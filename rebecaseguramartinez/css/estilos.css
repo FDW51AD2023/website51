@@ -1,0 +1,72 @@
+#mp1 p {
+    font-size: 50px;
+}
+
+#mp1 p::first-letter{
+    font-size: 80px;
+}
+
+#mp1 p::first-letter {
+    font-size: 100px;
+
+}
+
+#mp1 p::first-line {
+    background-color: rgb(181, 21, 155);
+    color: black
+
+}
+
+
+
+
+#mp1 ul li:first-child{
+    border-top: 2px double rebeccapurple;
+
+}
+
+#mp1 ul li:last-child{
+    border-bottom: 2px double rgb(211, 87, 193);
+
+}
+
+#mp1 main ul li:last-child{
+    border-bottom: 4px solid rgb(73, 173, 136);
+
+}
+
+#mp1 main ul li:nth-child(3){
+    background-color: rgb(89, 136, 120);
+    color: whitesmoke;
+}
+  
+
+.formatolista li:nth-child(odd){
+    background-color: darkorange;
+    color: rgb(255, 255, 255);
+
+}
+
+.formatolista2 li:nth-child(4n){
+    background-color: deeppink;
+}
+
+.formatolista li:nth-child(even){
+    background-color: rgb(131, 25, 224);
+    color: rgb(255, 255, 255);
+
+}
+#mp1 h2 {
+    background-color: cadetblue;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+
+#mp1 h2:hover { /* sirve para que cuando pases el boton se cambie de color (botones) */
+    background-color: rgb(10, 11, 11);
+    color: cadetblue;
+
+}
+
