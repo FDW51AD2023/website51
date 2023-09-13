@@ -1,0 +1,50 @@
+
+
+#mp1 h2 {
+    background-color: lightpink;
+    color: black;
+    border: 2px solid palevioletred;
+    border-radius: 5px;
+} 
+
+#mp1 h2:hover {
+    background-color: black;
+    color: pink;
+    border: 2px solid lightpink;
+    border-radius: 5px;
+}
+
+#mp1 main ul li:first-child {
+    border-top: 2px double purple;
+}
+
+#mp1 main ul li:last-child{
+    border-bottom: 4px double purple;
+}
+
+#mp1 main ul li:nth-child(3){
+    background-color:  rgb(236, 236, 174);
+}
+
+.formato-lista-1 li:nth-child(odd) {
+    background-color: rgb(236, 236, 174);
+}
+
+.formato-lista-1 li:nth-child(even) {
+    background-color: lightskyblue;
+}
+
+/* cada cuarto elemento */
+.formato-lista-1 li:nth-child(4n) {
+    background-color: palevioletred;
+    color: white;
+}
+
+
+#mp1 p::first-letter {
+    font-size: 100px;
+}
+
+#mp1 p::first-line {
+    background-color: lightgreen;
+}

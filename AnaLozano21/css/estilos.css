@@ -1,0 +1,34 @@
+#mp1 ul li:first-child{
+    border-top: rebeccapurple;
+}
+
+#mp1 h1{
+    background-color: tomato;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#mp1 h2:hover{
+    background-color: black;
+    color: tomato;
+
+}
+
+#mp1 main ul li:nth-child(3){
+    background-color: blue;
+    color: white;
+}
+
+/* Impar */
+.FormatoLista1 li:nth-child(odd){
+    background-color: blue;
+    color: white;
+}
+
+/* Par */
+.FormatoLista1 li:nth-child(even){
+    background-color: palevioletred;
+    color: black;
+}
+
