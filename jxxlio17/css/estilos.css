@@ -1,0 +1,49 @@
+#mp1 h2{
+    background-color: darkslateblue;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#mp1 h2:hover{
+    background-color: blueviolet;
+    color: saddlebrown;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#mp1 ul li:first-child {
+    border-top: 2px double salmon;
+}
+
+#mp1 ul li:last-child {
+    border-bottom: 5px solid darkslateblue;
+}
+
+#mp1 main ul li:nth-child() {
+    background-color: paleturquoise;
+    color: darkcyan;
+}
+
+.formato-lista-1 li:nth-child(odd) {
+    background-color: paleturquoise;
+    color: darkcyan;
+}
+
+.formato-lista-1 li:nth-child(even) {
+    background-color: darkgreen;
+    color: greenyellow;
+}
+
+.formato-lista-2 li:nth-child(4n) {
+    background-color: tomato;
+}
+
+#mp1 p::first-letter{
+    font-size: 50px;
+}
+
+#mp1 p::first-line{
+    background-color: green;
+    color: black;
+}
