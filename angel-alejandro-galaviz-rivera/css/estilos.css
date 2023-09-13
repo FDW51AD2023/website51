@@ -1,5 +1,12 @@
 /*Hoja de estilos*/
 
+.boton {
+    background-color: aliceblue;
+    color: black;
+    font-size: 2rem;
+}
+
+
 #mp1 h2 {
     background-color: black;
     color: rgb(255, 255, 255);
