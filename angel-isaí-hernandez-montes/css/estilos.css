@@ -1,0 +1,11 @@
+#mp1 h2{
+    background-color: aqua;
+    color: azure;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#mp1 h2:hover{
+    background-color: rgb(4, 73, 73);
+    color: rgb(208, 214, 214);
+}
