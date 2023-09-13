@@ -1,0 +1,48 @@
+#mp1 p::first-letter{
+    font-size: 50px;
+}
+#mp1 p::first-line {
+    background-color: green;
+}
+
+#mp1 main ul li:first-child {
+    border-top: 2px double rebeccapurple;
+}
+
+#mp1 main ul li:last-child {
+    border-top: 4px double rebeccapurple;
+}
+
+#mp1 main ul li:nth-child(3) {
+    background-color: 4px double blue;
+    color: black;
+}
+
+.formato-lista-1 li:nth-child(odd){
+    background-color: 4px double blue;
+    color: red;
+}
+
+.formato-lista-1 li:nth-child(even){
+    background-color: 4px double blue;
+    color: black;
+}
+
+.formato-lista-1 li:nth-child(4n){
+    background-color: 4px double rebeccapurple;
+    color: green;
+}
+
+#mp1 h2 {
+    background-color: tomato;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px
+}
+
+#mp1 h2:hover {
+    background-color: black;
+    color: tomato;
+    border: 2px solid black;
+    border-radius: 5px
+}
