@@ -1,0 +1,35 @@
+#mp1 p::first-letter {
+
+    font-size: 100px;
+}
+
+#mp1 p::first-line {
+    background-color: green;
+    
+}
+
+ul li:first-child {
+    border-top: 2px double rebeccapurple;
+}
+
+ul li:last-child {
+    border-top: 4px solid rebeccapurple;
+}
+
+ul li:nth-child(3) {
+    background-color: blue;
+    color: white;
+}
+
+#mp1 h2 {
+    background-color: tomato;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#mp1 h2:hover {
+    background-color: black;
+    color: tomato;
+    border: 2px solid black;
+}
