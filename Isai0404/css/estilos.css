@@ -1,0 +1,45 @@
+#mp1 h2{
+    background-color: aqua;
+    color: azure;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#mp1 h2:hover{
+    background-color: rgb(4, 73, 73);
+    color: rgb(208, 214, 214);
+}
+
+#mp1 ul li:last-child{
+    border: bottom 4px solid rgb(126, 28, 28);
+}
+
+#mp1 ul li:first-child{
+    border: bottom 4px solid rgb(42, 92, 201);
+}
+
+#mp1 ul li:nth-child(3){
+    background-color:aqua;
+}
+\\odd sirve ara los numeros impares
+.formato-lista-1 li:nth-child(odd){
+    background-color: rgb(42, 115, 124);
+    color: rgb(54, 44, 44);
+}
+
+.formato-lista-1 li:nth-child(even){
+    background-color: rgb(2, 42, 48);
+    color: rgb(156, 83, 83);
+}
+
+.formato-lista-2 li:nth-child(2n){
+    background-color: rgb(42, 115, 124);
+    color: rgb(54, 44, 44);
+}
+
+#mp1::first-letter{
+    font-size: 50px;
+}
+#mp1::first-line{
+    background-color: aquamarine;
+}
