@@ -1,0 +1,70 @@
+#mp1 article .header{
+    background-color: rebeccapurple;
+}
+
+#mp1 aside{
+    background-color: gray;
+    border: 11px solid black;
+    /* Relleno 4 lados */
+    padding: 10px;
+
+    /* Relleno RL, TB */
+    padding: 10px 20px;
+
+    /* Relleno arriba, izquierda y abajo */
+    padding: 10px 20px 30px;
+
+    /* Relleno cuatro lados (Manecillas del reloj)*/
+    padding: 10px 20px 30px 40px;
+
+    margin: 50px 5px;
+}
+
+#mp1 .s1 {
+    background-color: gold;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 5px solid black;
+}
+
+#mp1 .s2 {
+    background-color: palevioletred;
+    width: 200px;
+    height: 200px;
+}
+
+#mp1 .s3 .a1{
+    background-color: navy;
+}
+
+#mp1 .s3 .a2{
+    background-color: lawngreen;
+    box-sizing: border-box;
+}
+
+#mp1 .s3 .a3{
+    background-color: olive;
+}
+
+#mp1 .s3 article{
+    display: inline-block;
+}
+
+#mp1 .s3 span{
+    display: inline-block;
+    background-color: lightblue;
+    width: 80px;
+    height: 40px;
+}
+
+#mp1 .s3 strong{
+    background-color: plum;
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+}
+
+#mp1 .menu a{
+    display: block;
+}

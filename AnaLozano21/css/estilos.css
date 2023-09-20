@@ -1,3 +1,12 @@
+#mp1 p::first-letter{
+    font-size: 50px;
+}
+
+#mp1 p::first-line{
+    background-color: aqua;
+    color: black;
+}
+
 #mp1 ul li:first-child{
     border-top: rebeccapurple;
 }
