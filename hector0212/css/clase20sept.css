@@ -1,0 +1,61 @@
+
+
+
+
+
+
+
+
+#mp1 .s1 {
+    background-color: gold;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 5px solid black;
+}
+
+#mp2 .s2 {
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 5px solid black;   
+    box-sizing: border-box;
+}
+
+#mp1 .s3 .a1 {
+    background-color: blue;
+}
+
+#mp1 .s3 .a2 {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+
+}
+
+#mp1 .s3 .a3 {
+    background-color: orange;
+}
+
+#mp1 .s3 article {
+    display: inline block;
+}
+
+#mp1 .s3 span {
+    background-color: aqua;
+    display: inline block;
+    width: 80px;
+    height: 40px;
+}
+
+#mp1 .s3 strong {
+    background-color: blue;
+    display: inline block;
+    width: 100px;
+    height: 50px;
+}
+
+#mp1 .meno a {
+    display: block;
+}

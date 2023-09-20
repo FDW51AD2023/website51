@@ -1,0 +1,76 @@
+#mp1 article .encabezado {
+    background-color: red;
+}
+
+/* #mp1 article h2 {
+    background-color: purple !important;
+} */
+
+#mp1 aside {
+    background-color: lightpink;
+    border: 10px solid palevioletred;
+    /* Relleno 4 lados. Propiedad corta */
+    padding: 10px;  
+    /* Siempre empieza por arriba. Relleno 10px Superior e Inferior y 20 Izquierda y Derecha */
+    padding: 10px 60px; 
+    /* Relleno 10 arriba, 20 izquiera- derecha y 30 abajo */
+    padding: 10px 20px 30px;
+    /* Relleno 10 arriba, 20 derecha, 30 bajo y 40 izquiera */
+    padding: 10px 20px 30px 40px;
+    margin: 10px; /* Separa los elementos  */
+}
+
+/* Acceder a class s1 */
+
+#mp1 .s1 {
+    background-color: lightgoldenrodyellow;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 5px solid yellow;
+    box-sizing: border-box;
+}
+
+#mp1 .s2 {
+    background-color: rgb(230, 162, 230);
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 5px solid purple;
+}
+
+#mp1 .s3 .a1{
+    background-color: lightgreen;
+}
+
+#mp1 .s3 .a2{
+    background-color: lightgrey;
+
+}
+
+#mp1 .s3 .a3{
+    background-color: lightblue;
+}
+
+#mp1 .s3 article{
+    display: inline-block;
+    /* Cuando se quiere ancho y alto y que todos esten en la misma linea */
+}
+
+#mp1 .s3 span {
+    background-color: tomato;
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+#mp1 .s3 strong {
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+}
+
+#mp1 .menu a {
+    display: block;
+
+}
