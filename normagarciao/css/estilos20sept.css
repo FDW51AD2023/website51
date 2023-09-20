@@ -1,0 +1,77 @@
+/* #mp1 article h2{
+    background-color: aqua !important;
+
+} */
+
+#mp1 article.encabezado {
+    background-color: blue;
+}
+
+#mp1 aside{
+    background-color: rgb(238, 238, 50);
+    border: 10px solid black;
+    /* Relleno cuatro lados  */
+    padding: 10px;
+    /* Relleno 10 inferior-superior y 20 izq-der*/
+    padding: 10px 20px;
+    /* Relleno 10 arriba, 20 izq-der y 30 abajo */
+    padding: 10px 20px 30px;
+    /* Relleno 10 arriba, 20 derecha, 30 abajo y 40 izquierda. */
+    padding: 10px 20px 30px 40px;
+
+    margin: 10px;
+    margin: 50px 5px;
+}
+
+#mp1 .s1{
+    background-color: blueviolet;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 5px solid black;
+}
+#mp1 .s2{
+    background-color: brown;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 5px solid black;
+    box-sizing: border-box;
+}
+#mp1 .s3 .a1 {
+    background-color: tomato;
+}
+#mp1 .s3 .a2 {
+    background-color: rgb(68, 182, 93);
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+}
+#mp1 .s3 .a3 {
+    background-color: rgb(228, 135, 205);
+}
+
+
+#mp1 .s3 article{
+    display: inline-block;
+}
+
+#mp1 .s3 span {
+    background-color: cadetblue;
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+}
+
+#mp1 .s3 strong {
+    background-color: burlywood;
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+
+}
+
+#mp1 .menu a {
+    display: block;
+
+}
