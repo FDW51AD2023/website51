@@ -1,0 +1,104 @@
+
+/* #mp1 article h2 {
+    background-color: rgb(234, 33, 127);
+} */
+
+
+/* #mp1 article .encabezado {
+    background-color: rgba(127, 21, 241, 0.457) !important;
+}  */
+
+#mp1 aside{
+    background-color: rgb(233, 139, 183);
+    /* relleno cuatro lados */
+    padding: 10px;
+    padding: 10px 20px;
+    border: 10px solid rgb(194, 153, 233);
+    margin: 10px;
+}
+
+#mp1 aside{
+    background-color: rgb(233, 139, 183);
+    /* relleno 10 supinf 2o izqder */
+    padding: 10px 20px;
+
+    /* relleno 10 arriba, 20 izq der y 30 */
+    padding: 10px 20px 30px;
+
+    /* relleno 10 arriba 2o der 30 abajo 40 izq */
+    padding: 10px 20px 30px 40px;
+
+    margin: 10px;
+    margin: 50px 5px;
+}
+
+#mp1 .s1 {
+    background-color: rgba(104, 183, 243, 0.792);
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 5px solid rgb(157, 237, 165);
+}
+
+#mp1 .s2 {
+    background-color: rgba(133, 239, 135, 0.792);
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 5px solid rgb(104, 183, 236);
+    box-sizing: border-box;
+    /* para que respete una medida específica */
+}
+
+#mp1 .s3 .a1 {
+    background-color: red;
+}
+
+/* El bloque naranja se hace grande */
+#mp1 .s3 .a2 {
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+
+}
+
+#mp1 .s3 .a3 {
+    background-color: yellow;
+
+}
+
+/* articulos en linea */
+/* #mp1 .s3 article {
+    display: inline;
+} */
+
+/* articulos en bloque */
+#mp1 .s3 article {
+    display: inline-block;
+}
+
+/* solo 1 articulo en bloque */
+/* #mp1 .s3 .a3 {
+    background-color: yellow;
+
+} */
+
+#mp1 .s3 span {
+    background-color: greenyellow;
+    /* en el display se puede usar block o no se puede poner, no afecta si no se pone, solo cambia el tamaño */
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+}
+
+#mp1 .s3 strong {
+    background-color: rgb(99, 180, 246);
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+}
+
+#mp1 .menu a{
+    display: block;
+}
