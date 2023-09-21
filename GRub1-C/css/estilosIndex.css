@@ -12,7 +12,9 @@
     padding: 3px;
 }
 
-
+#mp1 ul li{
+    font-size: 15px;
+}
 footer:last-child{
     text-align: center;
     font-size: 20px;
