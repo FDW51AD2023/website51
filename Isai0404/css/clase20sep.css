@@ -1,0 +1,75 @@
+#mp1 article.encabezado{
+    background-color: aquamarine;
+}
+
+#mp1 article h2{
+    background-color: rgb(127, 255, 133);
+}
+/* Da prioridad a el elemento
+#mp1 article h2{
+    background-color: rgb(76, 77, 82) !important;
+} */
+#mp1 aside h2{
+    background-color: rgb(41, 42, 43);
+    border: 10px solid black;
+    /*relleno 4 lados*/
+    padding: 10px;
+    /*relleno 10 px superior e inferior y 20 px laterales*/
+    padding: 10px 20px;
+    /*Relleno 10px arriba, 20px laterales y 30px abajo*/
+    padding: 10px 20px 30px;
+    /*Relleno 4 lados con medidas diferentes (toma en cuenta las manecillas del reloj*/
+    padding: 10px 20px 30px 40px;
+    margin: 10px;
+    margin: 50px 5px;
+}
+
+#mp1 .s1{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    padding: 20;
+    border: 5px solid black;
+}
+
+#mp1 .s2{
+    background-color: rgb(79, 105, 105);
+    width: 200px;
+    height: 200px;
+    padding: 20;
+    border: 5px solid black;
+    box-sizing: border-box;
+}
+#mp1 .s3 .A1{
+    background-color: blueviolet;
+    width: 100px;
+}
+#mp1 .s3 .A2{
+    background-color: red;
+    width: 100px;
+}
+#mp1 .s3 .A3{
+    background-color: rgb(77, 7, 7);
+    width: 100px;
+}
+#mp1 .s3 article{
+    display: inline-block;
+}
+/*Display sirve para canbiar el grupo de 1 elemento de linea a bloque y viseversa*/
+#mp1 .s3 span{
+    background-color: rgb(206, 92, 92);
+    display: inline-block;
+    width: 40px;
+    height: 50px;
+}
+
+#mp1 .s3 strong{
+    background-color: rgb(55, 83, 74);
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+}
+
+#mp1 .menu a{
+    display: block;
+}
