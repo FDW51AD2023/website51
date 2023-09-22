@@ -1,0 +1,19 @@
+
+ul > h2{
+    background-color: powderblue;
+}
+
+li a{
+    color: grey;
+}
+
+li.ady + h3{
+    color: darksalmon;
+} 
+
+h1 {
+    background-color: azure;
+    text-align: center;
+    border: solid 10px cadetblue;
+}
+
