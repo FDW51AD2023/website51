@@ -1,0 +1,75 @@
+/*
+#mp1 h2 {
+    background-color: blue;
+}
+#mp1 article .encabezado {
+    background-color: red;
+}
+
+#mp1 article h2 {
+    background-color: blue;
+}*/
+
+#mp1 Aside h2 {
+    background-color: gray;
+    border: 10px solid black;
+    /* RELLENO CUATRO LADOS*/
+    padding: 10px;
+    margin: 10px skyblue;
+    /*  RELLENO 10 SUP-INF Y 20 IZQ-DER7*/
+    padding: 10px 20px 30px;
+    /*  RELLENO 10 arriba, 20der, 30 abajo, 40 izq*/
+    padding: 10px 20px 30px 40px;
+    margin: 10px;
+    margin: 50px 5px;
+}
+
+#mp1 .s1 {
+    background-color: gold;
+    padding: 20px;
+    border: 5px solid black;
+}
+
+#mp1 .s2 {
+    background-color: palevioletred;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 5px solid black;
+    box-sizing: border-box;
+}
+#mp1 .s3 .a1 {
+    background-color: navy;
+    width: 100px;
+}
+
+#mp1 .s3 .a2 {
+    background-color: lawngreen;
+    width: 100px;
+
+}
+
+#mp1 .s3 .a3 {
+    background-color: olive;
+    width: 100px;
+}
+#mp1 .s3 article {
+    display: inline-block;
+}
+
+#mp1 .s3 span {
+    background-color: tomato;
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+}
+
+#mp1 .s3 strong {
+    background-color: aquamarine;
+    width: 100px;
+    height: 50px;
+}
+
+#mp1 .menu a {
+    display: block;
+}
