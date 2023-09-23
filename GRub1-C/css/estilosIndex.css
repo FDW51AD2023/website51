@@ -1,0 +1,36 @@
+#mp1 h1 {
+    text-align: center;
+    font-size: 30px;
+    background-color: lightpink;
+    border: 10px solid palevioletred;
+    padding: 10px;  
+}
+
+#mp1 h2 {
+    font-size: 20px;
+    background-color: rgb(240, 240, 200);
+    padding: 3px;
+}
+
+#mp1 ul li{
+    font-size: 15px;
+}
+footer:last-child{
+    text-align: center;
+    font-size: 20px;
+    background-color: pink;
+    color: black;
+    border: 5px solid palevioletred;
+
+} 
+
+footer:hover{
+    background-color: palevioletred;
+    color: pink;
+    border: 5px solid pink;
+}
+
+#mp1 p {
+    font-size: 20px;
+
+}

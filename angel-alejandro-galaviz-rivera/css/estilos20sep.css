@@ -1,3 +1,19 @@
+.boton {
+    background-color: aliceblue;
+    color: black;
+    font-size: 1.5rem;
+    border-radius: 2.8px;
+    border-color: #ff0000;
+    border-style: double;
+    border-style: groove;
+}
+
+.boton:hover {
+    background-color: rgb(0, 0, 0);
+    color:rgb(255, 255, 255)
+}
+
+
 #mp1 article h2{
     color: black !important;
 }
