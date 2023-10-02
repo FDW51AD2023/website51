@@ -1,0 +1,121 @@
+
+/* #mp1 para que afecte solo a la seccion con id, p es lo que voy a afectar de la seccion em es para multiplicar 
+lo de el valor 1 por el valor 2 */
+
+/*el valor dentro de un contenedor se multiplica por el valor dado por el tamaño del contenedor*/
+
+/*
+#mp1 article{
+    font-size: 5px;
+}
+
+#mp1 p {
+    font-size: 5em;
+
+}
+*/
+
+
+/* se usa rem para que el valor de p en este caso 5 se multiplique por el tamaño predeterminado y no por el 
+valor de su contenedor
+#mp1 p {
+    font-size: 5rem;
+
+}
+*/
+
+
+/*Se usa vh para ocupar cierto margen del espacio de la pagina web alto y ancho height es altura weith ancho
+esto se adapta al tamaño visible de la pagina*/
+#mp1 .display {
+    background-color: chocolate;
+    height: 100vh;
+    width: 75vw;
+}
+
+/*Lo mismo pero con porcentajes (encierra toda la seccion)*/
+
+#mp1 .display-porcentaje {
+    background-color: crimson;
+    height: 100%;
+    width: 100%;
+}
+
+/*Estilos con px*/
+
+/*Para que de los articulos encerrador en la seccion con la clase #scolor solo se marque el primero
+esto marca toda el area que ocupa la etiqueta de articulo*/
+#scolor article:first-child {
+    width: 100px;
+    height: 50px;
+    background-color: #068FFF;
+}
+
+/*el nth-child es el una funcion que te permite seleccionar cual articulo quieres modificar/adornar*/
+/*RGB es para mezcla de colores a ver cual sale*/ 
+#scolor article:nth-child(2) {
+    width: 100px;
+    height: 200px;
+    background-color: rgb(78, 79, 235);
+}
+
+/* hsl es para que especifiques tono saturacion  luminosidad*/
+/*el last-child es el una funcion que te permite seleccionar el ultimo articulo que hay*/ 
+#scolor article:last-child {
+    width: 500px;
+    height: 300px;
+    background-color: hsl(350,90%,50%);
+}
+
+
+/*Combinar los colores de la tabla que ocupa el articulo con la tabla que ocupa el titulo (basicamente combinar
+colores*/
+
+/*Porcentajes se usan para decir cuanto ocupa el segundo color en base a su contenedor y vh es para lo visible
+en toda la pantalla*/
+#scolor .a1{
+    background-color: #4E4FEB;
+    height: 50%;
+}
+
+#scolor .a2{
+    background-color: lime;
+    height: 50%;
+    width: 50%;
+}
+
+#scolor .a3{
+    background-color: #4E4FEB;
+    height: 50%;
+    width: 30vw;
+}
+
+/*Para ocultar el contenido que se sale del contenedor
+.overflow{
+    font-size: 40px;
+    background-color: peru;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+*/
+
+/*Para poner barra horizontal y vertical
+.overflow{
+    font-size: 40px;
+    background-color: peru;
+    width: 300px;
+    height: 300px;
+    overflow: scroll;
+}
+*/
+
+/*Para poner la barra que necesito*/
+.overflow{
+    font-size: 40px;
+    background-color: peru;
+    width: 300px;
+    height: 300px;
+    overflow: auto;
+}
+
