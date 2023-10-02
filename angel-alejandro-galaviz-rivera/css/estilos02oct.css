@@ -1,0 +1,61 @@
+#mp1 article {
+    font-size: 5px;
+}
+
+#mp1 p {
+    font-size: 5rem;
+    padding: 0.5em;
+}
+
+#mp1 .display {
+    background-color: gold;
+    height: 100vh;
+    width: 100vh;
+}
+
+#mp1 .display-porcentaje {
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+}
+
+#scolor article:first-child {
+    height: 500px !important;
+    width: 100px !important;
+    background-color: #97FFF4;
+}
+
+#scolor article:nth-child(2) {
+    height: 500px !important;
+    width: 200px !important;
+    background-color: rgb(255, 255, 255);
+}
+
+#scolor article:last-child {
+    height: 500px !important;
+    width: 300px !important;
+    background-color: rgb(255, 0, 0);
+}
+
+
+#scolor .a1 {
+    background-color: #97FFF4;
+    height: 50%;
+    width: 50%;
+}
+
+
+#scolor .a2 {
+    background-color: #000000;
+    height: 50%;
+    width: 50vh;
+
+}
+
+.overflow {
+    background-color: #97FFF4;
+    width: 300px;
+    height: 300px;
+    overflow: auto;
+}
+
