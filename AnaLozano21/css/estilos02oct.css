@@ -1,0 +1,59 @@
+#mp1 article{
+    font-size: 5px;
+}
+
+
+
+/* Que sea en base a la raiz, la "r" significa que es un valor fijo */
+#mp1 p {
+    font-size: 5rem;
+    padding: 0.5em;
+}
+
+#mp1 .display {
+    background-color: chocolate;
+    height: 100vh;
+    width: 75vw;
+}
+
+#scolor article:first-child{
+    width: 100px;
+    height: 50px;
+    background-color: #F1B4BB;
+}
+
+#scolor article:nth-child(2){
+    width: 100px;
+    height: 50px;
+    background-color: rgb(19, 32, 67);
+}
+
+#scolor article:last-child{
+    width: 100px;
+    height: 50px;
+    background-color: hsl(324, 51.6%, 69.2%);
+}
+
+#scolor .a1{
+    background-color: #FACBEA;
+    height: 50%;
+}
+
+#scolor .a2{
+    background-color: whitesmoke;
+    height: 50%;
+    width: 50%;
+}
+
+#scolor .a3{
+    background-color: pink;
+    height: 50%;
+    width: 30vh;
+}
+
+.overflow {
+    background-color: hsl(324, 51.6%, 69.2%);
+    width: 300px;
+    height: 300px;
+    overflow: scroll;
+}
