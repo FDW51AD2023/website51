@@ -1,8 +1,8 @@
-#mp1 p ::first-letter{
+#mp1 p::first-letter{
     font-size: 50px;
 }
 
-#mp1 p ::first-line{
+#mp1 p::first-line{
     background-color: aqua;
     color: black
 }

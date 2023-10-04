@@ -1,0 +1,95 @@
+.boton {
+    background-color: aliceblue;
+    color: black;
+    font-size: 1.5rem;
+    border-radius: 2.8px;
+    border-color: #ff0000;
+    border-style: double;
+    border-style: groove;
+}
+
+.boton:hover {
+    background-color: rgb(0, 0, 0);
+    color:rgb(255, 255, 255)
+}
+
+
+#mp1 article h2{
+    color: black !important;
+}
+
+#mp1 article .encabezado{
+    color: red;
+}
+
+#mp1 aside {
+    background-color:aqua;
+    /*Relleno*/
+    padding: 10px;
+    /*Relleno 10px 20px 30px*/
+    padding:10px 20px 30px;
+    /*Relleno 10px 20px 30px 40px*/
+    padding: 10px 20px 30px 40px;
+    border: 10px solid red;
+    margin: 10px;
+    /*Margin 50px 5px*/
+    margin: 50px 5px;
+}
+
+
+#mp1 .s1 {
+    background-color: blueviolet;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 20px solid bisque;
+
+    box-sizing: border-box;
+}
+
+#mp1 .s2 {
+    background-color: gold;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 20px solid rgb(149, 255, 0);
+}
+
+#mp1 .s3 .a1 {
+    background-color: bisque;
+
+}
+
+#mp1 .s3 .a2 {
+    background-color:aqua;
+
+}
+
+#mp1 .s3 .a3 {
+    background-color:chartreuse;
+
+}
+
+
+#mp1 .s3 article {
+    display: inline-block;
+}
+
+#mp1 .s3 span {
+    background-color: blue;
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+}
+
+
+#mp1 .s3 strong {
+    background-color:plum;
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+}
+
+#mp1 .menu a {
+    display: block;
+}
