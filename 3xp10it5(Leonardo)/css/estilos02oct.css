@@ -1,0 +1,63 @@
+#mp1 p {
+    font-size: 5rem;
+    padding: 0.5em;
+}
+
+#mp1 article {
+    font-size: 5px;
+}
+
+#mp1 .display {
+    background-color: aqua;
+    height: 100vh;
+    width: 75vw;
+}
+
+#mp1 .display-porcentaje {
+    background-color: aquamarine;
+    height: 100%;
+    width: 100%;
+}
+
+#scolor article:first-child {
+    background-color: #16FF00;
+    width: 200px;
+    width: 500px;
+}
+
+#scolor article:nth-child(2) {
+    color: #FFED00;
+    background-color: rgb(40, 50, 60);
+    width: 200px;
+    width: 500px;
+}
+
+#scolor article:last-child {
+    background-color: hsl(350, 100%, 25%);
+    width: 200px;
+    width: 500px;        
+}
+
+#scolor .articulo1 {
+    background-color:  #002c6d;
+    height: 50%;
+}
+
+#scolor .articulo2 {
+    background-color: lime;
+    height: 50%;
+    width: 50%;
+}
+
+#scolor .articulo3 {
+    background-color: peru;
+    height: 50%;
+    width: 30vw;
+}
+
+.overflow {
+    background-color: hsl(350,70%,50%);
+    height: 400px;
+    width: 400px;
+    overflow: auto;
+}

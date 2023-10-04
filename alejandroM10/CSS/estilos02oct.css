@@ -1,0 +1,62 @@
+#mp1 article { 
+    font-size: 5px;
+}
+
+#mp1 p {
+    font-size: 5rem;
+    padding: 0.5em;
+}
+
+#mp1 .display {
+    background-color: chocolate;
+    height: 100vh;
+    width: 75vw;
+}
+
+#mp1 .display-porcentaje {
+    background-color: blueviolet;
+    height: 100%;
+    width: 100%;
+}
+
+#scolor article:first-child {
+    width: 500px;
+    height: 100px;
+    background-color: #1AACAC;
+}
+
+#scolor article:nth-child(2) {
+    width: 500px;
+    height: 200px;
+    background-color: rgb(54, 47, 217);
+}
+
+#scolor article:last-child {
+    width: 500px;
+    height: 300px;
+    background-color: hsl(315, 90%, 50%);
+}
+
+#scolor .a1 {
+    background-color: #141E46;
+    height: 50%;
+}
+
+#scolor .a2 {
+    background-color: lime;
+    height: 50%;
+    width: 50%;
+}
+
+#scolor .a3 {
+    background-color: peru;
+    height: 50%;
+    width: 10vw;
+}
+
+.overflow {
+    background-color: hsl(315, 90%, 50%);
+    width: 600px;
+    height: 300px;
+    overflow: auto;
+}
