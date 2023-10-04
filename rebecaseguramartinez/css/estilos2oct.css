@@ -1,0 +1,92 @@
+#mp1 article{
+    font-size:5px ;
+}
+#mp1 p {
+    font-size: 5em;
+} */
+/* las em valen 16 pero se le puede cambiar el valor, si se modifica, el 
+valor es el total de px * em, en este caso sería 25, si no le definimos 
+tamaño a px entonces sería 80 */
+
+#mp1 article{
+    font-size:5px ;
+}
+#mp1 p {
+    font-size: 5rem;
+} 
+/* si le ponemos rem, toma de referencia la rama y no el contenedor (px) */
+
+#mp1 article{
+    font-size:5px ;
+    
+}
+#mp1 p {
+    font-size: 5rem;
+    padding: 0.5em;
+}
+/* en este caso sería .5 *5 */
+#mp1 .display {
+    background-color: rgb(161, 225, 226);
+    height: 100vh;
+    width: 75vh;
+} 
+
+/* 75 de ancho 100 de alto */
+#mp1 .display {
+    background-color: rgb(161, 225, 226);
+    height: 100vh;
+    width: 100vw;
+}
+
+#mp1 .display-porcentaje {
+    background-color: rgb(61, 193, 208);
+    height: 100%;
+    width: 100%;
+}
+
+#scolor article:first-child{
+    width: 500px;
+    height: 100px;
+    background-color: #97bbf2;
+}    
+/* color hexadecimal colorhunt te da los hex y decimales, paletas de colores */
+
+#scolor article:nth-child(2){
+    width: 500px;
+    height: 200px;
+    background-color: #1953ab;
+}   
+/* color hexadecimal colorhunt te da los hex y decimales, paletas de colores */
+
+#scolor article:last-child{
+    width: 500px;
+    height: 300px;
+    background-color: hsl(182, 129%, 90%);
+}   
+/* color hexadecimal colorhunt te da los hex y decimales, paletas de colores */
+
+#scolor .a1 {
+    background-color: #BEFFF7;
+    height: 50%;
+} 
+
+#scolor .a2 {
+    background-color: aquamarine;
+    height: 50%;
+    width: 50%;
+}
+
+#scolor .a3 {
+    background-color: lightblue;
+    height: 50%;
+    width: 30vw;
+}
+
+.overflow {
+    background-color: rgb(47, 47, 145) ;
+    width: 600px;
+    height: 300px;
+    overflow: auto;
+}
+
+
