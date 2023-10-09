@@ -4,16 +4,16 @@ header {
 }
 
 #header1 img {
-    float:right;
+    float: right;
 }
 
-.clearfix::after{
+.clearflix::after{
     content: "";
-    clear:both;
+    clear: both;
     display: table;
 }
 
-#header2 img {
+#header2 img{
     float: left;
 }
 
@@ -25,26 +25,25 @@ header {
     background-color: pink;
 }
 
-.morado {
-    background-color: purple;
+.verde {
+    background-color: green;
 }
 
-.rojo {
-    background-color: red;
+.oro {
+    background-color: gold;
 }
 
-.amarillo {
-    background-color: yellow;
+.cafe {
+    background-color: brown;
 }
 
-.naranja {
-    background-color: orange;
+.gris {
+    background-color: gray;
 }
 
-
-#header3 article {
+#header3 article{
     float: left;
-    width: 16.666%;
+    width: 16.6666%;
 }
 
 #header4 {
@@ -53,15 +52,13 @@ header {
 
 #header5 {
     display: flex;
-/*flex-direction: column;*/
     flex-direction: column-reverse;
 }
 
-#header6 {
+#header6{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; /* acomoda conforme a los espacios mencionados . Funciona en Filas y Columnas*/
-
+    flex-wrap: wrap;
 }
 
 #header6 #a2 {
@@ -84,7 +81,7 @@ header {
 }
 
 #header7 #a1 {
-    height: 200px;
+    height: 100px;
 }
 
 #header7 #a3 {
@@ -92,7 +89,7 @@ header {
 }
 
 #header7 #a5 {
-    height: 150px;
+    height: 100px;
 }
 
 #header8 {
@@ -101,7 +98,7 @@ header {
     flex-flow: column-reverse wrap;
 }
 
-#header8 article{
+#header8 article {
     height: 200px;
 }
 
@@ -126,11 +123,11 @@ header {
     display: flex;
     flex-wrap: wrap;
     height: 400px;
-    align-content:space-around;
     justify-content: space-around;
+    align-content: space-around;
 }
 
-#header12 article{
+#header12 article {
     width: 30%;
 }
 
@@ -139,10 +136,27 @@ header {
     justify-content: space-around;
 }
 
-#header13 #a1{
+#header13 #a1 {
+    order: 2;
+}
+
+#header13 #a2 {
+    order: 1;
+}
+
+#header13 #a3 {
+    order: 4;
+}
+
+#header13 #a4 {
+    order: 3;
+}
+
+#header13 #a5 {
     order: 6;
 }
 
-#header13 #a1{
-    order: 2;
+#header13 #a6 {
+    order: 5;
 }
+

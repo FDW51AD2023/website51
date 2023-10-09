@@ -1,50 +1,51 @@
 header {
-    border: 5px solid black;
+    border: 5px solid orangered;
     margin-top: 1em;
 }
-
-#header1 img {
-    float:right;
+#header1 img{
+    float: right;
 }
 
-.clearfix::after{
+.clearfix::after {
     content: "";
-    clear:both;
+    clear: both;    
     display: table;
 }
 
 #header2 img {
-    float: left;
-}
+    float:left;
 
-.azul {
-    background-color: blue;
-}
-
-.rosa {
-    background-color: pink;
-}
-
-.morado {
-    background-color: purple;
-}
-
-.rojo {
-    background-color: red;
-}
-
-.amarillo {
-    background-color: yellow;
 }
 
 .naranja {
-    background-color: orange;
+    background-color:#FF6D3F ;
 }
 
+.anaranjado {
+    background-color: #B14B4B;
+}
 
-#header3 article {
+.morado {
+    background-color: #61146f;
+}
+
+.negro {
+    background-color: #ff9033;
+
+}
+
+.rojo {
+    background-color: #c1405a;
+
+}
+
+.morado2 {
+    background-color: #7858A6;
+
+}
+#header3 article{
     float: left;
-    width: 16.666%;
+    width: 16.6%;
 }
 
 #header4 {
@@ -53,19 +54,17 @@ header {
 
 #header5 {
     display: flex;
-/*flex-direction: column;*/
     flex-direction: column-reverse;
 }
 
 #header6 {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; /* acomoda conforme a los espacios mencionados . Funciona en Filas y Columnas*/
-
+    flex-wrap: wrap;
 }
 
 #header6 #a2 {
-    width: 70%;
+    width: 30%;
 }
 
 #header6 #a4 {
@@ -79,8 +78,8 @@ header {
 #header7 {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    height: 400px;
+    flex-wrap: nowrap;
+    height: 400px
 }
 
 #header7 #a1 {
@@ -92,7 +91,7 @@ header {
 }
 
 #header7 #a5 {
-    height: 150px;
+    height: 100px;
 }
 
 #header8 {
@@ -125,24 +124,35 @@ header {
 #header12 {
     display: flex;
     flex-wrap: wrap;
-    height: 400px;
-    align-content:space-around;
     justify-content: space-around;
+    height: 400px;
+    align-content: space-around;
 }
 
 #header12 article{
     width: 30%;
 }
 
-#header13 {
+#header13{
     display: flex;
     justify-content: space-around;
 }
 
-#header13 #a1{
+#header13 #a1 {
+    order: 2;
+}
+#header13 #a2 {
+    order: 1;
+}
+#header13 #a3 {
+    order: 4;
+}
+#header13 #a4 {
+    order: 3;
+}
+#header13 #a5 {
     order: 6;
 }
-
-#header13 #a1{
-    order: 2;
+#header13 #a6 {
+    order: 5;
 }
