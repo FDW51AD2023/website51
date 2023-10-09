@@ -1,0 +1,102 @@
+/*Codigo para ponerle margen al contenedor header*/
+header{
+    border: 5px solid black;
+    margin-top: 1em;
+}
+
+.azul{
+    background-color: blue;
+}
+
+.rosa{
+    background-color: pink;
+}
+
+.verde{
+    background-color: green;
+}
+
+.oro{
+    background-color: gold;
+}
+
+.cafe{
+    background-color: brown;
+}
+
+.gris{
+    background-color: gray;
+}
+
+#header1 {
+    display:flex;
+}
+
+
+/*Para que crezca un elemento al maximo posible*/
+/*el numero es un factor de crecimiento*/
+#header1 #a4 {
+    flex-grow: 1;
+}
+
+#header1 #a1 {
+    flex-grow: 2;
+}
+
+/*Se usa para que se enconja o contraiga un elemento al minimo posible*/
+#header2 {
+    display: flex;   
+}
+
+#header2 #a1{
+    width: 200px;
+}
+
+#header2 #a6{
+    width: 300px;
+    flex-shrink: 0;
+}
+
+/*Se usa para poner el tamaño ideal*/
+
+#header3 {
+display: flex;
+}
+
+#header3 #a2{
+    flex-basis: 200px;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+#header3 #a3{
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+
+#header3 #a4{
+    flex-basis: 200px;
+    flex-grow: 2;
+    flex-shrink: 2;
+}
+
+/*Version abreviabada del que crece del que se encoje y el ideal*/
+#header3 #a5{
+    flex:3 0 100px;
+}
+
+/*Align self sirve para alinear un elemento de manera diferente al resto*/
+
+#header4 {
+    display: flex;
+    height: 200px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#header4 #a6{
+    align-self: flex-start;
+}
+
+
+
