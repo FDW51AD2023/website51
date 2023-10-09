@@ -1,0 +1,41 @@
+header {
+    border: 5px solid black;
+    margin-top: 1em;
+}
+
+.azul {
+    background-color: blue;
+}
+
+.rosa {
+    background-color: pink;
+}
+
+.morado {
+    background-color: purple;
+}
+
+.rojo {
+    background-color: red;
+}
+
+.amarillo {
+    background-color: yellow;
+}
+
+.naranja {
+    background-color: orange;
+}
+
+
+#header1 {
+    display: flex;
+}
+
+#header1 #a4 {
+    flex-grow: 1;
+}
+
+#header1 #a1 {
+    flex-grow: 2;
+}
