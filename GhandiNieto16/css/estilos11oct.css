@@ -1,0 +1,131 @@
+header {
+    background-color: pink;
+}
+
+
+main {
+    background-color: yellow;
+}
+
+aside {
+    background-color: purple;
+}
+
+footer {
+    background-color: limegreen;
+}
+
+#mp1 {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+#mp2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 200px;
+}
+
+#mp3 {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+
+}
+
+#mp3 header{
+    grid-column: 1 / -1;
+}
+
+#mp3 footer{
+    grid-column: 1 / -1;
+}
+
+#mp4 {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-areas:    "h h"
+                            "m a"
+                            "f f";
+    gap: 10px;
+}
+
+#mp4 header{
+    grid-area: h;
+}
+
+#mp4 main{
+    grid-area: m;
+}
+
+#mp4 aside{
+    grid-area: a;
+}
+
+#mp4 footer{
+    grid-area: f;
+}
+
+#header-main{
+    background-color: #0a0a23;
+}
+
+.boton1 {
+    color: white;
+    border: 1px solid white;
+    padding: 1px;
+    text-decoration: none;
+}
+
+#copiapag{
+ 
+}
+
+#copiapag p{
+    color: white;
+}
+
+
+#mainpag p {
+    background-color: white;
+    color: black;
+}
+
+#mainpag {
+    font-family: sans-serif;
+    font-size: 18px;
+    display: grid;
+    background-color: white;
+    justify-content: center;
+
+}
+
+
+#mp5 {
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas:   "m a";
+    gap: 10px;
+}
+
+#mp5 p{
+    color: black;
+}
+
+#mp5 header{
+    grid-area: h;
+}
+
+#mp5 main{
+    grid-area: m;
+    background-color: white;
+}
+
+#mp5 aside{
+    grid-area: a;
+    background-color: white;
+}
+
+#mp5 footer{
+    grid-area: f;
+}
