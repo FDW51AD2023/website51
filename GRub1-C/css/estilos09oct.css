@@ -61,7 +61,7 @@ header {
 
 #header3 #a3{
     flex-basis: 200px;
-    flex-grow:  ;
+    flex-grow: 1;
 }
 
 #header3 #a4{
@@ -77,4 +77,10 @@ header {
 #header4 {
     display: flex;
     height: 200px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#header4 #a6 {
+    align-self: flex-start;
 }
