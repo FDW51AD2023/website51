@@ -7,26 +7,27 @@ header {
     background-color: blue;
 }
 
-.rosa {
-    background-color: pink;
-}
-
-.morado {
-    background-color: purple;
-}
-
 .rojo {
-    background-color: red;
+    background-color: tomato;
+}
+
+.gris {
+    background-color: gray;
+}
+
+
+.oro {
+    background-color: gold;
 }
 
 .amarillo {
     background-color: yellow;
 }
 
-.naranja {
-    background-color: orange;
-}
 
+.verde {
+    background-color: green;
+}
 
 #header1 {
     display: flex;
@@ -43,35 +44,42 @@ header {
 #header2 {
     display: flex;
 }
-/* Cuando la pantalla se hace pequeña, el tamaño se hace pequeño pero si se quiere desahibilitar utilizamos flex-shrink:0 */
+
+#header2 #a1 {
+    flex-shrink: 0;
+    width: 200px;
+}
+
 #header2 #a6 {
     flex-shrink: 0;
     width: 300px;
 }
 
 #header3 {
-    display:flex;
+    display: flex;
 }
-/* el basis se utiliza en cajas de tecto*/
-#header3 #a2{
+
+#header3 #a2 {
     flex-basis: 200px;
     flex-grow: 1;
     flex-shrink: 0;
 }
 
-#header3 #a3{
+#header3 #a3 {
     flex-basis: 200px;
     flex-grow: 1;
 }
 
-#header3 #a4{
+
+#header3 #a4 {
     flex-basis: 200px;
     flex-grow: 2;
     flex-shrink: 2;
 }
 
-#header3 #a5{
-    flex:3 0 100px;
+
+#header3 #a5 {
+    flex: 3 0 100px;
 }
 
 #header4 {
@@ -84,3 +92,9 @@ header {
 #header4 #a6 {
     align-self: flex-start;
 }
+
+
+
+
+
+
