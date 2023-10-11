@@ -1,0 +1,15 @@
+header {
+    background-color: rgb(11, 11, 53);
+    color: aliceblue;
+}
+
+.boton1{
+    color: aliceblue;
+    padding:10px 20px ;
+    border: 15px;
+    border-radius: 5px;
+}
+
+main{
+    text-align: center;
+}
