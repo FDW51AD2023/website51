@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(19, 19, 50);
+    color: aliceblue;
+}
+
+.spacer {
+    padding: 15px 0px;
+}
+
+#header1 {
+    box-sizing: border-box;
+    height: 5vh;
+    border:1px solid black;
+    background-color: rgb(22, 18, 62);
+}
+
+#header1 {
+    display: flex;
+}
+
+#header1 {
+    align-items: center;
+    justify-content:space-between;
+}
+
+#header1 #ais-SearchBox-input{
+    width: 60vh;
+}
+
+#header1 #p1 {
+    color: aliceblue;
+}
+
+#header1 #sign_in{
+    background-color: rgb(216, 177, 59);
+}
+
+#intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+
