@@ -1,0 +1,29 @@
+#apple-logo {
+    width: 30.76px;
+    height: 40px;
+}
+
+#google-logo {
+    width: 79px;
+    height: 40px;
+}
+
+#microsoft-logo {
+    width: 118.76px;
+    height: 40px;
+}
+
+#spotify-logo {
+    width: 106.76px;
+    height: 40px;
+}
+
+#amazon-logo {
+    width: 114.4px;
+    height: 40px;
+}
+
+#logos {
+    display: flex;
+    justify-content: space-between;
+}
