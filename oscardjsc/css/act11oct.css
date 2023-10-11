@@ -1,0 +1,26 @@
+#header1 {
+    background-color: #0a0a23;
+    display: flex;
+    justify-content: space-around;
+    height:  80px;
+}
+
+#p1 {
+    color: white;
+}
+
+.boton {
+    border: solid white;
+}
+
+.boton2 {
+    border: solid #ffb439;
+    background-color: #ffb439;
+}
+
+main {
+    text-align: center;
+    background-color: #1b1b32;
+    color: white;
+}
+

@@ -1,0 +1,15 @@
+#barraprincipal {
+    display: flex;
+    background-color: black;
+}
+
+#barraprincipal h2 {
+    color: white;
+}
+
+#barraprincipal h3 {
+    color: white;
+    border: 1px solid white;
+}
+
+
