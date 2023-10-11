@@ -11,28 +11,27 @@ header {
     background-color: pink;
 }
 
-.morado {
-    background-color: purple;
+.verde {
+    background-color: green;
 }
 
-.rojo {
-    background-color: red;
+.oro {
+    background-color: gold;
 }
 
-.amarillo {
-    background-color: yellow;
+.cafe {
+    background-color: brown;
 }
 
-.naranja {
-    background-color: orange;
+.gris {
+    background-color: gray;
 }
-
 
 #header1 {
     display: flex;
 }
 
-#header1 #a4 {
+#header1 #a4{
     flex-grow: 1;
 }
 
@@ -43,35 +42,43 @@ header {
 #header2 {
     display: flex;
 }
-/* Cuando la pantalla se hace pequeña, el tamaño se hace pequeño pero si se quiere desahibilitar utilizamos flex-shrink:0 */
+
+#header2 #a1 {
+    flex-shrink: 0;
+    width: 200px;
+}
 #header2 #a6 {
     flex-shrink: 0;
     width: 300px;
 }
 
 #header3 {
-    display:flex;
+    display: flex;
 }
-/* el basis se utiliza en cajas de tecto*/
-#header3 #a2{
+
+#header3 #a2 {
     flex-basis: 200px;
     flex-grow: 1;
     flex-shrink: 0;
 }
 
-#header3 #a3{
+#header3 #a3 {
     flex-basis: 200px;
     flex-grow: 1;
 }
 
-#header3 #a4{
-    flex-basis: 200px;
+#header3 #a4 {
+    /* su tamaño base */
+    flex-basis: 200px; 
+    /* factor de crecimiento */
     flex-grow: 2;
+    /* factor de encogimiento */
     flex-shrink: 2;
 }
 
-#header3 #a5{
-    flex:3 0 100px;
+#header3 #a5 {
+    /* grow shrink basis */
+    flex: 3 0 100px;
 }
 
 #header4 {
