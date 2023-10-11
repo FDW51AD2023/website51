@@ -1,0 +1,71 @@
+header{
+    background-color: pink;
+}
+
+main{
+    background-color: green;
+}
+
+aside{
+    background-color: gray;
+}
+
+footer{
+    background-color: lawngreen;
+}
+
+#mp1{
+    display: grid;
+    /*Para el numero de columnas*/
+    /*Los numeros son el ancho de las columnas*/
+    grid-template-columns: 4fr 1fr;
+}
+
+#mp2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*Para la medida de los renglones y su cantidad*/
+    grid-template-rows: 100px 200px;
+}
+
+#mp3{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+
+#mp3 header{
+    /*Para manipular una unica columna que abarque de espacio de otras columnas*/
+    grid-column: 1 / -1 ;
+}
+
+#mp3 footer{
+    /*Para manipular una unica columna que abarque de espacio de otras columnas*/
+    grid-column: 1 / -1 ;
+}
+
+#mp4{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    /*Para ordenar de manera sencilla los elementos de la  pagina*/
+    grid-template-areas:"h h" 
+                        "m a"
+                        "f f";
+
+    gap: 10px
+}
+
+#mp4 header{
+    grid-area: h;
+}
+
+#mp4 main{
+    grid-area: m;
+}
+
+#mp4 aside{
+    grid-area: a;
+}
+
+#mp4 footer{
+    grid-area: f;
+}

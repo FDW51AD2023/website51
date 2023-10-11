@@ -1,0 +1,22 @@
+#header1 {
+    background-color: #0a0a23;
+    display: flex;
+    justify-content: space-around;
+}
+
+input {
+    background-color: gray;
+}
+
+#placeholder {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+.boton1 {
+    color: white;
+    border: 1px solid white;
+}
