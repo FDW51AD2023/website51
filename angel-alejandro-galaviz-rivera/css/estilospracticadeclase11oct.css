@@ -1,0 +1,41 @@
+* {
+    color: white;
+}
+
+html {
+    font-size: 1rem;
+}
+
+body {
+    background-color: #0e132c;
+}
+
+header.buscador {
+    text-align: right;   
+}
+
+header.titulo {
+    text-align: center;
+}
+
+
+#Sitioweb {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-areas: "h h"
+                         "m m"
+                         "f f";
+    gap: 10px;                   
+}
+
+#Sitioweb header {
+    grid-area: h;
+}
+
+#Sitioweb main {
+    grid-area: m;
+}
+
+#Sitioweb footer {
+    grid-area: f;
+}

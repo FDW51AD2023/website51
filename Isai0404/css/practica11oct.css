@@ -1,0 +1,25 @@
+#main{
+    color: white;
+    background-color: #0a0a23;
+    display: flex;
+}
+
+.boton2{
+    color: aliceblue;
+    border: 1px solid white;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.boton3{
+    background-color: #ffb93d;
+    border: 1px solid #feac32;
+    color: #0a0a23;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.s1{
+    display: flex;
+    justify-content: center;
+}
