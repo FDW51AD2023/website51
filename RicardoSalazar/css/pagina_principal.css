@@ -1,0 +1,28 @@
+body{
+    background-color: blueviolet;
+}
+
+li {
+    font-size: 30px;
+}
+
+a {
+    color: white;
+}
+
+header {
+    border: 5px solid blue;
+}
+
+main {
+    background-color: aquamarine;
+    border: 10px solid blue;
+}
+
+#evidencia_1 {background-color: blueviolet;
+    border: 5px solid blue;
+}
+
+#evidencia_2 {background-color: skyblue;
+    border: 5px solid blue;
+}
