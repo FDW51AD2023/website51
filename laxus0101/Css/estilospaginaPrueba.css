@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(28, 28, 57);
+    background-color: rgb(92, 92, 128);
     color: aliceblue;
 }
 
@@ -24,11 +24,10 @@ body {
     width: 60vh;
 }
 
-/* #nav1 button{
-    padding-left: 1vh;
-    height: 4vh;
-    width: 10vh;
-} */
+#nav1 button:hover{
+    background-color: whitesmoke;
+    color: black;
+} 
 
 #header1 #p1 {
     color: aliceblue;
@@ -56,6 +55,8 @@ body {
     /* background-color: red; */
     display: flex;
     flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:large;
 }
 
 #logos {
@@ -68,3 +69,28 @@ body {
     height: 30vh;
 }
 
+#logos {
+    background-color: brown;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.logo-row svg {
+    width: 18vh;
+}
+
+#apple-logo{
+    width: 7vh;
+}
+
+.logo-row {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.spacer {
+    padding: 3vh;
+}
