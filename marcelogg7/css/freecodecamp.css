@@ -19,6 +19,8 @@
 
 #seccion1 button {
     background-color: goldenrod;
+    font-size: 20px;
+    padding: 15px 30px;
 }
 
 #seccion1 button:hover {
@@ -41,6 +43,22 @@
 }
 
 #seccion2 {
+    background-color: gray;
+    text-align: center;
+}
+
+#seccion2 {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+#seccion2 svg {
+    width: 50%;
+    height: auto;
+}
+
+#seccion0 {
     background-color: gray;
     text-align: center;
 }
