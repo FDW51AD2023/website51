@@ -12,4 +12,35 @@
     border: 1px solid white;
 }
 
+#seccion1 {
+    background-color: midnightblue;
+    text-align: center;
+}
 
+#seccion1 button {
+    background-color: goldenrod;
+}
+
+#seccion1 button:hover {
+    background-color: gray;
+}
+
+#seccion1 h2,p {
+    color: azure;
+}
+
+#logos {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+#logos svg {
+    width: 79px;
+    height: 40px;
+}
+
+#seccion2 {
+    background-color: gray;
+    text-align: center;
+}
