@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#barraprincipal {
+    display: flex;
+    background-color: black;
+}
+
+#barraprincipal h2 {
+    color: white;
+}
+
+#barraprincipal button {
+    background-color: goldenrod;
+    font-size: 20px;
+    padding: 15px 30px;
+    border: 1px solid white;
+
+}
+
+#barraprincipal button:hover {
+    background-color: gray;
+}
+
+#barraprincipal h3 {
+    color: white;
+    border: 1px solid white;
+}
+
+#seccion1 {
+    background-color: midnightblue;
+    text-align: center;
+}
+
+#seccion1 button {
+    background-color: goldenrod;
+    font-size: 20px;
+    padding: 15px 30px;
+}
+
+#seccion1 button:hover {
+    background-color: gray;
+}
+
+#seccion1 h2,p {
+    color: azure;
+}
+
+#logos {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+#logos svg {
+    width: 79px;
+    height: 40px;
+}
+
+#seccion2 {
+    background-color: gray;
+    text-align: center;
+}
+
+#seccion2 {
+    justify-content: center;
+    align-items: center;
+}
+
+#seccion2 svg {
+    width: 50%;
+    height: auto;
+}
+
+#seccion0 {
+    color: white;
+    background-color: gray;
+    text-align: center;
+}
+
+#seccion3{
+    font-size: 120%;
+    color: white;
+    background-color: midnightblue;
+}
+
+#seccion3 {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas:"img1  h21"
+                        "img1 h31"
+                        "img1  p1"
+                        "img2  h22"
+                        "img2 h32"
+                        "img2  p2"
+                        "img3  h23"
+                        "img3 h33"
+                        "img3  p3";
+}
+
+#seccion3 #img1 {
+    grid-area: img1;
+}
+
+#seccion3 #h21 {
+    grid-area: h21;
+}
+
+#seccion3 #h31 {
+    grid-area: h31;
+}
+
+#seccion3 #p1{
+    grid-area: p1;
+}
+
+#seccion3 #img2 {
+    grid-area: img2;
+}
+
+#seccion3 #h22 {
+    grid-area: h22;
+}
+
+#seccion3 #h32 {
+    grid-area: h32;
+}
+
+#seccion3 #p2{
+    grid-area: p2;
+}
+
+#seccion3 #img3 {
+    grid-area: img3;
+}
+
+#seccion3 #h23 {
+    grid-area: h23;
+}
+
+#seccion3 #h33 {
+    grid-area: h33;
+}
+
+#seccion3 #p3{
+    grid-area: p3;
+}
+
+#seccion4 {
+    font-size: 120%;
+    color: white;
+    background-color: midnightblue;
+}
+
+#seccion5 {
+    background-color: midnightblue;
+    text-align: center;
+}
+
+#seccion5 button {
+    background-color: goldenrod;
+    font-size: 20px;
+    padding: 15px 30px;
+}
+
+#seccion5 button:hover {
+    background-color: gray;
+}
+
+#seccion6 {
+    background-color: midnightblue;
+    color: white;
+}
+
+#seccion7 {
+    background-color: midnightblue;
+}
+
+#seccion7 {
+    background-color: midnightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#seccion7 button {
+    display: flex;
+    color: white;
+    background-color: rgb(106, 106, 243);
+    font-size: 20px;
+    padding: 15px 30px;
+    border: 1px solid white;
+    margin-top: 10px;
+}
+
+#seccion7 button:hover {
+    background-color: gray;
+}
+

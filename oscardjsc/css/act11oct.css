@@ -1,0 +1,96 @@
+#header1 {
+    background-color: #0a0a23;
+    display: flex;
+    justify-content: space-around;
+    height:  80px;
+}
+
+#p1 {
+    color: white;
+}
+
+.boton {
+    border: solid white;
+    background-color: #0a0a23 ;
+    color: white;
+}
+
+.boton:hover {
+    border: solid white;
+    background-color: white;
+    color: #0a0a23;
+}
+
+
+.boton2 {
+    border: solid #ffb439;
+    background-color: #ffb439;
+}
+
+.boton2:hover {
+    border: solid #ffb439;
+    background-color: #e0ae5d;
+}
+
+main {
+    text-align: center;
+    background-color: #1b1b32;
+    color: white;
+}
+
+body {
+    background-color: #1b1b32;
+}
+
+#seccion1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#seccion2 {
+    display: flex;
+    justify-content: center;
+}
+
+#boton3 {
+    border: rgb(183, 120, 5);
+    background-color: #ffc648;
+    padding: 10px 150px;
+}
+
+#boton3:hover {
+    border: rgb(183, 120, 5);
+    background-color: #eebd51;
+}
+
+main#marcas {
+    background-color: gray;
+}
+
+div {
+    margin: 20px;
+}
+
+div#marcas {
+    background-color: #3b3b4f;
+}
+
+#personas {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    justify-content: center;
+}
+
+.info {
+    background-color: #0a0a23;
+}
+
+#seccion3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+aside {
+    color: white;
+    margin: 200px;
+}
