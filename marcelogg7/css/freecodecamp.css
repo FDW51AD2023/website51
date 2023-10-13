@@ -13,6 +13,18 @@
     color: white;
 }
 
+#barraprincipal button {
+    background-color: goldenrod;
+    font-size: 20px;
+    padding: 15px 30px;
+    border: 1px solid white;
+
+}
+
+#barraprincipal button:hover {
+    background-color: gray;
+}
+
 #barraprincipal h3 {
     color: white;
     border: 1px solid white;
@@ -143,7 +155,6 @@
     background-color: midnightblue;
 }
 
-
 #seccion5 {
     background-color: midnightblue;
     text-align: center;
@@ -158,3 +169,35 @@
 #seccion5 button:hover {
     background-color: gray;
 }
+
+#seccion6 {
+    background-color: midnightblue;
+    color: white;
+}
+
+#seccion7 {
+    background-color: midnightblue;
+}
+
+#seccion7 {
+    background-color: midnightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#seccion7 button {
+    display: flex;
+    color: white;
+    background-color: rgb(106, 106, 243);
+    font-size: 20px;
+    padding: 15px 30px;
+    border: 1px solid white;
+    margin-top: 10px;
+}
+
+#seccion7 button:hover {
+    background-color: gray;
+}
+
