@@ -1,0 +1,63 @@
+body {
+    margin: 0px;
+    font-family: "Lato", sans-serif;
+}
+
+.title {
+    font-family: "Hack-ZeroSlash", monospace;
+}
+
+header {
+    background-color: hsl(240, 56%, 9%);
+    height: 56px;
+    padding: 0px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#search-bar {
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#header-logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+#options {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#search-bar a {
+    width: 30px;
+    height: 30px;
+}
+
+#search-bar input {
+    width: 30vw;
+    height: 30px;
+}
+
+#search-img {
+    width: 16px;
+    height: 16px;
+}
+
+#freecodecamp-logo {
+    filter: invert(100%);
+    height: 24px;
+    padding-top: 4px;
+    flex-basis: content;
+    flex-shrink: 0;
+}
+
+#world {
+    width: 24px;
+    height: 24px;
+}
