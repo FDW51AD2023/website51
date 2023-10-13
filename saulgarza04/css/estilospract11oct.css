@@ -20,3 +20,11 @@ p {
     color: white;
     border: 1px solid white;
 }
+
+#header1 input::placeholder {
+    color: white;
+}
+
+body {
+    background-color: #f5f6f7;
+}
