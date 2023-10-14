@@ -1,6 +1,10 @@
+body{
+    background-color:  rgb(242, 242, 253);
+}
 header {
     background-color: rgb(11, 11, 53);
     color: aliceblue;
+
 }
 ::placeholder{
     border-color: rgb(83, 83, 109);
@@ -16,6 +20,16 @@ header {
     background-color: rgb(11, 11, 53);
 }
 
+section h1{
+    color:  rgb(11, 11, 53);
+    font-size: 50px;
+    text-align: justify;
+    margin-left: 400px;
+    margin-right: 450px;
+}
+
+
+
 .icon2{
     background-color: rgb(11, 11, 53);
     border-color: white;
@@ -24,6 +38,7 @@ header {
 }
 
 .boton1{
+    display: inline;
     color: aliceblue;
     padding:10px 20px ;
     border: 2px;
@@ -42,6 +57,8 @@ header {
 
 }
 .boton3{
+    display: block;
+    margin:0 auto;
     color: black;
     border: 5px;
     border-color: orange;
@@ -53,6 +70,19 @@ header {
 main{
     text-align: center;
 }
+.iconos{
+    margin: 10px auto 10px;
+  display: block;
+}
+.img1{
+    margin: 10px auto 10px;
+  display: block;
+}
+footer{
+    text-align: center;
+    font-size: 20px;
+}
+
 
 #header2 {
     background-color: white;
@@ -197,7 +227,49 @@ main{
     font-weight: 300;
     font-size: 20px
 }
+.boton16{
+    margin: auto;
+    display: flex;
+    border-radius: 0px;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 300;
+    font-size: 20px
+}
+
+.boton17{
+    margin: auto;
+    display: flex;
+    border-radius: 0px;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 300;
+    font-size: 20px
+}
+
+.boton18{
+    margin: auto;
+    display: flex;
+    border-radius: 0px;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 300;
+    font-size: 20px
+}
 
 h2{
     color:#1b1b32;
+}
+
+article p{
+    margin-left: 300px;
+    margin-right: 300px;
+    justify-content: center;
+    text-align: justify;
+    font-size: 20px;
+}
+
+article h1{
+    font-size: 50px;
+    color: rgb(11, 11, 53); 
 }
