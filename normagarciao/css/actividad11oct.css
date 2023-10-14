@@ -2,14 +2,77 @@ header {
     background-color: rgb(11, 11, 53);
     color: aliceblue;
 }
+::placeholder{
+    border-color: rgb(83, 83, 109);
+    color: rgb(248, 245, 245);
+    background-color: rgb(83, 83, 109);
+}
+
+.icon {
+    border: 2px;
+    border-color: white;
+    border-style: solid;
+    background-color: white;
+}
 
 .boton1{
     color: aliceblue;
     padding:10px 20px ;
-    border: 15px;
-    border-radius: 5px;
+    border: 2px;
+    border-color: white;
+    border-style: solid;
+    font-size: 22px;
 }
 
+.boton2{
+    color: black;
+    border: 5px;
+    border-color: orange;
+    border-style: solid;
+    background-color: rgb(245, 175, 45);
+    font-size: 22px;
+
+}
+.boton3{
+    color: black;
+    border: 5px;
+    border-color: orange;
+    border-style: solid;
+    background-color: rgb(245, 175, 45);
+    font-size: 22px;
+
+}
 main{
     text-align: center;
+}
+
+#header2 {
+    background-color: white;
+}
+#header2 p {
+   color: black;
+   text-align: center;
+}
+#header3{
+    background-color: white;
+}
+
+#header3 p{
+    color: black;
+    text-align: center;
+}
+
+#header4{
+    background-color: white;
+}
+
+#header4 p{
+    color: black;
+    text-align: center;
+}
+
+.boton5{
+    width: 25px;
+    height: 50px;
+    background-color: rgb(106, 106, 129);
 }

@@ -2,23 +2,32 @@
     background-color: #0a0a23;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 input {
+    display: flex;
     background-color: gray;
-}
-
-#placeholder {
-    color: white;
+    width: 33%;
+    height: 25px;
 }
 
 p {
     color: white;
+    width: 33%;
 }
+
 
 .boton1 {
     color: white;
     border: 1px solid white;
+    padding: 5px;
+}
+
+.boton2 {
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
 }
 
 #header1 input::placeholder {
@@ -28,3 +37,4 @@ p {
 body {
     background-color: #f5f6f7;
 }
+
