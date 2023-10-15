@@ -28,7 +28,9 @@ section h1{
     margin-right: 450px;
 }
 
-
+.letras{
+    width: 1500px;
+    }
 
 .icon2{
     background-color: rgb(11, 11, 53);
@@ -269,7 +271,45 @@ article p{
     font-size: 20px;
 }
 
-article h1{
-    font-size: 50px;
+article h2{
     color: rgb(11, 11, 53); 
+    font-size: 25px;
+    margin-left: 300px;
+    margin-right: 300px;
+    justify-content: center;
+    text-align: justify
 }
+
+article h1{
+    color: rgb(11, 11, 53); 
+    font-size: 45px;
+    margin-left: 300px;
+    margin-right: 300px;
+    justify-content: center;
+    text-align: justify
+}
+
+div p{
+    color: rgb(11, 11, 53); 
+    margin-left: 380px;
+    margin-right: 380px;
+    text-align: justify;
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.cajachino{
+    margin-left: 125px;
+    margin-right: 125px;
+    justify-content: center;
+    text-align: justify
+}
+
+.cajachino p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin-top: 1em;
+}
+
