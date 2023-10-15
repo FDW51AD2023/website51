@@ -155,18 +155,19 @@
     background-color: midnightblue;
 }
 
-#seccion5 {
+#seccion5 ,#seccion8,#seccion10{
     background-color: midnightblue;
     text-align: center;
+    padding: 15px 30px;
 }
 
-#seccion5 button {
+#seccion5 button,#seccion8 button,#seccion10 button{
     background-color: goldenrod;
     font-size: 20px;
     padding: 15px 30px;
 }
 
-#seccion5 button:hover {
+#seccion5 button:hover, #seccion8 button:hover,#seccion10 button:hover {
     background-color: gray;
 }
 
@@ -201,3 +202,79 @@
     background-color: gray;
 }
 
+#seccion7 h1 {
+    display: flex;
+    color: white;
+    font-size: 20px;
+    padding: 15px 30px;
+    margin-top: 10px;
+}
+
+#seccion9 {
+    background-color: midnightblue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#seccion9 h1,h2,p{
+    padding: 15px 30px;
+}
+
+#seccion11 {
+    background-color: midnightblue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#seccion11 h1,img{
+    padding: 15px 30px;
+}
+
+#seccion12 {
+    background-color: midnightblue;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-areas: "m h h"
+                        "m a a2"
+                        "m a a2"
+                        "m a a2";
+    gap: 20px;
+}
+
+#seccion12 main p{
+    padding: 80px 30px;
+}
+
+#seccion12 main{
+    grid-area: m;
+    padding: 20px 30px;
+}
+
+#seccion12 #aside1{
+    grid-area: a;
+}
+
+#seccion12 #aside2{
+    grid-area: a2;
+}
+
+#seccion12 h1{
+    grid-area: h;
+    color: white;
+}
+
+#seccion13 {
+    display: flexbox;
+    background-color: midnightblue;
+    padding: 15px 30px;
+}
+
+#seccion13 a{
+    margin-left: 15px;
+}
