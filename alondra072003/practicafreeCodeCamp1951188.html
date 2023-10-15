@@ -1,14 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilosfreeCodeCamp.css">
-    <title>Document</title>
-</head>
-<body>
-    <header id="header1">
-        <input type="text" placeholder="Search 9,000+tutorials">
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilosfreeCodeCamp.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <title>Document</title>
+    </head>
+    <body>
+        
+        <div class="top-menu">
+            <nav id="options">
+                <div class="search-tutorals">
+                    <button class="lupa">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0,0,256,256"
+                            style="fill:#000000;">
+                            <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M21,3c-9.37891,0 -17,7.62109 -17,17c0,9.37891 7.62109,17 17,17c3.71094,0 7.14063,-1.19531 9.9375,-3.21875l13.15625,13.125l2.8125,-2.8125l-13,-13.03125c2.55469,-2.97656 4.09375,-6.83984 4.09375,-11.0625c0,-9.37891 -7.62109,-17 -17,-17zM21,5c8.29688,0 15,6.70313 15,15c0,8.29688 -6.70312,15 -15,15c-8.29687,0 -15,-6.70312 -15,-15c0,-8.29687 6.70313,-15 15,-15z"></path></g></g>
+                            </svg>
+                        </a>
+                    </button>
+                    <input type="text" placeholder="Search 9,000+ tutorials">
+                </div>
+                <div class="title">
+                    <img id="free" src=https://design-style-guide.freecodecamp.org/downloads/fcc_secondary_large.png>
+                </div>
+                <div class="buttons">
+                    <button class="language">
+                        <a href="">
+                            <img id="internet" src="data:image/png;base64,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">
+                        </a>
+                    </button>
+                    <button class="menu">
+                        <a href="">
+                            <p>Menu</p>
+                        </a>
+                    </button>
+                <a href="">
+                        <button class="signin">
+                            <p>Sign in</p>
+                        </button>
+                    </a>
+                </div>
+            </nav>
+        </div>
+        
+        <div class="all">
+            <div class="content">
+                <h1>Learn to code — for free.</h1>
+                <h1>Build projects.</h1>
+                <h1>Earn certifications.</h1>
+                <p>Since 2014, more than 40,000 freeCodeCamp.org graduates have gotten jobs at tech companies including:</p>
+                <div class="partners">
+                    <img  width="750px" src="patrocinadores.png">
+                </div>
+            </div>
+        
+        
+            <button class="get1">
+                Get started (it's free)
+            </button>
+            <img src="https://www.freecodecamp.org/static/wide-image-3cb329e8b3cae865be76746fbd069cd2.png">
+            <figcaption>freeCodeCamp students at a local study group in South Korea.</figcaption>
+            
+            <div class="separator">
+                <div class="as-seen-in">
+                    <img width="600px" src="asseenin.png">
+                </div>
+            </div>
+            
+            <h1 id="Egresados">Here is what our alumni say about freeCodeCamp:</h1>
+            <div class="alumns">
+                <div class="alumno1">
+                    <div class="image1">
+                        <img height="320px" src="https://www.freecodecamp.org/static/Shawn-bf42c7b909dae3111d18a21870ee6ca5.png">
+                    </div>
+                    <div class="text1">
+                        <h2><strong>Shawn Wang</strong> in Singapore</h2>
+                        <h3>Software Engineer at <strong>Amazon</strong></h3>
+                        <p>"It's scary to change careers. I only gained confidence that I could code by working through the hundreds of hours of free lessons on freeCodeCamp. Within a year I had a six-figure job as a Software Engineer. <strong>freeCodeCamp changed my life.</strong>"</p>
+                    </div>
+                </div>
+
+                <div class="alumno2">
+                    <div class="image2">
+                        <img height="320px" src=https://www.freecodecamp.org/static/Sarah-45de0e53b7b2520ebbac35c454b9748a.png>
+                    </div>
+                    <div class="text2">
+                        <h2><strong>Sarah Chima</strong> in Nigeria</h2>
+                        <h3>Software Engineer at <strong>ChatDesk</strong></h3>
+                        <p>"<strong>freeCodeCamp was the gateway to my career</strong> as a software developer. The well-structured curriculum took my coding knowledge from a total beginner level to a very confident level. It was everything I needed to land my first dev job at an amazing company."</p>
+                    </div>
+                </div>
+                
+                <div class="alumno3">
+                    <div class="image3">
+                        <img height="320px" src=https://www.freecodecamp.org/static/Emma-5a662db9bcf55809a1fefb2ea17634bc.png>
+                    </div>
+                    <div class="text3">
+                        <h2><strong>Emma Bostian</strong> in Sweden</h2>
+                        <h3>Software Engineer at <strong>Spotify</strong></h3>
+                        <p>"I've always struggled with learning JavaScript. I've taken many courses but freeCodeCamp's course was the one which stuck. Studying JavaScript as well as data structures and algorithms on <strong>freeCodeCamp gave me the skills</strong> and confidence I needed to land my dream job as a software engineer at Spotify."</p>
+                    </div>
+                </div>
+            </div>
+            <button class="get1">Get started (it's free)</button>
+
+            <h1>Earn free verified certifications with freeCodeCamp's core curriculum:</h1>
+            <div class="certifications">
+                <ul>
+                    <li>
+                        <div class="certification">
+                            <!-- <div class="imageleft"> -->
+                                <img class="imageleft" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAACcUlEQVR4nO2ZT0hUQRjAfyqSBRFBUVS3ojaL6hCEUVTgxUNBp4zwWl0UKaEipOzkQfBQEQheokMQ4SEUJPtDdauDh0BBIjp0KdAwF0HUjYF5MA0P9y375p87P/guyxu++b3dnfm+GYhEIpFIJOIz+4BzQKvlOAFssil6DPgClBxGEegDGkzL7gf+OJZV46Fp4eceSKqxAhRMCs8qyf4CA0C/5ZjQpDtNCpeUeI8bzmrzuGcyWVFJNIofwvdNJnsik6wC7dSAcD1wGmjGHVaFfcC68HFgL+5o0YRvm0z2WCZZBi7hho3AdzmPRVn5GWNRebNjuGMH0GFjLSkp8Y4aoOSJ8CngBnCrgrgMbAlNeA/wqYraew64EoqwWKymcmo4zocg3JljlzUdgvBIyv77NIOc6PAuAN+0z3f7LvxWy18H7ALmywjfkeMfaZ8fDlEYWdu/AF5rMQ7clfU/8nRkXQhnpeaEu5WxS8DmLINcnnhUKyy2tWHg81q9/HbgulKtLGhnWn0VVjtZ4yZwJGfhshwFfue491UaRXksbE34g0PZJNptCi87lp0BtuUoLLanXrmFnUl7IGmyk/ho8f7oJNCkzada4avK2AW5iP1HT8pbf6Bs5AS+Dx/SHxBv+GuK9CTQBbRZvjWctFF4FIBfHixeaWGs0irk1IcGI5z8vEXX8bNWhBMa5A38NbnE27w1/OFC2CVOuiWXRGHW+Tf8RpuwXomVY0gb34znPNMm/KqCBW9QO/taAbbiORdz3NImCADxn32Zg6y4fThIIDTKBqbc0WxarMpv9gABskHeC2dtPMTl207Xk45EIpFIJEIq/wBuRgajYZqb3gAAAABJRU5ErkJggg==">
+                            <!-- </div> -->
+                            <!-- <div class="text"> -->
+                                <p class="text">Responsive Web Design Certification</p>
+                            <!-- </div> -->
+                            <!-- <div class="imageright"> -->
+                                <img class="imageright" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAABP0lEQVR4nO3bQUrDQBQG4Oco7ZvfXsCNNvPaghv3KuJh9EqtC0HEe+hNRHqQOqKxooJkkm5e7P9BlgN5zJ8fEiYiRLQVVNOhyMl+x+W7g0E1k75QtTPAVkB6Vh0ftV0fo90BlgFbiMiOeKdqp4C9ft70S9uhvw38ft30YmhgclXv8sdNL4fDaSpffYAY7XE9dIzpVkSCeAcObdzpZox35jPtGVhkxiJrxiLLLDLPwCIzFlkzFllmkXkGFpmxyJqxyDKLzDOwyOz/Fxlg1z8//86qdgOnp94MDA5bijsbxCswxqUY4yBegTEuxRgH8QrbFePJr9MCHPYP3NkgXoExLsUYB/EKjHEpxjiIV2CMSzHGQbxSTecbHh++79XxYdXqYrMD4umhHjbN3Q+7Vr/xdP0F4HJvNJoed1tLRCRf3gBYwbGr6lijOAAAAABJRU5ErkJggg==">
+                            <!-- </div> -->
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img class="imageleft" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACf0lEQVR4nO2au2sUURTGL0Z39nx33JjdqCCRzZwzuwELEbVXC0Gx89Foo0RQrGwEQas0WonYaCE2VsaAD/wDBBttLPwPgi+MCpFICh+JXGYxs9fJ7kaZ3Fm8H9xm7pzD+Z1vzu5dZpXy8vJakcIw3gjIFMBfAVks1mJT01QYNoe7giQQrguWbkCTPYAU0QmxQeZ6cWSxH5byIHDvArwjcN95eEfgvtvwjqTkutPwjlhy3Wl4Ryy57jS8I5ZcdxreEUt5di37Pn4A8EHzE1upPWuJxrYAfAjghyvJ7RLkJ8CnOtcSjyf3FRqEr3UtRilFJFeKDLJQLsvW9oL5LBHfJeLzSqmB5Fo8QiRPCgtCJB/S17WWfVbsLaL4HBF/KfiM8FsLZO+/5nYF8r1ajSvte3wZkPk+AzErHrf3tY42E8kEEX/qGxAingmCBmfVUKuNrQf4IpHMFh6kBfPRDPpytZRK3CCSV4UHaa0FgB8BsjOrnkplpArIdD+ApBY/1Trab8cR8RmXID/+NjeRTKTjgqA+uhog862PzpvW9en2zHFgzccMUXwM4PsZILPtsdtKOYPw4yBoRkmkObnK1aRA+QzwyXTecnm0noqbTE67Sg0O1jcQ8Usr97N0rNa8KVcQIj7cNeHvYqITS3HRkQy3TgN8A+ALZsDTu0Tx0ZxB5N2SIx21BpAXqbj39qFxee1al+FYHjPCb4DGji4Q1zPiXmsdbe9USy35YvxjhvIadlPUNyK+bQ5/5pk3XTQd15qPA/y8c5zcAeSAOZ4opQaGhniQiHcDcilpUnZsTiCrv9R/9DKUM5/Jvns9HYbN4QSG54roBMD3evrDgJeXl0rrFzLFRP5eXTItAAAAAElFTkSuQmCC">
+                            JavaScript Algorithms and Data Structures Certification
+                            <img class="imageright" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAABP0lEQVR4nO3bQUrDQBQG4Oco7ZvfXsCNNvPaghv3KuJh9EqtC0HEe+hNRHqQOqKxooJkkm5e7P9BlgN5zJ8fEiYiRLQVVNOhyMl+x+W7g0E1k75QtTPAVkB6Vh0ftV0fo90BlgFbiMiOeKdqp4C9ft70S9uhvw38ft30YmhgclXv8sdNL4fDaSpffYAY7XE9dIzpVkSCeAcObdzpZox35jPtGVhkxiJrxiLLLDLPwCIzFlkzFllmkXkGFpmxyJqxyDKLzDOwyOz/Fxlg1z8//86qdgOnp94MDA5bijsbxCswxqUY4yBegTEuxRgH8QrbFePJr9MCHPYP3NkgXoExLsUYB/EKjHEpxjiIV2CMSzHGQbxSTecbHh++79XxYdXqYrMD4umhHjbN3Q+7Vr/xdP0F4HJvNJoed1tLRCRf3gBYwbGr6lijOAAAAABJRU5ErkJggg==">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img class="imageleft" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAHJklEQVR4nO1ZaYwUVRBuEHa6qmdZBaOsILNTNQu4RlDwiCeeCGKMmnhFTUQjhhBDvM8gCh4YEExMUPQH0RgQhB8oRlSUoGA8EAEPDhVWBU/kWJEbTPWrt90zO9Pdy874x62ks7Pd79X13qv6qp7jtFM7tVOZKZdC5AcB6CsA3oJIPyHSLAC6wnEGdUrOpxYRc7cA8DuGD+9HpO8B+FHHybhOZSnjItISRD5Y7AHg1Yg0LI4LIt0EwJtK8UGkpRU1BoCfVEE/eB5dUFOTORyRByDSvYi0URU5gMhTxeOF89Pp3kci8tyQ0hsAaDRiXf+uXXNdEHODLR8AHlchMzIuAG0XIa7Lp7f8nkt5Ht+FyDtVkW+rqqg+cEL21MBY+huARhbbiog0VOdvcZyBnctuhufR+UYAfR0z7gQAXqljfwfInoLIQxCpSVfhs+rquj4RLDqacycOy55ddkMA+Hb11PT40f08AJ5vvY9Ie9SI15PsfUSap+NvdcpNADxWDZmQbMagThKRQgd4tuM4hyWTRS/pnPvaqHakIWOTjZctJathIxr9kUpxLslcRHqugobQSFVqatzYVCpTB8C/2pUA4Ld07prq6r7d4uYj0mydO9wpNwHQlarM3AQJ83NdhWVyXrp161MdBAB+L26LIfKHasjQMptht4qvyMoYJaaqEj8D9DmmYJV+029jomWxnywlAjoVyuq7EXmfeFnCpIRR1+VrEPkBRH5BvB063LuKZGz7bj8AvY3Iz8tc4VFVle3tOE4HgFxPHbOjdZAnOXWUHGK3DABtKw0xDu0BoG2C4fT3FyKzbNqn05m+iDxFtkoRbLUVkRdLlAm2DS9OpepJPFtT0+sIx2moknMjv+WdfLNnCJHWaYRarMDxYMEKiswposMhGwBAJyPyHINKmz32pxqwSfZ8y0BAu5IIRcydhEh7BZe5Lp1p36d8BxgYJKggZJToMEd0aoUJDWkAelHBnyi3WxKU6/IZ4lkA3mze158ooyUiWUgRd4jzHcUTguBhMJXnZS+yjpLzITKNLs1n6wAATRMdYzyV6Q7AK1Qp8dhkgPoeJbLupDAiNhhMtpHllb0UgBcqRGnS38Py6xH6TueOVt4vq8LP5sus7yG6qE5i6ArRtYQZ4m1arozWmxVoSZ6XvTC8vRD5HxMq+byQseMjapZxYWPtljXKUlNpdO04opPoFgSDXKrIatD9VsFw/C+BTq0nbYRZUKhc9BOsDCJ/pHJX2b8Rsh3RLSjKikAYqR+SZlPX5TtDih2QZBnwoffjwywvDHjVn1MQgm+Lkx9ayW+KfPST3cFilV0hSSiVhBVA87BDTNSJyRfb8+cYyA9+MeUn2xhqSNtAVMQQblQhsSHO87JHhyLJjLYbYlYRgP9K4kiA+tOUV2MRQ2iSClkex0zCbH6MN6HYCJHolHxrmTo97/uIaDNqEYC/VF0ntvjcpUvPrkHhTx8Uht2ABna2hy1gyPNDRg5rxWHvIKVvAa9VpUwQnUQ35bFRdC7h6br+UgAFWVzqgfwGQHDQTHQLGhJBfS0hNkn4BchdZbeU5rDN5v8geFjnIWZvDpCF6FjX34kikxtoaUj4egAeJa0fYwjPUOFPh7eZJKkwWhWvaxJsKp4Q/QPrn0tEvju/MmQ/IRp85vcKNoRWc0kYHsWR5IrhUtGFGOwG4DdttEqncw1BhjZJCpHuSSoAkZ5RB6y2iAAMvvM9bqpKE0n1WaMV4yEh4o6y/Lovm8FjkI2l/vAV8ldJjEziLW3qWbgxXXgIL9Ctkx9IaJHr8tVlg/RmDzcftL0xh3mP2ff+1lmjT6N5l+flYs8+NfCNCDzVNgphsSHSRXRduhaAnkCkmRp9bJJM8Pgdlk9lNQHocfF6KsU5AL5cDXm3IkZIxrU1hCmYWpJGNIH/+z0ve70WUQPk0VpjtPV6GGTm88h0V0O2lrVCtOS6dFZJfFM0sfIvrsvH2veex8cHWZ8eiebBfvBIp+uPc8pNrkvXqRLzokc2VCHyJ2r0Molq0suSu49QVo9sBwHQAiMrN7jMZvjJ6w5VblrcWMRetYj0oxr+WggRr03SoIOgwLqxbAYEzPkpNWR8kvGel+0X7rRIaA1fM0TLookyR64p2qx4xCWPX+LGU0NVPoCkWUkPLwYZ3s/4ZSVhqp59JW6s3D6FmnU7AshPM8N1fWlZNKtivV9EuiSAFFHjeKCtNmU7Sf0toVZ7YKLcxzFd+Q62lC7VN2gj+SDPbzRIKG753e+KPBxc6tC6cPgUtBqARL/JMKJY9PI8Ps86oVItU/H2ZFuZIfLFnkdHmWqNxoQbatKLKtZ7EgQNwK+Gzo1cR48yBtei5/G5IWMjc00ZsrttdxZ91gLwZXFctPHdGAFfFiU5S22kngDAjykQ3KFV5VxBya27hZVb4NwNAg71Uminnq2H/gMj2qmd/nf0L297P+hz4dGlAAAAAElFTkSuQmCC">
+                            Front End Development Libraries Certification
+                            <img class="imageright" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAABP0lEQVR4nO3bQUrDQBQG4Oco7ZvfXsCNNvPaghv3KuJh9EqtC0HEe+hNRHqQOqKxooJkkm5e7P9BlgN5zJ8fEiYiRLQVVNOhyMl+x+W7g0E1k75QtTPAVkB6Vh0ftV0fo90BlgFbiMiOeKdqp4C9ft70S9uhvw38ft30YmhgclXv8sdNL4fDaSpffYAY7XE9dIzpVkSCeAcObdzpZox35jPtGVhkxiJrxiLLLDLPwCIzFlkzFllmkXkGFpmxyJqxyDKLzDOwyOz/Fxlg1z8//86qdgOnp94MDA5bijsbxCswxqUY4yBegTEuxRgH8QrbFePJr9MCHPYP3NkgXoExLsUYB/EKjHEpxjiIV2CMSzHGQbxSTecbHh++79XxYdXqYrMD4umhHjbN3Q+7Vr/xdP0F4HJvNJoed1tLRCRf3gBYwbGr6lijOAAAAABJRU5ErkJggg==">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img class="imageleft" src="db.png">
+                            Data Visualization Certification
+                            <img class="imageright" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAABP0lEQVR4nO3bQUrDQBQG4Oco7ZvfXsCNNvPaghv3KuJh9EqtC0HEe+hNRHqQOqKxooJkkm5e7P9BlgN5zJ8fEiYiRLQVVNOhyMl+x+W7g0E1k75QtTPAVkB6Vh0ftV0fo90BlgFbiMiOeKdqp4C9ft70S9uhvw38ft30YmhgclXv8sdNL4fDaSpffYAY7XE9dIzpVkSCeAcObdzpZox35jPtGVhkxiJrxiLLLDLPwCIzFlkzFllmkXkGFpmxyJqxyDKLzDOwyOz/Fxlg1z8//86qdgOnp94MDA5bijsbxCswxqUY4yBegTEuxRgH8QrbFePJr9MCHPYP3NkgXoExLsUYB/EKjHEpxjiIV2CMSzHGQbxSTecbHh++79XxYdXqYrMD4umhHjbN3Q+7Vr/xdP0F4HJvNJoed1tLRCRf3gBYwbGr6lijOAAAAABJRU5ErkJggg==">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img class="imageleft" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEtElEQVR4nO1ZS4wUVRQtx3G6zqmeoJmoECcz0/dW+xl/IIiaqLPSHazEaFTiCt0Z/MZfJLIxflZGNyobHVy48RPxm6iJilFMRCKgiYKgCaCihmEE0Yy586qnq3s+/Xqm6OqJ3OQlXe+9uu+c926/+6kgmJMsPQUoLSd1NaDrSX2ZlM2A7iT1R0APknLMmvs93rfT5thcQB8l9RbTYbqCVkoUlS4i9QFA3yVlhNSxbJqMAPIOqfdHkVx4XMD39JzTDcjtpH6RHfCG7XNb09bOgMJQJ6lrAN3XQgJj6QbIr6TcFwSDXbOi0NUlZUC35UWAkwjptkJB46ZIhGH5akB/yxs8pzgdw+ZFolCIFdA/8gbN6U/m90Lh7FJDIqRuzBssG5N5qSERYzwPiBz8XxEZbn8i8mJDIoVCWdr/z94/EPhIGJauco6o7U7ilzCUK71IRFHpzNQ1vLWNTuIrw5TGOKOQ8kOxGA+6p6FOi3cA3Z8jgf2GwbA4Eno+qbs8iJgCGQlDvTMIgpOtzwI3i7lI+ax1JMRC/TXVoHE87rub1MM27klkYje2AvGqIAg6qqZnOyL3AvIWKYcyBH4I0E2k3FO1iHHpCEO9HtCv0/ObIpJq39oCQPms2tnjprcsiko3AbrOXd3yKSDb7fiTxOpva0litcuN2Rwdtnfcu7KsYjoVAeJe2zBSv5sKU9BIGuzcv6R8SOqDQHx5/eJzk6HOMNQrSHmIlI/cWtNj8SDSVNb3F6lbAHk+ivSuMJQb7Hq0FKBYjE9fsKDvtCAITrJmv63PxmxOGMqNZvOAvmA6El1jvmbYkAigb+R1Q9GfyGu+OXkTu9PyNhpFcoGXtQK6MtvCQmYnMQLEK7xIJDYdkOXF5hzbiMT35MDFaYwzCimvBEEv3NNgFyB35Bvai/mXdVVMccErsUoUbCHjJZW+7u5ze4B4bStjLzhnvNbWTmG7BJAvbdyXyFhSIXw6DKWvdjxeQsrDgL5fCRcyaocBfc/5kfLi9JphONBPyjOk/lOZ3wSRCULmlYejqHRNJfaqiple+bKkZGrlz42+nt3mJu+sNh2T61ZDnWR8baLzWD2uWRCZFIk+58KK+nBl7gLEvVEU32xrAHJgJiw+RJowF9kLyNuAPJmE+yttd61cY5488ezjUnm2MQtv3Fwrw8pTruYre5sxQ49dsag2rxtKfS+CN31OZCkpR/MGy+mt4Ej6Rm1wKvGqNg1TRoH4Oi8SVTKlS0nZ00YnscflLd4EdEP1KlxEK+kD8meOBEYAfawu5X22IZFEwcfFYvm8Sl8UyRkJoe2tIgDIN5Yh2toVHJYCk/KJjfsSsZ04CujjZP/COpNb7tJa+SDj/9Go0ymPmFnXYupfCMgT6UuoCSIThI5YBmhFu3QRwklcSNLTW+s+hu4gdfcUnt36dqQ+hq63d02H6QpqpSP5TrPB3VS1uGZBpIbUTxbzWFWj/qSyELJvkdNtcZX8PBMWD2VNJVS2w5vcsdu3xniFmZ4Fec6T959a0Wu/rc/GnHnaXLnN3k2c8O5Mc3ZSXs/vhlJfIq82JHIiZ2f75ezBPMjZm5V2zNnnIO2Ss2cqeeTsLZDjmbOfkGBey3+QmY9ilbQZBAAAAABJRU5ErkJggg==">
+                            Relational Database Certification
+                            <img class="imageright" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAABP0lEQVR4nO3bQUrDQBQG4Oco7ZvfXsCNNvPaghv3KuJh9EqtC0HEe+hNRHqQOqKxooJkkm5e7P9BlgN5zJ8fEiYiRLQVVNOhyMl+x+W7g0E1k75QtTPAVkB6Vh0ftV0fo90BlgFbiMiOeKdqp4C9ft70S9uhvw38ft30YmhgclXv8sdNL4fDaSpffYAY7XE9dIzpVkSCeAcObdzpZox35jPtGVhkxiJrxiLLLDLPwCIzFlkzFllmkXkGFpmxyJqxyDKLzDOwyOz/Fxlg1z8//86qdgOnp94MDA5bijsbxCswxqUY4yBegTEuxRgH8QrbFePJr9MCHPYP3NkgXoExLsUYB/EKjHEpxjiIV2CMSzHGQbxSTecbHh++79XxYdXqYrMD4umhHjbN3Q+7Vr/xdP0F4HJvNJoed1tLRCRf3gBYwbGr6lijOAAAAABJRU5ErkJggg==">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img class="imageleft" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAADZklEQVR4nO1bS08UQRAeLupNDj5johdPRLd6s1GErsls1Q6GP+BR5KDE+ABf4IUYwsnEi4//oL9B4ISvPyFGE4WDekDFm2DK3WF6Z2c2O7Iy9jBfUtmku2fpb6q6u7r41nEK7ECc6OeD4PIoIN+10lweFQ5OB+hpPPRTIW/YbMIBkKeEUyJbIZv1RP8B8ankMG54FpDfl7Fa6+s7t8uxDDJnhTUfkD4Eni4NDB1oGShxH7wVIetYDqV5aNPTunahZQBomg4GxHm2hNV+0HzV87w9aduy8zTXw1rTdMsA0DQTDIj7AoX0te59up62LSuokPDMXxBufbjTtqygbCKsNE+A5mWxaLSUB+gYaF5Qmn4A0nxF+0etJnxykN3I8bJe0j6Gc+WF5qOH5qwmrDTfjp6nJazdMvq/R/q/WU24pH2MehiwqjfnijSfKw8LZN0C0qc/pvmaE13DSHMNTz+3fg13C2prhOvnq/m2O237XwlPt8u0wOXTCqtXjg8P707blgXk76t2mZbkm+FGUPOdHOXSZaTzLQMqnrcPkNaC25I8YOttCQbpbHhbojXhlpjdxN0p7bbqeOLbaWz3q9lPsjsGSKtJR1ZQ3nkTPkCLgPxAId23yRpzXjRIv44t85j5KyA9dCwHaH4c8DHz8Nj89ZTnHXIsh3BQoQNvpk48QNMzQPoiFY20bbZmWr8a/ffStllKmLc1lwbP6wWkMbGK7++N23MkVOXTesLgeb1K0zvjxFgySUfzhaT6mbKFcHmQL8ecqWPhXHmlqU/zitWEAWmsJZFw+aJBeLm5nz7aH9JIS6F3+W1TSGN13CC8nnQVVbYQFghBQLokFrdpSTIhm5ZZ+ulkzpsojqUIQPNT0PxZLvhp27KCaudhKYMGAyque9ixHHCGjxi7+I22pVHQ/MixGz0K6Um46cWv8x65Shlb/QtAns1cvpDeZpXml4bzXiWqAHZaAcCRWM96kl03zROxZBXi/nxKHii+iGeWafMneaCRlgGF5CGCQvLg5P6fabytl4dC8qALycOGcd4Wkgfr1nC5kDykh9pixaOQPIDNkgcw5MN5kzyouFw6KhDPj+SB4wXiApHLZ35/7XYRwKXJdi9IVABTefmRh9J0p6OwkBCQuK/v3JZJHmTOmkYSw7iAk2/8Bl9M5s29Fs62AAAAAElFTkSuQmCC">
+                            Back End Development and APIs Certification
+                            <img class="imageright" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAABP0lEQVR4nO3bQUrDQBQG4Oco7ZvfXsCNNvPaghv3KuJh9EqtC0HEe+hNRHqQOqKxooJkkm5e7P9BlgN5zJ8fEiYiRLQVVNOhyMl+x+W7g0E1k75QtTPAVkB6Vh0ftV0fo90BlgFbiMiOeKdqp4C9ft70S9uhvw38ft30YmhgclXv8sdNL4fDaSpffYAY7XE9dIzpVkSCeAcObdzpZox35jPtGVhkxiJrxiLLLDLPwCIzFlkzFllmkXkGFpmxyJqxyDKLzDOwyOz/Fxlg1z8//86qdgOnp94MDA5bijsbxCswxqUY4yBegTEuxRgH8QrbFePJr9MCHPYP3NkgXoExLsUYB/EKjHEpxjiIV2CMSzHGQbxSTecbHh++79XxYdXqYrMD4umhHjbN3Q+7Vr/xdP0F4HJvNJoed1tLRCRf3gBYwbGr6lijOAAAAABJRU5ErkJggg==">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img class="imageleft" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAADAklEQVR4nO2aOWgVQRjHfwkm8Wo8UBSDEKxEY6GgoBgVBS8sYiolWAlRgwZRvB7aeTRGvMBKvKKxEAs1auw0oEGshUhAbRQlIBaiiQcD38LnsPvyXng7b7KZH3ywOzM73/yZ2bkhEAgEime8WObZCrwB/oqZ50YyyiEl1LaDZIwFwJAS+FYsejdx88kQp5W4dqBC7JwKP0mGuKOELVTh9SrcpMkM7UrYLhW+W4WfZZQxAZiSYJuUsEHgOnBDnqPwjXm+n4gnLAI6gK95euBS2QDQCSwpl9g9Vs/ryn6XYxhrBP6oQvwAeoFuoKeE4nokz17xoeOaXYmtAj4ox1esf2xeCQWbvCImia8o7pP0G6mzVjl9DlRa8VOBnyUQOyh5aYyvFyrNFheC9yqH+xLSrAcuSY2MxMy3mxPyblP+j+CAnHLYhHualP9TLhzmgmC3hBoud5OuBFpk+tgS04tnroZz1vByNGHi8lgmFfnMLB/H+S74lSXYvNu8L2I8Xu274GtWga/GpLlQoNh+YLrvgmcCj4DvwENgRkI+k/MsByMzuyL4LjhtguC0yYUadkto0r406cqxUsNzZJE+JBsE5j1u18TsSS8exqaNBsEd1uThVkya+wVOPL4Btb4LfmkV2rzb9BUxtVzuu+ADVoH3x6RZWuAWUGvMt94JrgC2i6BtKfj3TnDaBMFpkws1nJ9q4B7wEVhDxpp0dUz6Eyq96XkzI7gZ+AU8AWokrF4du5hTvxVZEtypwi/L5ttrFXZepW0AbgJ3h7HDMbse3gheJjUcxXWr53dy+hfRX8RMa6WvgpGDarvApimv4n9uFyj2CzDbZ8EVwAOr0BcTlo5zgbphTLcKLwUjS7rowLxPdidLiXPBbcqhuecRh1kD7wRmpeC/Vfk/hgM2KIdPcY/uDM1l1dSpkfsVulmZHYy0qbKuMA6k8LskssPqmD4DXQWMqyO1LvGhfZpbfE45bl1dcmlnKBMNcuxZils7hdzqeQaswwOqpGeuS8lqExYmgUCAscU/PkSAefkyWf8AAAAASUVORK5CYII=">
+                            Quality Assurance
+                            <img class="imageright" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAABP0lEQVR4nO3bQUrDQBQG4Oco7ZvfXsCNNvPaghv3KuJh9EqtC0HEe+hNRHqQOqKxooJkkm5e7P9BlgN5zJ8fEiYiRLQVVNOhyMl+x+W7g0E1k75QtTPAVkB6Vh0ftV0fo90BlgFbiMiOeKdqp4C9ft70S9uhvw38ft30YmhgclXv8sdNL4fDaSpffYAY7XE9dIzpVkSCeAcObdzpZox35jPtGVhkxiJrxiLLLDLPwCIzFlkzFllmkXkGFpmxyJqxyDKLzDOwyOz/Fxlg1z8//86qdgOnp94MDA5bijsbxCswxqUY4yBegTEuxRgH8QrbFePJr9MCHPYP3NkgXoExLsUYB/EKjHEpxjiIV2CMSzHGQbxSTecbHh++79XxYdXqYrMD4umhHjbN3Q+7Vr/xdP0F4HJvNJoed1tLRCRf3gBYwbGr6lijOAAAAABJRU5ErkJggg==">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img class="imageleft" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC/UlEQVR4nO2bPWgUQRTHf1Ei8Tt+xEbB0o/SpBFtLcQjGjsLO9HEQjSIREU8JVhYBA+LNMFYCrG1UcSPoNUVgnpa2HqWSvQUo2Zl4B0sx9zd7s5u7s1yf/hDOIbJ+zEzj5k3s9BVV67aCBwGRoHLwG1gGpgExoEC0I/n2gJcBd4C/4CgjU2b18AJoBePtBK4BtQiQDbzO2AID7QGeOIAGvYiMIJi9QAPU4Kt+zdwAKU6mjJs3RWta/qlJdjPwHWgCFQdoI+hTOuBPw1BfgW2h9rskN+SAN9DmfZagpyztJtLCPwMZRq0BGmmeKPmEwKX8QA4AMZCbc46rGFvgANJVl8cM7VXwEEK7gJ3WntkFKK64vsIZ70Eyss9endkVFxOQGms4VZtahKjiXV3EtAVwC05tXQCMi5w2ItSXDAHmkgyDe8rAE0KXPdsVOgxBZBpABufjlKa+Z4j4AVgcyvgCQWAaQIHwMVWwB9zCFxpBrtNAVwWwEvAgA14WAGczfNS5nHpo2ADPq8Azua7sgFy6eOcDfiGAjhblt0pmyCXfoo24JICwLpN/euRlI/2A78c+ytlBWwSxAywD+jDTWtlKv5IIa6S7R8UU4A9KZdnZi/7NOaxMWxz3fIzxRlTzCJpzQjsJwVLIlLSGnbsdFBGNlDogg14QKZl0k77ZBoHyrwEbG2WKD44dIysv0CZ37fKjJdyCDye1fFQI/ACsIk2OpMj4FNEUI+UR3wHNreOsepakzGLeFqAzcuBm3Fgw9oFTEmma1em7SRwTXZnUxLzsqmcYLPitcoJyi9x9tjmXKxK5YynrroZUe4CE2sEq21e/ORqhEcj3H7kBvhFxLdf6oCfJwSO+sxJXZaedSjamcdrdZm/vzW0Mbu+dSjTiMMarkrtqdjk5Y+ZPeq0yrGIELtMo0EHZQOfJuwDlOt4is8lHgOr8UBDcspKCmoK8FfkvYk36pUPN15F/NjjL/BGLuZb3tz7oH7gCHBBigvT8knPhJSVDgEbOh1kV3iu//UT/UCZ5xsmAAAAAElFTkSuQmCC">
+                            Scientific Computing with Python Certification
+                            <img class="imageright" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAABP0lEQVR4nO3bQUrDQBQG4Oco7ZvfXsCNNvPaghv3KuJh9EqtC0HEe+hNRHqQOqKxooJkkm5e7P9BlgN5zJ8fEiYiRLQVVNOhyMl+x+W7g0E1k75QtTPAVkB6Vh0ftV0fo90BlgFbiMiOeKdqp4C9ft70S9uhvw38ft30YmhgclXv8sdNL4fDaSpffYAY7XE9dIzpVkSCeAcObdzpZox35jPtGVhkxiJrxiLLLDLPwCIzFlkzFllmkXkGFpmxyJqxyDKLzDOwyOz/Fxlg1z8//86qdgOnp94MDA5bijsbxCswxqUY4yBegTEuxRgH8QrbFePJr9MCHPYP3NkgXoExLsUYB/EKjHEpxjiIV2CMSzHGQbxSTecbHh++79XxYdXqYrMD4umhHjbN3Q+7Vr/xdP0F4HJvNJoed1tLRCRf3gBYwbGr6lijOAAAAABJRU5ErkJggg==">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img class="imageleft" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB8ElEQVR4nO2YwWpTQRSGP0NCRbqvii7duelDVJo2mDco+gQu2kXFhdu+QfsMddWWbnTjMxTpoiS0JBoLhUpWFYk5ZeC/MISGeJObe+fW+WE2YWZyvvPPnJm5EBU1i9aB70AXqFNidQFT61Bi9e4DyGtg6EGsUkItAZeC2KKkegAcC+IrUKGk2hTENfCckuolcCOQJiXVQ+BEELshHWBrKcfuCeIUeERAB5gDqv7juKbG/AaWKVivvLqftBbwZgLQU+BK/d1GL7RcbgMDBdPXiXzuAbWBt0BtZGwF+KI+nzVXIVoE9hWIc2PHq/su6A3gzAO6AN4BC+qzpd+v5Ewim9Ay1Qvgmyb+BTTG9KvJjbYXiHPrp5cAdx2hCJCGgjfBOKhJqmq/tEaC6t3Rd+4gbg1/BP5qwk9aXmnkgH5MuNXavEAa+vO+Jhpog0+7OddUqjtjbrVzAXk2ksGhSu08ZVmBVJS1A6+s5vnAsVlBngAfVCaTQX+AQwHk9cCxtCDJ3cgFeKSg/UPsPfCY/GVpQfy7UZJ9V4lWUj5ost6cNgtIV0/MaVQ4SF0As343KhwkK0WQsjqSdb/MFUHIyZGiMm0RZIyiI+S0tCzwtW8RhLAybdERwsq0RUcIK9MWHSGsTFt0hLAybdERwsq0/TeO3ALTPxOyPOYYDQAAAABJRU5ErkJggg==">
+                            Data Analysis with Python Certification
+                            <img class="imageright" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAABP0lEQVR4nO3bQUrDQBQG4Oco7ZvfXsCNNvPaghv3KuJh9EqtC0HEe+hNRHqQOqKxooJkkm5e7P9BlgN5zJ8fEiYiRLQVVNOhyMl+x+W7g0E1k75QtTPAVkB6Vh0ftV0fo90BlgFbiMiOeKdqp4C9ft70S9uhvw38ft30YmhgclXv8sdNL4fDaSpffYAY7XE9dIzpVkSCeAcObdzpZox35jPtGVhkxiJrxiLLLDLPwCIzFlkzFllmkXkGFpmxyJqxyDKLzDOwyOz/Fxlg1z8//86qdgOnp94MDA5bijsbxCswxqUY4yBegTEuxRgH8QrbFePJr9MCHPYP3NkgXoExLsUYB/EKjHEpxjiIV2CMSzHGQbxSTecbHh++79XxYdXqYrMD4umhHjbN3Q+7Vr/xdP0F4HJvNJoed1tLRCRf3gBYwbGr6lijOAAAAABJRU5ErkJggg==">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img class="imageleft" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAACs0lEQVR4nO2au2sUQRzHP/GFaEAbsYigTQRBRRtFiMYiWPkoFB+NWIiFFoIiFmKwtEihlWBQxH9BsFAQCaaUFFHQW0hEtPCBD3ygEbPygzk4jtt1Z+c3u7PLfuDLhQt3v98nO3ObmRtoaGjIyVLgJDAJ/DaZNM/J72rDKuAi8BaIE/IeuAoMUGEGgevAzxTR7shVvwtsokIMAfeAeQvRXnkC7AP6CJAlwHFg2lGyV1rAWWAZFZmfsVJKneeDOeanVgqd50NK81Mr3ub5dmAqAMGkTJkeVRgGfgUg9b/MASOusouB1wHIZM0bc8fIzf4AJGyz10X4QgACtpGec3MlAAHbSM+NcFaaK0z5Q7b2Q/oLMA7cBr7XXTgC1nX0syGDdGWFo4SV0Z06Ckcpy8BbdROOUmRleH+tk3ArRXaN+WPEdRFuKcg6C48GMIxtZGPTc27OWxT6DJwA1ppV1qsSZCXnXIRPWRQS2U4GMjSrLRubbzJyc8yikFxZLKR9yEqOuG7vxBkjw5iM0r5kJTtdhFdbFJpNkeiU9ikbm71yJz5ZFItM00nS9z3LfkSBx5ZF06TxKCt5pCE8mqPwbNcqpwhZySUN4R05i2eR1pSVbNMQXgR8yNlA2vDWln0HLESJaw6N9LrS2rKSMRTZ7NjMDLAH6DePM8qyko0oM+GhSa3InUSdkQDEkrIbT0wEIOfl3ps2l+cCkGznD7AVz4wFINqOnPnwznLgeQCyz4o82bM+w+6hz3wzm/KFchj4W4Ks1DxISZwuQVgOqZXK5QJlVVZDGpzxPLznXXcjfSCbZz88fUAdIlC2KK+CXpp/doKmH7jpeDxRXnvD3PMrw66cx4lfaJyoK4sF5vDn0wyi0+bMteywVJ4+4ADwsGvxIT8/MJv4QZ5812AlcNRkhco7NjTQ5h9MybUy++3jOwAAAABJRU5ErkJggg==">
+                            Information Security Certification
+                            <img class="imageright" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAABP0lEQVR4nO3bQUrDQBQG4Oco7ZvfXsCNNvPaghv3KuJh9EqtC0HEe+hNRHqQOqKxooJkkm5e7P9BlgN5zJ8fEiYiRLQVVNOhyMl+x+W7g0E1k75QtTPAVkB6Vh0ftV0fo90BlgFbiMiOeKdqp4C9ft70S9uhvw38ft30YmhgclXv8sdNL4fDaSpffYAY7XE9dIzpVkSCeAcObdzpZox35jPtGVhkxiJrxiLLLDLPwCIzFlkzFllmkXkGFpmxyJqxyDKLzDOwyOz/Fxlg1z8//86qdgOnp94MDA5bijsbxCswxqUY4yBegTEuxRgH8QrbFePJr9MCHPYP3NkgXoExLsUYB/EKjHEpxjiIV2CMSzHGQbxSTecbHh++79XxYdXqYrMD4umhHjbN3Q+7Vr/xdP0F4HJvNJoed1tLRCRf3gBYwbGr6lijOAAAAABJRU5ErkJggg==">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img class="imageleft" src="machine.png">
+                            Machine Learning with Python Certification
+                            <img class="imageright" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAABP0lEQVR4nO3bQUrDQBQG4Oco7ZvfXsCNNvPaghv3KuJh9EqtC0HEe+hNRHqQOqKxooJkkm5e7P9BlgN5zJ8fEiYiRLQVVNOhyMl+x+W7g0E1k75QtTPAVkB6Vh0ftV0fo90BlgFbiMiOeKdqp4C9ft70S9uhvw38ft30YmhgclXv8sdNL4fDaSpffYAY7XE9dIzpVkSCeAcObdzpZox35jPtGVhkxiJrxiLLLDLPwCIzFlkzFllmkXkGFpmxyJqxyDKLzDOwyOz/Fxlg1z8//86qdgOnp94MDA5bijsbxCswxqUY4yBegTEuxRgH8QrbFePJr9MCHPYP3NkgXoExLsUYB/EKjHEpxjiIV2CMSzHGQbxSTecbHh++79XxYdXqYrMD4umhHjbN3Q+7Vr/xdP0F4HJvNJoed1tLRCRf3gBYwbGr6lijOAAAAABJRU5ErkJggg==">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img class="imageleft" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAByElEQVR4nO2WP0gcQRjFRxB23ltjuDtC7Nb9vg1pBOso4dIErOwEIaQ1TQoVEgS7kMpWLSxS2dgIWqW1sQ+msRGxUREEO4sElcki2ejd/nHPWwj3g212vm/fm30zwxjTo8cjAOg3Uq+zHkD3Oy7ueRqR+hvQL0A0lfZYq686boDUNVIOjGn2m27j++FzUi9JnTFVAOgSoKfGBLbr4rWaPAX0gpRPpgpIXXQGnJEK5AML6AkgX6vK/mO8+IKhCuSb/aQekrL8oHZrdezvwRC+LtpP6ntSfnleMPwgA4DuJ47HK9/XNwXa+wD9Cci66QSkbrrf2Wi8fJKnHtDJ2LSMJN7tATKb3Suzzvw/LwcGomeAnJGyks+w7JKyfffDzpS1Ot9ePJpzNS2N+n74Lp5V+DZN3Nqo6WKzVsZbzS6OVBaKjBWKApDvpOykjN8TyiWeJwpyeNT9JVInTApJwdzieaIgZQPQH24XmAxu844zj+ay6jOj8LwX4va9tTJtclDSQDAE6HkyiiIXjlIRtIri9sIByAeTQalFeBdSttysSVkF9DjrwlF6G7aP4k/jZ5NC6YOoHW7RkXpUr0eDbYuKH8V7WXU9/n9uABwplgoSu2NKAAAAAElFTkSuQmCC">
+                            College Algebra with Python Certification
+                            <img class="imageright" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAABP0lEQVR4nO3bQUrDQBQG4Oco7ZvfXsCNNvPaghv3KuJh9EqtC0HEe+hNRHqQOqKxooJkkm5e7P9BlgN5zJ8fEiYiRLQVVNOhyMl+x+W7g0E1k75QtTPAVkB6Vh0ftV0fo90BlgFbiMiOeKdqp4C9ft70S9uhvw38ft30YmhgclXv8sdNL4fDaSpffYAY7XE9dIzpVkSCeAcObdzpZox35jPtGVhkxiJrxiLLLDLPwCIzFlkzFllmkXkGFpmxyJqxyDKLzDOwyOz/Fxlg1z8//86qdgOnp94MDA5bijsbxCswxqUY4yBegTEuxRgH8QrbFePJr9MCHPYP3NkgXoExLsUYB/EKjHEpxjiIV2CMSzHGQbxSTecbHh++79XxYdXqYrMD4umhHjbN3Q+7Vr/xdP0F4HJvNJoed1tLRCRf3gBYwbGr6lijOAAAAABJRU5ErkJggg==">
+                        </div>
+                    </li>
+
+                    <h1>Earn free professional certifications:</h1>
+                    <li>
+                        <div>
+                            <img class="imageleft" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACg0lEQVR4nO2av08UQRSAP4GACkKBGhMNBQXRBjtDg5UxYKVEC2Jig0jpnyBCdVoY1PAHWBA7UUuNlZ1R/JVoRYwgsTCoh8Z4CkM2eSaXdXZ3dnb3dmfhJS+5u+x7c9/u2zcz7w1sy9aRAWAe+Co6L785I4eAO8AGoDT6EOilwNIOTAK/AgDq9TcwA3RRIGkCLgCfDQD8+gW4DLTkDXECeGUB4Nd3wLk8AA5LrKuU9RHQ3wiAbontPxlA/NN1SRYHsgBolVj+liGAX39I8tiVBsAOid3FBgIony4BlySpWMkx4GmOAMqnz4DBuE/hesiElqduANdMQSYSDvYRuAUMSXbzJso24CBwEqgAHxKOcdEE5K2l82UZoNlgDO+a0QRAr01AahaO7wN7iC+ezZzFeDUT53Gd3kySUeSdvGExbqTEfRJJIOphnuQFshwSTvuBaWBBJrY14AUwBezzXdsD3LXIkpFi6mgswP4sUA2x8zZZZ4DdwBXgp+ULHymmKbY5AMLkzv4FVkL+nAr4njqIN0/owinsScS5y6pRIMMau+kUAKIkdZA+jd1LF0E6NHZrCcMql9DSpd2qiyB9GrsFF0NrWGM35SLIbY2dN2N/dy20lgJqUSNSPHBmQlTAeID9SESRYhU4XZQligI+hSwa9wJXgeeSlqvyeVJKSoVaNCrgQRmW8apu3ZV0YzWTRWjVLJx65dNOC4hOCatMtrpvLF++FSmkmVTWvWvOy3Ygs+LDuKXz+p3jLHAKOCLrsp3SABqSmpktgIrY1P0nlQIX6CqUoGR6nK1cxC5VW6F0jZ5Gtd4eA0dxuBn6Pq9maOna06U6MFC6IxxRh2ruuXaoZltIIJswbZ297D2UbAAAAABJRU5ErkJggg==">
+                            (New) Foundational C# with Microsoft Certification
+                            <img class="imageright" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAABP0lEQVR4nO3bQUrDQBQG4Oco7ZvfXsCNNvPaghv3KuJh9EqtC0HEe+hNRHqQOqKxooJkkm5e7P9BlgN5zJ8fEiYiRLQVVNOhyMl+x+W7g0E1k75QtTPAVkB6Vh0ftV0fo90BlgFbiMiOeKdqp4C9ft70S9uhvw38ft30YmhgclXv8sdNL4fDaSpffYAY7XE9dIzpVkSCeAcObdzpZox35jPtGVhkxiJrxiLLLDLPwCIzFlkzFllmkXkGFpmxyJqxyDKLzDOwyOz/Fxlg1z8//86qdgOnp94MDA5bijsbxCswxqUY4yBegTEuxRgH8QrbFePJr9MCHPYP3NkgXoExLsUYB/EKjHEpxjiIV2CMSzHGQbxSTecbHh++79XxYdXqYrMD4umhHjbN3Q+7Vr/xdP0F4HJvNJoed1tLRCRf3gBYwbGr6lijOAAAAABJRU5ErkJggg==">
+                        </div>
+                    </li>
+                    <h1>Prepare for the developer interview job search:</h1>
+                    <li>
+                        <div>
+                            <img class="imageleft" src="Imagen6.png">
+                            Coding Interview Prep
+                            <img class="imageright" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAABP0lEQVR4nO3bQUrDQBQG4Oco7ZvfXsCNNvPaghv3KuJh9EqtC0HEe+hNRHqQOqKxooJkkm5e7P9BlgN5zJ8fEiYiRLQVVNOhyMl+x+W7g0E1k75QtTPAVkB6Vh0ftV0fo90BlgFbiMiOeKdqp4C9ft70S9uhvw38ft30YmhgclXv8sdNL4fDaSpffYAY7XE9dIzpVkSCeAcObdzpZox35jPtGVhkxiJrxiLLLDLPwCIzFlkzFllmkXkGFpmxyJqxyDKLzDOwyOz/Fxlg1z8//86qdgOnp94MDA5bijsbxCswxqUY4yBegTEuxRgH8QrbFePJr9MCHPYP3NkgXoExLsUYB/EKjHEpxjiIV2CMSzHGQbxSTecbHh++79XxYdXqYrMD4umhHjbN3Q+7Vr/xdP0F4HJvNJoed1tLRCRf3gBYwbGr6lijOAAAAABJRU5ErkJggg==">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img class="imageleft" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACVklEQVR4nO2Yv2sUQRiGH5YYDGeTIigEImhloRBrTW+j+Kuw0DONTSSFlVFQ0CpWeqBgG1D8AwKmCtEUNhEhkhA5QwiHggohhdFAipWFd2FY1tvbu9u9mTAvDBwf37wzz+3sft8ueHl5eXntM/UBVeCLRlUxZxQAV7X5MDE2gFu2AwVNAJwACnIAWAkUdABgBVDQRYCeAAUFApQCFJQIEBYB1EuAsBtANgGE7QDFlbieYbYHLAEzwENgArgCjAEngCFgUKPf8O834kPKHdPcCXnNyHsvYw/1tE6hVYC3wDVtpGgNaq25PECLGcm/gQuJhY4Dl4H7QA14AywAK8BPYEtj1/DZNeI/lLuguTV5XZK3qYvATsYeF1sBuS3DQ8BjYL2Ee+Er8AioaO3JjPz3rRytwzL71IOb+6PWPtLOvZJMjlU2RNhk/VSApMxk20Dqed5rYoP4CtkCUs1bEJMGyXj01HkHPAfuANeBc8AocAwYNurFgDF/wIgPK/e05t6Q1wt5bzXZR8cgUcE6SXk6pTXbVtY/cRA4C9wEHgAvgVlV5FU9nhv6V7cNv23FGspZ1ZxZeURe0fE5ozU61v9AxlVzzCJX1Pir2jBeBMhSD270D0WAVHRmy+iK19SyVIoAMXVU/dcU8Ax4BcwDn4FvRk/1J3Fc4vh3YFlzXqvXugecB0Y62XxeECcUehDLFPorYon6gGnjikzb9m22VT1JeZ5HMef0KwUkev92To0UkE0cVC0F5CkOaiTx2WWnm+1C2ZoyQO7isA6omVvWb6c1quHl5cX+0T8B9Zii2RMvLwAAAABJRU5ErkJggg==">
+                            Project Euler
+                            <img class="imageright" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAABP0lEQVR4nO3bQUrDQBQG4Oco7ZvfXsCNNvPaghv3KuJh9EqtC0HEe+hNRHqQOqKxooJkkm5e7P9BlgN5zJ8fEiYiRLQVVNOhyMl+x+W7g0E1k75QtTPAVkB6Vh0ftV0fo90BlgFbiMiOeKdqp4C9ft70S9uhvw38ft30YmhgclXv8sdNL4fDaSpffYAY7XE9dIzpVkSCeAcObdzpZox35jPtGVhkxiJrxiLLLDLPwCIzFlkzFllmkXkGFpmxyJqxyDKLzDOwyOz/Fxlg1z8//86qdgOnp94MDA5bijsbxCswxqUY4yBegTEuxRgH8QrbFePJr9MCHPYP3NkgXoExLsUYB/EKjHEpxjiIV2CMSzHGQbxSTecbHh++79XxYdXqYrMD4umhHjbN3Q+7Vr/xdP0F4HJvNJoed1tLRCRf3gBYwbGr6lijOAAAAABJRU5ErkJggg==">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button class="get1">Get started (it's free)</button>
+            <div class="frequently-questions">
+                <h1>Frequently asked questions:</h1>
+                <div class="question1">
+                    <h2>What exactly is freeCodeCamp?</h2>
+                    <p>freeCodeCamp is a community of people from all around the world who are learning to code together. We're a 501(c)(3) public charity.</p>
+                </div>
+                <div class="question2">
+                    <h2>How will freeCodeCamp help me learn to code?</h2>
+                    <p>You will learn to code by building dozens of projects, step-by-step, right in your browser, code editor, or mobile app.</p>
+                    <p>You will also earn free verified certifications along the way.</p>
+                </div>
+                <div class="question3">
+                    <h2>Is freeCodeCamp really free?</h2>
+                    <p>Yes. Every aspect of freeCodeCamp is 100% free. The courses, the projects, and even the certifications.</p>
+                </div>
+                <div class="question4">
+                    <h2>Can freeCodeCamp help me get a job as a software developer?</h2>
+                    <p>Yes. Every year, thousands of people who join the freeCodeCamp community get their first software developer job.</p>
+                </div>
+                <div class="question5">
+                    <h2>What skills will I learn?</h2>
+                    <p>You will learn the skills most developers use on the job: HTML, CSS, JavaScript, Python, Linux, Git, and SQL, and more. You'll also learn how to use powerful libraries for web development, mobile app development, data science, and artificial intelligence.</p>
+                </div>
+                <div class="question6">
+                    <h2>How long does it take to learn all this?</h2>
+                    <p>freeCodeCamp is self-paced. Realistically, it may take several years of practicing coding to learn these skills well enough to get a job as a software engineer. Don't quit school or your day job until you feel ready.</p>
+                </div>
+                <div class="question7">
+                    <h2>How do I get started?</h2>
+                    <p>If you're a beginner, you should start at the beginning of the freeCodeCamp core curriculum. If you're more advanced, we still recommend starting at the beginning, but you can skip to whatever area you wish.</p>
+                </div>
+                <div class="question8">
+                    <h2>How do I earn the free verified certifications?</h2>
+                    <p>For each certification, you need to build its 5 certification projects, and get all of the project tests to pass to be able to claim your certification.</p>
+                </div>
+                <div class="question9">
+                    <h2>I don't see [name of tool] in the freeCodeCamp core curriculum.</h2>
+                    <p>Aside from the freeCodeCamp core curriculum, We have thousands of free, full-length books, courses, and programming tutorials. We almost certainly teach whatever programming tools you want to learn. Just use the search bar.</p>
+                </div>
+                <div class="End">
+                    <h2>Happy coding!</h2>
+                </div>
+            </div>
+            <button class="get1">Get started (it's free)</button>
+        </div> 
+    </body>
+
+    <footer id="footer">
+        <div class="footer-topics">
+            <p>freeCodeCamp is a donor-supported tax-exempt 501(c)(3) charitable organization (United States Federal Tax Identification Number: 82-0779546)</p>
+            <p>Our mission: to help people learn to code for free. We accomplish this by creating thousands of videos, articles, and interactive coding lessons - all freely available to the public. We also have thousands of freeCodeCamp study groups around the world.</p>
+            <p>Donations to freeCodeCamp go toward our education initiatives, and help pay for servers, services, and staff.</p>
+            <h3>You can <a href="#">make a tax-deductible donation here</a>.</h3>
+            <div class="treding-guides">
+                <h3>Treding Guides</h3>
+                <div class="articles">
+                    <span><a href="#" rel="noopener noreferrer" target="_blank">JS isEmpty Equivalent</a></span>
+                    <span><a href="#" rel="noopener noreferrer" target="_blank">Submit a Form with JS</a></span>
+                    <span><a href="#" rel="noopener noreferrer" target="_blank">Submit a Form with JS</a></span>
+                    <span><a href="#" rel="noopener noreferrer" target="_blank">Add to List in Python</a></span>
+                    <span><a href="#" rel="noopener noreferrer" target="_blank">Grep Command in Linux</a></span>
+                    <span><a href="#" rel="noopener noreferrer" target="_blank">String to Int in Java</a></span>
+                    <span><a href="#" rel="noopener noreferrer" target="_blank">Add to Dict in Python</a></span>
+                    <span><a href="#" rel="noopener noreferrer" target="_blank">Java For Loop Example</a></span>
+                    <span><a href="#" rel="noopener noreferrer" target="_blank">Matplotlib Figure Size</a></span>
+                    <span><a href="#" rel="noopener noreferrer" target="_blank">Database Normalization</a></span>
+                    <span><a href="#" rel="noopener noreferrer" target="_blank">Nested Lists in Python</a></span>
+                    <span><a href="#" rel="noopener noreferrer" target="_blank">Coalesce SQL</a></span>
+                    <span><a href="#" rel="noopener noreferrer" target="_blank">Python join()</a></span>
+                    <span><a href="#" rel="noopener noreferrer" target="_blank">JS POST Request</a></span>
+                    <span><a href="#" rel="noopener noreferrer" target="_blank">JS Type Checking</a></span>
+                    <span><a href="#" rel="noopener noreferrer" target="_blank">Read Python File</a></span>
+                    <span><a href="#" rel="noopener noreferrer" target="_blank">SOLID Principles</a></span>
+                    <span><a href="#" rel="noopener noreferrer" target="_blank">Sort a List in Java</a></span>
+                    <span><a href="#" rel="noopener noreferrer" target="_blank">For Loops in Python</a></span>
+                    <span><a href="#" rel="noopener noreferrer" target="_blank">JavaScript 2D Array</a></span>
+                    <span><a href="#" rel="noopener noreferrer" target="_blank">SQL CONVERT Function</a></span>
+                    <span><a href="#" rel="noopener noreferrer" target="_blank">Rename Column in Pandas</a></span>
+                    <span><a href="#" rel="noopener noreferrer" target="_blank">Delete a File in Python</a></span>
+                    <span><a href="#" rel="noopener noreferrer" target="_blank">K-Nearest Neighbors Algo</a></span>
+                    <span><a href="#" rel="noopener noreferrer" target="_blank">iferror Function in Excel</a></span>
+                    <span><a href="#" rel="noopener noreferrer" target="_blank">Remove From String Python</a></span>
+                    <span><a href="#" rel="noopener noreferrer" target="_blank">Create a File in Terminal</a></span>
+                    <span><a href="#" rel="noopener noreferrer" target="_blank">Clear Formatting in Excel</a></span>
+                    <span><a href="#" rel="noopener noreferrer" target="_blank">Accounting Num Format Excel</a></span>
+                    <span><a href="#" rel="noopener noreferrer" target="_blank">Check if File Exists Python</a></span>
+                    <span><a href="#" rel="noopener noreferrer" target="_blank">Iterate Over Dict in Python</a></span>                    
+                </div>
+            </div>
+        </div>
+        <div class="footer-our-charity">
+            <h2>Our charity</h2>
+            <div class="footer-our-charity-items">
+                <a href="#">About</a>
+                <a href="#">Alumni Network</a>
+                <a href="#">Open Source</a>
+                <a href="#">Shop</a>
+                <a href="#">Support</a>
+                <a href="#">Sponsors</a>
+                <a href="#">Academic Honesty</a>
+                <a href="#">Code of Conduct</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Copyright Policy</a>                
+            </div>
+    </div>
 </body>
 </html>
