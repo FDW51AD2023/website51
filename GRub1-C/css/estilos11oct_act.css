@@ -160,3 +160,22 @@ main div{
     border: 10px solid white;
 }
 
+/* SECCION FREQUENLY QUESTIONS */
+
+#section_questions div {
+    display: flex;
+    flex-direction: column;
+    color: #1B1B32;
+    font-size:22px;
+    font-family: sans-serif;
+    margin: 30px 200px 10px 200px;
+}
+
+#section_questions p {
+    display: flex;
+    flex-direction: column;
+    color: #1B1B32;
+    font-size:18px;
+    font-family: sans-serif;
+}
+
