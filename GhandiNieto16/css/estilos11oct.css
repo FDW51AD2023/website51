@@ -89,3 +89,58 @@ footer {
 #divp{
     background-color: white;
 }
+
+
+.divp {
+
+    padding-left: 200px;
+    font-family: sans-serif;
+    font-size: 2em;
+    margin: 0.67em 0;
+    text-align: left;
+
+    
+}
+
+#logos{
+    height: 60px;
+    width: 750px;
+    padding-left: 300px;
+}
+
+#boton1{
+    border-radius: 5px;
+    font-size: 25px;
+    width: 500px;
+    height: 50px;
+    background: linear-gradient(180deg, rgb(255, 221, 0), orange);  
+    border: 2px solid orange;  
+    cursor: pointer;
+}
+#botoncent{
+    padding-left: 500px;
+}
+
+body{
+    background-color: #f3f3fa;
+}
+
+#img1{
+    padding-left: 250px;
+}
+
+.par{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#img2{
+    width: 1500px;
+    height: 400px;
+}
+
+#alumni{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 40px;
+}
