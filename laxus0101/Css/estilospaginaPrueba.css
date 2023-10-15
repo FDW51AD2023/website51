@@ -1,6 +1,6 @@
 body {
-    background-color: rgb(92, 92, 128);
-    color: aliceblue;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(4, 15, 26);
 }
 
 * {
@@ -10,8 +10,7 @@ body {
 #header1 {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    padding: 1.5vh;
 }
 
 #header1 {
@@ -21,7 +20,22 @@ body {
 }
 
 #header1 #ais-SearchBox-input{
-    width: 60vh;
+    width: 35%;
+}
+
+#header1 #freecodelogo {
+    padding: 0vh 5vh 0vh 5vh;
+}
+
+#header1 #headerdiv {
+    display:flex;
+    width:45%;
+    justify-content: flex-end;
+}
+
+#header1 #freecodelogo {
+    display:flex;
+    width:20%;
 }
 
 #nav1 button:hover{
@@ -93,4 +107,21 @@ body {
 
 .spacer {
     padding: 3vh;
+}
+
+#boton_get {
+    background-color: ble;
+    width: 10vh;
+}
+
+#ass_seen {
+    text-align:center;
+    background-color: rgba(35, 38, 74, 0.674);
+    padding: 5vh 40vh;
+}
+
+#ass_seen p{
+    padding-bottom: 5vh;
+    display: block;
+    font-size: 1cm;
 }
