@@ -32,6 +32,7 @@
     color: white;
     display: flex;
     margin: 10px;
+    width: 1000px;
 }
 
 .boton-certificacion:hover{
@@ -125,3 +126,38 @@ aside {
     color: white;
     margin: 200px;
 }
+
+footer {
+    background-color: #2a2a40;
+    color: gray;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 4fr 2fr 2fr 2fr;
+    grid-template-areas:"p1 p2"
+                        "p1 p3 p4 p5";
+    gap: 10px;
+} 
+
+footer #parte1 {
+    grid-area: p1;
+}
+
+footer #parte2 {
+    grid-area: p2;
+}
+
+footer #parte3 {
+    grid-area: p3;
+}
+
+footer #parte4 {
+    grid-area: p4;
+}
+
+footer #parte5 {
+    grid-area: p5;
+}
+
+
