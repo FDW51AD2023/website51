@@ -5,6 +5,7 @@ header {
     color: white;
     height: 50px;
     align-self: flex-start;
+    text-align: center;
 }
 
 main {
@@ -25,6 +26,7 @@ main h2{
     height: 27px;
     font-size: 17px ;
     flex-grow: 1 ;
+    margin: 10px;
 }
 
 ::placeholder {
@@ -45,6 +47,7 @@ main h2{
     height: 27px;
     width: 70px;
     font-size: 17px;
+    margin: 10px;
 
 } 
 
@@ -131,3 +134,29 @@ main div{
     width: 300px;
     float:left;
 }
+
+/* SECION DE CERTIFICACIONES */
+
+#b4 {
+    background-color: #d0d0d5;
+    color: black;
+    align-self: center;
+    border: 3px solid #0a0a23;
+    height: 70px;
+    width: 700px;
+    font-size: 17px;
+} 
+
+#b4:hover {
+    background-color: #0a0a23;
+    color: black;
+    border: 2px solid #fec849;
+}
+
+#section_certificaciones li  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid white;
+}
+
