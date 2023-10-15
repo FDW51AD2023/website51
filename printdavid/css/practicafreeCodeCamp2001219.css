@@ -1,3 +1,146 @@
+body {
+    margin: 0px;
+    font-family: "Lato", sans-serif;
+    background-color: #f4f5f6;
+}
+
+.title {
+    font-family: "Hack-ZeroSlash", monospace;
+}
+
 header {
-    color: black;
+    background-color: #0a0a24;
+    height: 56px;
+    padding: 0px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#search-bar {
+    width: 40vw;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#search-bar-elements {
+    display: flex;
+}
+
+#header-logo {
+    width: 20vw;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+#options {
+    width: 40vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#search-bar a {
+    width: 20px;
+    height: 30px;
+    padding: 0px 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3b3b4f;
+}
+
+#search-bar a:hover {
+    background-color: #626272;
+}
+
+#search-bar input {
+    width: 465px;
+    height: 30px;
+    border: 0;
+    padding: 0 0 0 9px;
+    box-sizing: content-box;
+    background-color: #3b3b4f;
+    color: #ffffff;
+    outline: none;
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+}
+
+#search-bar input::placeholder {
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    color: #d0d0d5;
+}
+
+#search-img {
+    width: 18px;
+    height: 18px;
+    stroke: #d0d0d5;
+}
+
+#search-bar-elements:focus-within {
+    border: 2px solid #198eee;
+}
+
+#freecodecamp-logo {
+    filter: invert(100%);
+    height: 24px;
+    padding-top: 4px;
+    flex-basis: content;
+    flex-shrink: 0;
+}
+
+#world {
+    width: 27px;
+    height: 27px;
+    border: 1px solid #ffffff;
+    padding: 0px 3px;
+}
+
+#world:hover {
+    border-color: #0a0a24;
+    stroke: #0a0a24;
+    background-color: #ffffff;
+}
+
+#menu-button {
+    height: 30px;
+    width: 73px;
+    padding: 0px 12px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: 18px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 0px 10px;
+}
+
+#menu-button:hover {
+    color: #0a0a24;
+    background-color: #ffffff;
+}
+
+#sign-button {
+    height: 30px;
+    width: 82px;
+    padding: 0px 12px;
+    border: 3px solid #feac32;
+    background: linear-gradient(#fecc4c,#ffac33);
+    color: #0a0a24;
+    font-size: 18px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+#sign-button:hover {
+    border-color: #f1a02a;
+    background: linear-gradient(#fecc4c,#fecc4c);;
 }
