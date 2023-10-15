@@ -1,3 +1,6 @@
+html {
+    background-color: #f5f6f7;
+}
 
 header {
     display: flex;
@@ -114,10 +117,10 @@ main div{
 }
 
 #section_testimonios {
-    background-color: white;
+    background-color: #f5f6f7;
     display: flex;
     justify-content: center;
-    border: 20px solid white;
+    border: 20px solid #f5f6f7;
 }
 
 #section_testimonios  article {
@@ -157,7 +160,7 @@ main div{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 10px solid white;
+    border: 10px solid #f5f6f7;
 }
 
 /* SECCION FREQUENLY QUESTIONS */
