@@ -1,6 +1,6 @@
 body {
-    background-color: rgb(28, 28, 57);
-    color: aliceblue;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(4, 15, 26);
 }
 
 * {
@@ -10,8 +10,7 @@ body {
 #header1 {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    padding: 1.5vh;
 }
 
 #header1 {
@@ -21,14 +20,28 @@ body {
 }
 
 #header1 #ais-SearchBox-input{
-    width: 60vh;
+    width: 35%;
 }
 
-/* #nav1 button{
-    padding-left: 1vh;
-    height: 4vh;
-    width: 10vh;
-} */
+#header1 #freecodelogo {
+    padding: 0vh 5vh 0vh 5vh;
+}
+
+#header1 #headerdiv {
+    display:flex;
+    width:45%;
+    justify-content: flex-end;
+}
+
+#header1 #freecodelogo {
+    display:flex;
+    width:20%;
+}
+
+#nav1 button:hover{
+    background-color: whitesmoke;
+    color: black;
+} 
 
 #header1 #p1 {
     color: aliceblue;
@@ -56,6 +69,8 @@ body {
     /* background-color: red; */
     display: flex;
     flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:large;
 }
 
 #logos {
@@ -68,3 +83,45 @@ body {
     height: 30vh;
 }
 
+#logos {
+    background-color: brown;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.logo-row svg {
+    width: 18vh;
+}
+
+#apple-logo{
+    width: 7vh;
+}
+
+.logo-row {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.spacer {
+    padding: 3vh;
+}
+
+#boton_get {
+    background-color: ble;
+    width: 10vh;
+}
+
+#ass_seen {
+    text-align:center;
+    background-color: rgba(35, 38, 74, 0.674);
+    padding: 5vh 40vh;
+}
+
+#ass_seen p{
+    padding-bottom: 5vh;
+    display: block;
+    font-size: 1cm;
+}
