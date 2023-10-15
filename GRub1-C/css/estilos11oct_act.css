@@ -1,15 +1,54 @@
+
 header {
     display: flex;
     background-color: #0a0a23;
     color: white;
+    height: 50px;
+    align-self: flex-start;
+    text-align: center;
 }
 
+main {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main h2{
+    color: #F5F6F7;
+    font-size: 22px;
+    font-family: sans-serif;
+    margin: 10.8px 0px;
+}
+#buscar {
+    background-color: #292944f1 ;
+    color: white;
+    border: 0px;
+    align-self: center;
+    height: 27px;
+    font-size: 17px ;
+    flex-grow: 1 ;
+    margin: 10px;
+}
+
+::placeholder {
+    color: rgba(216, 216, 216, 0.897);
+}
+#titulo {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    align-self: center;
+    flex-grow: 2;
+}
 
 #b1 {
     background-color: #0a0a23;
     color: white;
     align-self: center;
     border: 2px solid white;
+    height: 27px;
+    width: 70px;
+    font-size: 17px;
+    margin: 10px;
+
 } 
 
 #b1:hover {
@@ -23,6 +62,9 @@ header {
     color: black;
     align-self: center;
     border: 2px solid #feac32;
+    height: 27px;
+    width: 70px;
+    font-size: 17px;
 } 
 
 #b2:hover {
@@ -31,11 +73,90 @@ header {
     border: 2px solid #fec849;
 }
 
-header #buscar {
-    background-color: #292944f1 ;
+
+main h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+main div{
     align-self: center;
-    flex-grow: 1;
+    align-content: center;
 }
-main {
-    background-color: #1b1b32;
+
+#seccion1 {
+    display: flex;
+    justify-content: center;
 }
+
+
+#b3 {
+    background-color: #ffc439;
+    color: black;
+    align-self: center;
+    border: 2px solid #f79a10;
+    font-size: 20px;
+    height: 47px;
+    width: 470px;
+
+} 
+
+#b3:hover {
+    background-color: #fec849;
+    color: black;
+    border: 2px solid #fec849;
+}
+
+/* SECCION 3 - SEEN IN*/
+
+#section3 {
+    background-color: #3b3b4f;
+}
+
+#section_testimonios {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    border: 20px solid white;
+}
+
+#section_testimonios  article {
+    color: #413b4f;
+    font-size: 20px;
+    text-align: center;
+    width: 1150px;
+    height: 300px;
+    box-shadow:  0px 0px 10px gray;
+}
+
+
+#section_testimonios  img {
+    width: 300px;
+    float:left;
+}
+
+/* SECION DE CERTIFICACIONES */
+
+#b4 {
+    background-color: #d0d0d5;
+    color: black;
+    align-self: center;
+    border: 3px solid #0a0a23;
+    height: 70px;
+    width: 700px;
+    font-size: 17px;
+} 
+
+#b4:hover {
+    background-color: #0a0a23;
+    color: black;
+    border: 2px solid #fec849;
+}
+
+#section_certificaciones li  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid white;
+}
+
