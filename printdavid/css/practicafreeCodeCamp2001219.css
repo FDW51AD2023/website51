@@ -8,36 +8,26 @@ body {
     font-family: "Hack-ZeroSlash", monospace;
 }
 
-header {
+#main-nav {
     background-color: #0a0a24;
     height: 56px;
     padding: 0px 15px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
 #search-bar {
-    width: 40vw;
+    width: 45%;
     display: flex;
+    align-items: center;
     justify-content: flex-start;
 }
 
-#search-bar-elements {
-    display: flex;
-}
-
-#header-logo {
-    width: 20vw;
-    min-width: 250px;
-    display: flex;
-    justify-content: center;
-}
-
 #options {
-    width: 40vw;
     display: flex;
     justify-content: flex-end;
+    flex: 1 0 33%;
+    gap: 1px;
 }
 
 #search-bar a {
@@ -55,8 +45,9 @@ header {
 }
 
 #search-bar input {
-    width: 465px;
-    height: 30px;
+    width: 100%;
+    max-width: 465px;
+    height: 29.99px;
     border: 0;
     padding: 0 0 0 9px;
     box-sizing: content-box;
@@ -72,16 +63,14 @@ header {
     font-family: "Lato", sans-serif;
     font-weight: 100;
     color: #d0d0d5;
+    display: flex;
+    align-items: center;
 }
 
 #search-img {
     width: 18px;
     height: 18px;
     stroke: #d0d0d5;
-}
-
-#search-bar-elements:focus-within {
-    border: 2px solid #198eee;
 }
 
 #freecodecamp-logo {
@@ -108,7 +97,6 @@ header {
 #menu-button {
     height: 30px;
     width: 73px;
-    padding: 0px 12px;
     border: 1px solid #ffffff;
     color: #ffffff;
     font-size: 18px;
@@ -128,7 +116,6 @@ header {
 #sign-button {
     height: 30px;
     width: 82px;
-    padding: 0px 12px;
     border: 3px solid #feac32;
     background: linear-gradient(#fecc4c,#ffac33);
     color: #0a0a24;
