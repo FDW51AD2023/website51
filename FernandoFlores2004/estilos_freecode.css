@@ -1,0 +1,366 @@
+#barra {
+    display: flex;
+    background-color: black;
+    justify-content: space-around;
+    color: azure;
+    font-size: 15px;
+}
+
+
+#barra .Busqueda {
+    background-color: gray;
+    height: 42px;
+    width: 400px;
+    border: 10px solid black;
+}
+
+#barra .mundo{
+    border: 2px solid white;
+    padding: 5px;
+}
+
+#barra .menu{
+    border: 2px solid white;
+    padding: 5px;
+}
+
+#barra .enter{
+    border: 2px solid white;
+    padding: 5px;
+    background-color: gold;
+    color: black;
+}
+
+
+#parte1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1.titulo {
+    font-size: 75px;
+    border: 200px;
+    padding-left: 24%;
+    padding-right: 25%;
+
+}
+
+#parte2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3.subtitulo {
+    border: 200px;
+    padding-left: 24%;
+    padding-right: 25%;
+
+}
+
+#imagenes{
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#imagenes .apple{
+
+    width: 50px;
+    height: auto;
+
+}
+
+#imagenes .google{
+
+    width: 55px;
+    height: auto;
+
+}
+
+#imagenes .microsoft{
+
+    width: 80px;
+    height: auto;
+
+}
+
+#imagenes .spoty{
+
+    width: 80px;
+    height: auto;
+    background-color: black;
+
+}
+
+#imagenes .amazon{
+
+    width: 80px;
+    height: auto;
+    background-color: black;
+
+}
+
+#hover{
+    display: flex;
+    justify-content: center;
+}
+
+#hover h2{
+
+    border: 5px solid brown;
+    padding-left: 70px;
+    padding-right: 0px ;
+    width: 290px;
+    background-color: goldenrod;
+    color: black;
+
+}
+
+#hover h2:hover{
+
+    background-color: yellow;
+    color: goldenrod;
+
+}
+
+#cita .imagen {
+    border: 10px solid black;
+    margin: 0 auto; 
+}
+
+#cita {
+    font-size: 30px;
+    text-align: center; 
+    color: gray;
+}
+
+#cuadro{
+    background-color: gray;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+#cuadro .wd{
+    width: 70px;
+    height: 50px;
+}
+
+#cuadro .bi{
+    width: 70px;
+    height: 50px;
+}
+
+#cuadro .inc{
+    width: 70px;
+    height: 50px;
+}
+
+#cuadro .lh{
+    width: 70px;
+    height: 50px;
+}
+
+#cuadro .tm{
+    width: 70px;
+    height: 50px;
+}
+
+#cuadro .qt{
+    width: 70px;
+    height: 50px;
+}
+
+#cuadro .am{
+    width: 70px;
+    height: 50px;
+}
+
+#cuadro .nt{
+    width: 70px;
+    height: 50px;
+}
+
+#cuadro .bbc{
+    width: 70px;
+    height: 50px;
+}
+
+#opiniones{
+    border: 0px;
+    background-color: blue;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.OP{
+    text-align: center;
+}
+
+#opiniones img{
+    float: left;
+    height: 300px;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+   }
+
+.p1{
+    font-size: 25px;
+}
+
+.pt2{
+    font-size: 25px;
+}
+
+
+
+#opiniones1{
+    border: 0px;
+    background-color: blue;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#opiniones1 img{
+    float: left;
+    height: 300px;
+}
+
+#opiniones2{
+    border: 0px;
+    background-color: blue;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#opiniones2 img{
+    float: left;
+    height: 300px;
+}
+
+
+#hover2{
+    display: flex;
+    justify-content: center;
+}
+
+#hover2 h2{
+
+    border: 5px solid brown;
+    padding-left: 70px;
+    padding-right: 0px ;
+    width: 290px;
+    background-color: goldenrod;
+    color: black;
+
+}
+
+#hover2 h2:hover{
+
+    background-color: yellow;
+    color: goldenrod;
+
+}
+
+
+.en{
+    font-size: 60px;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.botones{
+    display: flex;
+    font-size: 20px;
+    width: 80%;
+    border: 5px solid black;
+    font-size: 25px;
+    justify-content: start;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.h1{
+    font-size: 70px;
+    text-align: center;
+}
+
+.flecha{
+    width: 50px;
+    height: 85px;
+    padding-left: 50%;
+}
+
+
+.cpu{
+    width: 40px;
+    height: 80px;
+    padding-right: 20px;
+    margin-left: 100px;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+}
+
+.botones:hover{
+
+    background-color: white;
+    color: black;
+
+}
+
+#section{
+    margin-left: 250px;
+}
+
+#section h3{
+    font-size: 25px;
+}
+
+#section p{
+    font-size: 18px;
+}
+
+#end{
+    background-color: blanchedalmond;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+#end .F{
+    font-size: 25px;
+}
+
+.tb{
+    padding-bottom: 30px;
+}
+
+#detalles{
+    border: 10px solid blanchedalmond;
+    background-color: blanchedalmond; 
+    text-align: center;
+}
+
+
+
+
+
+
+
+
