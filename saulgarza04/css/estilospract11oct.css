@@ -1,0 +1,152 @@
+#header1 {
+    background-color: #0a0a23;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input {
+    display: flex;
+    background-color: gray;
+    width: 33%;
+    height: 25px;
+}
+
+p {
+    color: white;
+    width: 33%;
+}
+
+
+.boton1 {
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+}
+
+.boton2 {
+    color: black;
+    background-color: #ffbd40;
+    border: 1px solid #feac32;
+    padding: 5px;
+}
+
+#header1 input::placeholder {
+    color: white;
+}
+
+body {
+    background-color: #f5f6f7;
+}
+
+#section2 {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+} 
+
+.boton3 {
+    display: flex;
+    color: black;
+    background-color: #ffbd40;
+    border: 2px solid #feac32;
+    padding: 5px;
+    justify-content: center;
+}
+
+#section3 {
+    display: flex;
+    justify-content: center;
+}
+
+#section4 {
+    background-color: #3b3b4f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center
+}
+
+.s4h3 {
+    display: flex;
+    font-size: 30px;
+    color: #d0d0d5;
+    height: 70px;
+}
+
+.s4img {
+    display: flex;
+    align-content: center;
+}
+
+.ah2 {
+    display: flex;
+    justify-content: center;
+}
+
+.aimg {
+
+    height: 200px;
+}
+
+#img1p {
+    display: flex;
+    color: black;
+    border: 3px solid black;
+
+}
+
+#img1p img {
+    float:right;
+    
+}
+
+#img2p {
+    display: flex;
+    color: black;
+    border: 3px solid black;
+
+}
+
+#img2p img {
+    float:right;
+    
+} 
+
+#img3p {
+    display: flex;
+    color: black;
+    border: 3px solid black;
+
+}
+
+#img3p img {
+    float:right;
+    
+} 
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display:table;
+}
+
+#section5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.boton4 {
+    display: flex;
+    color: black;
+    background-color: #ffbd40;
+    border: 2px solid #feac32;
+    padding: 5px;
+    justify-content: center;
+}
+
+#section8 {
+    display: flex;
+    justify-content: center;
+}
