@@ -1,0 +1,385 @@
+body{
+    background-color:  rgb(242, 242, 253);
+}
+
+header {
+    background-color: rgb(11, 11, 53);
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+input{
+    background-color: #3b3b4f;
+    border:2px solid  #3b3b4f;
+    padding:5px;
+    width: 400px;
+
+}
+::placeholder{
+    border-color: rgb(83, 83, 109);
+    color: rgb(248, 245, 245);
+    background-color: rgb(83, 83, 109);
+    font-size: 1.2em;
+}
+
+
+.icon {
+    color: white;
+    border: 2px;
+    border-color: rgb(11, 11, 53);;
+    background-color: rgb(11, 11, 53);
+
+}
+section p{
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+    text-align: right;
+    margin: 0 auto;
+}
+
+section h1{
+    color:  rgb(11, 11, 53);
+    font-size: 50px;
+    text-align: justify;
+    margin-left: 400px;
+    margin-right: 450px;
+}
+
+.letras{
+    width: 1500px;
+    }
+
+.icon2{
+    background-color: rgb(11, 11, 53);
+    border-color: white;
+    border: 1px;
+    border-style: solid;
+    margin-left: 150px;
+    width: 35px;
+    height: 35px;
+}
+.icon2:hover{
+    background-color: white;
+    color: black;
+    border-color: white;
+    cursor: pointer;
+}
+
+.boton1{
+    display: inline;
+    color: aliceblue;
+    padding:5px 10px ;
+    border: 2px;
+    border-color: white;
+    border-style: solid;
+    font-size: 22px;
+    margin-left: -140px;
+    margin-right: 15px;
+}
+
+.boton1:hover{
+    background-color: white;
+    color: black;
+    border-color: white;
+    cursor: pointer;
+}
+
+.boton2{
+    color: black;
+    border: 5px;
+    border-color: orange;
+    border-style: solid;
+    background-color: rgb(245, 175, 45);
+    font-size: 22px;
+    margin-right: 25px;
+
+}
+
+.boton2:hover{
+    background-color: rgb(245, 180, 59);
+    color: black;
+    border-color: rgb(245, 180, 59);
+    cursor: pointer;
+}
+.boton3{
+    display: block;
+    margin:0 auto;
+    color: black;
+    border: 5px;
+    border-color: orange;
+    border-style: solid;
+    background-color: rgb(245, 175, 45);
+    font-size: 22px;
+
+}
+main{
+    text-align: center;
+}
+.iconos{
+    margin: 10px auto 10px;
+  display: block;
+}
+.img1{
+    margin: 10px auto 10px;
+  display: block;
+}
+footer{
+    text-align: center;
+    font-size: 20px;
+}
+
+
+#header2 {
+    background-color: white;
+}
+#header2 p {
+   color: black;
+   text-align: center;
+}
+#header3{
+    background-color: white;
+}
+
+#header3 p{
+    color: black;
+    text-align: center;
+}
+
+#header4{
+    background-color: white;
+}
+
+#header4 p{
+    color: black;
+    text-align: center;
+}
+
+.boton4{
+    margin: auto;
+    display: flex;
+    border-radius: 0px;
+    text-decoration: none;
+    width: 25%;
+    padding: 10px;
+    font-weight: 300;
+    font-size: 20px
+}
+
+.boton5{
+    margin: auto;
+    display: flex;
+    border-radius: 0px;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px
+}
+
+.boton6{
+    margin: auto;
+    display: flex;
+    border-radius: 0px;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px
+}
+
+.boton7{
+    margin: auto;
+    display: flex;
+    border-radius: 0px;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px
+}
+
+.boton8{
+    margin: auto;
+    display: flex;
+    border-radius: 0px;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px
+}
+
+.boton9{
+    margin: auto;
+    display: flex;
+    border-radius: 0px;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px
+}
+
+.boton10{
+    margin: auto;
+    display: flex;
+    border-radius: 0px;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px
+}
+
+.boton11{
+    margin: auto;
+    display: flex;
+    border-radius: 0px;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px
+}
+.boton12{
+    margin: auto;
+    display: flex;
+    border-radius: 0px;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px
+}
+
+.boton13{
+    margin: auto;
+    display: flex;
+    border-radius: 0px;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px
+}
+.boton14{
+    margin: auto;
+    display: flex;
+    border-radius: 0px;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px
+}
+
+.boton15{
+    margin: auto;
+    display: flex;
+    border-radius: 0px;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 300;
+    font-size: 20px
+}
+.boton16{
+    margin: auto;
+    display: flex;
+    border-radius: 0px;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 300;
+    font-size: 20px
+}
+
+.boton17{
+    margin: auto;
+    display: flex;
+    border-radius: 0px;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 300;
+    font-size: 20px
+}
+
+.boton18{
+    margin: auto;
+    display: flex;
+    border-radius: 0px;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 300;
+    font-size: 20px
+}
+
+h2{
+    color:#1b1b32;
+}
+
+article p{
+    margin-left: 300px;
+    margin-right: 300px;
+    justify-content: center;
+    text-align: justify;
+    font-size: 20px;
+}
+
+article h2{
+    color: rgb(11, 11, 53); 
+    font-size: 25px;
+    margin-left: 300px;
+    margin-right: 300px;
+    justify-content: center;
+    text-align: justify
+}
+
+article h1{
+    color: rgb(11, 11, 53); 
+    font-size: 45px;
+    margin-left: 300px;
+    margin-right: 300px;
+    justify-content: center;
+    text-align: justify
+}
+
+/*div p{
+    color: rgb(11, 11, 53); 
+    margin-left: 380px;
+    margin-right: 380px;
+    text-align: justify;
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}*/
+
+
+.cajachino{
+    margin-left: 125px;
+    margin-right: 125px;
+    justify-content: center;
+    text-align: justify
+}
+
+.cajachino p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    margin-top: 1em;
+    display: grid;
+    vertical-align: middle;
+
+}
+
+.chino{
+    margin-right: 800px;
+}
+
+.flex-container{
+    display: flex;
+    padding: 15px;
+    margin: 0 auto;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.caja{
+    width: 90%;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.subcaja{
+    text-align: center;
+    color: black;
+}
