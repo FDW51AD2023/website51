@@ -4,7 +4,9 @@ body{
     font-family: "Lato", sans-serif;
     outline: none;
     cursor: pointer;
+    overflow: auto;
 }
+
 
 .all{
     height: 100%;
@@ -12,17 +14,28 @@ body{
     width: 100%;
 }
 
-#options .top-menu{
+.top-menu{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: var(--z-index-site-header);
+    background: var(--secondary-background);
+    margin-top: var(--header-height);
+}
+
+#options{
     background-color: #0a0a23;
     width: 1403.7;
     height: 56px;
     padding: 0px 15px;
     display: flex;
     align-items: center;
+    
 }
 
+
 .search-tutorals{
-    width: 45%;
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -43,7 +56,7 @@ body{
     width: 499.99px;
     height: 29.99px;
     color: #d0d0d5;
-    font-size: 18px "Lato", sans-serif;
+    font: 18px "Lato", sans-serif;
 } 
 
 .search-tutorals .lupa{
@@ -77,6 +90,7 @@ body{
 
 .buttons{
     -webkit-box-flex: 1;
+    width: 40%;
     display: flex;
     justify-content: flex-end;
     flex: 1 0 33%;
@@ -122,7 +136,7 @@ body{
 
 .menu p{
     color: #FFFFFF;
-    font-size: 18px "Lato", sans-serif;
+    font: 18px "Lato", sans-serif;
     width: 46.01px;
     height: 25.71px;
     display: flex;
@@ -148,16 +162,17 @@ a{
 .title{
     display: flex;
     align-items: center;
+    width: 20%;
 }
 
 
 .signin {
     background: linear-gradient(#fecc4c,#ffac33);
     border: 3px solid #feac32;
-    font-size: 18px "Lato", sans-serif;
+    font: 18px "Lato", sans-serif;
     color: #0a0a24;
-    width: 80.78px;
-    height: 29.96px;
+    width: 82px;
+    height: 30px;
     padding: 0px 12px;
     box-sizing: border-box;
     display: flex;
@@ -165,8 +180,349 @@ a{
     align-items: center;
     text-decoration: none;
 }
+
  
 .signin:hover{
     border-color: #f1a02a;
-    background: linear-gradient(#fecc4c,#fecc4c);;
+    background: linear-gradient(#fecc4c,#fecc4c);
 }
+
+.all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin: 0px 176.2px; */
+    padding: 115px 0;
+}
+
+.all h1{
+    font-size: 45px ;
+    font-family: "Lato", sans-serif;
+    width: 750px;
+    margin: 55px 0 40px;
+    color: rgb(28, 27, 50);
+}
+
+.all p{
+    font: 19.8px "Lato",sans-serif;
+    color: #1B1B32;
+    font-weight: -67;
+    width: 750px;
+    height: 54px;
+    margin: 10.8px 0px;
+    font-weight: 400;
+}
+
+.all figcaption{
+    font: 18px "Lato", sans-serif;
+    margin: 10px 0 30px 0;
+    color: rgb(28, 27, 50);
+    font-weight: 600;
+}
+
+.partners {
+    width: 750px;
+    height: 50px;
+    margin: 10px 0px;
+}
+
+.get1{
+    background: linear-gradient(#fecc4c,#ffac33);
+    border: 3px solid #feac32;
+    font: 27px "Lato", sans-serif;
+    color: #0a0a24;
+    width: 500px;
+    height: 54.56px;
+    background-color: #feac32;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 50px 0px 50px 0px;
+    cursor: pointer;
+}
+
+.get1:hover{
+    border-color: #f1a02a;
+    background: linear-gradient(#fecc4c,#fecc4c);
+}
+
+.separator{
+    background-color: #3B3B4F;
+    width: 100%;
+    height: 320px;
+    padding: 0px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#Egresados{
+    text-align: center;
+    width: 1100px;
+    height: 70px;
+    margin: 70px 0 30px 0;
+}
+
+.alumns{
+    display: flex;
+    flex-direction: column;
+}
+
+.alumns div{
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 50px 0;
+    background-color: rgb(255, 255, 255);
+    height: 320px;
+    box-shadow: 0 0 15px 4px rgb(234, 235, 236);
+    /* box-shadow: 3px 3px 3px 0px rgb(234, 235, 236); */
+}
+
+.alumns div div{
+    flex-direction: column;
+    color: #0a0a24;
+}
+
+.alumns div div h2{
+    text-align: center;
+    font: 23.4px "Lato", sans-serif;
+    padding-top: 50px;
+    margin-bottom: 0px;
+}
+
+.alumns div div h3{
+    text-align: center;
+    font: 23.4px "Lato", sans-serif;
+    padding-bottom: 0px;
+    margin-top: 15px;
+}
+
+.alumns div div p{
+    text-align: justify;
+    padding: 0 40px;
+    font: 19.4px "Lato", sans-serif;
+    line-height: 25px;
+}
+
+.alumns div div h2 strong{
+    color: rgb(60, 59, 79);
+}
+
+.alumns div div h3 strong{
+    color: rgb(60, 59, 79);
+}
+
+.alumns div div p strong{
+    color: rgb(60, 59, 79);
+}
+
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+li div {
+    width: 1115px;
+    height: 80px;
+    background-color: #d0d0d5;
+    margin: 0px 0px 10px;
+    padding: 0px 16px;
+    display: flex;
+    align-items: center;
+}
+
+.certification{
+    border: 3px solid rgb(28, 27, 50);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.certification:hover{
+    background-color: rgb(28, 27, 50);
+    transition: background-color 0.3s;
+}
+
+.certifications{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#certifications-title{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 50px 50px;
+   /*  padding: 20px 20px 0px 0px;  */
+    text-align: justify;
+    width: 1153px;
+} 
+
+.certification ul li h1{
+    margin: 50px 0 30px 0;
+}
+    
+
+.certification:hover .text{
+    color: white;
+    transition: background-color 0.3s;
+}
+
+
+.certification:hover .imageleft{
+    filter: invert(80%); 
+}
+
+
+.certification:hover .imageright{
+    filter: invert(80%); 
+}
+
+
+li div div{
+    height: 80px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.imageleft{
+    width: 50px;
+    justify-content: flex-start;
+    margin: 0 15px 0 0;
+}
+
+.imageright{
+    width: 24px;
+    height: 26px;
+    justify-content: flex-end;
+    margin: 0 0 0 30%;
+}
+.imageright img{
+    width: 25px;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font: 19.8px "Lato", sans-serif;
+    width: 800px;
+}
+
+.frequently-questions {
+    width: 75%;
+}
+
+.frequently-questions h2{
+    font: 22.5 "Lato", sans-serif;
+    color: #1B1B32;
+    height: 27px;
+    margin: 0px 0px 21.6px;
+    width: 100%;
+}
+
+.frequently-questions p{
+    font: 18px "Lato", sans-serif;
+    height: 27px;
+    margin: 0 0 21.6px;
+    width: 100%;
+}
+
+#footer{
+    background-color: #DFDFE2;
+}
+
+
+.footer-topics{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 70px 0%;
+}
+
+.footer-information{
+    align-content: center;
+    margin-right: 20px;
+}
+
+.footer-information p{
+    width: 580px;
+    color: #2A2A40;
+    font: 16px "Lato", sans-serif;
+    line-height: 30px;
+    margin: 25px 0px 16.1px;
+}
+
+.footer-information h3{
+    font: 18px "Lato", sans-serif;
+}
+
+.footer-information a{
+    font: 18px "Lato", sans-serif;
+    color: #2A2A40;
+    border-bottom: 1px solid black;
+}
+
+.footer-information a:hover{
+    border: none;
+}
+
+.treding-guides{
+    flex-direction: row;
+}
+
+.treding-guides h3{
+    text-align: center;
+    font: 18px "Lato", sans-serif;
+    color: #2A2A40;
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+
+.articles{
+    display: grid;
+    grid-template-columns: 215px 215px;
+    grid-template-rows:  repeat(15,22.5px);
+    column-gap: 20px;
+    row-gap: 12px;
+}
+
+.articles a{
+    font: 16px "Lato", sans-serif; 
+    color: #2A2A40;
+}
+
+.articles a:hover{
+    border-bottom: 1px solid black;
+}
+
+.footer-our-charity{
+    padding: 30px 5% 60px;
+}
+
+.footer-our-charity-items{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-our-charity-items a{
+    font: 16px "Lato", sans-serif; 
+    color: #2A2A40;
+}
+
+.footer-our-charity-items a:hover{
+    border-bottom: 1px solid black;
+
+}
+
+hr{
+    width: 90%;
+} 
