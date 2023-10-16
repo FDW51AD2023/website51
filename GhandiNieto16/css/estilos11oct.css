@@ -66,26 +66,3 @@ footer {
 }
 
 
-/* Paginca codepen */
-
-#headerp{
-    background-color: #0a0a23;
-    display: flex;
-    color: white;
-    justify-content: space-between;
-}
-
-.boton1 {
-    color: white;
-    border: 1px solid white;
-    padding: 1px;
-    text-decoration: none;
-}
-
-#mundo{
-    border-color: white;
-}
-
-#divp{
-    background-color: white;
-}
