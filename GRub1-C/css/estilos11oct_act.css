@@ -1,0 +1,253 @@
+html {
+    background-color: #f5f6f7;
+}
+
+header {
+    display: flex;
+    background-color: #0a0a23;
+    color: white;
+    height: 50px;
+    align-self: flex-start;
+    text-align: center;
+}
+
+#buscar {
+    background-color: #292944f1 ;
+    color: white;
+    border: 0px;
+    align-self: center;
+    height: 27px;
+    font-size: 17px ;
+    flex-grow: 1 ;
+    margin: 10px;
+}
+
+::placeholder {
+    color: rgba(216, 216, 216, 0.897);
+}
+
+#titulo {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    align-self: center;
+    flex-grow: 2;
+}
+
+#b1 {
+    background-color: #0a0a23;
+    color: white;
+    align-self: center;
+    border: 2px solid white;
+    height: 27px;
+    width: 70px;
+    font-size: 17px;
+    margin: 10px;
+
+} 
+
+#b1:hover {
+    background-color: white;
+    color: #0a0a23;
+    border: 2px solid white;
+}
+
+#b2 {
+    background-color: #fec849;
+    color: black;
+    align-self: center;
+    border: 2px solid #feac32;
+    height: 27px;
+    width: 70px;
+    font-size: 17px;
+} 
+
+#b2:hover {
+    background-color: #fec849;
+    color: black;
+    border: 2px solid #fec849;
+}
+
+
+/* TITULO DE LA PAGINA  */
+
+main {
+    display: flex;
+    flex-direction: column;
+    color: #1b1b32;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+
+}
+main h3 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 30px 150px 0px 150px; 
+    font-size: 40px;
+}
+
+main h2{
+    font-size: 22px;
+    font-family: sans-serif;
+}
+
+#seccion_titulo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 30px 250px 0px 250px;
+}
+#seccion_titulo h1 {
+    margin: 15px 0px 15px 0;
+}
+
+#seccion1 {
+    display: flex;
+    justify-content: center;
+}
+
+
+#b3 {
+    background-color: #ffc439;
+    color: black;
+    align-self: center;
+    border: 2px solid #f79a10;
+    font-size: 25px;
+    height: 47px;
+    width: 470px;
+
+} 
+
+#b3:hover {
+    background-color: #fec849;
+    color: black;
+    border: 2px solid #fec849;
+}
+
+#pie_img {
+    color: #3b3b4f;
+    font-size: 18px;
+    font-family: sans-serif;
+
+}
+
+/* SECCION 3 - SEEN IN*/
+
+#section3 {
+    background-color: #3b3b4f;
+    color: rgba(216, 216, 216, 0.897);
+    text-align: center;
+}
+
+#section_testimonios {
+    background-color: #f5f6f7;
+    display: flex;
+    justify-content: center;
+    border: 20px solid #f5f6f7;
+}
+
+#section_testimonios  article {
+    color: #413b4f;
+    font-size: 20px;
+    text-align: center;
+    width: 1150px;
+    height: 300px;
+    box-shadow:  0px 0px 10px gray;
+}
+
+
+#section_testimonios  img {
+    width: 300px;
+    float:left;
+}
+
+/* SECION DE CERTIFICACIONES */
+
+#b4 {
+    background-color: #d0d0d5;
+    color: #0a0a23;
+    align-self: center;
+    border: 3px solid #0a0a23;
+    height: 70px;
+    width: 700px;
+    font-size: 20px;
+} 
+
+#b4:hover {
+    background-color: #0a0a23;
+    color: white;
+    border: 2px solid #0a0a23;
+}
+
+#section_certificaciones li  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid #f5f6f7;
+}
+
+/* SECCION FREQUENLY QUESTIONS */
+
+#section_questions div {
+    display: flex;
+    flex-direction: column;
+    color: #1B1B32;
+    font-size:22px;
+    font-family: sans-serif;
+    margin: 30px 200px 10px 200px;
+}
+
+#section_questions p {
+    display: flex;
+    flex-direction: column;
+    color: #1B1B32;
+    font-size:18px;
+    font-family: sans-serif;
+}
+
+
+
+/* SECCION FOOTER */
+footer {
+    background-color: #DFDFE2;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #2A2A40;
+}
+
+#article4 {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: sans-serif;
+    font-size: 16px;
+    padding: 5px 10px;
+    color: #2A2A40;
+}
+
+#seccion_footer {
+    display:flex;
+    justify-content: space-evenly;
+    width: 1150px;
+    height: 600px;
+    margin: 60px 0px 0px 0px;
+
+}
+
+#links1, #links2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#descripcion {
+    display: flex;
+    flex-basis: 600px;
+    margin: 20px;
+    align-items: center;
+}
+
+footer a {
+    margin: 10px;
+}
+
+
