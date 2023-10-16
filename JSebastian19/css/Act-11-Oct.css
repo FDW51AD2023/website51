@@ -238,8 +238,128 @@
 
 #header9 p {
   text-align: justify;
-  margin: 0 auto;
-  max-width: 800px;
+  position: absolute;
+  top: 2480px;
+  left: 260px;
   color: white;
   font-size: 50px;
+}
+
+/* Header 10 */
+
+#header10 {
+  text-align: center;
+  background-color: #1b1b32;
+}
+
+#header10 button {
+  width: 1000px;
+  height: 50px;
+  text-align: left;
+  background-color: #3b3b4f;
+  color: white;
+  border-color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+#header10 button:hover {
+  background-color: white;
+  color: black;
+  border-color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+/* Header 11 */
+
+#header11 {
+  text-align: center;
+  background-color: #1b1b32;
+}
+
+#header11 h3 {
+  position: absolute;
+  top: 3480px;
+  left: 260px;
+  color: white;
+  font-size: 50px;
+}
+
+/* Header 12 */
+
+#header12 {
+  text-align: center;
+  background-color: #1b1b32;
+}
+
+#header12 button {
+  width: 1000px;
+  height: 50px;
+  text-align: left;
+  background-color: #3b3b4f;
+  color: white;
+  border-color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+#header12 button:hover {
+  background-color: white;
+  color: black;
+  border-color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+#header13 {
+  text-align: center;
+  background-color: #1b1b32;
+}
+
+#header13 h3 {
+  text-align: justify;
+  position: absolute;
+  top: 3650px;
+  left: 260px;;
+  color: white;
+  font-size: 50px;
+}
+
+#header14 {
+  text-align: center;
+  background-color: #1b1b32;
+}
+
+#header14 button {
+  width: 1000px;
+  height: 50px;
+  text-align: left;
+  background-color: #3b3b4f;
+  color: white;
+  border-color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+#header14 button:hover {
+  background-color: white;
+  color: black;
+  border-color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+#header15 {
+  text-align: center;
+  background-color: #1b1b32;
+}
+
+#header15 button {
+  padding: 10px 20px;
+  background-color: #fec647;
+  color: black;
+  border-color: #fec647;
+  cursor: pointer;
+  font-size: 20px;
 }
