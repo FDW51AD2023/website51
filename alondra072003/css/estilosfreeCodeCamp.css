@@ -184,7 +184,7 @@ a{
  
 .signin:hover{
     border-color: #f1a02a;
-    background: linear-gradient(#fecc4c,#fecc4c);;
+    background: linear-gradient(#fecc4c,#fecc4c);
 }
 
 .all{
@@ -243,6 +243,11 @@ a{
     text-decoration: none;
     margin: 50px 0px 50px 0px;
     cursor: pointer;
+}
+
+.get1:hover{
+    border-color: #f1a02a;
+    background: linear-gradient(#fecc4c,#fecc4c);
 }
 
 .separator{
@@ -342,17 +347,6 @@ li div {
     background-color: rgb(28, 27, 50);
     transition: background-color 0.3s;
 }
-
-/* #certifications-title{
-    display: flex;
-    flex-direction: wrap;
-    justify-content: center;
-    align-content: space-around;
-    margin: 10.08px 0px 40px;
-    height: 99px; 
-    text-align: justify;
-    width: 1115.06;
-} */
 
 .certifications{
     display: flex;
