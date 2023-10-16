@@ -65,8 +65,14 @@ footer {
     grid-area: f;
 }
 
-#header-main{
+
+/* Paginca codepen */
+
+#headerp{
     background-color: #0a0a23;
+    display: flex;
+    color: white;
+    justify-content: space-between;
 }
 
 .boton1 {
@@ -76,56 +82,10 @@ footer {
     text-decoration: none;
 }
 
-#copiapag{
- 
+#mundo{
+    border-color: white;
 }
 
-#copiapag p{
-    color: white;
-}
-
-
-#mainpag p {
+#divp{
     background-color: white;
-    color: black;
-}
-
-#mainpag {
-    font-family: sans-serif;
-    font-size: 18px;
-    display: grid;
-    background-color: white;
-    justify-content: center;
-
-}
-
-
-#mp5 {
-    color: black;
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-template-areas:   "m a";
-    gap: 10px;
-}
-
-#mp5 p{
-    color: black;
-}
-
-#mp5 header{
-    grid-area: h;
-}
-
-#mp5 main{
-    grid-area: m;
-    background-color: white;
-}
-
-#mp5 aside{
-    grid-area: a;
-    background-color: white;
-}
-
-#mp5 footer{
-    grid-area: f;
 }
