@@ -109,9 +109,18 @@ body {
     padding: 3vh;
 }
 
-#boton_get {
-    background-color: ble;
-    width: 10vh;
+#contenedor_getstarted {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#buton_get {
+    width: 80vh;
+    height: 8vh;
+    align-items: center;
+    background-color: rgb(237, 207, 37);
 }
 
 #ass_seen {
