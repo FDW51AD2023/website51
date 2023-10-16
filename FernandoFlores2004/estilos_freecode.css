@@ -324,6 +324,39 @@ h3.subtitulo {
 
 }
 
+#section{
+    margin-left: 250px;
+}
+
+#section h3{
+    font-size: 25px;
+}
+
+#section p{
+    font-size: 18px;
+}
+
+#end{
+    background-color: blanchedalmond;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+#end .F{
+    font-size: 25px;
+}
+
+.tb{
+    padding-bottom: 30px;
+}
+
+#detalles{
+    border: 10px solid blanchedalmond;
+    background-color: blanchedalmond; 
+    text-align: center;
+}
+
 
 
 
