@@ -1,3 +1,35 @@
+#top_pagina {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#input_search {
+    width: 275px;
+    height: 30px;
+}
+
+#language_button {
+    width: 30px;
+    height: 30px;
+}
+
+#menu_button {
+    width: 60px;
+    height: 30px;
+}
+
+#sign_up_button {
+    width: 60px;
+    height: 30px;
+}
+
+#cuerpo_pagina h1, h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #apple-logo {
     width: 30.76px;
     height: 40px;
@@ -25,5 +57,44 @@
 
 #logos {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
+
+#get_started_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#get_started_button {
+    width: 500px;
+    height: 48.23px;
+    font-size: 23px;
+}
+
+article h1, #featured_logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#featured-logos {
+    width: 1500px;
+    height: 60px;
+}
+
+.alumni {
+    margin: 120px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info_alumni h2, h4{
+    margin: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
