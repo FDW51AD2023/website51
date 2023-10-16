@@ -1,3 +1,415 @@
-header {
-    color: black;
+body {
+    margin: 0px;
+    font-family: "Lato", sans-serif;
+    background-color: #f4f5f6;
+}
+
+.title {
+    font-family: "Hack-ZeroSlash"/* , monospace */;
+}
+
+#main-nav {
+    background-color: #0a0a24;
+    height: 56px;
+    padding: 0px 15px;
+    display: flex;
+    align-items: center;
+}
+
+#search-bar {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#header-logo {
+    width: 20%;
+    min-width: 209.688px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#options {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1 0 40%;
+    gap: 1px;
+}
+
+#search-bar a {
+    width: 20px;
+    height: 30px;
+    padding: 0px 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3b3b4f;
+}
+
+#search-bar a:hover {
+    background-color: #626272;
+}
+
+#search-bar input {
+    width: 100%;
+    max-width: 465px;
+    height: 29.99px;
+    border: 0;
+    padding: 0 0 0 9px;
+    box-sizing: content-box;
+    background-color: #3b3b4f;
+    color: #ffffff;
+    outline: none;
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+}
+
+#search-bar input::placeholder {
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    color: #d0d0d5;
+    display: flex;
+    align-items: center;
+}
+
+#search-img {
+    width: 18px;
+    height: 18px;
+    stroke: #d0d0d5;
+}
+
+#freecodecamp-logo {
+    filter: invert(100%);
+    height: 24px;
+    padding-top: 4px;
+    flex-basis: content;
+    flex-shrink: 0;
+}
+
+#world {
+    width: 27px;
+    height: 27px;
+    border: 1px solid #ffffff;
+    padding: 0px 3px;
+}
+
+#world:hover {
+    border-color: #0a0a24;
+    stroke: #0a0a24;
+    background-color: #ffffff;
+}
+
+#menu-button {
+    height: 30px;
+    width: 73px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: 18px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 0px 10px;
+}
+
+#menu-button:hover {
+    color: #0a0a24;
+    background-color: #ffffff;
+}
+
+#sign-button {
+    height: 30px;
+    width: 82px;
+    border: 3px solid #feac32;
+    background: linear-gradient(#fecc4c,#ffac33);
+    color: #0a0a24;
+    font-size: 18px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+#sign-button:hover {
+    border-color: #f1a02a;
+    background: linear-gradient(#fecc4c,#fecc4c);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#introduction {
+    padding: 106.8px 15px 0px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 750px;
+    max-width: 90%;
+}
+
+#introduction h1 {
+    display: flex;
+    align-items: center;
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0px 0px 40px 0px;
+    height: 49.5px;
+    word-spacing: 0.039em;
+    color: #1b1b32;
+}
+
+.p-title {
+    display: flex;
+    align-items: center;
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0px 0px 40px 0px;
+    height: 49.5px;
+    word-spacing: 0.039em;
+    color: #1b1b32;
+}
+
+#introduction .p-desc {
+    margin: 0px 0px 10.8px 0px;
+    font-size: 22.5px;
+    font-weight: 700;
+    word-spacing: 0.039em;
+    color: #1b1b32;
+}
+
+#introduction-images {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    margin-bottom: 40px;
+}
+
+#introduction-images svg {
+    height: 40px;
+    margin: 5px;
+    fill: #3b3b4f;
+}
+
+#apple-logo {
+    width: 30.766px;
+}
+
+#google-logo {
+    width: 79px;
+}
+
+#microsoft-logo {
+    width: 118.641px;
+}
+
+#spotify-logo {
+    width: 106.641px;
+}
+
+#amazon-logo {
+    width: 114.406px;
+}
+
+.get-started {
+    height: 54.56px;
+    width: 500px;
+    max-width: 90%;
+    border: 3px solid #feac32;
+    background: linear-gradient(#fecc4c,#ffac33);
+    color: #0a0a24;
+    font-size: 27px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.get-started:hover {
+    border-color: #f1a02a;
+    background: linear-gradient(#fecc4c,#fecc4c);
+}
+
+#introduction .get-started {
+    align-self: center;
+}
+
+#introduction figure {
+    margin: 60px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#introduction figure img {
+    width: 100%;
+}
+
+#introduction figure figcaption {
+    margin: 10px 0px 0px 0px;
+    width: 100;
+    min-height: 25.7px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #3b3b4f;
+    word-spacing: 0.039em;
+}
+
+#as-seen-in {
+    margin-top: 41.097px;
+    height: 320.38px;
+    width: 100%;
+    background-color: #3b3b4f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#as-seen-in img {
+    width: 640px;
+    max-width: 90%;
+}
+
+#testimonial-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90%;
+}
+
+main h2 {
+    display: flex;
+    align-items: center;
+    font-size: 45px;
+    font-weight: 700;
+    min-height: 49.5px;
+    margin: 0px;
+    word-spacing: 0.039em;
+    color: #1b1b32;
+}
+
+#testimonial-section h2 {
+    padding-top: 87.6px;
+    padding-bottom: 40px;
+}
+
+.testimonial-img {
+    max-width: 50%;
+    width: 320px;
+}
+
+#testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1170px;
+    max-width: 90vw;
+    padding-bottom: 76.8px;
+}
+
+.testimonial {
+    margin: 10px 0px 50px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px 0px rgba(183, 182, 186, 0.43);
+}
+
+.testimonial-text {
+    min-height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    color: #3b3b4f;
+}
+
+.testimonial-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 23.4px;
+    padding: 0px 0px 30px 0px;
+}
+
+.testimonial-meta p:nth-child(2) {
+    margin: 15px 0px 0px 0px;
+}
+
+.testimonial-text p {
+    margin: 0;
+}
+
+.testimonial-text > p {
+    font-size: 19.8px;
+    min-height: 81px;
+    text-align: justify;
+}
+
+.testimonial-quote {
+    display: inline;
+}
+
+#certifications {
+    padding-top: 66px;
+    width: 1115.06px;
+    max-width: 90vw;
+}
+
+#certifications-and-prepare-links {
+    display: flex;
+    flex-direction: column;
+}
+
+#certifications-and-prepare-links h2 {
+    margin: 10.8px 0px 40px 0px;
+}
+
+#certifications-and-prepare-links a {
+    display: flex;
+    padding: 10px 16px;
+    margin-bottom: 10px;
+    border: 3px solid #1b1b32;
+    height: 80px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+#certifications-and-prepare-links .first-elements {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 19.8px;
+    color: #1b1b32;
+}
+
+#certifications-and-prepare-links .first-elements svg:nth-child(1) {
+    width: 50px;
+    margin: 0px 20px 0px 5px;
+    fill: #0a0a23;
+}
+
+#certifications-and-prepare-links a p {
+    margin: 0;
+}
+
+#certifications-and-prepare-links .last-element {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#certifications-and-prepare-links .last-element svg {
+    width: 18px;
+    margin: 0px 0px 0px 5px;
 }

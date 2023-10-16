@@ -1,0 +1,48 @@
+body {
+    background-color: darkblue;
+}
+
+
+#mp1 header {
+    background-color: darkblue;
+}
+
+#apple-logo {
+    width: 70px;
+    height: 70px;
+}
+#google-logo {
+    width: 70px;
+    height: 70px;
+}
+#microsoft-logo {
+    width: 70px;
+    height: 70px;
+}
+#spotify-logo {
+    width: 70px;
+    height: 70px;
+}
+#amazon-logo {
+    width: 70px;
+    height: 70px;
+}
+
+ 
+#iconos1 {
+    display: flex;
+    justify-content: center;
+ }
+
+ #boton1 {
+    display: flex;
+    justify-content: center;
+
+ }
+ 
+ #botongrande {
+    width: 400px;
+    height: 50px;
+    background-color: orange;
+    font-size: 20px;
+ }
