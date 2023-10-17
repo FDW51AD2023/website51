@@ -125,11 +125,10 @@ main{
     margin: 10px auto 10px;
   display: block;
 }
-footer{
-    text-align: center;
+nav {
+text-align: center;
     font-size: 20px;
 }
-
 
 #header2 {
     background-color: white;
@@ -472,6 +471,65 @@ article h1{
 }
 
 .subcaja{
+    text-align:center;
+    color: rgb(8, 0, 0);
+    margin-top: 15px;
+}
+
+header p{
+    padding: 15px;
     text-align: center;
-    color: black;
+font-size: 20px
+}
+
+#super{
+    background-color:#dedee7;
+}
+#s55{
+    background-color: #dedee7;
+    color: #000007;
+    margin-left: 950px;
+    margin-right: 100px;
+    justify-content: baseline;
+    font-size: 20px;
+}
+aside #s65{
+    grid-area: h;
+}
+aside #s7 p{
+    grid-area: a1;
+    color: #000008;
+}
+aside #s9 a{
+    grid-area: list1;
+    color: #000007;
+    text-decoration: none;
+}
+aside #s8 ul{
+    grid-area: list;
+}
+aside #s8 a{
+    color: #000005;
+    text-decoration: none;
+}
+aside{
+    display: grid;
+    background-color:#dedee7;
+    color: #000005;
+    grid-template-columns: 3fr 1fr;
+}
+
+footer button{
+    background-color: #dedee7;;
+    color: #000003;
+    align-content: space-around;
+}
+
+footer{
+    background-color: #dedee7;
+    display: flex;
+}
+
+footer a{
+    color: #000007;
 }
