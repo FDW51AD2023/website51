@@ -238,9 +238,8 @@
 
 #header9 p {
   text-align: justify;
-  position: absolute;
-  top: 2480px;
-  left: 260px;
+  margin: 0 auto;
+  max-width: 800px;
   color: white;
   font-size: 50px;
 }
@@ -279,12 +278,13 @@
 }
 
 #header11 h3 {
-  position: absolute;
-  top: 3480px;
-  left: 260px;
+  text-align: justify;
+  margin: 0 auto;
+  max-width: 800px;
   color: white;
   font-size: 50px;
 }
+
 
 /* Header 12 */
 
@@ -319,12 +319,12 @@
 
 #header13 h3 {
   text-align: justify;
-  position: absolute;
-  top: 3650px;
-  left: 260px;;
+  margin: 0 auto;
+  max-width: 800px;
   color: white;
   font-size: 50px;
 }
+
 
 #header14 {
   text-align: center;
@@ -362,4 +362,27 @@
   border-color: #fec647;
   cursor: pointer;
   font-size: 20px;
+}
+
+/* Header 16 */
+
+#header16 {
+  text-align: center;
+  background-color: #1b1b32;
+}
+
+#header16 h3 {
+  text-align: justify;
+  margin: 0 auto;
+  max-width: 800px;
+  color: white;
+  font-size: 50px;
+}
+
+#header16 p {
+  text-align: justify;
+  margin: 0 auto;
+  max-width: 800px;
+  color: white;
+  font-size: 30px;
 }
