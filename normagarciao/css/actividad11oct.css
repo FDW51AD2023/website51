@@ -157,150 +157,242 @@ footer{
 }
 
 .boton4{
+    background-color: #dedee7;
+    width: 700px;
+    height: 100px;
     margin: auto;
     display: flex;
-    border-radius: 0px;
-    text-decoration: none;
-    width: 25%;
-    padding: 10px;
-    font-weight: 300;
-    font-size: 20px
-}
-
-.boton5{
-    margin: auto;
-    display: flex;
-    border-radius: 0px;
-    text-decoration: none;
+    text-align: right;
     padding: 10px;
     font-weight: 600;
     font-size: 20px
 }
+.boton4:hover {
+    background-color:rgb(11, 11, 53);
+    color: rgb(252, 249, 249);
+  }
+  .boton5:hover {
+    background-color:rgb(11, 11, 53);
+    color: rgb(252, 249, 249);
+  }
+  .boton6:hover {
+    background-color:rgb(11, 11, 53);
+    color: rgb(252, 249, 249);
+  }
+  .boton7:hover {
+    background-color:rgb(11, 11, 53);
+    color: rgb(252, 249, 249);
+  }
+  .boton8:hover {
+    background-color:rgb(11, 11, 53);
+    color: rgb(252, 249, 249);
+  }
+  .boton9:hover {
+    background-color:rgb(11, 11, 53);
+    color: rgb(252, 249, 249);
+  }
+  .boton10:hover {
+    background-color:rgb(11, 11, 53);
+    color: rgb(252, 249, 249);
+  }
+  .boton11:hover {
+    background-color:rgb(11, 11, 53);
+    color: rgb(252, 249, 249);
+  }
+  .boton12:hover {
+    background-color:rgb(11, 11, 53);
+    color: rgb(252, 249, 249);
+  }
+  .boton13:hover {
+    background-color:rgb(11, 11, 53);
+    color: rgb(252, 249, 249);
+  }
+  .boton14:hover {
+    background-color:rgb(11, 11, 53);
+    color: rgb(252, 249, 249);
+  }
+  .boton15:hover {
+    background-color:rgb(11, 11, 53);
+    color: rgb(252, 249, 249);
+  }
+  .boton16:hover {
+    background-color:rgb(11, 11, 53);
+    color: rgb(252, 249, 249);
+  }
+  .boton17:hover {
+    background-color:rgb(11, 11, 53);
+    color: rgb(252, 249, 249);
+  }
+  .boton18:hover {
+    background-color:rgb(11, 11, 53);
+    color: rgb(252, 249, 249);
+  }
 
-.boton6{
+.boton5{
+    background-color: #dedee7;
+    width: 700px;
+    height: 100px;
     margin: auto;
     display: flex;
-    border-radius: 0px;
-    text-decoration: none;
+    text-align: right;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px
+}
+.imgboton4,.imgboton5,.imgboton6,.imgboton7,.imgboton8,.imgboton9,.imgboton10,.imgboton11,.imgboton12,.imgboton13,.imgboton14,.imgboton15,.imgboton16,.imgboton17,.imgboton18{
+    width: 80px;
+}
+
+.boton6{
+    background-color: #dedee7;
+    width: 700px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    text-align: right;
     padding: 10px;
     font-weight: 600;
     font-size: 20px
 }
 
 .boton7{
+    background-color: #dedee7;
+    width: 700px;
+    height: 100px;
     margin: auto;
     display: flex;
-    border-radius: 0px;
-    text-decoration: none;
+    text-align: right;
     padding: 10px;
     font-weight: 600;
     font-size: 20px
 }
 
 .boton8{
+    background-color: #dedee7;
+    width: 700px;
+    height: 100px;
     margin: auto;
     display: flex;
-    border-radius: 0px;
-    text-decoration: none;
+    text-align: right;
     padding: 10px;
     font-weight: 600;
     font-size: 20px
 }
 
 .boton9{
+    background-color: #dedee7;
+    width: 700px;
+    height: 100px;
     margin: auto;
     display: flex;
-    border-radius: 0px;
-    text-decoration: none;
+    text-align: right;
     padding: 10px;
     font-weight: 600;
     font-size: 20px
 }
 
 .boton10{
+    background-color: #dedee7;
+    width: 700px;
+    height: 100px;
     margin: auto;
     display: flex;
-    border-radius: 0px;
-    text-decoration: none;
+    text-align: right;
     padding: 10px;
     font-weight: 600;
     font-size: 20px
 }
 
 .boton11{
+    background-color: #dedee7;
+    width: 700px;
+    height: 100px;
     margin: auto;
     display: flex;
-    border-radius: 0px;
-    text-decoration: none;
+    text-align: right;
     padding: 10px;
     font-weight: 600;
     font-size: 20px
 }
 .boton12{
+    background-color: #dedee7;
+    width: 700px;
+    height: 100px;
     margin: auto;
     display: flex;
-    border-radius: 0px;
-    text-decoration: none;
+    text-align: right;
     padding: 10px;
     font-weight: 600;
     font-size: 20px
 }
 
 .boton13{
+    background-color: #dedee7;
+    width: 700px;
+    height: 100px;
     margin: auto;
     display: flex;
-    border-radius: 0px;
-    text-decoration: none;
+    text-align: right;
     padding: 10px;
     font-weight: 600;
     font-size: 20px
 }
 .boton14{
+    background-color: #dedee7;
+    width: 700px;
+    height: 100px;
     margin: auto;
     display: flex;
-    border-radius: 0px;
-    text-decoration: none;
+    text-align: right;
     padding: 10px;
     font-weight: 600;
     font-size: 20px
 }
 
 .boton15{
+    background-color: #dedee7;
+    width: 700px;
+    height: 100px;
     margin: auto;
     display: flex;
-    border-radius: 0px;
-    text-decoration: none;
+    text-align: right;
     padding: 10px;
-    font-weight: 300;
+    font-weight: 600;
     font-size: 20px
 }
 .boton16{
+    background-color: #dedee7;
+    width: 700px;
+    height: 100px;
     margin: auto;
     display: flex;
-    border-radius: 0px;
-    text-decoration: none;
+    text-align: right;
     padding: 10px;
-    font-weight: 300;
+    font-weight: 600;
     font-size: 20px
 }
 
 .boton17{
+    background-color: #dedee7;
+    width: 700px;
+    height: 100px;
     margin: auto;
     display: flex;
-    border-radius: 0px;
-    text-decoration: none;
+    text-align: right;
     padding: 10px;
-    font-weight: 300;
+    font-weight: 600;
     font-size: 20px
 }
 
 .boton18{
+    background-color: #dedee7;
+    width: 700px;
+    height: 100px;
     margin: auto;
     display: flex;
-    border-radius: 0px;
-    text-decoration: none;
+    text-align: right;
     padding: 10px;
-    font-weight: 300;
+    font-weight: 600;
     font-size: 20px
 }
 
