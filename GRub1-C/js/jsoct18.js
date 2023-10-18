@@ -16,9 +16,18 @@ document.title = "Nuevo Título";
 
 /* PROGRAMAR  ELEMENTO / OBJETO HTML. Obtener una referecnia  a un elemento html*/
 
-const titulo = document.getElementById("titulo");
-/* Se utiliza constante porque este no cambiara. Los quecomienzan con get sirven para obtener cosas. GET - OBTENER / SET - CAMBIAR */
+const titulo=document.getElementById("titulo");
+/* Se utiliza constante porque este no cambiara. GET - OBTENER / SET - CAMBIAR */
 
+titulo.innerHTML="Titulo modificado desde javascript";
+/* Propiedad que permite cambiar el contenido*/
+
+titulo.style.color = "black"; 
+titulo.style.backgroundColor = "lightpink";
+titulo.style.border = "3px solid violet";
+titulo.style.borderRadius = "5px";
+titulo.style.textAlign = "center";
+/* Codigo ordenado para manipulacion de contenido */
 
 
 
