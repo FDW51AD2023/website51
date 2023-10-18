@@ -67,6 +67,11 @@ section h1{
     cursor: pointer;
 }
 
+div h2{
+    text-align: center;
+    color: rgb(2, 2, 48);
+}
+
 .boton1{
     display: inline;
     color: aliceblue;
@@ -154,6 +159,33 @@ text-align: center;
     color: black;
     text-align: center;
 }
+
+.alumns div div h3{
+    text-align: center;
+    font: 23.4px "Lato", sans-serif;
+    padding-bottom: 0px;
+    margin-top: 15px;
+}
+
+.alumns div div p{
+    text-align: justify;
+    padding: 0 40px;
+    font: 19.4px "Lato", sans-serif;
+    line-height: 25px;
+}
+
+.alumns div div h2 strong{
+    color: rgb(60, 59, 79);
+}
+
+.alumns div div h3 strong{
+    color: rgb(60, 59, 79);
+}
+
+.alumns div div p strong{
+    color: rgb(60, 59, 79);
+}
+
 
 .boton4{
     background-color: #dedee7;
@@ -425,56 +457,41 @@ article h1{
     text-align: justify
 }
 
-/*div p{
-    color: rgb(11, 11, 53); 
-    margin-left: 380px;
-    margin-right: 380px;
-    text-align: justify;
-    font-size: 22px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}*/
-
-
-.cajachino{
-    margin-left: 125px;
-    margin-right: 125px;
-    justify-content: center;
-    text-align: justify
-}
-
-.cajachino p{
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: right;
-    margin-top: 1em;
-    display: grid;
-    vertical-align: middle;
-
-}
-
-.chino{
-    margin-right: 800px;
-}
-
-.flex-container{
-    display: flex;
-    padding: 15px;
-    margin: 0 auto;
-    flex-flow: row wrap;
-    justify-content: space-around;
-}
-
-.caja{
-    width: 90%;
+#personas{
     text-align: center;
-    margin-top: 90px;
+    width: 1100px;
+    height: 70px;
+    margin: 70px 0 30px 0;
 }
 
-.subcaja{
-    text-align:center;
-    color: rgb(8, 0, 0);
-    margin-top: 15px;
+.alumns{
+    display: flex;
+    flex-direction: column;
 }
+
+.alumns div{
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 50px 0;
+    background-color: rgb(255, 255, 255);
+    height: 320px;
+    box-shadow: 0 0 15px 4px rgb(234, 235, 236);
+}
+
+.alumns div div{
+    flex-direction: column;
+    color: #0a0a24;
+}
+
+.alumns div div h2{
+    text-align: center;
+    font: 23.4px "Lato", sans-serif;
+    padding-top: 50px;
+    margin-bottom: 0px;
+}
+
+
+
 
 header p{
     padding: 15px;
@@ -533,3 +550,6 @@ footer{
 footer a{
     color: #000007;
 }
+
+
+
