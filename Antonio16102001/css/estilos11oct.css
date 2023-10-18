@@ -51,6 +51,10 @@ footer {
     grid-area: h;
 }
 
+#header4 {
+    display: flex;
+}
+
 #mp4 main {
     grid-area: m;
 }
