@@ -1,0 +1,165 @@
+/* h1 {
+    border: 10px dotted gold;
+    border-radius: 50px;
+    background-color: lime;
+    text-align: center;
+    box-shadow: 5px 5px gray;
+    font-size: 100px;
+} */
+
+
+/* Selector universal */
+
+/* *{
+    border: 1px dashed blue;
+} */
+
+/* Selector por id */
+
+/* #link1 {
+    font-size: 20px;
+}
+
+#link6 {
+    background-color: red;
+}
+
+
+.rojo {
+    background-color: red;
+    border: 5px groove tomato;
+    border-radius: 5px;
+}
+
+.verde {
+    background-color: green;
+    border: 5px inset groove greenyellow;
+    border-radius: 5px;
+
+
+}
+
+h1.verde{
+    font-size: 50px ;
+}
+ */
+/* Buscar por atributo sin importar valor */
+
+/* [href] {
+    border-bottom: 5px solid blue;
+} */
+
+/* [lang] {
+    color: aqua;
+} */
+
+
+[href="#"] {
+    background-color: green;
+}
+
+[href*="you"] {
+    color: red;
+}
+
+[href $="mx"] {
+    color: lime;
+}
+
+[href ^="https"] {
+    border: 20px
+}
+
+#mp1 {
+    border-top: 3px solid tomato;
+    border-bottom: 5px solid tomato;
+}
+
+/* main {
+    background-color: blueviolet;
+}
+
+aside {
+    background-color: gold;
+}
+
+/* footer{
+    background-color: orange;
+} */
+
+#mp1 p::first-letter {
+    font-size: 50px;
+}
+
+#mp1 p::first-line {
+
+    background-color: green;
+}
+
+
+#mp1 > footer {
+    background-color: orange;
+}
+
+/* poner borde al pie de los articulos */
+
+#mp1 article > footer {
+    border: 10px double gray;
+}
+
+/* hermano */
+
+#mp1 h2 ~ article {
+    box-shadow: 10px 10px 10px palevioletred;
+}
+
+/* Hemrano Adyacente */
+
+#mp1 h2 + article, #mp1 nav, [href="#"] {
+    border-top: 5px double blue;
+
+}
+
+#mp1 h2 {
+    background-color: tomato;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#mp1 h2:hover {
+    background-color: black;
+    color: tomato;
+    border: 2px solid black;
+}
+
+#mp1 ul li:first-child {
+    border-top: 2px double rebeccapurple;
+
+}
+
+#mp1 ul li:last-child {
+ 
+    border-top: 4px double rebeccapurple;
+}
+
+#mp1 ul li:nth-child(3) {
+ 
+    background-color: blue;
+    color: white;
+}
+
+.formato-lista-1 li:nth-child(odd) {
+    background-color: blue;
+    color: wh;
+}
+
+.formato-lista-1 li:nth-child(even) {
+    background-color: gray;
+    color: wh;
+}
+
+.formato-lista-2 li:nth-child(4n) {
+    background-color: tomato;
+}
+
