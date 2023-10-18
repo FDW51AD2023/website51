@@ -1,0 +1,21 @@
+/*Css para input tipo text*/
+
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input [type="text"] {
+    padding: 8px;
+    border: none;
+    border-bottom: 5px solid black;
+}
+
+.row {
+    margin-bottom: 8px;
+}
+
+.btn {
+    padding: 5px 30px;
+    background-color: black;
+    color: white;
+}
