@@ -134,3 +134,20 @@ body {
     display: block;
     font-size: 1cm;
 }
+
+.divs_desc {
+    display: flex;
+    flex-direction: row;
+}
+
+.divs_text {
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    padding: 8vh;
+}
+
+.divs_text p{
+    align-self : center;
+    font-size: 20px;
+}
