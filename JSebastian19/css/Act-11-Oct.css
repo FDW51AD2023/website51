@@ -57,7 +57,7 @@
   margin: 0 auto;
   max-width: 800px;
   color: white;
-  font-size: 40px;
+  font-size: 50px;
 }
 
 #header2 p, img {
@@ -238,8 +238,8 @@
 
 #header9 p {
   text-align: justify;
-  margin: 0 auto;
-  max-width: 800px;
+  margin-left:260px;
+  margin-right: 260px;
   color: white;
   font-size: 50px;
 }
@@ -279,8 +279,8 @@
 
 #header11 h3 {
   text-align: justify;
-  margin: 0 auto;
-  max-width: 800px;
+  margin-left:260px;
+  margin-right: 260px;
   color: white;
   font-size: 50px;
 }
@@ -319,8 +319,8 @@
 
 #header13 h3 {
   text-align: justify;
-  margin: 0 auto;
-  max-width: 800px;
+  margin-left:260px;
+  margin-right: 260px;
   color: white;
   font-size: 50px;
 }
@@ -373,16 +373,32 @@
 
 #header16 h3 {
   text-align: justify;
-  margin: 0 auto;
-  max-width: 800px;
+  margin-left:250px;
+  margin-right: 250px;
   color: white;
-  font-size: 50px;
+  font-size: 45px;
 }
 
 #header16 p {
   text-align: justify;
-  margin: 0 auto;
-  max-width: 800px;
+  margin-left:250px;
+  margin-right: 250px;
   color: white;
-  font-size: 30px;
+  font-size: 25px;
+}
+
+/* Header 17 */
+
+#header17 {
+  text-align: center;
+  background-color: #1b1b32;
+}
+
+#header17 button {
+  padding: 10px 20px;
+  background-color: #fec647;
+  color: black;
+  border-color: #fec647;
+  cursor: pointer;
+  font-size: 20px;
 }
