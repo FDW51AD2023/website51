@@ -1,4 +1,3 @@
-// Console es para mandar mensajes a la consola.
 console.log("Mensaje enviado a la consola");
 console.warn("Esto es un warning");
 console.error("Esto es un error");
