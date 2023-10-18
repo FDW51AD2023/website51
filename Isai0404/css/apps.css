@@ -1,0 +1,16 @@
+/*css para input con text*/
+
+input[type="text"]{
+    padding: 10px;
+    border: none;
+    border-bottom: 5px solid gray;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.row{
+    margin-bottom: 5px;
+}
+
+.btm{
+    padding: 5px  30px;
+}
