@@ -402,3 +402,53 @@
   cursor: pointer;
   font-size: 20px;
 }
+
+/* Header 18 */
+
+#header18 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2a2a40;
+}
+
+/* Div 1 */
+
+#div1 {
+  color: white;
+  font-size: 15px;
+}
+
+#header18 a {
+  color: white;
+}
+
+#header18 a:hover {
+  text-decoration:none;
+}
+
+/* Header 19 */
+
+#header19 {
+  text-align: center;
+  background-color: #2a2a40;
+}
+
+#header19 hr {
+  margin-top: 0px;
+  margin-left: 120px;
+  margin-right: 120px;
+  border-color: #a8a8ea;
+}
+
+#header19 a {
+  padding-right: 22px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+#header19 a:hover {
+  text-decoration: underline;
+}
