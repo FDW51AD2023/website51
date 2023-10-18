@@ -1,0 +1,263 @@
+/* Paginca codepen */
+
+#headerp{
+    background-color: #0a0a23;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+
+#menu {
+    color: white;
+    border: 1px solid white;    
+    padding: 2.2px;
+    text-decoration: none;
+}
+
+#signIn {
+    padding: 1;
+    background-color: orange;
+    color:black;
+    border: 1px solid white;
+    padding: 1px;
+    text-decoration: none;
+    background: linear-gradient(180deg, rgb(255, 221, 0), orange);  
+    border: 2px solid orange; 
+}
+
+#emoji{
+    border: 1px solid white;
+    padding: 2.2px;
+}
+
+#headerBotones{
+    padding-right: 20px;
+    padding-top: 15px;
+}
+
+#divp{
+    background-color: white;
+}
+
+
+.divp {
+
+    padding-left: 250px;
+    padding-right: 250px;
+    font-family: sans-serif;
+    font-size: 2em;
+    margin: 0.67em 0;
+    text-align: left;
+
+    
+}
+
+#logos{
+    height: 60px;
+    width: 750px;
+    padding-left: 300px;
+}
+
+#boton1{
+    border-radius: 5px;
+    font-size: 25px;
+    width: 500px;
+    height: 50px;
+    background: linear-gradient(180deg, rgb(255, 221, 0), orange);  
+    border: 2px solid orange;  
+    cursor: pointer;
+}
+
+#contenedorBoton{
+    padding-left: 425px;
+}
+
+#img1{
+    padding-left: 300px;
+}
+
+.par{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#img2{
+    width: 1500px;
+    height: 300px;
+}
+
+.alumni{
+    text-align: center;
+    font-family: sans-serif;    
+    font-size: 40px;
+}
+
+
+.alumnos {    
+    padding-left: 120px;
+    padding-right: 120px;    
+}
+
+
+
+.alumnos main{
+    grid-area: m;
+}
+
+.alumnos aside{
+    grid-area: a;
+}
+
+.alumnidesc{    
+    padding-left: 50px;     
+    padding-right: 50px;
+}
+
+.tarjetaAlumnos{
+    background-color: #fff;  
+    box-shadow: 5px 5px 5px #e8e8e8;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas:   "a m";
+    gap: 10px;
+}
+
+.alumnidesc > .alumNombre{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#434141da; 
+    font-size: 20px;
+}
+
+.alumnidesc > .alumDesc{    
+    font-family: Arial, Helvetica, sans-serif;
+    color:#434141da; 
+    font-size: 20px;
+}
+
+.btnOpciones{
+    background-color: #D1D0D6;
+    border: 3px solid #1B1B33;
+    width: 820px;
+}
+
+.btnOpciones:hover {    
+    background-color: #1B1B33;
+    color: white;    
+}
+
+.divOpciones{
+    padding-left: 250px;
+    padding-right: 250px;
+    font-family: sans-serif;
+    font-size: 2em;
+    margin: 0.67em 0;    
+}
+
+.btnContainer{
+    display: flex;
+}
+
+.btnImg{    
+    padding-top: 8px; 
+    padding-left: 8px;   
+    width: 60px;
+    height: 50px;
+}
+
+.btnTxt{    
+    padding-left: 10px;
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+.btnSimb{
+    position: absolute;
+    padding-top: 8px;
+    padding-left: 750px;
+    width: 50px;
+    height: 50px;
+}
+
+.divPreguntas{
+    padding-left: 250px;
+    padding-right: 250px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;    
+    margin: 0.67em 0;
+    text-align: left;
+}
+
+.divPreguntas > h2{
+    font-size: 2em;    
+}
+
+.divPreguntas > p{
+    font-size: 17px;    
+}
+
+.pregunta{
+    font-size: 23px !important; 
+}
+
+footer{
+    background-color: #DFDEE2;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px; 
+    font-family: sans-serif;
+    font-size: 17px;
+}
+
+.column {    
+    padding: 10px;
+}
+
+.txtCentrado{
+    text-align: center;
+}
+
+#footerDesc{
+    padding-top: 130px;
+}
+
+strong>a{
+    color:black; 
+    text-decoration: none;;  
+    border-bottom: 1px solid black; 
+}
+
+strong>a:hover{
+    border-bottom: none;
+}
+
+.column>a{    
+    color:black;
+    text-decoration: none;        
+}
+
+.column>a:hover{
+    border-bottom: 1px solid black;
+}
+
+#ultimodiv{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: sans-serif;
+    color: black;
+
+}
+
+#ultimodiv a{
+    text-decoration: none;
+    color: #585859;
+}
+
+#search{
+    background-color: #151535;
+    color: white;
+    font-size: 20px;
+}
