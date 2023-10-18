@@ -83,14 +83,20 @@ footer {
     display: flex;
 }
 
-#s1 h1{
-    color: rgb(29, 29, 31);
+#s1{
+    background-color: rgb(242, 242, 247);
+    color: rgb(48, 48, 58);
     font-family: monospace;
     font-size: large;
 }
 
-#s1 h1{
-    color: rgb(29, 29, 31);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: medium;
+#s2{
+    background-color: rgb(59, 59, 77);
+    color: rgb(255, 255, 255);
+    font-family: monospace;
+    font-size: large;
+}
+
+img{
+    align-items: center;
 }

@@ -57,7 +57,7 @@
   margin: 0 auto;
   max-width: 800px;
   color: white;
-  font-size: 40px;
+  font-size: 50px;
 }
 
 #header2 p, img {
@@ -238,9 +238,8 @@
 
 #header9 p {
   text-align: justify;
-  position: absolute;
-  top: 2480px;
-  left: 260px;
+  margin-left:260px;
+  margin-right: 260px;
   color: white;
   font-size: 50px;
 }
@@ -279,12 +278,13 @@
 }
 
 #header11 h3 {
-  position: absolute;
-  top: 3480px;
-  left: 260px;
+  text-align: justify;
+  margin-left:260px;
+  margin-right: 260px;
   color: white;
   font-size: 50px;
 }
+
 
 /* Header 12 */
 
@@ -319,12 +319,12 @@
 
 #header13 h3 {
   text-align: justify;
-  position: absolute;
-  top: 3650px;
-  left: 260px;;
+  margin-left:260px;
+  margin-right: 260px;
   color: white;
   font-size: 50px;
 }
+
 
 #header14 {
   text-align: center;
@@ -362,4 +362,93 @@
   border-color: #fec647;
   cursor: pointer;
   font-size: 20px;
+}
+
+/* Header 16 */
+
+#header16 {
+  text-align: center;
+  background-color: #1b1b32;
+}
+
+#header16 h3 {
+  text-align: justify;
+  margin-left:250px;
+  margin-right: 250px;
+  color: white;
+  font-size: 45px;
+}
+
+#header16 p {
+  text-align: justify;
+  margin-left:250px;
+  margin-right: 250px;
+  color: white;
+  font-size: 25px;
+}
+
+/* Header 17 */
+
+#header17 {
+  text-align: center;
+  background-color: #1b1b32;
+}
+
+#header17 button {
+  padding: 10px 20px;
+  background-color: #fec647;
+  color: black;
+  border-color: #fec647;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Header 18 */
+
+#header18 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2a2a40;
+}
+
+/* Div 1 */
+
+#div1 {
+  color: white;
+  font-size: 15px;
+}
+
+#header18 a {
+  color: white;
+}
+
+#header18 a:hover {
+  text-decoration:none;
+}
+
+/* Header 19 */
+
+#header19 {
+  text-align: center;
+  background-color: #2a2a40;
+}
+
+#header19 hr {
+  margin-top: 0px;
+  margin-left: 120px;
+  margin-right: 120px;
+  border-color: #a8a8ea;
+}
+
+#header19 a {
+  padding-right: 22px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+#header19 a:hover {
+  text-decoration: underline;
 }
