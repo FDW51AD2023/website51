@@ -15,10 +15,10 @@ app1BtnCalcular.addEventListener("click", (e) => {
     app1Res.value = suma;
 });
 
-/* app2 */
+/* app 2 */
 const app2Num1 = document.getElementById("app2Num1")
 const app2Num2 = document.getElementById("app2Num2")
-const app2Sum = document.getElementById("app2Sum")
+const app2Res = document.getElementById("app2Res")
 
 const app2BtnCalcular = document.getElementById("app2BtnCalcular")
 app2BtnCalcular.addEventListener("click", (e) => {
@@ -26,27 +26,44 @@ app2BtnCalcular.addEventListener("click", (e) => {
 
     let num1 = parseInt (app2Num1.value);
     let num2 = parseInt (app2Num2.value);
-    let suma = num1 + num2;
-
-    app2Sum.value = suma;
-
-});
-
-const rapp2Num1 = document.getElementById("app2Num1")
-const rapp2Num2 = document.getElementById("app2Num2")
-const rapp2Rest = document.getElementById("app2Sum")
-
-const rapp2BtnCalcular = document.getElementById("app2BtnCalcular")
-app2BtnCalcular.addEventListener("click", (e) => {
-    e.preventDefault();
-
-    let num1 = parseInt (app2Num1.value);
-    let num2 = parseInt (app2Num2.value);
     let resta = num1 - num2;
 
-    app2Rest.value = resta;
-
+    app2Res.value = resta;
 });
+
+/* app 3 */
+const app3Num1 = document.getElementById("app3Num1")
+const app3Num2 = document.getElementById("app3Num2")
+const app3Res = document.getElementById("app3Res")
+
+const app3BtnCalcular = document.getElementById("app3BtnCalcular")
+app3BtnCalcular.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    let num1 = parseInt (app3Num1.value);
+    let num2 = parseInt (app3Num2.value);
+    let multiplicacion = num1 * num2;
+
+    app3Res.value = multiplicacion;
+});
+
+/* app 4 */
+const app4Num1 = document.getElementById("app4Num1")
+const app4Num2 = document.getElementById("app4Num2")
+const app4Res = document.getElementById("app4Res")
+
+const app4BtnCalcular = document.getElementById("app4BtnCalcular")
+app4BtnCalcular.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    let num1 = parseInt (app4Num1.value);
+    let num2 = parseInt (app4Num2.value);
+    let multiplicacion = num1 / num2;
+
+    app4Res.value = multiplicacion;
+});
+
+
 
 
 
