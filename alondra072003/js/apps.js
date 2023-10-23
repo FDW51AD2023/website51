@@ -1,3 +1,66 @@
+/* App6 */
+
+const app6Tabla = document.getElementById("app6Tabla");
+const app6Inv = document.getElementById("app6Inv");
+const app6SoloPunto = document.getElementById("app6SoloPunto");
+const app6Res = document.getElementById("app6Res");
+const app6BtnVer = document.getElementById("app6BtnVer");
+
+/* checar si se marco tabla invertida */
+if(app6Inv.checked){
+    
+}
+
+
+
+
+
+
+/* App5 */
+
+const app5Num1 = document.getElementById("app5Num1");
+const app5Num2 = document.getElementById("app5Num2");
+const app5Operacion = document.getElementById("app5Operacion");
+const app5Res = document.getElementById("app5Res");
+const app5BtnCalcular = document.getElementById("app5BtnCalcular");
+
+app5BtnCalcular.addEventListener("click", (e) => {
+    e.preventDefault();
+    let num1 = parseInt(app5Num1.value);
+    let num2 = parseInt(app5Num2.value);
+    let operacion = app5Operacion.value;
+    let resultado;
+
+    /* if(operacion == "s"){
+        resultado = num1+num2;
+    }
+    else if (operacion == "r"){
+        resultado = num1-num2;
+
+    }
+    else if(operacion == "m"){
+        resultado = num1 * num2;
+    }
+    else if(operacion == "d"){
+        resultado = num1 / num2;
+    }
+ */
+   
+    switch(operacion){
+        case "s": resultado = num1 + num2;
+                  break;
+        case "r": resultado = num1 - num2;
+                  break;
+        case "m": resultado = num1*num2;
+                  break;
+        case "d": resultado = num1 / num2;
+                  break;
+    }
+    app5Res.value = resultado;
+});
+ 
+
+
 
 /* App1 */
 
@@ -32,3 +95,41 @@ app2BtnCalcular.addEventListener( "click", (e) => {
     let resta = num1 - num2 ;
     app2Res.value = resta;
 });
+
+/* App3 */
+
+const app3Num1 = document.getElementById("app3Num1");
+const app3Num2 = document.getElementById("app3Num2");
+const app3Res = document.getElementById("app3Res");
+
+const app3BtnCalcular = document.getElementById("app3BtnCalcular");
+
+app3BtnCalcular.addEventListener( "click", (e) => { 
+    e.preventDefault();
+
+    let num1= parseInt(app3Num1.value);
+    let num2 = parseInt(app3Num2.value);
+    let multiplicacion = num1 * num2 ;
+    app3Res.value = multiplicacion;
+});
+
+/* App4 */
+
+const app4Num1 = document.getElementById("app4Num1");
+const app4Num2 = document.getElementById("app4Num2");
+const app4Res = document.getElementById("app4Res");
+
+const app4BtnCalcular = document.getElementById("app4BtnCalcular");
+
+app4BtnCalcular.addEventListener( "click", (e) => { 
+    e.preventDefault();
+
+    let num1= parseInt(app4Num1.value);
+    let num2 = parseInt(app4Num2.value);
+    let division = num1 / num2 ;
+    app4Res.value = division;
+});
+
+
+
+
