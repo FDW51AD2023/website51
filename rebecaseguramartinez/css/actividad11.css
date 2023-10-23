@@ -304,19 +304,4 @@ main {
     justify-content: center;
 }
 
-#boton22 {
-    background-color: #fec849;
-    color: black;
-    text-align: center;
-    height: 70px;
-    width: 700px;
-    font-size: 17px;
-    margin-top: 50px;
-    border: 2px solid #a68337;
-} 
 
-#boton22:hover {
-    background-color: #e7ae33f2;
-    color: black;
-    border: 2px solid #a68337;
-}
