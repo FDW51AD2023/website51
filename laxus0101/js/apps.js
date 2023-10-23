@@ -1,3 +1,39 @@
+/* App3 */
+
+
+const app3Num1 = document.getElementById("app3Num1")
+const app3Num2 = document.getElementById("app3Num2")
+const App3operacion = document.getElementById("app3operacion")
+const app3Res = document.getElementById("app3Res")
+const app3BtnCalcular = document.getElementById("app3BtnCalcular")
+
+
+app3BtnCalcular.addEventListener("click", (e)=> {
+    e.preventDefault();
+
+let app3num1 = parseInt(app3Num1.value)
+let app3num2 = parseInt(app3Num2.value)
+let operacion = App3operacion.value;
+let app3resultado;
+
+if(operacion == "S"){
+    app3resultado = app3num1 + app3num2;
+}
+else if(operacion == "R"){
+    app3resultado = app3num1 - app3num2;
+}
+else if(operacion == "M"){
+    app3resultado = app3num1 * app3num2;
+}
+else if(operacion == "D"){
+    app3resultado = app3num1 / app3num2;
+}
+
+app3Res.value=app3resultado;
+});
+
+
+
 /* App1 */
 
 
