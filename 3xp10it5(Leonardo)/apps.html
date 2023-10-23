@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicaciones</title>
+    <link rel="stylesheet" href="css/apps.css">
+</head>
+<body>
+    <h1>Apps</h1>
+    <form  id="app1" action="">
+        <h2>Aplicación para sumar dos numeros</h2>
+
+        <div class="row">
+
+            <label for="app1Num1">Numero:</label>
+            <input type="text" name="app1Num1" id="app1Num1">
+
+        </div>
+
+        <div class="row">
+
+            <label for="app1Num2">Numero:</label>
+            <input type="text" name="app1Num2" id="app1Num2">
+
+        </div>
+
+        <div class="row">
+            <label for="app1Res">Resultado:</label>
+            <input readonly type="text" name="app1Res" id="app1Res">
+
+        </div>
+
+        <div id="botones_res">
+            <div>
+                <input id="app1BtnCalcular" class="btn" type="submit" value="Calcular Suma">
+                </input>
+            </div>
+            <div>
+                <input id="resta" class="btn" type="submit" value="Calcular Resta">
+                </input>
+            </div>
+            <div>
+                <input id="division" class="btn" type="submit" value="Calcular division">
+                </input>
+            </div>
+            <div>
+                <input id="multiplicacion" class="btn" type="submit" value="Calcular multiplicacion">
+                </input>
+            </div>
+        </div>
+
+
+    </form>
+
+    
+
+    <form id="app1" action="">
+        <h2>Aplicacion para sumar dos numeros</h2>
+
+        <div class="row">
+            <label for="app1Num1">Numero:</label>
+            <input type="text" name="app1Num1" id="app1Num1">
+        </div>
+        
+        <div class="row">
+            <label for="app1Num2">Numero:</label>
+            <input type="text" name="app1Num2" id="app1Num2">
+        </div>
+
+        <div class="row">
+            <label for="">Operacion</label>
+            <select name="App3operacion" id="App3operacion">
+                <option value="S">Suma</option>
+                <option value="R">Resta</option>
+                <option value="M">multiplicacion</option>
+                <option value="D">Division</option>
+            </select>
+        </div>
+
+        <div class="row">
+            <label for="app1Res">Resultado:</label>
+            <input readonly type="text" name="app1Res" id="app1Res">
+        </div>
+
+        <div>
+            <input id="app1BtnCalcular" class="btn" type="submit" value="Calcular">
+        </div>
+    </form>
+
+    
+
+    <script src="js/apps.js"></script>
+</body>
+</html>
