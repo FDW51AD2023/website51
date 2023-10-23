@@ -1,7 +1,7 @@
 
 console.log("Mensaje enviado a la consola");
 console.warn("Esto es un waring");
-console.log("Esto es un error");
+console.error("Esto es un error");
 console.info("Esto es informacion");
 
 document.write("Mensaje desde javascript");
