@@ -36,3 +36,56 @@ app2bc.addEventListener("click",(e) =>{
     app2res3.value = multiplicacion
     app2res4.value=divicion
 })
+
+/* app3*/
+const app3Num1 = document.getElementById("app3Num1");
+const app3Num2 = document.getElementById("app3Num2");
+const app3op = document.getElementById("app3op");
+const app3res = document.getElementById("app3res");
+const app3bc = document.getElementById("app3bc");
+
+app3bc.addEventListener("click",(e)=>{
+    e.preventDefault();
+    let num1 = parseInt(app3Num1.value)
+    let num2 = parseInt(app3Num2.value)
+    let op = app3op.value
+    let resultado;
+/*
+    if(op == "s"){
+        resultado = num1 + num2
+    }
+    else if(op== "r"){
+        resultado= num1 - num2
+    }
+    else if(op=="m"){
+        resultado = num1 * num2
+    }
+    else if (op=="d"){
+        resultado= num1 / num2
+    }
+    */
+    switch(op){
+        case "s": resultado = num1 + num2;
+                break;
+        case "r": resultado = num1 - num2;
+                break;
+        case "m": resultado = num1 * num2;
+                break;
+        case "d": resultado= num1 / num2;
+                break;}
+    app3res.value = resultado
+});
+
+/* app 4*/
+for(let cont=1; cont <=10; cont++){
+    console.log(cont);
+}
+const app4tabla = document.getElementById(app4tab);
+const app4inv = document.getElementById(app4inv)
+const app4solo = document.getElementById(solo)
+const app4res = document.getElementById(app4res)
+const app4bc = document.getElementById(app4bc)
+
+if(inv.checked){}
+
+/* el cont++ es para que el incremento sea de 1 en 1 */
