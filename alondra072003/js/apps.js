@@ -32,3 +32,37 @@ app2BtnCalcular.addEventListener( "click", (e) => {
     let resta = num1 - num2 ;
     app2Res.value = resta;
 });
+
+/* App3 */
+
+const app3Num1 = document.getElementById("app3Num1");
+const app3Num2 = document.getElementById("app3Num2");
+const app3Res = document.getElementById("app3Res");
+
+const app3BtnCalcular = document.getElementById("app3BtnCalcular");
+
+app3BtnCalcular.addEventListener( "click", (e) => { 
+    e.preventDefault();
+
+    let num1= parseInt(app3Num1.value);
+    let num2 = parseInt(app3Num2.value);
+    let multiplicacion = num1 * num2 ;
+    app3Res.value = multiplicacion;
+});
+
+/* App4 */
+
+const app4Num1 = document.getElementById("app4Num1");
+const app4Num2 = document.getElementById("app4Num2");
+const app4Res = document.getElementById("app4Res");
+
+const app4BtnCalcular = document.getElementById("app4BtnCalcular");
+
+app4BtnCalcular.addEventListener( "click", (e) => { 
+    e.preventDefault();
+
+    let num1= parseInt(app4Num1.value);
+    let num2 = parseInt(app4Num2.value);
+    let division = num1 / num2 ;
+    app4Res.value = division;
+});
