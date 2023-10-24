@@ -1,12 +1,13 @@
-* {
+*{
     font-family: sans-serif;
 }
-/*  CSS PARA INPUT tipo texto*/
+
+/* css para input tipo texto */
 
 input[type="text"]{
     padding: 8px;
     border: none;
-    border-bottom: 2px solid violet;
+    border-bottom: 3px solid black;
 }
 
 .row {
@@ -15,6 +16,10 @@ input[type="text"]{
 
 .btn {
     padding: 5px 30px;
-
 }
+
+
+
+
+
 

@@ -7,10 +7,67 @@
     <link rel="stylesheet" href="css/apps.css">
 </head>
 <body>
+    <h2>App 4</h2>
+    <form id="app4" action="">
+        <h2>Aplicacion para tablas de Multiplicar</h2>
+        <div class="row">
+            <input type="checkbox" name="app4Inv" id="app4Inv">
+            <label for="app4tabla">Tabla:</label>
+        </div>
+        <div class="row">
+            <input type="checkbox" name="app4SoloPunto" id="app4SoloPunto">
+            <label for="app4Num2">Numero 2:</label>
+        </div>
+        <div class="row">
+            <label for="">Operacion:</label>
+            <select name="app3Operacion" id="app3Operacion">
+                <option value="s">Suma</option>
+                <option value="r">Resta</option>
+                <option value="m">Multiplicacion</option>
+                <option value="d">Division</option>
+            </select>
+        </div>
+        <div class="row">
+            <label for="app4Res">Resultado:</label>
+        </div>
+        <div>
+            <input id="app4BtnVer" class="btn" type="submit" value="Calcular">
+        </div>
+    </form>
+
+    <h2>App 3</h2>
+    <form id="app3" action="">
+        <h2>Aplicacion para sumar dos numeros</h2>
+        <div class="row">
+            <label for="app3Num1">Numero 1:</label>
+            <input type="text" name="app_restaNum1" id="app3Num1">
+        </div>
+        <div class="row">
+            <label for="app3Num2">Numero 2:</label>
+            <input type="text" name="app_2Num2" id="app3Num2">
+        </div>
+        <div class="row">
+            <label for="">Operacion:</label>
+            <select name="app3Operacion" id="app3Operacion">
+                <option value="s">Suma</option>
+                <option value="r">Resta</option>
+                <option value="m">Multiplicacion</option>
+                <option value="d">Division</option>
+            </select>
+        </div>
+        <div class="row">
+            <label for="app3Resultado">Resultado:</label>
+            <input readonly type="text" name="app3Res" id="app3Res">
+        </div>
+        <div>
+            <input id="app_3BtnCalcular" class="btn" type="submit" value="Calcular">
+        </div>
+    </form>
+
     <h1>Apps</h1>
     <h2>Suma</h2>
     <form id="app1" action="">
-        <h2>Aplicacion para sumer dos numeros</h2>
+        <h2>Aplicacion para sumar dos numeros</h2>
         <div class="row">
             <label for="app1Num1">Numero 1:</label>
             <input type="text" name="app1Num1" id="app1Num1">
@@ -30,7 +87,7 @@
 
     <h2>Resta</h2>
     <form id="app_resta" action="">
-        <h2>Aplicacion para sumer dos numeros</h2>
+        <h2>Aplicacion para restar dos numeros</h2>
         <div class="row">
             <label for="app_restaNum1">Numero 1:</label>
             <input type="text" name="app_restaNum1" id="app_restaNum1">
@@ -50,7 +107,7 @@
 
     <h2>Multiplicacion</h2>
     <form id="app_multiplicacion" action="">
-        <h2>Aplicacion para sumer dos numeros</h2>
+        <h2>Aplicacion para Multiplicar dos numeros</h2>
         <div class="row">
             <label for="app_multiplicacionNum1">Numero 1:</label>
             <input type="text" name="app_multiplicacionNum1" id="app_multiplicacionNum1">
@@ -70,7 +127,7 @@
 
     <h2>Division</h2>
     <form id="app_division" action="">
-        <h2>Aplicacion para sumer dos numeros</h2>
+        <h2>Aplicacion para dividir dos numeros</h2>
         <div class="row">
             <label for="app_divisionNum1">Numero 1:</label>
             <input type="text" name="app_divisionNum1" id="app_divisionNum1">
@@ -90,3 +147,4 @@
     <script src="js/apps.js" ></script>
 </body>
 </html>
+
