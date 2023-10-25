@@ -85,6 +85,9 @@ app3BtnCalcular.addEventListener("click",(e)=> {
 });
 
 
+
+
+
 /* APP 4 */
   /*     variable; contador; incrementador */
 
@@ -94,42 +97,80 @@ const app4SoloPunto = document.getElementById("app4SoloPunto");
 const app4Res = document.getElementById("app4Res");
 const app4BtnVer = document.getElementById("app4BtnVer");
 
-app4BtnVer.addEventListener ("click",(e) => {
-  e.preventDefault();
+function mostrartabla(){
+    app4BtnVer.addEventListener ("click",(e) => {
+    e.preventDefault();
+  
+    let tabla = parseInt(app4Tabla.value);
+     
+    let lista = document.createElement("ul");
+  
+  
+    if(!app4Inv.checked){
+       for(let i=1 ;i<=10; i++){
+  
+          let resMult = app4SoloPunto.checked ? ".".repeat(tabla* i) : tabla * i;
+  
+          /* let resMult;
+          if(app4SoloPunto.checked){
+              resMult = ".".repeat(tabla* i);
+          }
+          else{
+              resMult = tabla * i;
+          } */
+  
+          let item = document.createElement("li");
+          item.innerHTML = tabla + " X " + i +  " = " + resMult;
+          lista.appendChild(item);
+       }
+    }
+    else {
+       for(let i=10 ;i>=1; i--){
+  
+          let resMult = app4SoloPunto.checked ? ".".repeat(tabla* i) : tabla * i;
+  
+  
+          /* if(app4SoloPunto.checked){
+              resMult = ".".repeat(tabla* i);
+          }
+          else{
+              resMult = tabla * i;
+          } */
+  
+          let item = document.createElement("li");
+          item.innerHTML = tabla + " X " + i +  " = " + resMult;
+          lista.appendChild(item);
+       }
+    }
+    /* practicar mandar a la consola - en lista  */
+    app4Res.innerHTML = "";
+    app4Res.appendChild(lista);
+  });
 
-  let tabla = parseInt(app4Tabla.value);
-   
-  let lista = document.createElement("ul");
+}
+app4Inv.addEventListener("change", )
 
 
-  if(!app4Inv.checked){
-     for(let i=1 ;i<=10; i++){
-        let resMult;
-        if(app4SoloPunto.checked){
-            resMult = ".".repeat(tabla* i);
-        }
-        else{
-            resMult = tabla * i;
-        }
-        let item = document.createElement("li");
-        item.innerHTML = tabla + " X " + i +  " = " + resMult;
-        lista.appendChild(item);
-     }
-  }
-  else {
-     for(let i=10 ;i>=1; i--){
-        if(app4SoloPunto.checked){
-            resMult = ".".repeat(tabla* i);
-        }
-        else{
-            resMult = tabla * i;
-        }
-        let item = document.createElement("li");
-        item.innerHTML = tabla + " X " + i +  " = " + resMult;
-        lista.appendChild(item);
-     }
-  }
-  /* practicar mandar a la consola - en lista  */
-  app4Res.innerHTML = "";
-  app4Res.appendChild(lista);
-});
+
+/* App5 */
+
+const app5borde = document.getElementById("app5borde");
+const app5color = document.getElementById("app5color");
+const app5grosor = document.getElementById("app5grosor");
+const app5tipo = document.getElementById("app5tipo");
+const div_prueba = document.getElementById("div_prueba");
+
+
+app5ver.addEventListener("click",(e) => { 
+    e.preventDefault();
+    div_prueba.style.border = app5borde;
+    div_prueba.style.backgroundColor = app5color;
+    div_prueba.style.borderWidth = app5grosor;
+    div_prueba.style.borderStyle = app5tipo;
+    app1Res.value = suma;
+ });
+
+
+
+
+
