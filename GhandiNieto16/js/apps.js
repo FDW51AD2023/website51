@@ -2,16 +2,65 @@
 
 const app4Tabla = document.getElementById("app4Tabla");
 const app4Inv = document.getElementById("app4Inv");
-const app4SoloPunto = document.getElementById("app4SoloPunto")
+const app4SoloPunto = document.getElementById("app4SoloPunto");
 const app4Res = document.getElementById("app4Res");
 const app4BtnVer = document.getElementById("app4BtnVer");
 
+app4BtnVer.addEventListener("click",(e) =>{
+    e.preventDefault();
+    let tabla = parseInt(app4Tabla.value);
 
-/* Checar si se marco la tabla invertida */
+    let lista = document.createElement("ul");
 
-if (app4Inv.checked){
+
+    /* Primero va el objeto "app4Inv" */
+    if( !app4Inv.checked){
+
+        for(let i=1; i <=10; i++){
+            let resMult;
+            /* repeat es un metodo para cadenas */
+            if(app4SoloPunto.checked){
+                resMult=".".repeat(tabla * i)
+            }
+            else{
+                resMult = tabla*i;
+            }
+            let item = document.createElement("li");
+            /* Contenido que va dentro del elemento */
+            item.innerHTML=tabla+" X "+i+" = "+ resMult;
+            lista.appendChild(item);
+        }
+    }
+
+    else{
+        for(let i=10; i >=1; i--){
+            let resMult;
+            /* repeat es un metodo para cadenas */
+            if(app4SoloPunto.checked){
+                resMult=".".repeat(tabla * i)
+            }
+            else{
+                resMult = tabla*i;
+            }
+            let item = document.createElement("li");
+            /* Contenido que va dentro del elemento */
+            item.innerHTML=tabla+" X "+i+" = "+ resMult;
+            lista.appendChild(item);
+        }
+
+    }
     
-};
+
+    /* Esto se mando a un div como lista */
+
+    /*  Dejar el elemento vacio */
+    app4Res.innerHTML="";
+    /* Mandar al HTML el conetnido de JS */
+    app4Res.appendChild(lista);
+
+});
+
+/* Mandar a la consola; Mandar una caja ; Mandar a un elemento */
 
 /* Inicialización, Repetición (mientras cont sea menor o igual a 10 el ciclo se va a estar reptitiendo), en cuanto aumenta */
 for(let cont = 1; cont <=10; cont++){
