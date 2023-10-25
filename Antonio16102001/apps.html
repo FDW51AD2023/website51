@@ -13,30 +13,32 @@
 
         <div class="row">
             <label for="app4Tabla">Tabla:</label>
-            <input type="text" name="app4Tabla" id="app4Tabla">
+            <input type="text" name="app4Tabla" id="app4Tabla1">
         </div>
         
         <div class="row">
             <input type="checkbox" name="app4Inv" id="app4Inv">
-            <label for="app4Inv">Tabla invertida</label>
+            <label for="app4Num2">Tabla invertida</label>
         </div>
         <div class="row">
-            <input type="checkbox" name="app4SoloPunto" id="app4SoloPunto">
+            <input type="checkbox" name="app4SoloPunto"
+            id="app4SoloPunto">
             <label for="app4SoloPunto">Mostrar resultados con el simbolo (.)</label>
         </div>
+        
         <div class="row">
             <label for="app4Res">Resultado:</label>
-            <div id="app4Res">
+            <div id="appRes">
 
             </div>
         </div>
 
-        <div>
+        <div class="row">
             <input id="app4BtnVer" class="btn" type="submit" value="Ver tabla">
+            <label for="app4BtnVer"></label>
         </div>
-    </form>
-
-    <form id="app3" action="">
+    
+        <form id="app3" action="">
         <h2>Aplicacion para operaciones aritmeticas</h2>
 
         <div class="row">
@@ -45,11 +47,11 @@
         </div>
         
         <div class="row">
-            <label for="app#Num2">Numero:</label>
+            <label for="app3Num2">Numero:</label>
             <input type="text" name="app3Num2" id="app3Num2">
         </div>
         <div class="row">
-            <label for="">Operacion:</label>
+            <label for="app3Num2">Operacion</label>
             <select name="app3Operacion" id="app3Operacion">
                 <option value="s">Suma</option>
                 <option value="r">Resta</option>
@@ -57,16 +59,16 @@
                 <option value="d">Division</option>
             </select>
         </div>
+        
         <div class="row">
             <label for="app3Res">Resultado:</label>
-            <input readonly type="text" name="app3Res" id="app3Res">
+            <input  readonly  type="text" name="app3Res" id="app3Res">
         </div>
 
-        <div>
+        <div class="row">
             <input id="app3BtnCalcular" class="btn" type="submit" value="Calcular">
         </div>
-    </form>
- 
+    
     <form id="app1" action="">
         <h2>Aplicacion para sumar dos numeros</h2>
 
@@ -79,16 +81,48 @@
             <label for="app1Num2">Numero:</label>
             <input type="text" name="app1Num2" id="app1Num2">
         </div>
+        
         <div class="row">
             <label for="app1Res">Resultado:</label>
-            <input readonly type="text" name="app1Res" id="app1Res">
+            <input  readonly  type="text" name="app1Res" id="app1Res">
         </div>
 
-        <div>
+        <div class="row">
             <input id="app1BtnCalcular" class="btn" type="submit" value="Calcular">
         </div>
-    </form>
+
+        <form id="app2" action="">
+            <h2>Aplicacion para sumar, multiplicar, dividir numeros</h2>
     
+            <div class="row">
+                <label for="app2Num1">Numero:</label>
+                <input type="text" name="app2Num1" id="app2Num1">
+            </div>
+            
+            <div class="row">
+                <label for="app2Num2">Numero:</label>
+                <input type="text" name="app2Num2" id="app2Num2">
+            </div>
+            
+            <div class="row">
+                <label for="app2Sum">SUMA:</label>
+                <input  readonly  type="text" name="app2Sum" id="app2Sum">
+            </div>
+            
+            <div class="row">
+                <label for="app2Multi">MULTIPLICAR:</label>
+                <input  readonly  type="text" name="app2Multi" id="app2Multi">
+            </div>
+            
+            <div class="row">
+                <label for="app2Divi">DIVIDIR:</label>
+                <input  readonly  type="text" name="app2Divi" id="app2Divi">
+            </div>
+    
+            <div class="row">
+                <input id="app2BtnCalcular" class="btn" type="submit" value="Calcular">
+            </div>
+    </form>
     <script src="js/apps.js"></script>
 </body>
 </html>

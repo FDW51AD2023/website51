@@ -83,6 +83,59 @@
             <input readonly id="app4BtnCalcular" class="btn" type="submit" value="Calcular">            
         </div>
     </form>
+    <hr>
+    <form id="app5" action="">
+        <h2>Operaciones Aritmeticas</h2>
+        <div class="row">
+            <label for="app5Num1">Numero:</label>
+            <input type="text" name="app5Num1" id="app5Num1">
+        </div>
+        <div class="row">
+            <label for="app5Num2">Numero:</label>
+            <input type="text" name="app5Num2" id="app5Num2">
+        </div>
+        <div class="row">
+            <label for="">Operacion:</label>
+            <select name="app5Operacion" id="app5Operacion">
+                <option value="s">Suma</option>
+                <option value="r">Resta</option>
+                <option value="m">Multiplicacion</option>
+                <option value="d">Division</option>
+            </select>
+        </div>
+        <div class="row">
+            <label for="app5Res">Resultado:</label>
+            <input type="text" name="app5Res" id="app5Res">
+        </div>
+        <div class="row">
+            <input readonly id="app5BtnCalcular" class="btn" type="submit" value="Calcular">            
+        </div>
+    </form>
+    <hr>
+    <form id="app6" action="">
+        <h2>Applicacion para tabla Multiplicar</h2>
+        <div class="row">
+            <label for="app6Tabla">Tabla:</label>
+            <input type="text" name="app6Tabla" id="app6Tabla">
+        </div>
+        <div>
+            <input type="checkbox" name="app6Inv" id="app6Inv">
+            <label for="app6Inv">Tabla Invertida:</label>
+        </div>
+        <div class="row">
+            <input type="checkbox" name="app6SoloPunto" id="app6SoloPunto">
+            <label for="app6SoloPunto">Mostrar resultados con el simbolo (.)</label>
+        </div>
+        <div class="row">
+            <label for="app6Res">Resultado:</label>
+            <div id="app6Res">
+
+            </div>
+        </div>
+        <div class="row">
+            <input readonly id="app6BtnVer" class="btn" type="submit" value="Ver Tabla">            
+        </div>
+    </form>
     <script src="js/apps.js"></script>
 </body>
 </html>
