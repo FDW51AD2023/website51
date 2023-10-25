@@ -1,3 +1,14 @@
+/* App7 */
+
+const app7Tabla = document.getElementById("app7Tabla");
+const app7Borde = document.getElementById("app7Borde");
+const app7Color = document.getElementById("app7Color");
+const app7Grosor = document.getElementById("app7Grosor");
+const app7Tipo = document.getElementById("app7Tipo");
+const app7DivPrueba = document.getElementById("app7DivPrueba");7
+const app7BtnVer = document.getElementById("app7BtnVer");
+
+
 /* App6 */
 
 const app6Tabla = document.getElementById("app6Tabla");
@@ -5,6 +16,79 @@ const app6Inv = document.getElementById("app6Inv");
 const app6SoloPunto = document.getElementById("app6SoloPunto");
 const app6Res = document.getElementById("app6Res");
 const app6BtnVer = document.getElementById("app6BtnVer");
+
+function mostrarTabla(){
+    let tabla = parseInt(app6Tabla.value);
+
+    let lista = document.createElement("ul");
+/* 
+    if( !app6Inv.checked ){
+        for (let i=1; i <=10; i++){
+            let resMult;
+            if(app6SoloPunto.checked){
+                resMult = " . ".repeat (tabla * i)
+            }
+            else {
+                resMult = tabla * i;
+            }
+
+            let item = document.createElement("li");
+            item.innerHTML = tabla +" X " + i + " = " + resMult;
+            lista.appendChild(item);
+        } */
+    if( !app6Inv.checked ){
+        for (let i=1; i <=10; i++){
+            let resMult = app6SoloPunto.checked ? " . ".repeat(tabla * i ) : tabla * i;
+
+            let item = document.createElement("li");
+            item.innerHTML = tabla +" X " + i + " = " + resMult;
+            lista.appendChild(item);
+        }
+    }
+    /* else{
+        for (let i=10; i >=1; i--){
+            let resMult;
+            if(app6SoloPunto.checked){
+                resMult = " . ".repeat (tabla * i)
+            }
+            else {
+                resMult = tabla * i;
+            }
+
+
+            let item = document.createElement("li");
+            item.innerHTML = tabla +" X " + i + " = " + resMult;
+            lista.appendChild(item);
+        }
+    } */
+    else{
+        for (let i=10; i >=1; i--){
+            let resMult = app6SoloPunto.checked ? " . ".repeat(tabla * i ) : tabla * i;
+            
+
+            let item = document.createElement("li");
+            item.innerHTML = tabla +" X " + i + " = " + resMult;
+            lista.appendChild(item);
+        }
+    }
+
+    
+    app6Res.innerHTML = "";
+    app6Res.appendChild(lista);
+}
+
+app6BtnVer.addEventListener("click", (e) => {
+    e.preventDefault();
+    mostrarTabla();
+    
+})
+
+app6Inv.addEventListener("change", (e) => {
+    mostrarTabla();
+});
+app6SoloPunto.addEventListener("change", (e) => {
+    mostrarTabla();
+});
 
 /* Checar si se marcvo la tabla invertida */
 
