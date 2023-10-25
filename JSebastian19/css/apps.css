@@ -2,17 +2,7 @@
     font-family: sans-serif;
 }
 
-/* Css para input tipo text */
-
 input[type="text"]{
     padding: 10px;
     margin-bottom: 20px;
-}
-
-.row {
-    margin-bottom: 20px;
-}
-
-.btn {
-    padding: 5px 20px;
 }
