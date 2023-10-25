@@ -1,3 +1,117 @@
+/* App7 */
+
+const app7Borde = document.getElementById("app7Borde");
+const app7Color = document.getElementById("app7Color");
+const app7Grosor = document.getElementById("app7Grosor");
+const app7Tipo = document.getElementById("app7Tipo");
+const app7Div = document.getElementById("app7Div");
+const app7BtnVer = document.getElementById("app7BtnVer");
+
+/* App6 */
+
+const app6Tabla = document.getElementById("app6Tabla");
+const app6Inv = document.getElementById("app6Inv");
+const app6SoloPunto = document.getElementById("app6SoloPunto");
+const app6Res = document.getElementById("app6Res");
+const app6BtnVer = document.getElementById("app6BtnVer");
+
+function mostrarTabla(){
+    let tabla = parseInt(app6Tabla.value);
+    let lista = document.createElement("ul");
+
+    if(!app6Inv.checked){
+        for(let i=1 ; i <= 10 ; i++){
+            let resMult = app6SoloPunto.checked ? ".".repeat(tabla * i) : tabla * i ;
+/*             let resMult;
+            if(app6SoloPunto.checked){
+                resMult = ".".repeat(tabla * i)
+            }
+            else {
+                resMult = tabla * i
+            } */
+
+            let item = document.createElement("li");
+            item.innerHTML = tabla + " X " + i + " = " + resMult;
+            lista.appendChild(item);
+        }
+    }
+    else {
+        for(let i=10 ; i >= 1 ; i--){
+            let resMult = app6SoloPunto.checked ? ".".repeat(tabla * i) : tabla * i;
+/*             let resMult;
+            if(app6SoloPunto.checked){
+                resMult = ".".repeat(tabla * i)
+            }
+            else {
+                resMult = tabla * i
+            } */
+
+            let item = document.createElement("li");
+            item.innerHTML = tabla + " X " + i + " = " + resMult;
+            lista.appendChild(item);
+        }
+    }
+
+    app6Res.innerHTML = "";
+    app6Res.appendChild(lista);
+}
+
+app6BtnVer.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    mostrarTabla();
+});
+
+app6Inv.addEventListener("change", (e) => {
+    mostrarTabla();
+});
+
+app6SoloPunto.addEventListener("change", (e) => {
+    mostrarTabla();
+});
+
+/* App5 */
+
+const app5Num1 = document.getElementById("app5Num1");
+const app5Num2 = document.getElementById("app5Num2");
+const app5Operacion = document.getElementById("app5Operacion")
+const app5Res = document.getElementById("app5Res");
+const app5BtnCalcular = document.getElementById("app5BtnCalcular");
+
+app5BtnCalcular.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    let num1 = parseInt(app5Num1.value);
+    let num2 = parseInt(app5Num2.value);
+    let operacion = app5Operacion.value;
+    let resultado;
+
+/*     if( operacion == "s" ){
+        resultado = num1 + num2;
+    }
+    else if( operacion == "r" ){
+        resultado = num1 - num2;
+    }
+    else if( operacion == "m" ){
+        resultado = num1 * num2;
+    }
+    else if ( operacion == "d" ){
+        resultado = num1 / num2;
+    } */
+
+    switch(operacion){
+        case "s" :  resultado = num1 + num2;
+                    break;
+        case "r" :  resultado = num1 - num2;
+                    break;
+        case "m" :  resultado = num1 * num2;
+                    break;
+        case "d" :  resultado = num1 / num2;
+                    break;
+    }
+
+    app5Res.value = resultado;
+});
 
 /* App1 */
 
