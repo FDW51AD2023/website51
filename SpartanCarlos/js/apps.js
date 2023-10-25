@@ -110,13 +110,58 @@ app5BtnCalcular.addEventListener("click", (e)  =>{
 })
 
 /* App6 */
-const app6Tabla = document.getElementById("app6Tabla");
+/* const app6Tabla = document.getElementById("app6Tabla");
 const app6Inv = document.getElementById("app6Inv");
 const app6SoloPunto = document.getElementById("app6SoloPunto");
 const app6Res = document.getElementById("app6Res");
 const app6BtnVer = document.getElementById("app6BtnVer");
 
-/* Checar si se marco Tabla Invertida */
-if(app6Inv.checked){
+Function mostrarTabla(){
 
 }
+
+app6BtnVer.addEventListener("click",(e) => {
+    e.preventDefault();
+    mostrarTabla();
+
+    let tabla = parseInt(app6Tabla.value);
+
+    let lista = document.createElement("ul");
+
+
+    if( !app6Inv.checked ){
+        for(let i=1 ;i <=10 ; i++ ){
+            let resMult = app6SoloPunto.checked ? ".".repeat(tabla * i) : tabla * i ;
+          
+            let item = document.createElement("li");
+            item.innerHTML = tabla + " X " + i + " = " + resMult;  
+            lista.appendChild(item);
+        }
+    }
+    else {
+        for(let i=10 ;i >=1 ; i-- ){
+            let resMult = app6SoloPunto.checked ? ".".repeat(tabla * i) : tabla * i ;
+
+            let item = document.createElement("li");
+            item.innerHTML = tabla + " X " + i + " = " + resMult;  
+            lista.appendChild(item);
+        }
+    }
+    app6Res.innerHTML = "";
+    app6Res.appendChild(lista);
+    mostrartabla();
+}); 
+
+app6Inv.addEventListener("change" (e) => {
+    mostrarTabla(); 
+});
+
+
+app6SoloPunto.addEventListener("change" (e) => {
+    mostrarTabla();
+}); */
+
+
+/* App7 */
+
+
