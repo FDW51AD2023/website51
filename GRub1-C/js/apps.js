@@ -95,8 +95,64 @@ const app4SoloPunto = document.getElementById("app4SoloPunto");
 const app4Res = document.getElementById("app4Res");
 const app4BtnVer = document.getElementById("app4BtnVer");
 
-/* Checar si se marco table invertida */
-if (app4Inv.checked  ) {
+function mostrarTabla(){
+   let tabla = parseInt(app4Tabla.value);
 
-}
+   let lista = document.createElement("ul");
+
+
+   if(!app4Inv.checked){
+      for(let i=1 ;i<=10; i++){
+         let resMult = app4SoloPunto.checked ? ".".repeat(tabla * i) : tabla * i;
+
+         let item = document.createElement("li");
+         item.innerHTML = tabla + " X " + i +  " = " + resMult;
+         lista.appendChild(item);
+      }
+   }
+   else {
+      for(let i=10 ;i>=1; i--){
+         let resMult =   app4SoloPunto.checked ? "." .repeat(tabla * i) : tabla * i /* repeat es un metodo dentro de la clase / objeto . */
+
+         let item = document.createElement("li");
+         item.innerHTML = tabla + " X " + i +  " = " + resMult;
+         lista.appendChild(item);
+      }
+   }
+   /* practicar mandar a la consola - en lista  */
+   app4Res.innerHTML = "";
+   app4Res.appendChild(lista);
+};
+
+app4Inv.addEventListener("change", (e) =>{
+   mostrarTabla();
+})
+
+app4SoloPunto.addEventListener("change", (e)=> {
+   mostrarTabla();
+})
+
+app4BtnVer.addEventListener("click", (e) => {
+   e.preventDefault();
+   mostrarTabla();
+})
+
+app4BtnVer.addEventListener ("click",(e) => {
+   e.preventDefault();
+
+
+});
+
+
+
+/* APLICAICON 5 */
+
+const app5Borde = document.getElementById("app5Borde");
+const app5Color = document.getElementById("app5Color");
+const app5Grosor = document.getElementById("app5Grosor");
+const app5Tipo = document.getElementById("app5Tipo");
+const app5BtnVer = document.getElementById("app5BtnVer");
+
+
+
 
