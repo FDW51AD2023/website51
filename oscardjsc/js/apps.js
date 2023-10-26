@@ -146,3 +146,74 @@ app4SoloPunto.addEventListener("change", (e) => {
 });
 
 
+
+/* App 5 */
+
+const app5Borde = document.getElementById("app5Borde");
+const app5Color = document.getElementById("app5Color");
+const app5Grosor = document.getElementById("app5Grosor");
+const app5Tipo = document.getElementById("app5Tipo");
+const app5Div = document.getElementById("app5Div");
+const app5BtnVer = document.getElementById("app5BtnVer");
+
+app5BtnVer.addEventListener("click", (e) => {
+    e.preventDefault();
+    let borde = app5Borde.value;
+    let app5NuevoColor = app5Color.value;
+    let grosor = parseInt(app5Grosor.value);
+    let divTipo = app5Tipo.value
+    
+
+    app5Div.style.background = app5NuevoColor;
+    app5Div.style.border = "none";
+    if (borde == "t"){
+        switch (divTipo){
+            case "so" : app5Div.style.border = grosor + "px solid";
+                        break;
+            case "da" : app5Div.style.border = grosor + "px dashed";
+                        break;
+            case "do" : app5Div.style.border = grosor + "px double";
+                        break;
+        }
+    }
+    else if (borde == "s"){
+        switch (divTipo){
+            case "so" : app5Div.style.borderTop = grosor + "px solid";
+                        break;
+            case "da" : app5Div.style.borderTop = grosor + "px dashed";
+                        break;
+            case "do" : app5Div.style.borderTop = grosor + "px double";
+                        break;
+        }   
+    }
+    else if (borde == "in"){
+        switch (divTipo){
+            case "so" : app5Div.style.borderBottom = grosor + "px solid";
+                        break;
+            case "da" : app5Div.style.borderBottom = grosor + "px dashed";
+                        break;
+            case "do" : app5Div.style.borderBottom = grosor + "px double";
+                        break;
+        }           
+    }
+    else if (borde == "iz"){
+        switch (divTipo){
+            case "so" : app5Div.style.borderLeft = grosor + "px solid";
+                        break;
+            case "da" : app5Div.style.borderLeft = grosor + "px dashed";
+                        break;
+            case "do" : app5Div.style.borderLeft = grosor + "px double";
+                        break;
+        }           
+    }
+    else if (borde == "d"){
+        switch (divTipo){
+            case "so" : app5Div.style.borderRight = grosor + "px solid";
+                        break;
+            case "da" : app5Div.style.borderRight = grosor + "px dashed";
+                        break;
+            case "do" : app5Div.style.borderRight = grosor + "px double";
+                        break;
+        }           
+    }
+});
