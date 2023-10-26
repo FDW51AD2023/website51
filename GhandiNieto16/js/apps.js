@@ -1,25 +1,43 @@
 /* App 5 */
-
 const app5Borde = document.getElementById("app5Borde");
 const app5Grosor = document.getElementById("app5Grosor");
 const app5Color = document.getElementById("app5Color");
 const app5Tipo = document.getElementById("app5Tipo");
-const prueba = document.getElementById("prueba");
+const app5BtnVer = document.getElementById("app5BtnVer");
+const appDiv = document.getElementById("prueba");
 
-app5BtnVer.addEventListener("click", (e)=> {
+app5BtnVer.addEventListener("click", (e) => {
     e.preventDefault();
-    let vBorde = document.getElementById("app5Borde").value;
-    prueba.document.getElementById("prueba").style.border = vBorde;
 
-    let vGrosor = document.getElementById("app5Grosor").value;
-    prueba.document.getElementById("prueba").style.borderWidth = vGrosor;
-
-    let vTipo = document.getElementById("app5Tipo").value;
-    prueba.document.getElementById("prueba").style.borderWidth = vTipo;
-
-    let vColor = document.getElementById("app5Color").value;
-    prueba.document.getElementById("prueba").style.borderColor = vColor;
+    switch (app5Borde.value) {
+        case "top":
+            appDiv.style.borderTopWidth = app5Grosor.value + "px";
+            appDiv.style.borderTopStyle = app5Tipo.value;
+            appDiv.style.borderTopColor = app5Color.value;
+            break;
+        case "right":
+            appDiv.style.borderRightWidth = app5Grosor.value + "px";
+            appDiv.style.borderRightStyle = app5Tipo.value;
+            appDiv.style.borderRightColor = app5Color.value;
+            break;
+        case "bottom":
+            appDiv.style.borderBottomWidth = app5Grosor.value + "px";
+            appDiv.style.borderBottomStyle = app5Tipo.value;
+            appDiv.style.borderBottomColor = app5Color.value;
+            break;
+        case "left":
+            appDiv.style.borderLeftWidth = app5Grosor.value + "px";
+            appDiv.style.borderLeftStyle = app5Tipo.value;
+            appDiv.style.borderLeftColor = app5Color.value;
+            break;
+        case "all":
+            appDiv.style.borderWidth = app5Grosor.value + "px";
+            appDiv.style.borderStyle = app5Tipo.value;
+            appDiv.style.borderColor = app5Color.value;
+            break;
+    }
 });
+
 
 
 
