@@ -91,86 +91,102 @@ app3BtnCalcular.addEventListener("click",(e)=> {
 /* APP 4 */
   /*     variable; contador; incrementador */
 
-const app4Tabla = document.getElementById("app4Tabla");
-const app4Inv = document.getElementById("app4Inv");
-const app4SoloPunto = document.getElementById("app4SoloPunto");
-const app4Res = document.getElementById("app4Res");
-const app4BtnVer = document.getElementById("app4BtnVer");
 
-function mostrartabla(){
-    app4BtnVer.addEventListener ("click",(e) => {
-    e.preventDefault();
+  const app4Tabla = document.getElementById("app4Tabla");
+  const app4Inv = document.getElementById("app4Inv");
+  const app4SoloPunto = document.getElementById("app4SoloPunto");
+  const app4Res = document.getElementById("app4Res");
+  const app4BtnVer = document.getElementById("app4BtnVer");
   
-    let tabla = parseInt(app4Tabla.value);
-     
-    let lista = document.createElement("ul");
+  function mostrarTabla(){
+      let tabla = parseInt(app4Tabla.value);
+      let lista = document.createElement("ul");
   
+      if(!app4Inv.checked){
+          for(let i=1 ; i <= 10 ; i++){
+              let resMult = app4SoloPunto.checked ? ".".repeat(tabla * i) : tabla * i ;
+  /*             let resMult;
+              if(app4SoloPunto.checked){
+                  resMult = ".".repeat(tabla * i)
+              }
+              else {
+                  resMult = tabla * i
+              } */
   
-    if(!app4Inv.checked){
-       for(let i=1 ;i<=10; i++){
-  
-          let resMult = app4SoloPunto.checked ? ".".repeat(tabla* i) : tabla * i;
-  
-          /* let resMult;
-          if(app4SoloPunto.checked){
-              resMult = ".".repeat(tabla* i);
+              let item = document.createElement("li");
+              item.innerHTML = tabla + " X " + i + " = " + resMult;
+              lista.appendChild(item);
           }
-          else{
-              resMult = tabla * i;
-          } */
+      }
+      else {
+          for(let i=10 ; i >= 1 ; i--){
+              let resMult = app4SoloPunto.checked ? ".".repeat(tabla * i) : tabla * i;
+  /*             let resMult;
+              if(app4SoloPunto.checked){
+                  resMult = ".".repeat(tabla * i)
+              }
+              else {
+                  resMult = tabla * i
+              } */
   
-          let item = document.createElement("li");
-          item.innerHTML = tabla + " X " + i +  " = " + resMult;
-          lista.appendChild(item);
-       }
-    }
-    else {
-       for(let i=10 ;i>=1; i--){
-  
-          let resMult = app4SoloPunto.checked ? ".".repeat(tabla* i) : tabla * i;
-  
-  
-          /* if(app4SoloPunto.checked){
-              resMult = ".".repeat(tabla* i);
+              let item = document.createElement("li");
+              item.innerHTML = tabla + " X " + i + " = " + resMult;
+              lista.appendChild(item);
           }
-          else{
-              resMult = tabla * i;
-          } */
+      }
   
-          let item = document.createElement("li");
-          item.innerHTML = tabla + " X " + i +  " = " + resMult;
-          lista.appendChild(item);
-       }
-    }
-    /* practicar mandar a la consola - en lista  */
-    app4Res.innerHTML = "";
-    app4Res.appendChild(lista);
+      app4Res.innerHTML = "";
+      app4Res.appendChild(lista);
+  }
+  
+  app4BtnVer.addEventListener("click", (e) => {
+      e.preventDefault();
+  
+      mostrarTabla();
   });
-
-}
-app4Inv.addEventListener("change", )
-
-
+  
+  app4Inv.addEventListener("change", (e) => {
+      mostrarTabla();
+  });
+  
+  app4SoloPunto.addEventListener("change", (e) => {
+      mostrarTabla();
+  });
 
 /* App5 */
 
-const app5borde = document.getElementById("app5borde");
-const app5color = document.getElementById("app5color");
-const app5grosor = document.getElementById("app5grosor");
-const app5tipo = document.getElementById("app5tipo");
-const div_prueba = document.getElementById("div_prueba");
+const app5ver = document.getElementById("app5ver");
+const divPrueba = document.getElementById("div_prueba");
 
 
 app5ver.addEventListener("click",(e) => { 
-    e.preventDefault();
-    div_prueba.style.border = app5borde;
-    div_prueba.style.backgroundColor = app5color;
-    div_prueba.style.borderWidth = app5grosor;
-    div_prueba.style.borderStyle = app5tipo;
-    app1Res.value = suma;
- });
+   e.preventDefault();
 
 
+   const app5borde = document.getElementById("app5borde").value;
+   const app5color = document.getElementById("app5color").value;
+   const app5grosor = document.getElementById("app5grosor").value;
+   const app5tipo = document.getElementById("app5tipo").value;
+  
 
+   divPrueba.style.backgroundColor = app5color ;
+   
+   switch(app5borde){
+      case "top":
+         divPrueba.style.borderTop = `${app5grosor}px ${app5tipo}`;
+         break;
+      case "bot":
+         divPrueba.style.borderBottom =  `${app5grosor}px ${app5tipo}`;
+         break;
+      case "izq":
+         divPrueba.style.borderLeft =  `${app5grosor}px ${app5tipo}`;
+         break;
+      case "der":
+         divPrueba.style.borderRight =  `${app5grosor}px ${app5tipo}`;
+         break; 
+      case "all":
+         divPrueba.style.border = `${app5grosor}px ${app5tipo}`;
+         break;  
+   }
 
-
+ }); 
