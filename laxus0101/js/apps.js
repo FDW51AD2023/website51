@@ -1,127 +1,192 @@
-/* App6 */
-
-const app6Tabla = document.getElementById("app6Tabla");
-const app6Inv = document.getElementById("app6Inv");
-const app6SoloPunto = document.getElementById("app6SoloPunto");
-const app6Res = document.getElementById("app6Res");
-const app6BtnVer = document.getElementById("app6BtnVer");
-
-/* Checar si se marcvo la tabla invertida */
-
-if (app6Inv.checked ){
-    
-}
-
-/* App5*/
-
-const app5Num1 = document.getElementById("app5Num1");
-const app5Num2 = document.getElementById("app5Num2");
-const app5Operacion = document.getElementById("app5Operacion");
-const app5Res = document.getElementById("app5Res");
-const app5BtnCalcular = document.getElementById("app5BtnCalcular");
-
-app5BtnCalcular.addEventListener("click", (e) => {
-    e.preventDefault();
-    let num1 = parseInt(app5Num1.value);
-    let num2 = parseInt(app5Num2.value);
-    let operacion = app5Operacion.value;
-    let resultado;
-
-    /* if(operacion == "s"){
-        resultado = num1 + num2;
-    }
-    else if(operacion == "r"){
-        resultado = num1 - num2;
-    }
-    else if(operacion == "m"){
-        resultado = num1 * num2;
-    }
-    else if(operacion == "d"){
-        resultado = num1 / num2;
-    } */
-
-    switch (operacion){
-        case "s": resultado = num1 + num2;
-                  break;
-        case "r": resultado = num1 - num2;
-                  break;
-        case "m": resultado = num1 * num2;
-                  break;
-        case "d": resultado = num1 / num2;
-                  break;
-    }
-
-    app5Res.value = resultado;
-});
-
-/* App1 */
+/*  App 1 */
 
 const app1Num1 = document.getElementById("app1Num1");
 const app1Num2 = document.getElementById("app1Num2");
-const app1Res = document.getElementById("app1Res");
+const app1Res =  document.getElementById("app1Res");
 
 const app1BtnCalcular = document.getElementById("app1BtnCalcular");
 
-app1BtnCalcular.addEventListener("click", (e) => {
-    e.preventDefault();
-
-let num1 = parseInt(app1Num1.value);
-let num2 = parseInt(app1Num2.value);
-let suma = num1 + num2
-
-    app1Res.value = suma;
+/* Metodo para agregar escuchador de eventos. (e) de evento */
+app1BtnCalcular.addEventListener("click",(e) => { 
+   e.preventDefault();
+   let num1 = parseInt(app1Num1.value);
+   let num2 = parseInt(app1Num2.value);
+   let suma = num1 + num2;
+   app1Res.value = suma;
 });
 
-/* App2 */
 
 const app2Num1 = document.getElementById("app2Num1");
 const app2Num2 = document.getElementById("app2Num2");
-const app2Res = document.getElementById("app2Res");
+const app2Res =  document.getElementById("app2Res");
 
-const app2BtnCalcular = document.getElementById("app2BtnCalcular");
+const app2BtnCalcular = document.getElementById("app1BtnCalcular");
 
-app2BtnCalcular.addEventListener("click", (e) => {
-    e.preventDefault();
-
-let num1 = parseInt(app2Num1.value);
-let num2 = parseInt(app2Num2.value);
-let suma = num1 - num2
-
-    app2Res.value = suma;
+/* Metodo para agregar escuchador de eventos. (e) de evento */
+app2BtnCalcular.addEventListener("click",(e) => { 
+   e.preventDefault();
+   let num1 = parseInt(app2Num1.value);
+   let num2 = parseInt(app2Num2.value);
+   let suma = num1 + num2;
+   app1Res.value = suma;
 });
 
-/* App3 */
+
+
+/* APP 3 */
 
 const app3Num1 = document.getElementById("app3Num1");
 const app3Num2 = document.getElementById("app3Num2");
+const app3Operacion = document.getElementById("app3Operacion");
 const app3Res = document.getElementById("app3Res");
-
 const app3BtnCalcular = document.getElementById("app3BtnCalcular");
 
-app3BtnCalcular.addEventListener("click", (e) => {
-    e.preventDefault();
 
-let num1 = parseInt(app3Num1.value);
-let num2 = parseInt(app3Num2.value);
-let suma = num1 / num2
+app3BtnCalcular.addEventListener("click",(e)=> {
+  e.preventDefault();
 
-    app3Res.value = suma;
+  let num1 = parseInt(app3Num1.value);
+  let num2 = parseInt(app3Num2.value);
+  let operacion = app3Operacion.value;
+  let resultado;
+
+/*    if (operacion == "s"){
+     resultado = num1 + num2;
+  }
+  else if (operacion == "r"){
+     resultado = num1 - num2;
+  }
+  else if (operacion == "m"){
+     resultado = num1 * num2;
+  }
+  else if (operacion == "d") {
+     resultado = num1 / num2;
+  } */
+
+  switch (operacion) {
+     case "s":
+        resultado = num1 + num2;
+        break;
+     
+     case "r":
+        resultado = num1 - num2;
+        break;
+     
+     case "m":
+        resultado = num1 * num2;
+        break;
+     
+     case "d":
+        resultado = num1 / num2;
+        break;     
+  }
+  app3Res.value = resultado;
+
 });
 
-/* Apps4 */
 
-const app4Num1 = document.getElementById("app4Num1");
-const app4Num2 = document.getElementById("app4Num2");
-const appRes = document.getElementById("app4Res");
 
-const app4BtnCalcular = document.getElementById("app4BtnCalcular");
 
-app4BtnCalcular.addEventListener("click", (e) => {
-    e. preventDefault();
 
-let num1 = parseInt(app4Num1.value);
-let num2 = parseInt(app4Num2.value);
-let suma = num1 * num2;
+/* APP 4 */
+  /*     variable; contador; incrementador */
 
-    app4Res.value = suma;
-})
+
+  const app4Tabla = document.getElementById("app4Tabla");
+  const app4Inv = document.getElementById("app4Inv");
+  const app4SoloPunto = document.getElementById("app4SoloPunto");
+  const app4Res = document.getElementById("app4Res");
+  const app4BtnVer = document.getElementById("app4BtnVer");
+  
+  function mostrarTabla(){
+      let tabla = parseInt(app4Tabla.value);
+      let lista = document.createElement("ul");
+  
+      if(!app4Inv.checked){
+          for(let i=1 ; i <= 10 ; i++){
+              let resMult = app4SoloPunto.checked ? ".".repeat(tabla * i) : tabla * i ;
+  /*             let resMult;
+              if(app4SoloPunto.checked){
+                  resMult = ".".repeat(tabla * i)
+              }
+              else {
+                  resMult = tabla * i
+              } */
+  
+              let item = document.createElement("li");
+              item.innerHTML = tabla + " X " + i + " = " + resMult;
+              lista.appendChild(item);
+          }
+      }
+      else {
+          for(let i=10 ; i >= 1 ; i--){
+              let resMult = app4SoloPunto.checked ? ".".repeat(tabla * i) : tabla * i;
+  /*             let resMult;
+              if(app4SoloPunto.checked){
+                  resMult = ".".repeat(tabla * i)
+              }
+              else {
+                  resMult = tabla * i
+              } */
+  
+              let item = document.createElement("li");
+              item.innerHTML = tabla + " X " + i + " = " + resMult;
+              lista.appendChild(item);
+          }
+      }
+  
+      app4Res.innerHTML = "";
+      app4Res.appendChild(lista);
+  }
+  
+  app4BtnVer.addEventListener("click", (e) => {
+      e.preventDefault();
+  
+      mostrarTabla();
+  });
+  
+  app4Inv.addEventListener("change", (e) => {
+      mostrarTabla();
+  });
+  
+  app4SoloPunto.addEventListener("change", (e) => {
+      mostrarTabla();
+  });
+
+/* App5 */
+
+const app5ver = document.getElementById("app5ver");
+const divPrueba = document.getElementById("div_prueba");
+
+
+app5ver.addEventListener("click",(e) => { 
+   e.preventDefault();
+
+
+   const app5borde = document.getElementById("app5borde").value;
+   const app5color = document.getElementById("app5color").value;
+   const app5grosor = document.getElementById("app5grosor").value;
+   const app5tipo = document.getElementById("app5tipo").value;
+  
+
+   divPrueba.style.backgroundColor = app5color ;
+   
+   switch(app5borde){
+      case "top":
+         divPrueba.style.borderTop = `${app5grosor}px ${app5tipo}`;
+         break;
+      case "bot":
+         divPrueba.style.borderBottom =  `${app5grosor}px ${app5tipo}`;
+         break;
+      case "izq":
+         divPrueba.style.borderLeft =  `${app5grosor}px ${app5tipo}`;
+         break;
+      case "der":
+         divPrueba.style.borderRight =  `${app5grosor}px ${app5tipo}`;
+         break; 
+      case "all":
+         divPrueba.style.border = `${app5grosor}px ${app5tipo}`;
+         break;  
+   }
+
+ }); 
