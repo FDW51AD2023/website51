@@ -157,35 +157,35 @@ app3BtnCalcular.addEventListener("click",(e)=> {
 
 const app5ver = document.getElementById("app5ver");
 const divPrueba = document.getElementById("div_prueba");
-
+const app5borde = document.getElementById("app5borde");
+const app5color = document.getElementById("app5color");
+const app5grosor = document.getElementById("app5grosor");
+const app5tipo = document.getElementById("app5tipo");
 
 app5ver.addEventListener("click",(e) => { 
    e.preventDefault();
 
-
-   let app5borde = document.getElementById("app5borde").value;
-   let app5color = document.getElementById("app5color").value;
-   let app5grosor = document.getElementById("app5grosor").value;
-   let app5tipo = document.getElementById("app5tipo").value;
-  
-
-   divPrueba.style.backgroundColor = app5color ;
+   let borde5 = app5borde.value;
+   let color5 = app5color.value;
+   let grosor5 = app5grosor.value;
+   let tipo5 = app5tipo.value;
+   divPrueba.style.border="none"
    
-   switch(app5borde){
+   switch(borde5){
       case "top":
-         divPrueba.style.borderTop = `${app5grosor}px ${app5tipo}`;
+         divPrueba.style.borderTop = `${grosor5}px ${tipo5} ${color5}`;
          break;
       case "bot":
-         divPrueba.style.borderBottom =  `${app5grosor}px ${app5tipo}`;
+         divPrueba.style.borderBottom = `${grosor5}px ${tipo5} ${color5}`;
          break;
       case "izq":
-         divPrueba.style.borderLeft =  `${app5grosor}px ${app5tipo}`;
+         divPrueba.style.borderLeft = `${grosor5}px ${tipo5} ${color5}`;
          break;
       case "der":
-         divPrueba.style.borderRight =  `${app5grosor}px ${app5tipo}`;
+         divPrueba.style.borderRight = `${grosor5}px ${tipo5} ${color5}`;
          break; 
       case "all":
-         divPrueba.style.border = `${app5grosor}px ${app5tipo}`;
+         divPrueba.style.border =`${grosor5}px ${tipo5} ${color5}`;
          break;  
    }
 
