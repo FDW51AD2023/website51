@@ -73,8 +73,47 @@ const app4SoloPunto = document.getElementById("app4SoloPunto");
 const app4Res = document.getElementById("app4Res");
 const app4BtnVer = document.getElementById("app4BtnVer");
 
-/* Checar si se marco tabla invertida */
+function mostrarTabla(){
+    let tabla = parseInt(app4Tabla.value);
+    let lista = document.createElement("ul");
+    if( !app4Inv.checked ){
+        for(let i=1 ; i<=10 ; i++){
+            let resMult = app4SoloPunto.checked ? ".".repeat(tabla*i) : tabla * i ;
+            let item = document.createElement("li");
+            item.innerHTML = tabla + " X " + i + " = " + resMult;
+            lista.appendChild(item);
+        }
+    }
+    else {
+        for( let i=10 ; i>=1 ; i-- ){
+            let resMult= app4SoloPunto.checked ? ".".repeat(tabla*i) : tabla*i ;
+            let item = document.createElement("li");
+            item.innerHTML = tabla + " X " + i + " = " + resMult;
+            lista.appendChild(item);
+        }
+    }
+    app4Res.innerHTML="";
+    app4Res.appendChild(lista);
+};
 
-if ( app4Inv.checked ) {
-    
-}
+app4BtnVer.addEventListener("click",(e) =>{
+    e.preventDefault();
+    mostrarTabla();
+});
+
+app4Inv.addEventListener("change",(e)=>{
+    mostrarTabla();
+});
+
+app4SoloPunto.addEventListener("change",(e)=>{
+    mostrarTabla();
+});
+
+/* App5 */
+
+const app5Borde = documen.getElementById("app5Borde");
+const app5Color = document.getElementById("app5Color");
+const app5Grosor = document.getElementById("app5Grosor");
+const app5TipoBorde = document.getElementById("app5TipoBorde");
+const app5DivPrueba = document.getElementById("app5DivPrueba");
+const app5BtnVer = document.getElementById("app5BtnVer");
