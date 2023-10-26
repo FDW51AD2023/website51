@@ -1,3 +1,28 @@
+/* App 5 */
+
+const app5Borde = document.getElementById("app5Borde");
+const app5Grosor = document.getElementById("app5Grosor");
+const app5Color = document.getElementById("app5Color");
+const app5Tipo = document.getElementById("app5Tipo");
+const prueba = document.getElementById("prueba");
+
+app5BtnVer.addEventListener("click", (e)=> {
+    e.preventDefault();
+    let vBorde = document.getElementById("app5Borde").value;
+    prueba.document.getElementById("prueba").style.border = vBorde;
+
+    let vGrosor = document.getElementById("app5Grosor").value;
+    prueba.document.getElementById("prueba").style.borderWidth = vGrosor;
+
+    let vTipo = document.getElementById("app5Tipo").value;
+    prueba.document.getElementById("prueba").style.borderWidth = vTipo;
+
+    let vColor = document.getElementById("app5Color").value;
+    prueba.document.getElementById("prueba").style.borderColor = vColor;
+});
+
+
+
 /* App 4 */
 
 const app4Tabla = document.getElementById("app4Tabla");
@@ -5,9 +30,7 @@ const app4Inv = document.getElementById("app4Inv");
 const app4SoloPunto = document.getElementById("app4SoloPunto");
 const app4Res = document.getElementById("app4Res");
 const app4BtnVer = document.getElementById("app4BtnVer");
-
-app4BtnVer.addEventListener("click",(e) =>{
-    e.preventDefault();
+function mostrarTabla(){
     let tabla = parseInt(app4Tabla.value);
 
     let lista = document.createElement("ul");
@@ -17,8 +40,17 @@ app4BtnVer.addEventListener("click",(e) =>{
     if( !app4Inv.checked){
 
         for(let i=1; i <=10; i++){
+
+            let resMult = app4SoloPunto.checked ? ".".repeat(tabla*i): tabla*i;
+            let item = document.createElement("li");
+            item.innerHTML=tabla+" X "+i+" = "+ resMult;
+            lista.appendChild(item);
+            
+        }
+
+  /*       for(let i=1; i <=10; i++){
             let resMult;
-            /* repeat es un metodo para cadenas */
+            
             if(app4SoloPunto.checked){
                 resMult=".".repeat(tabla * i)
             }
@@ -26,16 +58,27 @@ app4BtnVer.addEventListener("click",(e) =>{
                 resMult = tabla*i;
             }
             let item = document.createElement("li");
-            /* Contenido que va dentro del elemento */
+            
             item.innerHTML=tabla+" X "+i+" = "+ resMult;
             lista.appendChild(item);
         }
+ */
+        
     }
 
     else{
+
         for(let i=10; i >=1; i--){
+
+            let resMult = app4SoloPunto.checked ? ".".repeat(tabla*i): tabla*i;
+            let item = document.createElement("li");
+            item.innerHTML=tabla+" X "+i+" = "+ resMult;
+            lista.appendChild(item);
+            
+        }
+  /*       for(let i=10; i >=1; i--){
             let resMult;
-            /* repeat es un metodo para cadenas */
+   
             if(app4SoloPunto.checked){
                 resMult=".".repeat(tabla * i)
             }
@@ -43,11 +86,11 @@ app4BtnVer.addEventListener("click",(e) =>{
                 resMult = tabla*i;
             }
             let item = document.createElement("li");
-            /* Contenido que va dentro del elemento */
+   
             item.innerHTML=tabla+" X "+i+" = "+ resMult;
             lista.appendChild(item);
         }
-
+ */
     }
     
 
@@ -57,17 +100,33 @@ app4BtnVer.addEventListener("click",(e) =>{
     app4Res.innerHTML="";
     /* Mandar al HTML el conetnido de JS */
     app4Res.appendChild(lista);
+}
 
+app4BtnVer.addEventListener("click",(e) =>{
+    e.preventDefault();
+    mostrarTabla();
+
+
+});
+
+app4Inv.addEventListener("change", (e) => {
+    mostrarTabla();
+
+});
+
+app4SoloPunto.addEventListener("change", (e) => {
+    mostrarTabla();
+    
 });
 
 /* Mandar a la consola; Mandar una caja ; Mandar a un elemento */
 
 /* Inicialización, Repetición (mientras cont sea menor o igual a 10 el ciclo se va a estar reptitiendo), en cuanto aumenta */
-for(let cont = 1; cont <=10; cont++){
+/* for(let cont = 1; cont <=10; cont++){
 
     console.log(cont);
 
-}
+} */
 
 
 
@@ -122,15 +181,6 @@ app3BtnCalcular.addEventListener("click", (e) => {
     app3Res.value = resultado;
 
 });
-
-
-
-
-
-
-
-
-
 
 
 
