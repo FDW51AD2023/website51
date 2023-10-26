@@ -169,7 +169,7 @@ app5ver.addEventListener("click",(e) => {
    let color5 = app5color.value;
    let grosor5 = app5grosor.value;
    let tipo5 = app5tipo.value;
-   divPrueba.style.border="none"
+   divPrueba.style.border="none";
    
    switch(borde5){
       case "top":
@@ -186,7 +186,10 @@ app5ver.addEventListener("click",(e) => {
          break; 
       case "all":
          divPrueba.style.border =`${grosor5}px ${tipo5} ${color5}`;
-         break;  
+         break;
+      case "none":
+         divPrueba.style.border ="none";
+         break;    
    }
 
  }); 
