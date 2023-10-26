@@ -163,10 +163,10 @@ app5ver.addEventListener("click",(e) => {
    e.preventDefault();
 
 
-   const app5borde = document.getElementById("app5borde").value;
-   const app5color = document.getElementById("app5color").value;
-   const app5grosor = document.getElementById("app5grosor").value;
-   const app5tipo = document.getElementById("app5tipo").value;
+   let app5borde = document.getElementById("app5borde").value;
+   let app5color = document.getElementById("app5color").value;
+   let app5grosor = document.getElementById("app5grosor").value;
+   let app5tipo = document.getElementById("app5tipo").value;
   
 
    divPrueba.style.backgroundColor = app5color ;
