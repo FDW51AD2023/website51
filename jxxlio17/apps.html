@@ -99,48 +99,41 @@
     </form>
 
     <form id="app4" action="">
-        
-        <h2>Aplicacion para tabla de multiplicar</h2>
+        <h2>Aplicacion para tabla de multiplicar.</h2>
 
         <div class="row">
-            <label for="app4Tabla">TABLA:</label>
-            <input type="text" name="app4Tabla" id="appTabla4">
+            <label for="app4Tabla">Tabla: </label>
+            <input type="text" name="app4Tabla" id="app4Tabla">
         </div>
-        
-        <div class="row">
-            <input type="checkbox" name="app4Inv" id="app4Inv">
-            <label for="app4Inv">Tabla Invertida: </label>
-        </div>
-        
-        <div class="row">
-            <input type="checkbox" name="app4Inv" id="app4Inv">
-            <label for="app4Inv">Mostrar resultados con simbolo: </label>
-        </div>
-        
 
         <div class="row">
-            <label for="">Operacion</label>
-            <select name="app3Operacion" id="idApp3Operacion">
-                <option value="s">suma</option>
-                <option value="r">resta</option>
-                <option value="m">multiplicacion</option>
-                <option value="d">division</option>
+            <input type="checkbox" name="app4Inv" id="app4Inv">
+            <label for="app4Inv">Tabla invertida: </label>
+        </div>
+
+        <div class="row">
+            <input type="checkbox" name="app4SoloPunto" id="app4SoloPunto">
+            <label for="app4SoloPunto">Mostrar resultados con simbolo (.): </label>
             </select>
-
-        </div>
-        
-        <div class="row">
-            <label for="app3Res">Resultado:</label>
-            <input type="text" name="app3Res" id="app3Res">
         </div>
 
         <div class="row">
-            <input id="app3BtnCalcular" class="btn" type="submit" value="Calcular">
+            <label for="app4Res">Resultado: </label>
+            <div id="app4Res">
+
+            </div>
         </div>
-    
+
+        <div>
+            <input class="app4BtnVer" type="submit" value="Ver tabla" id="app4BtnVer">
+        </div>
     </form>
     
     <script src="js/apps.js"></script>
+
+    <form action="app5">
+        <h2>Aplicacion de div de prueba</h2>
+    </form>
     
 </body>
 </html>
