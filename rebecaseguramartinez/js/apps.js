@@ -1,3 +1,68 @@
+/* App 6 */
+const app6Tabla = document.getElementById("app6Tabla");
+const app6Inv = document.getElementById("app6Inv");
+const app6SoloPunto = document.getElementById("app6SoloPunto");
+const app6Res = document.getElementById("app6Res");
+const app6btnVer = document.getElementById("app6btnVer");
+
+
+
+
+
+for(let cont=1; cont <=10; cont++){
+    console.log(cont);
+}
+
+/* App 5 */
+const app5Num1 = document.getElementById("app5Num1");
+const app5Num2 = document.getElementById("app5Num2");
+const app5operacion = document.getElementById("app5operacion")
+const app5Res = document.getElementById("app5Res");
+const app5BtnCalcular = document.getElementById("app5BtnCalcular");
+
+app5BtnCalcular.addEventListener("click" , (e) => {
+    e.preventDefault();
+
+    let num1 =parseInt(app5Num1.value);
+    let num2 =parseInt(app5Num2.value);
+    let operacion = app5operacion.value;
+    let resultado;
+    /* if(operacion == "s" ){
+        resultado = num1 + num2;
+    }
+    else if(operacion == "r"){
+        resultado = num1 - num2;
+    }
+    else if(operacion == "m"){
+        resultado = num1 * num2;
+    }
+    else if(operacion == "d"){
+        resultado = num1 / num2;
+    } */
+    switch(operacion){
+        case "s" : resultado = num1 + num2;
+                    break;
+        case "r" : resultado = num1 - num2;
+                    break;
+        case "m" : resultado = num1 * num2;
+                    break;
+        case "d" : resultado = num1 / num2
+                    break;
+     }
+    app5Res.value = resultado;
+
+});
+
+
+
+
+
+
+
+
+
+
+
 /* app1 */
 
 const app1Num1 = document.getElementById("app1Num1")
