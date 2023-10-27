@@ -152,7 +152,7 @@ const app5Color = document.getElementById("app5Color");
 const app5Grosor = document.getElementById("app5Grosor");
 const app5Tipo = document.getElementById("app5Tipo");
 const app5BtnVer = document.getElementById("app5BtnVer");
-const editarDiv = document.getElementsById("editarDiv");
+const editarDiv = document.getElementById("editarDiv");
 
 app5BtnVer.addEventListener("click",(e)=> {
    e.preventDefault();
@@ -183,11 +183,16 @@ app5BtnVer.addEventListener("click",(e)=> {
    }
 
    switch (Tipo){
-      case "solid"  :     app5DivPrueba.style.border = "solid";
-                  break;
-      case "dashed" :    app5DivPrueba.style.border= "dashed";
-                  break;
-      case "double" :     app5DivPrueba.style.border = "double";
-                  break;
+      case "solid"  :     
+         editarDiv.style.border = "solid";
+         break;
+         
+      case "dashed" :    
+         editarDiv.style.border= "dashed";
+         break;
+
+      case "double" :     
+         app5DivPrueba.style.border = "double";
+         break;
   }
 });
