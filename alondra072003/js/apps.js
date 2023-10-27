@@ -4,9 +4,31 @@ const borde = document.getElementById("borde");
 const color = document.getElementById("color");
 const grosor = document.getElementById("grosor");
 const tipo = document.getElementById("tipo");
-const ver = document.getElementById("ver");
+const mod = document.getElementById("mod");
+const ViewBtn = document.getElementById("ViewBtn");
 
-ver.addEventListener();
+ViewBtn.addEventListener("click", (e)=>{
+    e.preventDefault();
+    let opcionA = (borde.value);
+    let opcionB = (color.value);
+    let opcionC = (grosor.value);
+    let opcionD = (tipo.value);
+    mod.style.border="none";
+
+    switch(opcionA){
+        case "todo": mod.style.border= opcionC + "px " + opcionD + " " + opcionB;
+                  break;
+        case "sup": mod.style.borderTop= opcionC + "px " + opcionD + " " + opcionB;
+                  break;
+        case "inf": mod.style.borderBottom= opcionC + "px " + opcionD + " " + opcionB;
+                  break;
+        case "izq": mod.style.borderLeft= opcionC + "px " + opcionD + " " + opcionB;
+                  break;
+        case "der": mod.style.borderRight= opcionC + "px " + opcionD + " " + opcionB;
+                  break;
+    }  
+
+});
 
 
 /* App6 */
