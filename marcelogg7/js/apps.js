@@ -119,7 +119,6 @@ const app5BtnVer = document.getElementById("app5BtnVer");
 
 app5BtnVer.addEventListener("click",(e) =>{
     e.preventDefault();
-    app5DivPrueba.style.border = "none";
 
     switch (app5Borde.value) {
         case "t" :  app5DivPrueba.style.border = app5Grosor.value + "px " + app5Color.value ;
