@@ -17,6 +17,7 @@
  });
 
  
+ /*   APLICACION 2 */
  const app2Num1 = document.getElementById("app2Num1");
  const app2Num2 = document.getElementById("app2Num2");
  const app2Res =  document.getElementById("app2Res");
@@ -29,7 +30,14 @@
     let num1 = parseInt(app2Num1.value);
     let num2 = parseInt(app2Num2.value);
     let suma = num1 + num2;
-    app1Res.value = suma;
+    let resta = num1 - num2;
+    let divi = num1 / num2;
+    let mult = num1 * num2;
+    app2ResSuma.value = suma;
+    app2ResResta.value = resta;
+    app2ResMult = mult;
+    app2ResDiv = divi;
+
  });
 
 
@@ -204,4 +212,12 @@ app5BtnVer.addEventListener("click",(e)=> {
 const app6Ini = document.getElementById("app5Ini");
 const app6Fin = document.getElementById("app6Fin");
 const app6Res = document.getElementById("app6Res");
-const app6Btn = document.getElementById("app6Btn")
+const app6Btn = document.getElementById("app6Btn");
+
+app6Btn.addEventListener("click", (e) => {
+   e.preventDefault();
+
+   let ini = parseInt(app6Ini.value);
+   let fin = parseInt(app6Fin.value);
+   let 
+});
