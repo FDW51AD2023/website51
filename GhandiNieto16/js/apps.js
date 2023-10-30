@@ -1,3 +1,53 @@
+
+/* El do while lleva la condicion al final*/
+/* Pueden venir los 3 ciclos. if, switch, manipular cajas, tomar datos de cajas y mandarlo a consola o aun elemento */
+/* Ciclos y estructuras condicionales */
+
+/* App 6 */
+function perfecto(numero){
+    let div = 1;
+    let suma = 0;
+    while(div < numero){
+        if (numero % div ==0){
+            suma += div
+        }
+        div++;
+
+    }
+    return suma == numero;
+
+}
+
+const app6Ini = document.getElementById("app6Ini");
+const app6Fin = document.getElementById("app6Fin");
+const app6Res = document.getElementById("app6Res");
+const app6BtnVer = document.getElementById("app6BtnVer");
+const lista = document.createElement("ol");
+
+app6BtnVer.addEventListener("click", (e) =>{
+    e.preventDefault();
+    let ini = parseInt(app6Ini.value);
+    let fin = parseInt(app6Fin.value);
+    let numero = ini
+
+    do{
+        /* Codigo para checar ese numero */
+        if(perfecto(numero)){
+            let item = document.createElement("li");
+            /* Al item, le agregamos el numero */
+            item.innerHTML = numero;
+            lista.appendChild(item);
+        }
+        numero++;
+
+
+    }while( numero <= fin);
+
+    app6Res.appendChild(lista);
+});
+
+
+
 /* App 5 */
 const app5Borde = document.getElementById("app5Borde");
 const app5Grosor = document.getElementById("app5Grosor");
@@ -37,9 +87,6 @@ app5BtnVer.addEventListener("click", (e) => {
             break;
     }
 });
-
-
-
 
 /* App 4 */
 

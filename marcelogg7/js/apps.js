@@ -110,10 +110,75 @@ app4SoloPunto.addEventListener("change",(e)=>{
 });
 
 /* App5 */
-
-const app5Borde = documen.getElementById("app5Borde");
+const app5Borde = document.getElementById("app5Borde");
 const app5Color = document.getElementById("app5Color");
 const app5Grosor = document.getElementById("app5Grosor");
 const app5TipoBorde = document.getElementById("app5TipoBorde");
 const app5DivPrueba = document.getElementById("app5DivPrueba");
 const app5BtnVer = document.getElementById("app5BtnVer");
+
+app5BtnVer.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    app5DivPrueba.style.border = "none";
+
+    switch (app5Borde.value) {
+        case "all":
+            app5DivPrueba.style.border = app5Grosor.value + "px " + app5TipoBorde.value + app5Color.value;
+            break;
+        case "top":
+            app5DivPrueba.style.borderTop = app5Grosor.value + "px " + app5TipoBorde.value + app5Color.value;
+            break;
+        case "bottom":
+            app5DivPrueba.style.borderBottom = app5Grosor.value + "px " + app5TipoBorde.value + app5Color.value;
+            break;
+        case "left":
+            app5DivPrueba.style.borderLeft = app5Grosor.value + "px " + app5TipoBorde.value + app5Color.value;
+            break;
+        case "right":
+            app5DivPrueba.style.borderRight = app5Grosor.value + "px " + app5TipoBorde.value + app5Color.value;
+            break;
+    }
+});
+
+
+/* APP 6 */
+function perfecto(numero){
+    let div = 1;
+    let suma = 0;
+
+    while(div<numero){
+        if (numero%div==0){
+            suma+=div;
+        }
+        div++;
+    }
+    return suma==numero;
+}
+
+const app6Ini = document.getElementById("app6Ini");
+const app6Fin = document.getElementById("app6Fin");
+const app6Res = document.getElementById("app6Res");
+const app6BtnVer  = document.getElementById("app6BtnVer");
+const lista = document.createElement("ol");
+
+app6BtnVer.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    let ini = parseInt(app6Ini.value);
+    let fin = parseInt(app6Fin.value);
+
+    let numero = ini;
+
+    do {
+        /* Codigo para checar si es perfecto */
+        if(perfecto(numero)){
+            let item= document.createElement("li");
+            item.innerHTML=numero;
+            lista.appendChild(item);
+        }
+
+        numero++;
+    } while(numero<=fin);
+        app6Res.appendChild(lista);
+});

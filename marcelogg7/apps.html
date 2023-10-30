@@ -115,41 +115,66 @@
         <div class="row">
             <label for="">Borde: </label>
             <select name="app5Borde" id="app5Borde">
-                <option value="t">Todos</option>
-                <option value="s">Superior</option>
-                <option value="in">Inferior</option>
-                <option value="iz">Izquierdo</option>
-                <option value="d">Derecho</option>
+                <option value="all">Todos</option>
+                <option value="top">Superior</option>
+                <option value="bottom">Inferior</option>
+                <option value="left">Izquierda</option>
+                <option value="right">Derecha</option>
             </select>
         </div>
 
         <div class="row">
-            <label for="app5Color">Color: </label>
+            <label for="app5Color">Color</label>
             <input type="color" name="app5Color" id="app5Color">
         </div>
 
         <div class="row">
-            <label for="app5Grosor">Grosor: </label>
-            <input type="number" name="app5Grosor" id="app5Grosor">
+            <label for="app5Grosor">Grosor</label>
+            <input type="text" name="app5Grosor" id="app5Grosor">
         </div>
 
         <div class="row">
             <label for="">Tipo: </label>
             <select name="app5TipoBorde" id="app5TipoBorde">
-                <option value="s">Solid</option>
-                <option value="da">Dashed</option>
-                <option value="do">Double</option>
+                <option value="solid">Solid</option>
+                <option value="dashed">Dashed</option>
+                <option value="double">Double</option>
             </select>
         </div>
 
         <div class="row" id="app5DivPrueba">
-            <h3>DIV PRUEBA</h3>
+            Div prueba
+        </div>
+
+        <div class="row">
+                <input id="app5BtnVer" class="btn" type="submit" value="Ver">
+        </div>
+
+    </form>
+
+    <form id="app6" action="">
+        <h2>Aplicacion numeros perfectos.</h2>
+
+        <div class="row">
+            <label for="app6Ini">Numero inicial: </label>
+            <input type="text" name="app6Ini" id="app6Ini">
+        </div>
+
+        <div class="row">
+            <label for="app6Fin">Numero Final: </label>
+            <input type="text" name="app6Fin" id="app6Fin">
+        </div>
+
+        <div class="row">
+            <label for="app6Res">Resultado: </label>
+            <div id="app6Res">
+
+            </div>
         </div>
 
         <div>
-            <input class="app5BtnVer" type="submit" value="Ver" id="app5BtnVer">
+            <input class="app6BtnVer" type="submit" value="Mostrar numeros" id="app6BtnVer">
         </div>
-
     </form>
 
     <script src="js/apps.js"></script>

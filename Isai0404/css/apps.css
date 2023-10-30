@@ -1,5 +1,6 @@
 /*css para input con text*/
 
+
 input[type="text"]{
     padding: 10px;
     border: none;
@@ -13,4 +14,11 @@ input[type="text"]{
 
 .btm{
     padding: 5px  30px;
+}
+
+#box{
+    display: flex;
+    align-content: center;
+    text-align: center;
+    border: blue;
 }
