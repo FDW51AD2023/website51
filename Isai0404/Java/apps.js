@@ -238,4 +238,37 @@ app5bc.addEventListener("click",(e)=>{
     console.log(tip)
     console.log(sup)
     divv.style.margin = col;
-})
+});
+/* App6*/
+function Perfecto(num){
+    let div =1;
+    let suma = 0;
+    while(div < num){
+        if(num % div ==0){
+            suma += div
+        }
+        div++
+    }
+    return suma == num;
+}
+const app6Ini =document.getElementById("app6Ini")
+const app6Fin =document.getElementById("app6Fin")
+const app6Res = document.getElementById("app6res")
+const app6bc = document.getElementById("app6bc")
+const lis =document.createElement("ol")
+
+app6bc.addEventListener("click",(e) =>{
+    e.preventDefault();
+    let ini = parseInt(app6Ini.value);
+    let fin = parseInt(app6Fin.value);
+    let num = ini;
+    do{
+        /* Codigo pa ver si el numero es perfect */
+        if(Perfecto(num)){
+            let item = document.createElement("li");
+            item.innerHTML = num;
+            lis.appendChild(item)}
+        num++;
+    }while( num <= fin);
+    app6Res.appendChild(lis)
+});
