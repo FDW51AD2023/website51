@@ -1,3 +1,15 @@
+/* App5 */
+
+
+
+
+
+
+
+
+
+
+
 /* App4 */
 const app4Tabla = document.getElementById("app4Tabla");
 const app4Inv = document.getElementById("app4Inv");
@@ -5,10 +17,47 @@ const app4SoloPunto = document.getElementById("app4SoloPunto");
 const app4Res = document.getElementById("app4Res");
 const app4BtnVer = document.getElementById("app4BtnVer");
 
-/* checar si se marco tabla invertida */
-if( app4Inv.checked ){
-    
+function mostrarTabla(){
+    let tabla = parseInt(app4Tabla.value);
+ 
+    let lista = document.createElement("ul");
+    if(!app4Inv.checked){
+        for(let i=1; i<=10 ; i++){
+            let resMult = app4SoloPunto.checked ? ".".repeat(tabla * i) : tabla * i;
+ 
+            let item = document.createElement("li");
+            item.innerHTML = tabla + " X " + i + " = " + resMult ;
+            lista.appendChild(item);
+        }
+    }
+    else{
+        if(app4Inv.checked){
+            for(let i=10; i>=1 ; i--){
+                let resMult = app4SoloPunto.checked ? ".".repeat(tabla * i) : tabla * i;
+ 
+                let item = document.createElement("li");
+                item.innerHTML = tabla + " X " + i + " = " + resMult ;
+                lista.appendChild(item);
+            }
+        }
+       
+    }
+    app4Res.innerHTML = "";
+    app4Res.appendChild(lista);
 }
+ 
+app4BtnVer.addEventListener("click", (e) => {
+    e.preventDefault();
+    mostrarTabla();
+});
+ 
+app4Inv.addEventListener("change", (e) => {
+    mostrarTabla();
+});
+ 
+app4SoloPunto.addEventListener("change", (e) => {
+    mostrarTabla();
+}); 
 
 
 
@@ -106,5 +155,11 @@ app2BtnCalcular.addEventListener("click", (e) => {
     app2Multi.value = multiplicacion;
     app2Divi.value = division;
 });
+
+
+
+
+
+
 
 
