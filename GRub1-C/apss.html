@@ -8,12 +8,35 @@
 </head>
 <body>
     <h1> APPS </h1>
+    <form id="app6" action="">
+        <h2> Aplicacion de Numeros Perfectos </h2>
+
+        <div class="row">
+            <label for="app6Ini">Numero Inicial: </label>
+            <input type="text" name="app6Ini" id="app6Ini">
+        </div>
+
+        <div class="row">
+            <label for="app6Fin">Numero Final: </label>
+            <input type="text" name="app6Fin" id="app6Fin">
+        </div>
+
+        <div class="row">
+            <label for="app6Res"> Resultado: </label>
+            <div id="app6Res"></div>
+        </div>
+
+        <div>
+            <input id="app6Btn" class="btn" type="submit" value=" Mostrar Numeros ">
+        </div>
+    </form>
+
 
     <form id="app5" action="">
         <h2> Aplicacion para Edicion </h2>
 
         <div class="row">
-            <label for="app5Borde">Borde: </label>
+            <label for="">Borde: </label>
             <select name="app5Borde" id="app5Borde">
                 <option value="t">Todos</option>
                 <option value="s">Superior</option>
@@ -34,15 +57,15 @@
         </div>
         <br>
         <div class="row">
-            <label for="app5Tipo">Tipo: </label>
+            <label for="">Tipo: </label>
             <select name="app5Tipo" id="app5Tipo">
-                <option value="s">Solido</option>
-                <option value="da">Dashed</option>
-                <option value="do">Double</option>
+                <option value="solid">Solido</option>
+                <option value="dashed">Dashed</option>
+                <option value="double">Double</option>
             </select>
         </div>
         <br>
-        <div>
+        <div id="editarDiv">
             DIV DE PRUEBA 
         </div>
         <br>
@@ -72,10 +95,7 @@
 
         <div class="row">
             <label for="app4Res"> Resultado: </label>
-            <div id="app4Res">
-
-            </div>
-
+            <div id="app4Res"></div>
         </div>
 
         <div>
@@ -116,6 +136,46 @@
         </div>
     </form>
 
+    <!-- APLICACION NUMERO 2 -->
+    <form id="app2" action="">
+        <h2> Aplicacion para operaciones de dos numeros </h2>
+
+        <div class="row">
+            <label for="app2Num1"> Numero: </label>
+            <input type="text" name="app2Num1" id="app2Num1">
+        </div>
+
+        <div class="row">
+            <label for="app2Num2"> Numero: </label>
+            <input type="text" name="app2Num2" id="app2Num2">
+        </div>
+
+        <div class="row">
+            <label for="app2ResSuma"> Resultado Suma: </label>
+            <input readonly type="text" name="app2ResSuma" id="app2ResSuma">
+        </div>
+
+        <div class="row">
+            <label for="app2ResResta"> Resultado Suma: </label>
+            <input readonly type="text" name="app2ResResta" id="app2ResResta">
+        </div>
+
+        <div class="row">
+            <label for="app2ResMulti"> Resultado Suma: </label>
+            <input readonly type="text" name="app2ResMulti" id="app2ResMulti">
+        </div>
+
+        <div class="row">
+            <label for="app2ResDivi"> Resultado Suma: </label>
+            <input readonly type="text" name="app2ResDivi" id="app2ResDivi">
+        </div>
+
+        <div>
+            <input id="app2BtnCalcular" class="btn" type="submit" value="Calcular">
+        </div>
+    </form>
+
+    <!-- APLICAICON NUMERO 1 -->
     <form id="app1" action="">
         <h2> Aplicacion para sumar dos numeros </h2>
 
@@ -139,28 +199,7 @@
         </div>
     </form>
 
-    <form id="app2" action="">
-        <h2> Aplicacion para restar dos numeros </h2>
 
-        <div class="row">
-            <label for="app2Num1"> Numero: </label>
-            <input type="text" name="app2Num1" id="app2Num1">
-        </div>
-
-        <div class="row">
-            <label for="app2Num2"> Numero: </label>
-            <input type="text" name="app2Num2" id="app2Num2">
-        </div>
-
-        <div class="row">
-            <label for="app2Res"> Resultado: </label>
-            <input readonly type="text" name="app2Res" id="app2Res">
-        </div>
-
-        <div>
-            <input id="app2BtnCalcular" class="btn" type="submit" value="Calcular">
-        </div>
-    </form>
 
     <script src="js/apps.js"></script>
 </body>

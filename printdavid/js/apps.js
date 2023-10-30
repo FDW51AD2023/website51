@@ -7,6 +7,29 @@ const app7Tipo = document.getElementById("app7Tipo");
 const app7Div = document.getElementById("app7Div");
 const app7BtnVer = document.getElementById("app7BtnVer");
 
+app7BtnVer.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    app7Div.style.border = "none";
+    switch (app7Borde.value) {
+        case "all":
+            app7Div.style.border = app7Grosor.value + "px " + app7Tipo.value + app7Color.value;
+            break;
+        case "top":
+            app7Div.style.borderTop = app7Grosor.value + "px " + app7Tipo.value + app7Color.value;
+            break;
+        case "bottom":
+            app7Div.style.borderBottom = app7Grosor.value + "px " + app7Tipo.value + app7Color.value;
+            break;
+        case "left":
+            app7Div.style.borderLeft = app7Grosor.value + "px " + app7Tipo.value + app7Color.value;
+            break;
+        case "right":
+            app7Div.style.borderRight = app7Grosor.value + "px " + app7Tipo.value + app7Color.value;
+            break;
+    }
+});
+
 /* App6 */
 
 const app6Tabla = document.getElementById("app6Tabla");

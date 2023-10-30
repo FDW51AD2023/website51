@@ -1,12 +1,77 @@
+/* App8 */
+
+function perfecto(numero){
+    let div = 1;
+    let suma = 0;
+    while(div < numero){
+        if(numero % div == 0){
+            suma += div;
+        }
+        div++;
+    }
+    return suma == numero;
+}
+
+const app8Ini = document.getElementById("app8Ini");
+const app8Fin = document.getElementById("app8Fin");
+const app8Res = document.getElementById("app8Res");
+const app8BtnVer = document.getElementById("app8BtnVer");
+const lista = document.createElement("ol");
+
+
+app8BtnVer.addEventListener("click", (e) => {
+    e.preventDefault();
+    let ini = parseInt(app8Ini.value);
+    let fin = parseInt(app8Fin.value);
+
+    let numero = ini;
+
+    do {
+        /* codigo para checar si es perfecto*/
+        if( perfecto(numero)){
+            let item = document.createElement("li");
+            item.innerHTML = numero;
+            lista.appendChild(item);
+        }
+        numero++;
+    }while(numero <= fin);
+    app8Res.appendChild(lista);
+});
+
+
+
+
 /* App7 */
 
 const borde = document.getElementById("borde");
 const color = document.getElementById("color");
 const grosor = document.getElementById("grosor");
 const tipo = document.getElementById("tipo");
-const ver = document.getElementById("ver");
+const mod = document.getElementById("mod");
+const ViewBtn = document.getElementById("ViewBtn");
 
-ver.addEventListener();
+ViewBtn.addEventListener("click", (e)=>{
+    e.preventDefault();
+    let opcionA = (borde.value);
+    let opcionB = (color.value);
+    let opcionC = (grosor.value);
+    let opcionD = (tipo.value);
+    mod.style.border="none";
+
+    switch(opcionA){
+        case "todo": mod.style.border= opcionC + "px " + opcionD + " " + opcionB;
+                  break;
+        case "sup": mod.style.borderTop= opcionC + "px " + opcionD + " " + opcionB;
+                  break;
+        case "inf": mod.style.borderBottom= opcionC + "px " + opcionD + " " + opcionB;
+                  break;
+        case "izq": mod.style.borderLeft= opcionC + "px " + opcionD + " " + opcionB;
+                  break;
+        case "der": mod.style.borderRight= opcionC + "px " + opcionD + " " + opcionB;
+                  break;
+    }  
+
+});
 
 
 /* App6 */
