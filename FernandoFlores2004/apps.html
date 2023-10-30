@@ -136,20 +136,77 @@
 
 
 <h2>Tablas de multiplicacion</h2>
-<div class="row">
-<label for="app5Tabla">Tabla</label>
-<input type="text" name="app5Tabla" id="app5Tabla">
+<form id="app5" action="">
+    <h2>Aplicacion para tabla de multiplicar.</h2>
+
+    <div class="fila">
+        <label for="app5Tabla">Tabla: </label>
+        <input type="text" name="app4Tabla" id="app5Tabla">
+    </div>
+
+    <div class="fila">
+        <input type="checkbox" name="app5Inv" id="app5Inv">
+        <label for="app4Inv">Tabla invertida: </label>
+    </div>
+
+    <div class="fila">
+        <input type="checkbox" name="app5SoloPunto" id="app5SoloPunto">
+        <label for="app5SoloPunto">Mostrar resultados con simbolo (.): </label>
+    </div>
+
+    <div class="fila">
+        <label for="app5Res" id="app5Res">Resultado: </label>
+    </div>
+
+    <div>
+        <input class="app5BtnVer" type="submit" value="Ver tabla" id="app5BtnVer">
+    </div>
+</form>
+
+<h2>Bordes</h2>
+
+<div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+<label for="jsPractica" id="jsPractica">Borde:</label>
+<select name="borde" id="seleccionBorde">
+    <option value="margin">todos</option>
+    <option value="margin-top">superior</option>
+    <option value="margin-bottom">inferior</option>
+    <option value="margin-left">izquierdo</option>
+    <option value="margin-right">derecho</option>
+</select>
 </div>
 
-<div class="row">
-    <input type="checkbox" name="app5Inv" id="app5Inv">
-    <label for="app4Inv">Tabla invertida</label>
+
+<div>
+    <label for="color">Color:</label>
+    <input id="color" type="color">
 </div>
 
-<div class="row">
-    <input type="text">
 
+<div>
+    <label for="grosor">Selecciona el grueso del margen:</label>
+    <input id="grueso" type="text">
 </div>
+
+<div>
+    <label for="tipo">Tipo de margen</label>
+    <select name="tipo" id="tipo">
+        <option value="solid">solid</option>
+        <option value="dashed">dashed</option>
+        <option value="double">double</option>
+    </select>
+</div>
+
+<div></div>
+
+<div>
+    <p id="div">div de prueba</p>
+</div>
+
+<div>
+    <input class="app6BtnVer" type="submit" value="Ver" id="app6BtnVer">
+</div>
+
 
     <script src="js/apps.js"></script>
 </body>

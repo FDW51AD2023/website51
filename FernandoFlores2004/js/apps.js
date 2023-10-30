@@ -80,6 +80,7 @@ appDbt.addEventListener("click",(e)=>{
 
 /*app 4*/ 
 
+
 const app4Num1=document.getElementById("app4Num1");
 const app4Num2=document.getElementById("app4Num2");
 const app4Operacion=document.getElementById("app4Operacion");
@@ -136,15 +137,87 @@ Calcular.addEventListener("click",(e)=>{
     app4Res.value=resultado;
 })
 
+
+
 /*app 5*/
 
-const app5Tabla=document.getElementById("app5Tabla");
-const app5Inv=document.getElementById("app5Inv");
-const app5Solopunto=document.getElementById("app5Solopunto");
-const app5Res=document.getElementById("app5Res");
-const app5BtnVer=document.getElementById("app5BtnVer");
+const app5Tabla = document.getElementById("app5Tabla");
+const app5Inv = document.getElementById("app5Inv");
+const app5SoloPunto = document.getElementById("app5SoloPunto");
+const app5Res = document.getElementById("app5Res");
+const app5BtnVer = document.getElementById("app5BtnVer");
 
+function mostrarTabla() {
+    let tabla = parseInt(app5Tabla.value);
+
+    let lista = document.createElement("ul");
+
+    if (!app5Inv.checked) {
+        for (let i = 1; i <= 10; i++) {
+            let resMult = app5SoloPunto.checked ? ".".repeat(tabla * i) : tabla * i;
+
+            let item = document.createElement("li");
+            item.innerHTML = tabla + " X " + i + " = " + resMult;
+            lista.appendChild(item);
+        }
+    } else {
+        for (let i = 10; i >= 1; i--) {
+            let resMult = app5SoloPunto.checked ? ".".repeat(tabla * i) : tabla * i;
+
+            let item = document.createElement("li");
+            item.innerHTML = tabla + " X " + i + " = " + resMult;
+            lista.appendChild(item);
+        }
+    }
+
+    app5Res.innerHTML = "";
+    app5Res.appendChild(lista);
+}
+
+app5Inv.addEventListener("change", (e) => {
+    mostrarTabla();
+});
+
+app5SoloPunto.addEventListener("change", (e) => {
+    mostrarTabla();
+});
+
+app5BtnVer.addEventListener("click", (e) => {
+    e.preventDefault();
+    mostrarTabla();
+});
+
+
+//app de prueba del for
 
 for (let cont=1; cont<=10; cont ++){
     console.log(cont);
 }
+
+
+//app 6
+
+const borde = document.getElementById("seleccionBorde");
+const color = document.getElementById("color");
+const grueso = document.getElementById("grueso");
+const margen = document.getElementById("tipo");
+const boton = document.getElementById("app6BtnVer");
+const texto = document.getElementById("div");
+
+
+
+boton.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  let B = borde.value;
+  let C = color.value;
+  let G = grueso.value;
+  let M = margen.value;
+
+
+
+  texto.style.margin = B;
+  texto.style.color = C;
+  texto.style.border = G 
+  texto.style.border = M;
+});
