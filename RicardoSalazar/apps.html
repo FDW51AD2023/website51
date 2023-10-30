@@ -8,30 +8,85 @@
 </head>
 <body>
     <h2>App 4</h2>
+    <form id="app 6" action="">
+        <h2>Aplicacion para tabla de multiplicar.</h2>
+        <div class="row">
+            <label type="text" for="app6Ini">Numero inicial:</label>
+            <input type="text" name="app6Ini" id="app6Ini">
+        </div>
+        <div class="row">
+            <label type="text" for="app6Fin">Numero final:</label>
+            <input type="text" name="app6Fin" id="app6Fin">
+        </div>
+        <div class="row">
+            <label for="app6Res">Resultado:</label>
+            <div id="app6Res">
+            </div>
+        </div>
+        <div>
+            <input class="app6BtnVer" type="submit" value="Mostrar resultado" id="app6BtnVer">
+        </div>
+    </form>
+
+    <form id="app 5">
+        <h2>App 5</h2>
+        <div class="row">
+            <h3>Borde</h3>
+            <select name="app5Borde" id="app5Borde">
+                <option value="todos">todos</option>
+                <option value="superior">superior</option>
+                <option value="inferior">inferior</option>
+                <option value="izquierda">izquierda</option>
+                <option value="derecha">derecha</option>
+            </select>
+        </div>
+        <div>
+            <h3>color</h3>
+            <input type="color">
+        </div>
+        <div>
+            <h3>Grosor</h3>
+            <input type="number">
+        </div>
+        <div>
+            <h3>Tipo</h3>
+            <select name="app5Borde" id="app5Borde">
+                <option value="Solid">solid</option>
+                <option value="Dashed">dashed</option>
+                <option value="Double">Double</option>
+            </select>
+        </div>
+        <div>
+            <p>Prueba</p>
+        </div>
+        <div>
+            <input class="app5ver" type="submit" value="Ver" id="app5ver">
+        </div>
+    </form>
+
+    <h2>App 4</h2>
     <form id="app4" action="">
-        <h2>Aplicacion para tablas de Multiplicar</h2>
+        <h2>Aplicacion para tabla de multiplicar.</h2>
+        <div class="row">
+            <label for="borde">Tabla: </label>
+            <input type="text" name="app4Tabla" id="app4Tabla">
+        </div>
         <div class="row">
             <input type="checkbox" name="app4Inv" id="app4Inv">
-            <label for="app4tabla">Tabla:</label>
+            <label for="app4Inv">Tabla invertida: </label>
         </div>
         <div class="row">
             <input type="checkbox" name="app4SoloPunto" id="app4SoloPunto">
-            <label for="app4Num2">Numero 2:</label>
-        </div>
-        <div class="row">
-            <label for="">Operacion:</label>
-            <select name="app3Operacion" id="app3Operacion">
-                <option value="s">Suma</option>
-                <option value="r">Resta</option>
-                <option value="m">Multiplicacion</option>
-                <option value="d">Division</option>
+            <label for="app4SoloPunto">Mostrar resultados con simbolo (.): </label>
             </select>
         </div>
         <div class="row">
-            <label for="app4Res">Resultado:</label>
+            <label for="app4Res">Resultado: </label>
+            <div id="app4Res">
+            </div>
         </div>
         <div>
-            <input id="app4BtnVer" class="btn" type="submit" value="Calcular">
+            <input class="app4BtnVer" type="submit" value="Ver tabla" id="app4BtnVer">
         </div>
     </form>
 
