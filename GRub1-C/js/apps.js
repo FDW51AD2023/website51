@@ -20,9 +20,12 @@
  /*   APLICACION 2 */
  const app2Num1 = document.getElementById("app2Num1");
  const app2Num2 = document.getElementById("app2Num2");
- const app2Res =  document.getElementById("app2Res");
+ const app2ResSuma =  document.getElementById("app2ResSuma");
+ const app2ResResta =  document.getElementById("app2ResResta");
+ const app2ResMulti =  document.getElementById("app2ResMulti");
+ const app2ResDivi =  document.getElementById("app2ResDivi");
 
- const app2BtnCalcular = document.getElementById("app1BtnCalcular");
+ const app2BtnCalcular = document.getElementById("app2BtnCalcular");
 
  /* Metodo para agregar escuchador de eventos. (e) de evento */
  app2BtnCalcular.addEventListener("click",(e) => { 
@@ -35,8 +38,8 @@
     let mult = num1 * num2;
     app2ResSuma.value = suma;
     app2ResResta.value = resta;
-    app2ResMult = mult;
-    app2ResDiv = divi;
+    app2ResMulti.value = mult;
+    app2ResDivi.value = divi;
 
  });
 
@@ -200,7 +203,7 @@ app5BtnVer.addEventListener("click",(e)=> {
          break;
 
       case "double" :     
-         app5DivPrueba.style.border = "double";
+         editarDiv.style.border = "double";
          break;
   }
 });
@@ -208,16 +211,49 @@ app5BtnVer.addEventListener("click",(e)=> {
 
 /*  APLICACION 6 */
 
+function perfecto(numero){
+   let div = 1;
+   let suma = 0;
 
-const app6Ini = document.getElementById("app5Ini");
+   while (div < numero){
+      if(numero % div == 0){
+         suma += div;
+      }
+      div++;
+   }
+   return suma == numero;
+/*    if(suma == numero){
+      return true;
+
+   }
+   else {
+      return false;
+   } */
+}
+
+const app6Ini = document.getElementById("app6Ini");
 const app6Fin = document.getElementById("app6Fin");
 const app6Res = document.getElementById("app6Res");
 const app6Btn = document.getElementById("app6Btn");
+const lista = document.createElement("ol");
 
 app6Btn.addEventListener("click", (e) => {
    e.preventDefault();
 
    let ini = parseInt(app6Ini.value);
    let fin = parseInt(app6Fin.value);
-   let 
+   
+   let numero = ini;
+
+   do{
+      /* codigo paara checar si ese numero es perfecto */
+      if(perfecto(numero)){
+         let item = document.createElement("li");
+         item.innerHTML = numero;
+         lista.appendChild(item);
+      }
+      app6Res.innerHTML = "";
+      app6Res.appendChild(lista);
+      numero++;
+   }while(numero <= fin );
 });
