@@ -17,3 +17,9 @@ input[type="text"]{
     padding: 5px 30px;
 }
 
+#mod{
+    text-align: center;
+    width: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
