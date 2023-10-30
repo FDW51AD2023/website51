@@ -78,10 +78,60 @@ const app6SoloPunto = document.getElementById("app6SoloPunto")
 const app6Res = document.getElementById("app6Res")
 const app6BtnVer = document.getElementById("app6BtnVer")
 
-/*Checar si se marco*/
-if (app6Inv.checked) {
+function mostrartabla() {
+    let tabla = parseInt(app6Tabla.value);
+
+    let lista = document.createElement("ul");
+
+    if(!app6Inv.checked == false){
+        for( let i=1; i < 10; i++){
+
+            let resMult= app6SoloPunto.checked ? ".".repeat (tabla * i) : tabla * i ;
+            
+            let item = document.createElement("li");
+            item.innerHTML=tabla + "x" + i + "=" + resMult;
+            lista.appendChild(item);
+
+        }
+    }
+    else {
+        for( let i=10; i >= 1; i--){
+
+            let resMult= app6SoloPunto.checked ? ".".repeat (tabla * i) : tabla * i ;
+
+            let item = document.createElement("li");
+            item.innerHTML=tabla + "x" + i + "=" + resMult;
+            lista.appendChild(item);
+
+        }
+    }
+
+    app6Res.innerHTML = "";
+    app6Res.appendChild(lista);
     
 }
+
+app6BtnVer.addEventListener ("click" , (e) => {
+    e.preventDefault();
+
+    mostrartabla();
+})
+
+app6Inv.addEventListener("change" , (e) => {
+    e.preventDefault();
+
+    mostrartabla();
+
+
+});
+
+app6SoloPunto.addEventListener("change" , (e) => {
+    e.preventDefault();
+
+    mostrartabla();
+
+
+});
 
 /*App4*/
 
@@ -140,3 +190,66 @@ app5BtnCalcular.addEventListener ("click" , (e) => {
 });
 
 /*App3*/
+
+
+/*App7*/
+function perfecto(numero){
+    let div =1;
+    let suma =0;
+    
+    while(div < numero){
+        if(numero % div == 0){
+            suma+=div
+        }
+        div++;
+    }
+    return suma == numero;
+}
+
+
+const app7Init = document.getElementById("app7Init");
+const app7Fin = document.getElementById("app7Fin");
+const app7Res = document.getElementById("app7Res");
+const app7BtnVer = document.getElementById("app7BtnVer");
+
+const lista = document.createElement("ol");
+
+app7BtnVer.addEventListener("click" , (e) => {
+    e.preventDefault;
+
+    let ini = parseInt(app7Init.value);
+    let fin =parseInt(app7Fin.value);
+    let numero = ini;
+
+    /*Codigo para checar ese numero*/
+
+    do {
+        /*Codigo para checar si el numero es perfecto*/
+        if(perfecto(numero)){
+            let item = document.createElement("li");
+            item.innerHTML = numero;
+            lista.appendChild(item);
+
+        }
+        numero++;
+    }while(ini <= fin);
+
+    app7Res.appendChild(lista);
+
+});
+/*App7*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

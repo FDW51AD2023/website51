@@ -1,3 +1,79 @@
+/* App8 */
+
+function perfecto(numero){
+    let div = 1;
+    let suma = 0;
+    while(div < numero){
+        if(numero % div == 0){
+            suma += div;
+        }
+        div++;
+    }
+    return suma == numero;
+}
+
+const app8Ini = document.getElementById("app8Ini");
+const app8Fin = document.getElementById("app8Fin");
+const app8Res = document.getElementById("app8Res");
+const app8BtnVer = document.getElementById("app8BtnVer");
+const lista = document.createElement("ol");
+
+
+app8BtnVer.addEventListener("click", (e) => {
+    e.preventDefault();
+    let ini = parseInt(app8Ini.value);
+    let fin = parseInt(app8Fin.value);
+
+    let numero = ini;
+
+    do {
+        /* codigo para checar si es perfecto*/
+        if( perfecto(numero)){
+            let item = document.createElement("li");
+            item.innerHTML = numero;
+            lista.appendChild(item);
+        }
+        numero++;
+    }while(numero <= fin);
+    app8Res.appendChild(lista);
+});
+
+
+
+
+/* App7 */
+
+const borde = document.getElementById("borde");
+const color = document.getElementById("color");
+const grosor = document.getElementById("grosor");
+const tipo = document.getElementById("tipo");
+const mod = document.getElementById("mod");
+const ViewBtn = document.getElementById("ViewBtn");
+
+ViewBtn.addEventListener("click", (e)=>{
+    e.preventDefault();
+    let opcionA = (borde.value);
+    let opcionB = (color.value);
+    let opcionC = (grosor.value);
+    let opcionD = (tipo.value);
+    mod.style.border="none";
+
+    switch(opcionA){
+        case "todo": mod.style.border= opcionC + "px " + opcionD + " " + opcionB;
+                  break;
+        case "sup": mod.style.borderTop= opcionC + "px " + opcionD + " " + opcionB;
+                  break;
+        case "inf": mod.style.borderBottom= opcionC + "px " + opcionD + " " + opcionB;
+                  break;
+        case "izq": mod.style.borderLeft= opcionC + "px " + opcionD + " " + opcionB;
+                  break;
+        case "der": mod.style.borderRight= opcionC + "px " + opcionD + " " + opcionB;
+                  break;
+    }  
+
+});
+
+
 /* App6 */
 
 const app6Tabla = document.getElementById("app6Tabla");
@@ -6,10 +82,68 @@ const app6SoloPunto = document.getElementById("app6SoloPunto");
 const app6Res = document.getElementById("app6Res");
 const app6BtnVer = document.getElementById("app6BtnVer");
 
-/* checar si se marco tabla invertida */
-if(app6Inv.checked){
-    
+function mostrarTabla(){
+    let tabla = parseInt(app6Tabla.value);
+    let lista = document.createElement("ul");
+
+    if(!app6Inv.checked){
+        for(let i=1;i<=10;i++){
+            let resMult= app6SoloPunto.checked ?".".repeat(tabla * i) : tabla * i;
+
+/*             let resMult;
+            if(app6SoloPunto.checked){
+                resMult = ".".repeat(tabla*i)
+
+            }
+            else{
+                resMult = tabla * i;
+            } */
+
+            let item = document.createElement("li");
+            item.innerHTML = tabla + " X " + i + " = " + resMult;
+            lista.appendChild(item);
+        }    
+    }
+    else{
+        for(let i=10;i>=1;i--){
+            let resMult= app6SoloPunto.checked ? ".".repeat(tabla * i) : tabla * i;
+
+            /* let resMult; */
+           /*  if(app6SoloPunto.checked){
+                resMult = ".".repeat(tabla*i)
+
+            }
+            else{
+                resMult = tabla * i;
+            } */
+            let item = document.createElement("li");
+            item.innerHTML = tabla + " X " + i + " = " + resMult;
+            lista.appendChild(item);
+        } 
+    };
+
+    app6Res.innerHTML = "";
+    app6Res.appendChild(lista);
 }
+
+app6BtnVer.addEventListener("click", (e)=>{
+    e.preventDefault();
+    mostrarTabla();
+
+});
+
+
+app6Inv.addEventListener("change", (e)=>{
+    mostrarTabla();
+
+});
+
+app6SoloPunto.addEventListener("change", (e)=>{
+    mostrarTabla();
+
+});
+
+
 
 
 
