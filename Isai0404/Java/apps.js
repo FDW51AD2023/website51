@@ -86,8 +86,7 @@ const app4solo = document.getElementById("solo");
 const app4res = document.getElementById("app4res");
 const app4bc = document.getElementById("app4bc");
 
-if(app4inv.checked){}
-
+/*
 let lista = document.createElement("ul");
 app4bc.addEventListener("click",(e)=>{
     e.preventDefault();
@@ -171,4 +170,105 @@ if(!app4inv.checked){
 }
 /* el cont++ es para que el incremento sea de 1 en 1 */
 
-/* APP 5*/
+function mostrarTabla(){
+    let tabla = parseInt(app4tabla.value);
+
+    let lista = document.createElement("ul");
+
+
+    if(!app4inv.checked){
+        for(let i=1 ;i<=10; i++){
+            let resMult = solo.checked ? ".".repeat(tabla * i) : tabla * i;
+            let item = document.createElement("li");
+            item.innerHTML = tabla + " X " + i +  " = " + resMult;
+            lista.appendChild(item);
+        }
+    }
+    else {
+        for(let i=10 ;i>=1; i--){
+            let resMult=solo.checked ? "." .repeat(tabla * i) : tabla * i /* repeat es un metodo dentro de la clase / objeto . */
+            let item = document.createElement("li");
+            item.innerHTML = tabla + " X " + i +  " = " + resMult;
+            lista.appendChild(item);
+        }
+    }
+    app4res.innerHTML = "";
+    app4res.appendChild(lista);
+};
+
+app4inv.addEventListener("change", (e) =>{
+    mostrarTabla();})
+solo.addEventListener("change", (e)=> {
+    mostrarTabla();})
+app4bc.addEventListener("click", (e) => {
+    e.preventDefault();
+    mostrarTabla();})
+app4bc.addEventListener ("click",(e) => {
+    e.preventDefault();});
+
+/* APP 5
+
+const borde = document.getElementById("borde");
+const gros = document.getElementById("gros");
+const tipo = document.getElementById("tipo");
+const color = document.getElementById("color"); */
+app5bc.addEventListener("click",(e)=>{
+    e.preventDefault();
+    var col = document.getElementById("color").value
+    console.log(col);
+    var tip = document.getElementById("tipo").value
+    console.log(tip)
+    var gros = document.getElementById("gros").value
+    console.log(gros)
+    var bor = document.getElementById("borde").value
+    console.log(bor)
+    var divv = document.getElementById("box");
+    switch(bor){
+        case "t": divv.style.border = gros +" "+tip+" "+ col;
+                break;
+        case "s": divv.style.borderTop = gros +" "+tip+" "+ col;
+                break;
+        case "in": divv.style.borderBlockEnd= gros +" "+tip+" "+ col;
+                break;
+        case "iz": divv.style.borderLeft = gros +" "+tip+" "+ col;
+                break
+        case "d": divv.style.borderRight = gros +" "+tip+" "+ col;
+                break;}
+    var sup = gros
+    console.log(tip)
+    console.log(sup)
+    divv.style.margin = col;
+});
+/* App6*/
+function Perfecto(num){
+    let div =1;
+    let suma = 0;
+    while(div < num){
+        if(num % div ==0){
+            suma += div
+        }
+        div++
+    }
+    return suma == num;
+}
+const app6Ini =document.getElementById("app6Ini")
+const app6Fin =document.getElementById("app6Fin")
+const app6Res = document.getElementById("app6res")
+const app6bc = document.getElementById("app6bc")
+const lis =document.createElement("ol")
+
+app6bc.addEventListener("click",(e) =>{
+    e.preventDefault();
+    let ini = parseInt(app6Ini.value);
+    let fin = parseInt(app6Fin.value);
+    let num = ini;
+    do{
+        /* Codigo pa ver si el numero es perfect */
+        if(Perfecto(num)){
+            let item = document.createElement("li");
+            item.innerHTML = num;
+            lis.appendChild(item)}
+        num++;
+    }while( num <= fin);
+    app6Res.appendChild(lis)
+});

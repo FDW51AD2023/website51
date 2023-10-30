@@ -17,11 +17,15 @@
  });
 
  
+ /*   APLICACION 2 */
  const app2Num1 = document.getElementById("app2Num1");
  const app2Num2 = document.getElementById("app2Num2");
- const app2Res =  document.getElementById("app2Res");
+ const app2ResSuma =  document.getElementById("app2ResSuma");
+ const app2ResResta =  document.getElementById("app2ResResta");
+ const app2ResMulti =  document.getElementById("app2ResMulti");
+ const app2ResDivi =  document.getElementById("app2ResDivi");
 
- const app2BtnCalcular = document.getElementById("app1BtnCalcular");
+ const app2BtnCalcular = document.getElementById("app2BtnCalcular");
 
  /* Metodo para agregar escuchador de eventos. (e) de evento */
  app2BtnCalcular.addEventListener("click",(e) => { 
@@ -29,7 +33,14 @@
     let num1 = parseInt(app2Num1.value);
     let num2 = parseInt(app2Num2.value);
     let suma = num1 + num2;
-    app1Res.value = suma;
+    let resta = num1 - num2;
+    let divi = num1 / num2;
+    let mult = num1 * num2;
+    app2ResSuma.value = suma;
+    app2ResResta.value = resta;
+    app2ResMulti.value = mult;
+    app2ResDivi.value = divi;
+
  });
 
 
@@ -152,7 +163,97 @@ const app5Color = document.getElementById("app5Color");
 const app5Grosor = document.getElementById("app5Grosor");
 const app5Tipo = document.getElementById("app5Tipo");
 const app5BtnVer = document.getElementById("app5BtnVer");
+const editarDiv = document.getElementById("editarDiv");
+
+app5BtnVer.addEventListener("click",(e)=> {
+   e.preventDefault();
+   editarDiv.style.border="none";
+   let Borde = (app5Borde.value);
+   let Tipo = (app5Tipo.value);
+
+   switch (Borde) {
+      case "t":
+         editarDiv.style.border = app5Color.value + app5Grosor.value + "px";
+         break;
+
+      case "s":
+         editarDiv.style.borderTop = app5Color.value + app5Grosor.value + "px";
+         break;
+      
+      case "in":
+         editarDiv.style.borderBotton = app5Color.value + app5Grosor.value + "px";
+         break;
+      
+      case "iz":
+         editarDiv.style.borderLeft = app5Color.value + app5Grosor.value + "px";
+         break;
+
+      case "d":
+         editarDiv.style.borderRight = app5Color.value + app5Grosor.value + "px";
+         break;
+   }
+
+   switch (Tipo){
+      case "solid"  :     
+         editarDiv.style.border = "solid";
+         break;
+         
+      case "dashed" :    
+         editarDiv.style.border= "dashed";
+         break;
+
+      case "double" :     
+         editarDiv.style.border = "double";
+         break;
+  }
+});
 
 
+/*  APLICACION 6 */
 
+function perfecto(numero){
+   let div = 1;
+   let suma = 0;
 
+   while (div < numero){
+      if(numero % div == 0){
+         suma += div;
+      }
+      div++;
+   }
+   return suma == numero;
+/*    if(suma == numero){
+      return true;
+
+   }
+   else {
+      return false;
+   } */
+}
+
+const app6Ini = document.getElementById("app6Ini");
+const app6Fin = document.getElementById("app6Fin");
+const app6Res = document.getElementById("app6Res");
+const app6Btn = document.getElementById("app6Btn");
+const lista = document.createElement("ol");
+
+app6Btn.addEventListener("click", (e) => {
+   e.preventDefault();
+
+   let ini = parseInt(app6Ini.value);
+   let fin = parseInt(app6Fin.value);
+   
+   let numero = ini;
+
+   do{
+      /* codigo paara checar si ese numero es perfecto */
+      if(perfecto(numero)){
+         let item = document.createElement("li");
+         item.innerHTML = numero;
+         lista.appendChild(item);
+      }
+      app6Res.innerHTML = "";
+      app6Res.appendChild(lista);
+      numero++;
+   }while(numero <= fin );
+});

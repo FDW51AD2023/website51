@@ -1,3 +1,45 @@
+/* App 8 */
+
+function perfecto(numero){
+    let div = 1;
+    let suma = 0;
+    
+    while(div < numero){
+        if(numero % div == 0){
+            suma += div;
+        }
+        div++;
+    }
+    return suma == numero;
+}
+
+const app8Ini = document.getElementById("app8Ini");
+const app8Fin = document.getElementById("app8Fin");
+const app8Res = document.getElementById("app8Res");
+const app8BtnVer = document.getElementById("app8BtnVer");
+const lista = document.createElement("ol");
+
+app8BtnVer.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    let ini = parseInt(app8Ini.value);
+    let fin = parseInt(app8Fin.value);
+
+    let numero = ini;
+
+    do {
+        /* codigo para checar si es perfecto */
+        if(perfecto(numero)){
+            let item = document.createElement("li")
+            item.innerHTML = numero;
+            lista.appendChild(item);
+        }
+        numero++;
+    }while( numero <= fin );
+
+    app8Res.appendChild(lista);
+});
+
 /* App7 */
 
 const app7Borde = document.getElementById("app7Borde");
@@ -6,6 +48,29 @@ const app7Grosor = document.getElementById("app7Grosor");
 const app7Tipo = document.getElementById("app7Tipo");
 const app7Div = document.getElementById("app7Div");
 const app7BtnVer = document.getElementById("app7BtnVer");
+
+app7BtnVer.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    app7Div.style.border = "none";
+    switch (app7Borde.value) {
+        case "all":
+            app7Div.style.border = app7Grosor.value + "px " + app7Tipo.value + app7Color.value;
+            break;
+        case "top":
+            app7Div.style.borderTop = app7Grosor.value + "px " + app7Tipo.value + app7Color.value;
+            break;
+        case "bottom":
+            app7Div.style.borderBottom = app7Grosor.value + "px " + app7Tipo.value + app7Color.value;
+            break;
+        case "left":
+            app7Div.style.borderLeft = app7Grosor.value + "px " + app7Tipo.value + app7Color.value;
+            break;
+        case "right":
+            app7Div.style.borderRight = app7Grosor.value + "px " + app7Tipo.value + app7Color.value;
+            break;
+    }
+});
 
 /* App6 */
 

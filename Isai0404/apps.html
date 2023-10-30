@@ -56,6 +56,7 @@
     </form>
 
     <h2>app 3</h2>
+    <form action="">
         <div class="row">
             <label for="">Numero</label>
             <input type="text" name="app3Num1" id="app3Num1">
@@ -80,6 +81,7 @@
         <div> <input id="app3bc" class="btm" type="submit" ></div>
     </form>
     <h2>app4 Multiplicacion</h2>
+    <form action="">
         <div class="row">
             <label for="">Numero</label>
             <input type="text" name="app4tab" id="app4tab">
@@ -99,9 +101,10 @@
     </form>
 
     <h2>app5 Margenes</h2>
+    <form action="">
         <div class="row">
             <label for="">Borde</label>
-            <select name = "bordet" id="bordet">
+            <select name = "borde" id="borde">
                 <option value="t">Todos</option>
                 <option value="s">Superior</option>
                 <option value="in">Inferior</option>
@@ -120,17 +123,31 @@
         <div class="row">
             <label for="">tipo</label>
             <select name="tipo" id="tipo">
-                <option value="so">Solid</option>
-                <option value="da">Dashed</option>
-                <option value="do">Double</option>
+                <option value="solid">Solid</option>
+                <option value="dashed">Dashed</option>
+                <option value="double">Double</option>
             </select>
         </div>
-        <div class="row">
-            <label for="" name="app4res" id="app4res">Resultado</label>
-            
-        </div>
-        <div> <input id="app4bc" class="btm" type="submit" ></div>
+        <div class="row" id="box"> Prueba</div>
+        <div> <input id="app5bc" class="btm" type="submit" ></div>
     </form>
+
+    <h2>app6 numeros perfectos</h2>
+    <div class="row">
+        <label for=""></label>
+    <div class="row">
+        <label for="app6Ini">Numero inicial</label>
+        <input type="text" name="app6Ini" id="app6Ini">
+    </div>
+    <div class="row">
+        <label for="app6Fin">Numero final</label>
+        <input type="text" name="app6Fin" id="app6Fin">
+    </div>
+    <div class="row">
+        <label for="app6res" name="app6res" id="app6res">Resultado</label>
+    </div>
+    <div> <input id="app6bc" class="btm" type="submit" ></div>
+</form>
     <script src="java/apps.js"></script>
 
 </body>

@@ -164,56 +164,100 @@ app5BtnVer.addEventListener("click", (e) => {
     let divTipo = app5Tipo.value
     
 
-    app5Div.style.background = app5NuevoColor;
+    
     app5Div.style.border = "none";
     if (borde == "t"){
         switch (divTipo){
-            case "so" : app5Div.style.border = grosor + "px solid";
+            case "so" : app5Div.style.border = grosor + "px solid" + app5NuevoColor;
                         break;
-            case "da" : app5Div.style.border = grosor + "px dashed";
+            case "da" : app5Div.style.border = grosor + "px dashed" + app5NuevoColor;
                         break;
-            case "do" : app5Div.style.border = grosor + "px double";
+            case "do" : app5Div.style.border = grosor + "px double" + app5NuevoColor;
                         break;
         }
     }
     else if (borde == "s"){
         switch (divTipo){
-            case "so" : app5Div.style.borderTop = grosor + "px solid";
+            case "so" : app5Div.style.borderTop = grosor + "px solid" + app5NuevoColor;
                         break;
-            case "da" : app5Div.style.borderTop = grosor + "px dashed";
+            case "da" : app5Div.style.borderTop = grosor + "px dashed" + app5NuevoColor;
                         break;
-            case "do" : app5Div.style.borderTop = grosor + "px double";
+            case "do" : app5Div.style.borderTop = grosor + "px double" + app5NuevoColor;
                         break;
         }   
     }
     else if (borde == "in"){
         switch (divTipo){
-            case "so" : app5Div.style.borderBottom = grosor + "px solid";
+            case "so" : app5Div.style.borderBottom = grosor + "px solid" + app5NuevoColor;
                         break;
-            case "da" : app5Div.style.borderBottom = grosor + "px dashed";
+            case "da" : app5Div.style.borderBottom = grosor + "px dashed" + app5NuevoColor;
                         break;
-            case "do" : app5Div.style.borderBottom = grosor + "px double";
+            case "do" : app5Div.style.borderBottom = grosor + "px double" + app5NuevoColor;
                         break;
         }           
     }
     else if (borde == "iz"){
         switch (divTipo){
-            case "so" : app5Div.style.borderLeft = grosor + "px solid";
+            case "so" : app5Div.style.borderLeft = grosor + "px solid" + app5NuevoColor;
                         break;
-            case "da" : app5Div.style.borderLeft = grosor + "px dashed";
+            case "da" : app5Div.style.borderLeft = grosor + "px dashed" + app5NuevoColor;
                         break;
-            case "do" : app5Div.style.borderLeft = grosor + "px double";
+            case "do" : app5Div.style.borderLeft = grosor + "px double" + app5NuevoColor;
                         break;
         }           
     }
     else if (borde == "d"){
         switch (divTipo){
-            case "so" : app5Div.style.borderRight = grosor + "px solid";
+            case "so" : app5Div.style.borderRight = grosor + "px solid" + app5NuevoColor;
                         break;
-            case "da" : app5Div.style.borderRight = grosor + "px dashed";
+            case "da" : app5Div.style.borderRight = grosor + "px dashed" + app5NuevoColor;
                         break;
-            case "do" : app5Div.style.borderRight = grosor + "px double";
+            case "do" : app5Div.style.borderRight = grosor + "px double" + app5NuevoColor;
                         break;
         }           
     }
 });
+
+
+/* App 6 */
+function perfecto (numero){
+    let div = 1;
+    let suma = 0;
+    while (div < numero){
+        if (numero % div == 0){
+            suma += div;
+        }
+        div++;
+    }
+    return suma == numero;
+
+}
+
+const app6Ini = document.getElementById("app6Ini");
+const app6Fin = document.getElementById("app6Fin");
+const app6Res = document.getElementById("app6Res");
+const app6BtnVer = document.getElementById("app6BtnVer");
+const lista = document.createElement("ol");
+
+app6BtnVer.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    let ini = parseInt(app6Ini.value);
+    let fin = parseInt(app6Fin.value);
+    let numero = ini;
+
+
+    do {
+        /* codigo para checar si es perfecto */
+        if(perfecto(numero)){
+            let item = document.createElement("li");
+            item.innerHTML= numero;
+            lista.appendChild(item);
+        }
+
+        app6Res.appendChild(lista);
+
+        numero++;
+    }while(numero <= fin);
+
+})

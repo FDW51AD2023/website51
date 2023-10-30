@@ -8,6 +8,34 @@
 </head>
 <body>
     <h1>Apps</h1>
+    <form id="app8" action="">
+        <h2>Aplicaciones numeros perfectos</h2>
+    
+        <div class="row">
+            <label for="app8Ini">Numero inicial:</label>
+            <input type="text" name="app8Ini" id="app8Ini">
+        </div>
+        
+        <div class="row">
+            
+            <label for="app8Fin">Numero final:</label>
+            <input type="text" name="app8Fin" id="app8Fin">
+        </div>
+
+    
+        <div class="row">
+            <label for="app8Res">Resultado:</label>
+            <div id="app8Res">
+
+            </div>
+        </div>
+        <div>
+            <input id="app8BtnVer" class="btn" type="submit" value="Mostarar Numeros">
+        </div>
+    </form>
+
+
+
     <form id="app7" action="">
         <h2>Aplicacion 7</h2>
 
@@ -29,22 +57,22 @@
 
         <div class="row">
             <label for="grosor">Grosor:</label>
-            <input readonly type="text" name="grosor" id="grosor">
+            <input type="text" name="grosor" id="grosor">
         </div>
 
         <div class="row">
             <label for="tipo">Tipo:</label>
             <select name="tipo" id="tipo">
-                <option value="solid">Todo</option>
-                <option value="dash">Dashed</option>
-                <option value="dou">Double</option>
+                <option value="solid">Solid</option>
+                <option value="dashed">Dashed</option>
+                <option value="double">Double</option>
             </select>
         </div>
-        <div>
+        <div id="mod">
             Div prueba
         </div>
         <div class="row">
-            <input id="ver" class="btn" type="submit" value="Ver">
+            <input id="ViewBtn" class="btn" type="submit" value="Ver">
         </div>
       
     </form>
