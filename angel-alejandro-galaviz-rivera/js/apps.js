@@ -190,3 +190,66 @@ app5BtnCalcular.addEventListener ("click" , (e) => {
 });
 
 /*App3*/
+
+
+/*App7*/
+function perfecto(numero){
+    let div =1;
+    let suma =0;
+    
+    while(div < numero){
+        if(numero % div == 0){
+            suma+=div
+        }
+        div++;
+    }
+    return suma == numero;
+}
+
+
+const app7Init = document.getElementById("app7Init");
+const app7Fin = document.getElementById("app7Fin");
+const app7Res = document.getElementById("app7Res");
+const app7BtnVer = document.getElementById("app7BtnVer");
+
+const lista = document.createElement("ol");
+
+app7BtnVer.addEventListener("click" , (e) => {
+    e.preventDefault;
+
+    let ini = parseInt(app7Init.value);
+    let fin =parseInt(app7Fin.value);
+    let numero = ini;
+
+    /*Codigo para checar ese numero*/
+
+    do {
+        /*Codigo para checar si el numero es perfecto*/
+        if(perfecto(numero)){
+            let item = document.createElement("li");
+            item.innerHTML = numero;
+            lista.appendChild(item);
+
+        }
+        numero++;
+    }while(ini <= fin);
+
+    app7Res.appendChild(lista);
+
+});
+/*App7*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
