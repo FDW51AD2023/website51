@@ -1,4 +1,75 @@
-/* app4 Contador*/
+/* App 6 */
+function perfecto(numero){
+    let div = 1;
+    let suma = 0;
+    while(div < numero){
+        if(numero % div == 0){
+            suma += div
+        }
+        div++;
+    }
+    return suma == numero;
+}
+
+const app6Ini = document.getElementById("app6Ini");
+const app6Fin = document.getElementById("app6Fin");
+const app6Res = document.getElementById("app6Res");
+const app6btnVer = document.getElementById("app6BtnVer");
+const lista = document.createElement("ol");
+
+app6btnVer.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    let ini = parseInt(app6Ini.value);
+    let fin = parseInt(app6Fin.value);
+
+    let numero = ini
+
+    do {
+        /* Aqui deberia ir un codigo para checar ese numero */
+        /* Codigo para revisar si es perfecto */
+        if(perfecto(numero)){
+            let item = document.createElement("li");
+            item.innerHTML = numero
+            lista.appendChild(item);
+        }
+        numero++;
+    }while(numero <= fin);
+
+    app6Res.appendChild(lista);
+});
+
+/* app 5 */
+
+/* const app5Num1 = document.getElementById("app5Num1");
+const app5Num2 = document.getElementById("app5Num2");
+const app5Operacion = document.getElementById("app5Operacion")
+const app5Res = document.getElementById("app5Res");
+const app5BtnCalcular = document.getElementById("app5BtnCalcular");
+
+app5BtnCalcular.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    let num1 = parseInt(app5Num1.value);
+    let num2 = parseInt(app5Num2.value);
+    let operacion = app5Operacion.value;
+    let resultado;
+
+    switch(operacion){
+        case "s" :  resultado = num1 + num2;
+                    break;
+        case "r" :  resultado = num1 - num2;
+                    break;
+        case "m" :  resultado = num1 * num2;
+                    break;
+        case "d" :  resultado = num1 / num2;
+                    break;
+    }
+
+    app5Res.value = resultado;
+}); */
+
+/* app4 Tablas de multiplicar*/
 
 const app4Tabla = document.getElementById("app4Tabla");
 const app4Inv = document.getElementById("app4Inv");
@@ -6,10 +77,27 @@ const app4SoloPunto = document.getElementById("app4SoloPunto");
 const app4Res = document.getElementById("app4Res");
 const app4BtnVer = document.getElementById("app4BtnVer");
 
-/* Revisar si se marco tabla invertida */
-if (app4Inv.checked){
-    
-}
+app4BtnVer.addEventListener("click", (e) => {e.preventDefault();
+
+    let tabla = parseInt(app4Tabla.value);
+        if(app4SoloPunto.checked){
+            for(let i=1 ; i <=10; i++ ){
+                let i = app4SoloPunto.checked? resMult= ".".repeat(tabla*i): resMult = tabla * i;
+                let app4SoloPunto;}
+            }
+        if ( !app4Inv.checked){
+            for(let i=1; i <=10; i++ ){
+                let i = document.createElement("li");
+                item.innerHTML = tabla + " X " + i + " = " + tabla * i;
+                lista.appendChild(item)};
+            }
+        else {
+            for(let i=10; i >=1; i-- ){
+                let item = document.createElement("li");
+                item.innerHTML = tabla + " X " + i + " = " + tabla * i;
+                lista.appendChild(item)};
+            }
+        });
 /* App3 */
 
 const app3Num1 = document.getElementById("app3Num1")
@@ -96,7 +184,7 @@ app_divisionBtnCalcular.addEventListener("click", (e) => { e.preventDefault();
 
     let num1 = parseInt(app_divisionNum1.value);
     let num2 = parseInt(app_divisionNum2.value);
-    let suma = num1 / num2;
+    let division = num1 / num2;
 
-    app_divisionRes.value = suma
+    app_divisionRes.value = division
 });
