@@ -216,13 +216,13 @@ function perfecto(numero){
  const app6Res = document.getElementById("app6Res");
  const app6BtnVer = document.getElementById("app6BtnVer");
  const lista = document.createElement("ol");
-
-
+ 
+ app6Res.innerHTML = "";
 
 
  app6BtnVer.addEventListener("click", (e) => {
    e.preventDefault();
-
+   
 
    let ini = parseInt(app6ini.value);
    let fin = parseInt(app6fin.value);
@@ -242,7 +242,6 @@ function perfecto(numero){
       numero++;
    }while( numero <= fin);
    
-
    app6Res.appendChild(lista);
-
- });
+    /* pendiente hacer que se borre el resulatdo antes de mostrar otro */
+ })
