@@ -182,3 +182,63 @@ app5VerDiv.addEventListener("click", (e) => {
             break;
     }
 });
+
+/* Aplicacion 6 */
+
+function perfecto (numero){
+
+    let div = 1;
+    let suma = 0;
+
+    while(div < numero){
+
+        if (numero % div == 0){
+            suma += div;
+        }
+
+        div++;
+    }
+
+    return suma == numero;
+}
+
+/* Declarar las Variables */
+
+const app6Ini = document.getElementById ("app6Ini");
+const app6Fin = document.getElementById ("app6Fin");
+
+const app6BtnVer = document.getElementById ("app6BtnVer");
+
+const app6Res = document.getElementById ("app6Res");
+
+const lista = document.createElement ("ol");
+
+/* Iniciar Evento */
+
+app6BtnVer.addEventListener("click",(e)=> {
+    e.preventDefault();
+
+    /* Sacar los Valores */
+
+    let ini = parseInt (app6Ini.value);
+    let fin = parseInt (app6Fin.value);
+
+    let numero = ini
+
+    do{
+
+        /* Codigo para checar ese numero es perfecto */
+
+        if ( perfecto(numero)){
+            let item = document.createElement ("li");
+            item.innerHTML = numero;
+
+            lista.appendChild (item);
+        }
+
+        numero ++;
+    } while(numero <= fin);
+
+    app6Res.appendChild (lista);
+
+});
