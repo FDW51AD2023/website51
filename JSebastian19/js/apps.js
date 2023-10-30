@@ -101,6 +101,144 @@ const app4Res = document.getElementById ("app4Res");
 
 const app4BtnVer = document.getElementById ("app4BtnVer");
 
-if (app4Inv.checked){
+/* Funcion */
 
+function mostrarTabla(){
+
+    let tabla = parseInt(app4Tabla.value);
+    let lista = document.createElement("ul");
+
+    if( !app4Inv.checked ){
+        for(let i=1 ; i<=10 ; i++){
+            let resMult = app4SoloPunto.checked ? ".".repeat(tabla*i) : tabla * i ;
+            let item = document.createElement("li");
+            item.innerHTML = tabla + " X " + i + " = " + resMult;
+            lista.appendChild(item);
+        }
+    }
+    else {
+        for( let i=10 ; i>=1 ; i-- ){
+            let resMult= app4SoloPunto.checked ? ".".repeat(tabla*i) : tabla*i ;
+            let item = document.createElement("li");
+            item.innerHTML = tabla + " X " + i + " = " + resMult;
+            lista.appendChild(item);
+        }
+
+    }
+
+    app4Res.innerHTML="";
+    app4Res.appendChild(lista);
+};
+
+app4BtnVer.addEventListener ("click",(e) => {
+   e.preventDefault ();
+   mostrarTabla ();
+});
+
+app4Inv.addEventListener ("click",(e) => {
+   mostrarTabla ();
+});
+
+app4sSoloPunto.addEventListener ("click",(e) => {
+   mostrarTabla ();
+});
+
+/* Aplicacion 5 */
+
+const app5Borde = document.getElementById ("app5Borde");
+const app5Color = document.getElementById ("app5Color");
+const app5Grosor = document.getElementById ("app5Grosor");
+const app5Tipo = document.getElementById ("app5Tipo");
+
+const app5VerDiv = document.getElementById ("app5VerDiv");
+
+const app5Res = document.getElementById ("app5Res");
+
+app5VerDiv.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    app5Res.style.border = "none";
+
+    switch (app5Borde.value) {
+
+        case "all":
+            app5Res.style.border = app5Grosor.value + "px " + app5Tipo.value + app5Color.value;
+            break;
+
+        case "top":
+            app5Res.style.borderTop = app5Grosor.value + "px " + app5Tipo.value + app5Color.value;
+            break;
+
+        case "bottom":
+            app5Res.style.borderBottom = app5Grosor.value + "px " + app5Tipo.value + app5Color.value;
+            break;
+
+        case "left":
+            app5Res.style.borderLeft = app5Grosor.value + "px " + app5Tipo.value + app5Color.value;
+            break;
+
+        case "right":
+            app5Res.style.borderRight = app5Grosor.value + "px " + app5Tipo.value + app5Color.value;
+            break;
+    }
+});
+
+/* Aplicacion 6 */
+
+function perfecto (numero){
+
+    let div = 1;
+    let suma = 0;
+
+    while(div < numero){
+
+        if (numero % div == 0){
+            suma += div;
+        }
+
+        div++;
+    }
+
+    return suma == numero;
 }
+
+/* Declarar las Variables */
+
+const app6Ini = document.getElementById ("app6Ini");
+const app6Fin = document.getElementById ("app6Fin");
+
+const app6BtnVer = document.getElementById ("app6BtnVer");
+
+const app6Res = document.getElementById ("app6Res");
+
+const lista = document.createElement ("ol");
+
+/* Iniciar Evento */
+
+app6BtnVer.addEventListener("click",(e)=> {
+    e.preventDefault();
+
+    /* Sacar los Valores */
+
+    let ini = parseInt (app6Ini.value);
+    let fin = parseInt (app6Fin.value);
+
+    let numero = ini
+
+    do{
+
+        /* Codigo para checar ese numero es perfecto */
+
+        if ( perfecto(numero)){
+            let item = document.createElement ("li");
+            item.innerHTML = numero;
+
+            lista.appendChild (item);
+        }
+
+        numero ++;
+    } while(numero <= fin);
+
+    app6Res.appendChild (lista);
+
+});

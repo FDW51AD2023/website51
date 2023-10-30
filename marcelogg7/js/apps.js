@@ -117,29 +117,68 @@ const app5TipoBorde = document.getElementById("app5TipoBorde");
 const app5DivPrueba = document.getElementById("app5DivPrueba");
 const app5BtnVer = document.getElementById("app5BtnVer");
 
-app5BtnVer.addEventListener("click",(e) =>{
+app5BtnVer.addEventListener("click", (e) => {
     e.preventDefault();
+
     app5DivPrueba.style.border = "none";
 
     switch (app5Borde.value) {
-        case "t" :  app5DivPrueba.style.border = app5Grosor.value + "px " + app5Color.value ;
-                    break;
-        case "s" :  app5DivPrueba.style.borderTop = app5Grosor.value + "px " + app5Color.value ;
-                    break;
-        case "in" : app5DivPrueba.style.borderBottom = app5Grosor.value + "px " + app5Color.value ;
-                    break;
-        case "iz" : app5DivPrueba.style.borderLeft = app5Grosor.value + "px " + app5Color.value ;
-                    break;
-        case "d"   : app5DivPrueba.style.borderRight = app5Grosor.value + "px " + app5Color.value ;
-                    break;
+        case "all":
+            app5DivPrueba.style.border = app5Grosor.value + "px " + app5TipoBorde.value + app5Color.value;
+            break;
+        case "top":
+            app5DivPrueba.style.borderTop = app5Grosor.value + "px " + app5TipoBorde.value + app5Color.value;
+            break;
+        case "bottom":
+            app5DivPrueba.style.borderBottom = app5Grosor.value + "px " + app5TipoBorde.value + app5Color.value;
+            break;
+        case "left":
+            app5DivPrueba.style.borderLeft = app5Grosor.value + "px " + app5TipoBorde.value + app5Color.value;
+            break;
+        case "right":
+            app5DivPrueba.style.borderRight = app5Grosor.value + "px " + app5TipoBorde.value + app5Color.value;
+            break;
     }
+});
 
-    switch (app5TipoBorde.value){
-        case "s"  :     app5DivPrueba.style.border = "solid";
-                    break;
-        case "da" :    app5DivPrueba.style.border= "dashed";
-                    break;
-        case "do" :     app5DivPrueba.style.border = "double";
-                    break;
+
+/* APP 6 */
+function perfecto(numero){
+    let div = 1;
+    let suma = 0;
+
+    while(div<numero){
+        if (numero%div==0){
+            suma+=div;
+        }
+        div++;
     }
+    return suma==numero;
+}
+
+const app6Ini = document.getElementById("app6Ini");
+const app6Fin = document.getElementById("app6Fin");
+const app6Res = document.getElementById("app6Res");
+const app6BtnVer  = document.getElementById("app6BtnVer");
+const lista = document.createElement("ol");
+
+app6BtnVer.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    let ini = parseInt(app6Ini.value);
+    let fin = parseInt(app6Fin.value);
+
+    let numero = ini;
+
+    do {
+        /* Codigo para checar si es perfecto */
+        if(perfecto(numero)){
+            let item= document.createElement("li");
+            item.innerHTML=numero;
+            lista.appendChild(item);
+        }
+
+        numero++;
+    } while(numero<=fin);
+        app6Res.appendChild(lista);
 });
