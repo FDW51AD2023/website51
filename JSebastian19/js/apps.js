@@ -101,6 +101,84 @@ const app4Res = document.getElementById ("app4Res");
 
 const app4BtnVer = document.getElementById ("app4BtnVer");
 
-if (app4Inv.checked){
+/* Funcion */
 
-}
+function mostrarTabla(){
+
+    let tabla = parseInt(app4Tabla.value);
+    let lista = document.createElement("ul");
+
+    if( !app4Inv.checked ){
+        for(let i=1 ; i<=10 ; i++){
+            let resMult = app4SoloPunto.checked ? ".".repeat(tabla*i) : tabla * i ;
+            let item = document.createElement("li");
+            item.innerHTML = tabla + " X " + i + " = " + resMult;
+            lista.appendChild(item);
+        }
+    }
+    else {
+        for( let i=10 ; i>=1 ; i-- ){
+            let resMult= app4SoloPunto.checked ? ".".repeat(tabla*i) : tabla*i ;
+            let item = document.createElement("li");
+            item.innerHTML = tabla + " X " + i + " = " + resMult;
+            lista.appendChild(item);
+        }
+
+    }
+
+    app4Res.innerHTML="";
+    app4Res.appendChild(lista);
+};
+
+app4BtnVer.addEventListener ("click",(e) => {
+   e.preventDefault ();
+   mostrarTabla ();
+});
+
+app4Inv.addEventListener ("click",(e) => {
+   mostrarTabla ();
+});
+
+app4sSoloPunto.addEventListener ("click",(e) => {
+   mostrarTabla ();
+});
+
+/* Aplicacion 5 */
+
+const app5Borde = document.getElementById ("app5Borde");
+const app5Color = document.getElementById ("app5Color");
+const app5Grosor = document.getElementById ("app5Grosor");
+const app5Tipo = document.getElementById ("app5Tipo");
+
+const app5VerDiv = document.getElementById ("app5VerDiv");
+
+const app5Res = document.getElementById ("app5Res");
+
+app5VerDiv.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    app5Res.style.border = "none";
+
+    switch (app5Borde.value) {
+
+        case "all":
+            app5Res.style.border = app5Grosor.value + "px " + app5Tipo.value + app5Color.value;
+            break;
+
+        case "top":
+            app5Res.style.borderTop = app5Grosor.value + "px " + app5Tipo.value + app5Color.value;
+            break;
+
+        case "bottom":
+            app5Res.style.borderBottom = app5Grosor.value + "px " + app5Tipo.value + app5Color.value;
+            break;
+
+        case "left":
+            app5Res.style.borderLeft = app5Grosor.value + "px " + app5Tipo.value + app5Color.value;
+            break;
+
+        case "right":
+            app5Res.style.borderRight = app5Grosor.value + "px " + app5Tipo.value + app5Color.value;
+            break;
+    }
+});
