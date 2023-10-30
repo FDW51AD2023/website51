@@ -152,7 +152,42 @@ const app5Color = document.getElementById("app5Color");
 const app5Grosor = document.getElementById("app5Grosor");
 const app5Tipo = document.getElementById("app5Tipo");
 const app5BtnVer = document.getElementById("app5BtnVer");
+const editarDiv = document.getElementsById("editarDiv");
 
+app5BtnVer.addEventListener("click",(e)=> {
+   e.preventDefault();
+   editarDiv.style.border="none";
+   let Borde = (app5Borde.value);
+   let Tipo = (app5Tipo.value);
 
+   switch (Borde) {
+      case "t":
+         editarDiv.style.border = app5Color.value + app5Grosor.value + "px";
+         break;
 
+      case "s":
+         editarDiv.style.borderTop = app5Color.value + app5Grosor.value + "px";
+         break;
+      
+      case "in":
+         editarDiv.style.borderBotton = app5Color.value + app5Grosor.value + "px";
+         break;
+      
+      case "iz":
+         editarDiv.style.borderLeft = app5Color.value + app5Grosor.value + "px";
+         break;
 
+      case "d":
+         editarDiv.style.borderRight = app5Color.value + app5Grosor.value + "px";
+         break;
+   }
+
+   switch (Tipo){
+      case "solid"  :     app5DivPrueba.style.border = "solid";
+                  break;
+      case "dashed" :    app5DivPrueba.style.border= "dashed";
+                  break;
+      case "double" :     app5DivPrueba.style.border = "double";
+                  break;
+  }
+});
