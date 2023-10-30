@@ -196,3 +196,12 @@ app5BtnVer.addEventListener("click",(e)=> {
          break;
   }
 });
+
+
+/*  APLICACION 6 */
+
+
+const app6Ini = document.getElementById("app5Ini");
+const app6Fin = document.getElementById("app6Fin");
+const app6Res = document.getElementById("app6Res");
+const app6Btn = document.getElementById("app6Btn")
