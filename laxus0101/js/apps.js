@@ -193,3 +193,88 @@ app5ver.addEventListener("click",(e) => {
    }
 
  }); 
+
+
+
+ /* app 6 */
+
+function perfecto(numero){
+   let div = 1;
+   let suma = 0 ;
+   while(div < numero){
+      if(numero % div == 0){
+         suma += div
+      }
+      div++;
+   }
+   return suma == numero
+   }
+
+
+ const app6ini = document.getElementById("app6ini");
+ const app6fin = document.getElementById("app6fin");
+ const app6Res = document.getElementById("app6Res");
+ const app6BtnVer = document.getElementById("app6BtnVer");
+ const lista = document.createElement("ol");
+ 
+ app6Res.innerHTML = "";
+
+
+ app6BtnVer.addEventListener("click", (e) => {
+   e.preventDefault();
+   
+
+   let ini = parseInt(app6ini.value);
+   let fin = parseInt(app6fin.value);
+   
+
+   let numero = ini ;
+   
+   do {
+      /* Codigo apra checar si es perfecto */
+      if(perfecto(numero)){
+         let item = document.createElement("li");
+         item.innerHTML = numero;
+         lista.appendChild(item);
+      }
+
+      /* codigo para checar numero */
+      numero++;
+   }while( numero <= fin);
+   
+   app6Res.appendChild(lista);
+    /* pendiente hacer que se borre el resulatdo antes de mostrar otro */
+ })
+
+
+
+/* app 7 */
+
+const app7id = document.getElementById("app7id");
+const app7nombre = document.getElementById("app7nombre");
+const app7peso = document.getElementById("app7peso");
+const app7altura = document.getElementById("app7altura");
+const app7imagen = document.getElementById("app7imagen");
+const app7BtnBuscar = document.getElementById("app7BtnBuscar");
+
+
+function mostrardatos(data){
+   app7nombre.innerHTML = "Nombre " + data.name;
+   app7peso.innerHTML = "Peso " + data.weight;
+   app7altura.innerHTML = "altura" + data.height;
+   app7imagen.src = data.sprites.other.home.front_default;
+}
+
+
+app7BtnBuscar.addEventListener("click", e => {
+   e.preventDefault();
+
+   let id7 = app7id.value;
+
+   let urlpokemon = "https://pokeapi.co/api/v2/pokemon/" + id7;
+
+   fetch(urlpokemon)
+   .then(Response => Response.json())
+   .then(data => mostrardatos(data));
+
+});
