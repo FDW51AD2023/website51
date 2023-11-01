@@ -193,3 +193,55 @@ app5ver.addEventListener("click",(e) => {
    }
 
  }); 
+
+
+
+ /* app 6 */
+
+function perfecto(numero){
+   let div = 1;
+   let suma = 0 ;
+   while(div < numero){
+      if(numero % div == 0){
+         suma += div
+      }
+      div++;
+   }
+   return suma == numero
+   }
+
+
+ const app6ini = document.getElementById("app6ini");
+ const app6fin = document.getElementById("app6fin");
+ const app6Res = document.getElementById("app6Res");
+ const app6BtnVer = document.getElementById("app6BtnVer");
+ const lista = document.createElement("ol");
+ 
+ app6Res.innerHTML = "";
+
+
+ app6BtnVer.addEventListener("click", (e) => {
+   e.preventDefault();
+   
+
+   let ini = parseInt(app6ini.value);
+   let fin = parseInt(app6fin.value);
+   
+
+   let numero = ini ;
+   
+   do {
+      /* Codigo apra checar si es perfecto */
+      if(perfecto(numero)){
+         let item = document.createElement("li");
+         item.innerHTML = numero;
+         lista.appendChild(item);
+      }
+
+      /* codigo para checar numero */
+      numero++;
+   }while( numero <= fin);
+   
+   app6Res.appendChild(lista);
+    /* pendiente hacer que se borre el resulatdo antes de mostrar otro */
+ })
