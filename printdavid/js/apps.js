@@ -1,3 +1,74 @@
+/* App 9 */
+
+const app9Id = document.getElementById("app9Id");
+const app9Nombre = document.getElementById("app9Nombre");
+const app9Altura = document.getElementById("app9Altura");
+const app9Peso = document.getElementById("app9Peso");
+const app9Imagen = document.getElementById("app9Imagen");
+const app9BtnBuscar = document.getElementById("app9BtnBuscar");
+
+app9BtnBuscar.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    let id = app9Id.value;
+    let url = "https://pokeapi.co/api/v2/pokemon/" + id;
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => mostrarDatos(data));
+});
+
+function mostrarDatos(data){
+    console.log(data);
+
+    app9Nombre.innerHTML = "Nombre: " + data.name;
+    app9Peso.innerHTML = "Peso: " + data.weight;
+    app9Altura.innerHTML = "Altura: " + data.height;
+    app9Imagen.src = data.sprites.other.home.front_default;
+}
+
+/* App 8 */
+
+function perfecto(numero){
+    let div = 1;
+    let suma = 0;
+    
+    while(div < numero){
+        if(numero % div == 0){
+            suma += div;
+        }
+        div++;
+    }
+    return suma == numero;
+}
+
+const app8Ini = document.getElementById("app8Ini");
+const app8Fin = document.getElementById("app8Fin");
+const app8Res = document.getElementById("app8Res");
+const app8BtnVer = document.getElementById("app8BtnVer");
+const lista = document.createElement("ol");
+
+app8BtnVer.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    let ini = parseInt(app8Ini.value);
+    let fin = parseInt(app8Fin.value);
+
+    let numero = ini;
+
+    do {
+        /* codigo para checar si es perfecto */
+        if(perfecto(numero)){
+            let item = document.createElement("li")
+            item.innerHTML = numero;
+            lista.appendChild(item);
+        }
+        numero++;
+    }while( numero <= fin );
+
+    app8Res.appendChild(lista);
+});
+
 /* App7 */
 
 const app7Borde = document.getElementById("app7Borde");
