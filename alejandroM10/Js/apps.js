@@ -182,23 +182,81 @@ const app5BtnVer = document.getElementById("app5BtnVer");
 
 app5BtnVer.addEventListener("click", (e) => {
     e.preventDefault();
+    
     let borde = app5Borde.value;
     let color = app5Color.value;
-    let grosor = parseInt(app5Grosor.value);
+    let grosor = app5Grosor.value + "px";
     let tipo = app5Tipo.value;
-    let ver;
     switch(borde){
-        case "t": ver= style.borde = "border color grosor";
+        case "t":
+            app5Res.style.border = borde;
+            app5Res.style.borderColor = color;
+            app5Res.style.borderWidth = grosor;
+            app5Res.style.borderStyle = tipo;
+            break;    
+        case "s":
+            app5Res.style.border = borde;
+            app5Res.style.borderTopColor = color;
+            app5Res.style.borderTopWidth = grosor;
+            app5Res.style.borderTopStyle = tipo;
             break;
-        case "s": ver= style.borde = "border-top color grosor";
+        case "i":
+            app5Res.style.border = borde;
+            app5Res.style.borderBottomColor = color;
+            app5Res.style.borderBottomWidth = grosor;
+            app5Res.style.borderBottomStyle = tipo;
             break;
-        case "i": ver= style.borde = "border-botton color grosor";
+        case "izq":
+            app5Res.style.border = borde;
+            app5Res.style.borderLeftColor = color;
+            app5Res.style.borderLeftWidth = grosor; 
+            app5Res.style.borderLeftStyle = tipo;
             break;
-        case "izq": ver= style.borde = "border-left color grosor";
-            break;
-        case "der": ver= style.borde = "border-right color grosor";
+        case "der":
+            app5Res.style.border = borde;
+            app5Res.style.borderRightColor = color;
+            app5Res.style.borderRightWidth = grosor;
+            app5Res.style.borderRightStyle = tipo;
             break;
     }
-    app5Res.value = console(ver);
+    app5BtnVer.innerHTML = borde;
 
 });
+
+/* App6 */
+function perfecto(numero){
+    let div = 1;
+    let suma = 0;
+    while(div < numero){
+        if(numero % div == 0){
+            suma += div
+        }
+        div++;
+    }
+    return suma == numero;
+}
+
+const app6Ini = document.getElementById("app6Ini");
+const app6Fin = document.getElementById("app6Fin");
+const app6Res = document.getElementById("app6Res");
+const app6BtnVer = document.getElementById("app6BtnVer");
+const lista = document.createElement("ol");
+app6BtnVer.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    let ini = parseInt(app6Ini.value);
+    let fin = parseInt(app6Fin.value);
+
+    let numero = ini
+    do {
+        /* codigo para checar si es perfecto*/
+        if(perfecto(numero)){
+            let item = document.createElement("li");
+            item.innerHTML = numero;
+            lista.appendChild(item);
+        }
+        numero++;
+    }while( numero <= fin);
+
+    app6Res.appendChild(lista);
+})
