@@ -1,3 +1,75 @@
+/* App8 */
+
+const app8Id = document.getElementById("app8Id");
+const app8Nombre = document.getElementById("app8Nombre");
+const app8Altura = document.getElementById("app8Altura");
+const app8Peso = document.getElementById("app8Peso");
+const app8Imagen = document.getElementById("app8Imagen");
+const app8BtnBuscar = document.getElementById("app8BtnBuscar");
+
+app8BtnBuscar.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    let id = app8Id.value;
+    let url = "https://pokeapi.co/api/v2/pokemon/" + id;
+
+    fetch(url)
+    .then(Response => Response.json())
+    .then(data => MostrarDatos(data));
+});
+function MostrarDatos(data){
+    console.log(data);
+    app8Nombre.innerHTML = "Nombre: " + data.name;
+    app8Peso.innerHTML = "Peso: " + data.weight;
+    app8Altura.innerHTML = "Altura: " + data.height;
+    app8Imagen.src = data.sprites.other.home.front_default;
+
+
+
+}
+
+
+/* App 7 */
+function perfecto(numero){
+    let div = 1;
+    let suma = 0;
+    while (div < numero){
+        if(numero % div == 0){
+            suma+= div
+        }
+        div++;
+    }
+    return suma == numero;
+}
+
+const app7Ini = document.getElementById("app7Ini");
+const app7Fin = document.getElementById("app7Fin");
+const app7Res = document.getElementById("app7Res");
+const app7BtnVer = document.getElementById("app7BtnVer");
+const lista = document.createElement("ol");
+
+app7BtnVer.addEventListener("click" , (e) => {
+    e.preventDefault();
+
+    let ini = parseInt(app7Ini.value);
+    let fin = parseInt(app7Fin.value);
+
+    let numero = ini
+
+    do {
+        /* codigo para checar si es perfecto */
+        if ( perfecto (numero)){
+            let item = document.createElement("li");
+            item.innerHTML = numero;
+            lista.appendChild(item);
+        }
+        numero++;
+
+    }while( numero <= fin);
+
+    app7Res.appendChild(lista);
+});
+
 /* App 6 */
 const app6Tabla = document.getElementById("app6Tabla");
 const app6Inv = document.getElementById("app6Inv");

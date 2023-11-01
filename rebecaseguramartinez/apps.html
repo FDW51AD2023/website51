@@ -9,6 +9,48 @@
 <body>
     <h1>APPS</h1>
     <form id="app6" action="">
+        <h2>Aplicacion para pokemon</h2>
+        <div class="row">
+            <label for="app8Id">Id o nombre: </label>
+            <input type="text" name="app8Id" id="app8Id">   
+        </div>
+        <div class="row">
+            <label for="app8Res">Resultado: </label>
+            <h2 id="app8Nombre"></h2>
+            <h3 id="app8Peso"></h3>
+            <h3 id="app8Altura"></h3>
+            <img id="app8Imagen" src="" alt="">
+        </div>
+
+        <div class="row">
+            <input id="app8BtnBuscar" class="btn" type="submit" value="Buscar Pokemon">
+        </div>
+    </form>
+    <!-- --------------------------------------------------------------------------------------------------------- -->
+    <form id="app7" action="">
+        <h2>Aplicacion para numeros perfectos</h2>
+        <div class="row">
+            <label for="app7Ini">Numero Inicial: </label>
+            <input type="text" name="app7Ini" id="app7Ini">   
+        </div>
+
+        <div class="row">
+            <label for="app7Fin">Numero Final:</label>
+            <input type="text" name="app7Fin" id="app7Fin">
+        </div>
+
+        <div class="row">
+            <label for="app7Res">Resultado: </label>
+            <div id="app7Res">
+            </div>
+        </div>
+
+        <div class="row">
+            <input id="app7BtnVer" class="btn" type="submit" value="Mostrar resultado">
+        </div>
+    </form>
+    <!-- ------------------------------------------------------------------------------------------------ -->
+    <form id="app6" action="">
         <h2>Aplicacion para tabla de multiplicar</h2>
         <div class="row">
             <label for="app6Tabla">Tabla: </label>
@@ -181,6 +223,8 @@
         <input id="app4BtnCalcular" class="btn" type="submit" value="Calcular">
     </div> 
     </form>
+    <!-- ------------------------------------------------------------------------------------------- -->
+
     <script src="js/apps.js"></script>
 </body>
 </html>
