@@ -92,10 +92,10 @@ app5BtnVer.addEventListener("click", (e) => {e.preventDefault();
     let grosor = app5grosor.value;
     let estilo_borde = app5tipo.value;
     let div_prueba = app5div_prueba.value;
-    switch (borde){
-        case "todos":
-            div_prueba.style.border = grosor + "px " + estilo_borde + " " + color;
-            break;
+
+    if (borde == "todos"){
+        div_prueba.style.border = grosor + "px " + estilo_borde + " " + color;
+        console.log("todos los bordes elegidos")
     }
 });
 
