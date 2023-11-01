@@ -7,7 +7,27 @@
     <link rel="stylesheet" href="css/apps.css">
 </head>
 <body>
-    <h2>App 4</h2>
+    <h2>App 7</h2>
+    <form id="app7" action="">
+        <h2>Aplicacion para buscar pokemon</h2>
+        <div class="row">
+            <label for="app7id">ID o nombre:</label>
+            <input type="text" name="app7id" id="app7id">
+        </div>
+
+        <div class="row">
+            <label for="app7res">Resultado: </label>
+            <h2 id="app7nombre"></h2>
+            <h3 id="app7peso"></h3>
+            <h3 id="app7altura"></h3>
+            <img id="app7imagen" src="" alt="">
+        </div>
+        <div>
+            <input class="btn" type="submit" value="Buscar" id="app7BtnBuscar">
+        </div>
+    </form>
+
+    <h2>App 6</h2>
     <form id="app 6" action="">
         <h2>Aplicacion para tabla de multiplicar.</h2>
         <div class="row">
@@ -32,7 +52,7 @@
         <h2>App 5</h2>
         <div class="row">
             <h3>Borde</h3>
-            <select name="app5Borde" id="app5Borde">
+            <select name="app5ubicacion" id="app5ubicacion">
                 <option value="todos">todos</option>
                 <option value="superior">superior</option>
                 <option value="inferior">inferior</option>
@@ -41,26 +61,26 @@
             </select>
         </div>
         <div>
-            <h3>color</h3>
-            <input type="color">
+            <h3>color del borde</h3>
+            <input type="color" id="app5color">
         </div>
         <div>
             <h3>Grosor</h3>
-            <input type="number">
+            <input type="box" id="app5grosor">
         </div>
         <div>
-            <h3>Tipo</h3>
-            <select name="app5Borde" id="app5Borde">
-                <option value="Solid">solid</option>
-                <option value="Dashed">dashed</option>
-                <option value="Double">Double</option>
+            <h3>Tipo de borde</h3>
+            <select name="app5tipo" id="app5tipo">
+                <option value="solid">solid</option>
+                <option value="dashed">dashed</option>
+                <option value="double">Double</option>
             </select>
         </div>
-        <div>
-            <p>Prueba</p>
+        <div id="app5div_prueba">
+            <p>Div Prueba</p>
         </div>
         <div>
-            <input class="app5ver" type="submit" value="Ver" id="app5ver">
+            <input class="btn" type="submit" value="ver" id="app5BtnVer">
         </div>
     </form>
 

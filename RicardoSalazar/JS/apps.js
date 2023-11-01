@@ -1,3 +1,40 @@
+/* APP 7: aplicacion para buscar pokemon */
+
+const app7id = document.getElementById("app7id");
+const app7nombre = document.getElementById("app7nombre");
+const app7altura = document.getElementById("app7altura");
+const app7peso = document.getElementById("app7peso");
+const app7imagen = document.getElementById("app7imagen");
+const app7BtnBuscar = document.getElementById("app7BtnBuscar");
+
+app7BtnBuscar.addEventListener("click", e => {
+    e.preventDefault();
+
+    let id = app7id.value;
+    let url = "https://pokeapi.co/api/v2/pokemon/" + id;
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => mostrarDatos(data));
+});
+
+function mostrarDatos(data){
+    console.log(data);
+
+    app7nombre.innerHTML = "nombre: " + data.name;
+    app7peso.innerHTML = "Peso: " + data.weight;
+    app7altura.innerHTML = "Altura: " + data.height;
+    app7imagen.src = data.sprites.other.home.front_default;
+
+    let plantilla = `<div class="row">
+        <label for="app7res">Resultado: </label>
+        <h2 id="app7nombre"> ${data.name}</h2>
+        <h3 id="app7peso"></h3>
+        <h3 id="app7altura"></h3>
+        <img id="app7imagen" src="" alt="">
+    </div>`
+}
+
 /* App 6 */
 function perfecto(numero){
     let div = 1;
@@ -41,33 +78,26 @@ app6btnVer.addEventListener("click", (e) => {
 
 /* app 5 */
 
-/* const app5Num1 = document.getElementById("app5Num1");
-const app5Num2 = document.getElementById("app5Num2");
-const app5Operacion = document.getElementById("app5Operacion")
-const app5Res = document.getElementById("app5Res");
-const app5BtnCalcular = document.getElementById("app5BtnCalcular");
+const app5ubicacion = document.getElementById("app5ubicacion");
+const app5color = document.getElementById("app5color");
+const app5grosor = document.getElementById("app5grosor");
+const app5tipo = document.getElementById("app5tipo");
+const app5BtnVer = document.getElementById("app5BtnVer");
+const app5div_prueba = document.getElementById("app5div_prueba");
 
-app5BtnCalcular.addEventListener("click", (e) => {
-    e.preventDefault();
+app5BtnVer.addEventListener("click", (e) => {e.preventDefault();
 
-    let num1 = parseInt(app5Num1.value);
-    let num2 = parseInt(app5Num2.value);
-    let operacion = app5Operacion.value;
-    let resultado;
+    let borde = app5ubicacion.value;
+    let color = app5color.value;
+    let grosor = app5grosor.value;
+    let estilo_borde = app5tipo.value;
+    let div_prueba = app5div_prueba.value;
 
-    switch(operacion){
-        case "s" :  resultado = num1 + num2;
-                    break;
-        case "r" :  resultado = num1 - num2;
-                    break;
-        case "m" :  resultado = num1 * num2;
-                    break;
-        case "d" :  resultado = num1 / num2;
-                    break;
+    if (borde == "todos"){
+        div_prueba.style.border = grosor + "px " + estilo_borde + " " + color;
+        console.log("todos los bordes elegidos")
     }
-
-    app5Res.value = resultado;
-}); */
+});
 
 /* app4 Tablas de multiplicar*/
 
