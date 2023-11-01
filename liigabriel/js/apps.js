@@ -1,3 +1,34 @@
+/* App5 */
+
+const app5Id = document.getElementById("app5Id");
+const app5Nombre = document.getElementById("app5Nombre");
+const app5Altura = document.getElementById("app5Altura");
+const app5Peso = document.getElementById("app5Peso");
+const app5Imagen = document.getElementById("app5Imagen");
+const app5BtnBuscar = document.getElementById("app5BtnBuscar");
+
+app5BtnBuscar.addEventListener("click", e => {
+    e.preventDefault();
+
+    let id = app5Id.value;
+    let url = "https://pokeapi.co/api/v2/pokemon/" + id;
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => mostrarDatos(data));
+});
+
+function mostrarDatos(data){
+    console.log(data);
+    app5Nombre.innerHTML = "Nombre: " + data.name;
+    app5Peso.innerHTML = "Peso: " + data.weight;
+    app5Altura.innerHTML = "Altura: " + data.height;
+    app5Imagen.src = data.sprites.other.home.front_default; 
+}
+
+
+
+
 /* App4 */
 const app4Tabla = document.getElementById("app4Tabla");
 const app4Inv = document.getElementById("app4Inv");
@@ -5,14 +36,14 @@ const app4SoloPunto = document.getElementById("app4SoloPunto");
 const app4Res = document.getElementById("app4Res");
 const app4BtnVer = document.getElementById("app4BtnVer");
 
-function mostrarTabla(){
-    let tabla =  parseInt(app4Tabla.value);
+function mostrarTabla() {
+    let tabla = parseInt(app4Tabla.value);
 
     let lista = document.createElement("ul");
-    
-    if( !app4Inv.checked ){
-        for(let i=1 ; i <=10; i++ ){
-            let resMult = app4SoloPunto.checked ? ".".repeat(tabla * i) : tabla * i ;
+
+    if (!app4Inv.checked) {
+        for (let i = 1; i <= 10; i++) {
+            let resMult = app4SoloPunto.checked ? ".".repeat(tabla * i) : tabla * i;
 
             let item = document.createElement("li");
             item.innerHTML = tabla + " X " + i + " = " + resMult;
@@ -20,9 +51,9 @@ function mostrarTabla(){
         }
     }
     else {
-        for(let i=10 ; i >=1; i-- ){
+        for (let i = 10; i >= 1; i--) {
 
-            let resMult = app4SoloPunto.checked ? ".".repeat(tabla *i): tabla*i;
+            let resMult = app4SoloPunto.checked ? ".".repeat(tabla * i) : tabla * i;
 
             let item = document.createElement("li");
             item.innerHTML = tabla + " X " + i + " = " + resMult;
@@ -84,19 +115,19 @@ app3BtnCalcular.addEventListener("click", (e) => {
         resultado = num1 / num2;
     } */
 
-    switch(operacion){
-        case "s" :  resultado = num1 + num2; 
-                    break;
-        case "r" : resultado = num1 - num2;
-                    break;
-        case "m" : resultado = num1 * num2;
-                    break;
-        case "d" :resultado = num1 /num2;
-                    break;
+    switch (operacion) {
+        case "s": resultado = num1 + num2;
+            break;
+        case "r": resultado = num1 - num2;
+            break;
+        case "m": resultado = num1 * num2;
+            break;
+        case "d": resultado = num1 / num2;
+            break;
     }
 
     app3Res.value = resultado;
-} );
+});
 
 
 
@@ -116,8 +147,8 @@ const app1BtnCalcular = document.getElementById("app1BtnCalcular");
 app1BtnCalcular.addEventListener("click", (e) => {
     e.preventDefault();
 
-    let num1 =  parseInt(app1Num1.value);
-    let num2 =  parseInt(app1Num2.value);
+    let num1 = parseInt(app1Num1.value);
+    let num2 = parseInt(app1Num2.value);
     let suma = num1 + num2;
 
     app1Res.value = suma;
