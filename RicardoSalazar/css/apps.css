@@ -1,0 +1,19 @@
+* {
+    font-family: sans-serif;
+}
+
+/* CSS para un input tipo text*/
+
+input[type="text"]{
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.row {
+    margin-bottom: 5px;
+}
+
+.btn {
+    padding: 5px 30px;
+}

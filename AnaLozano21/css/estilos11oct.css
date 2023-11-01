@@ -1,0 +1,102 @@
+header{
+    background-color: rgb(230, 214, 193);
+}
+
+main {
+    background-color: rgb(186, 102, 228);
+}
+
+aside{
+    background-color: rgb(218, 91, 154);
+}
+
+footer {
+    background-color: rgb(137, 129, 248);
+}
+
+#mp1 {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+#mp2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 200px;
+}
+
+#mp3 {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+
+#mp3 header{
+    grid-column: 1 / -1;
+}
+
+#mp3 footer{
+    grid-column: 1 / -1;
+}
+
+#mp4 {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-areas: "h h"
+                         "m a"  
+                         "m a"  
+                         "f f"  ;
+    gap: 10px;
+}
+
+#mp4 header{
+    grid-area: h;
+}
+#mp4 main{
+    grid-area: m;
+}
+#mp4 aside{
+    grid-area: a;
+}
+#mp4 footer{
+    grid-area: f;
+}
+
+#header-main{
+    background-color: rgb(21, 18, 27);
+}
+
+#header-main p{
+    font-style: initial;
+    font-family: monospace;
+    font-size: large;
+    color: white;
+}
+
+.btn1{
+    color: white;
+    border: 1px solid white;
+    padding: 2px;
+    text-decoration: none;
+}
+
+#header-main{
+    display: flex;
+}
+
+#s1{
+    background-color: rgb(242, 242, 247);
+    color: rgb(48, 48, 58);
+    font-family: monospace;
+    font-size: large;
+}
+
+#s2{
+    background-color: rgb(59, 59, 77);
+    color: rgb(255, 255, 255);
+    font-family: monospace;
+    font-size: large;
+}
+
+img{
+    align-items: center;
+}

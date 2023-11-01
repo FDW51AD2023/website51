@@ -1,0 +1,8 @@
+* {
+    font-family: sans-serif;
+}
+
+input[type="text"]{
+    padding: 10px;
+    margin-bottom: 20px;
+}

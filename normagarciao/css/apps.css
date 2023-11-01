@@ -1,0 +1,17 @@
+/*css para input tipo text*/
+*{
+    font-family: sans-serif;
+}
+input[type="text"]{
+    padding: 8px;
+    border: none;
+    border-bottom: 3px solid rgb(245, 5, 5);
+}
+
+.row{
+    margin-bottom: 5px;
+}
+
+.btn{
+    padding: 5px 30px;
+}

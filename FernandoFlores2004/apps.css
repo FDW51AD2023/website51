@@ -1,0 +1,20 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/*css para input tipo text*/
+
+input[type="text"]{
+    padding: 8px;
+    border: none;
+    border-bottom:3px solid black;
+}
+
+.fila{
+    margin-bottom: 5px;
+}
+
+.btn{
+    padding: 5px 30px;
+}

@@ -1,0 +1,25 @@
+*{
+    font-family: sans-serif;
+}
+/* css para input tipo text */
+
+input[type="text"]{
+    padding: 8px;
+    border: none;
+    border-bottom: 3px solid black;
+}
+
+.row{
+    margin-bottom: 5px;
+}
+
+.btn{
+    padding: 5px 30px;
+}
+
+#mod{
+    text-align: center;
+    width: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

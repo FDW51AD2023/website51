@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apps</title>
+    <link rel="stylesheet" href="apps.css">
+</head>
+<body>
+    <h1>Apps</h1>
+    <form id="app1" action="">
+    <h2>Aplicacion para sumar 2 numeros</h2>
+
+    <div>
+        <label for="app1Num1">Numero:</label>
+        <input type="text" name="app1Num1" id="app1Num1">
+    </div>
+
+    <div class="fila">
+        <label for="app1Num2">Numero:</label>
+        <input type="text" name="app1Num2" id="app1Num2">
+    </div>
+
+    <div class="fila">
+    <label for="app1Res">Resultado:</label>
+    <input readonly type="text" name="app1Res" id="app1Res">
+    </div>
+
+    <div class="fila">
+        <input id="app1BtnCalcular" class="btn" type="submit" value="Calcular">
+    </div>
+</form>
+
+    <h2>Aplicacion para restar 2 numeros</h2>
+    <form id="app2" action="">
+
+    <div class="fila">
+        <label for="app2Num1">Numero 1:</label>
+        <input type="text" name="app2Num1" id="app2Num1">
+    </div>
+
+    <div class="fila">
+        <label for="app2Num2">Numero 2:</label>
+        <input type="text" name="app2Num2" id="app2Num2">
+    </div>
+
+    <div class="fila">
+        <label for="app2Res">Resultado:</label>
+        <input type="text" name="app2Res" id="app2Res">
+    </div>
+
+    <div>
+        <input id="restar" class="btn" type="submit" value="restar">
+    </div>
+</form>
+
+    <h2>Aplicacion para multiplicar 2 numeros</h2>
+    <form id="app3" action="">
+
+        <div class="fila">
+            <label for="app3Num1">Numero 1:</label>
+            <input type="text" name="app3Num1" id="app3Num1">
+        </div>
+    
+        <div class="fila">
+            <label for="app3Num2">Numero 2:</label>
+            <input type="text" name="app3Num2" id="app3Num2">
+        </div>
+    
+        <div class="fila">
+            <label for="app3Tabla">Resultado:</label>
+            <input type="text" name="app3Tabla" id="app3Tabla">
+        </div>
+    
+        <div>
+            <input id="multiplicar" class="btn" type="submit" value="multiplicar">
+        </div>
+    </form>
+
+    <h2>Aplicacion para dividir 2 numeros</h2>
+    <form id="appDivision" action="">
+
+        <div class="fila">
+            <label for="appDNum1">Numero 1:</label>
+            <input type="text" name="appDNum1" id="appDNum1">
+        </div>
+    
+        <div class="fila">
+            <label for="appDNum2">Numero 2:</label>
+            <input type="text" name="appDNum2" id="appDNum2">
+        </div>
+    
+        <div class="fila">
+            <label for="appDRes">Resultado:</label>
+            <input type="text" name="appDRes" id="appDRes">
+        </div>
+    
+        <div>
+            <input id="dividir" class="btn" type="submit" value="dividir">
+        </div>
+    </form>
+
+
+<h2>Operaciones aritmeticas</h2>
+<form id="app4" action="">
+<div class="fila">
+<label for="app4Num1">Numero 1:</label>
+<input type="text" name="app4Num1" id="app4Num1">
+</div>
+
+<div class="fila">
+    <label for="app4Num2">Numero 2:</label>
+    <input type="text" name="app4Num2" id="app4Num2">
+</div>
+
+<div>
+    <label for="">Operacion</label>
+    <select name="Operacion" id="app4Operacion">
+        <option value="s">suma</option>
+        <option value="r">resta</option>
+        <option value="m">multiplicacion</option>
+        <option value="d">division</option>
+    </select>
+
+</div>
+
+<div class="fila">
+    <label for="app4Res">Resultado:</label>
+    <input type="text" name="app4Res" id="app4Res">
+</div>
+
+<div>
+    <input id="Calcular" class="btn" type="submit" value="Calcular">
+</div>
+</form>
+
+
+<h2>Tablas de multiplicacion</h2>
+<form id="app5" action="">
+    <h2>Aplicacion para tabla de multiplicar.</h2>
+
+    <div class="fila">
+        <label for="app5Tabla">Tabla: </label>
+        <input type="text" name="app4Tabla" id="app5Tabla">
+    </div>
+
+    <div class="fila">
+        <input type="checkbox" name="app5Inv" id="app5Inv">
+        <label for="app4Inv">Tabla invertida: </label>
+    </div>
+
+    <div class="fila">
+        <input type="checkbox" name="app5SoloPunto" id="app5SoloPunto">
+        <label for="app5SoloPunto">Mostrar resultados con simbolo (.): </label>
+    </div>
+
+    <div class="fila">
+        <label for="app5Res" id="app5Res">Resultado: </label>
+    </div>
+
+    <div>
+        <input class="app5BtnVer" type="submit" value="Ver tabla" id="app5BtnVer">
+    </div>
+</form>
+
+<h2>Bordes</h2>
+
+<div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+<label for="jsPractica" id="jsPractica">Borde:</label>
+<select name="borde" id="seleccionBorde">
+    <option value="margin">todos</option>
+    <option value="margin-top">superior</option>
+    <option value="margin-bottom">inferior</option>
+    <option value="margin-left">izquierdo</option>
+    <option value="margin-right">derecho</option>
+</select>
+</div>
+
+
+<div>
+    <label for="color">Color:</label>
+    <input id="color" type="color">
+</div>
+
+
+<div>
+    <label for="grosor">Selecciona el grueso del margen:</label>
+    <input id="grueso" type="text">
+</div>
+
+<div>
+    <label for="tipo">Tipo de margen</label>
+    <select name="tipo" id="tipo">
+        <option value="solid">solid</option>
+        <option value="dashed">dashed</option>
+        <option value="double">double</option>
+    </select>
+</div>
+
+<div></div>
+
+<div>
+    <p id="div">div de prueba</p>
+</div>
+
+<div>
+    <input class="app6BtnVer" type="submit" value="Ver" id="app6BtnVer">
+</div>
+
+
+    <h2>Aplicacion numeros perfectos</h2>
+
+    <div class="fila">
+        <label for="app8Ini">Numero inicial:</label>
+        <input type="text" name="app8Ini" id="app8Ini">
+    </div>
+
+    <div class="fila">
+        <label for="app8Fin">Numero Final:</label>
+        <input type="text" name="app8fin" id="app8Fin">
+    </div>
+
+    <div>
+       <label for="app8Res" id="app8Res">Resultado:</label>
+    <div></div>
+    </div>
+
+
+    <div>
+        <input class="app8BtnVer" type="submit" value="Ver" id="app8BtnVer">
+    </div>
+    
+
+
+
+    <script src="js/apps.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
