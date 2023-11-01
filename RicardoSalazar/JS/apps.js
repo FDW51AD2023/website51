@@ -94,10 +94,22 @@ app5BtnVer.addEventListener("click", (e) => {e.preventDefault();
     let div_prueba = app5div_prueba.value;
 
     if (borde == "todos"){
-        div_prueba.style.border = grosor + "px " + estilo_borde + " " + color;
-        console.log("todos los bordes elegidos")
+        app5div_prueba.style.border= grosor + "px " + estilo_borde + " " + color;
+    }
+    else if (borde == "superior"){
+        app5div_prueba.style.borderTop= grosor + "px " + estilo_borde + " " + color;
+    }
+    else if (borde == "inferior"){
+        app5div_prueba.style.borderBottom= grosor + "px " + estilo_borde + " " + color;
+    }
+    else if (borde == "izquierda"){
+        app5div_prueba.style.borderleft= grosor + "px " + estilo_borde + " " + color;
+    }
+    else if (borde == "derecha"){
+        app5div_prueba.style.borderleft= grosor + "px " + estilo_borde + " " + color;
     }
 });
+
 
 /* app4 Tablas de multiplicar*/
 
