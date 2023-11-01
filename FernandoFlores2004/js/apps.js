@@ -204,7 +204,7 @@ const margen = document.getElementById("tipo");
 const boton = document.getElementById("app6BtnVer");
 const texto = document.getElementById("div");
 
-
+console.log(grueso.value);
 
 boton.addEventListener("click", (e) => {
   e.preventDefault();
@@ -218,8 +218,8 @@ boton.addEventListener("click", (e) => {
 
   texto.style.margin = B;
   texto.style.color = C;
-  texto.style.border = G 
-  texto.style.border = M;
+  
+  texto.style.border = G + "px " + M + " black";
 });
 
 //app8
@@ -278,3 +278,5 @@ app8BtnVer.addEventListener("click",(e)=>{
 app8Res.appendChild(lista);
 
 })
+
+
