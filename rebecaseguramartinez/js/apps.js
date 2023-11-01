@@ -1,3 +1,34 @@
+/* App8 */
+
+const app8Id = document.getElementById("app8Id");
+const app8Nombre = document.getElementById("app8Nombre");
+const app8Altura = document.getElementById("app8Altura");
+const app8Peso = document.getElementById("app8Peso");
+const app8Imagen = document.getElementById("app8Imagen");
+const app8BtnBuscar = document.getElementById("app8BtnBuscar");
+
+app8BtnBuscar.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    let id = app8Id.value;
+    let url = "https://pokeapi.co/api/v2/pokemon/" + id;
+
+    fetch(url)
+    .then(Response => Response.json())
+    .then(data => MostrarDatos(data));
+});
+function MostrarDatos(data){
+    console.log(data);
+    app8Nombre.innerHTML = "Nombre: " + data.name;
+    app8Peso.innerHTML = "Peso: " + data.weight;
+    app8Altura.innerHTML = "Altura: " + data.height;
+    app8Imagen.src = data.sprites.other.home.front_default;
+
+
+
+}
+
+
 /* App 7 */
 function perfecto(numero){
     let div = 1;
