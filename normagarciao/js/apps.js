@@ -1,3 +1,37 @@
+
+/* app 7*/
+const app7Id =document.getElementById("app7Id")
+const app7Nombre = document.getElementById("app7Nombre")
+const app7Altura = document.getElementById("app7Altura")
+const app7Peso = document.getElementById("app7Peso")
+const app7Imagen = document.getElementById("app7Imagen")
+const app7BtnVer = document.getElementById("app7BtnVer")
+
+app7BtnVer.addEventListener("click",e =>{
+    e.preventDefault();
+
+let id = app7Id.value
+let url = "https://pokeapi.co/api/v2/pokemon/" + id;
+
+fetch(url)
+.then(response => response.json())
+.then(data => mostrarDatos(data));
+})
+
+function mostrarDatos(data){
+    console.log(data);
+
+    app7Nombre.innerHTML ="Nombre:" + data.name;
+    app7Peso.innerHTML = "Peso:"+ data.weight
+    app7Altura.innerHTML = "Altura:" + data.height
+    app7Imagen.src = data.sprites.other.home.front_default;
+}
+
+
+
+
+
+
 /* app 6*/
 function perfecto(numero){
     let div = 1;
