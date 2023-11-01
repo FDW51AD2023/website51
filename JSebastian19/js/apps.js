@@ -242,3 +242,48 @@ app6BtnVer.addEventListener("click",(e)=> {
     app6Res.appendChild (lista);
 
 });
+
+/* Aplicacion 7 */
+
+/* Variables declaradas */
+
+const app7Id = document.getElementById ("app7Id");
+const app7Nombre = document.getElementById ("app7Nombre");
+const app7Altura = document.getElementById ("app7Altura");
+const app7Peso = document.getElementById ("app7Peso");
+const app7Imagen = document.getElementById ("app7Imagen");
+
+const app7BtnVer = document.getElementById ("app7BtnVer");
+
+/* Evento */
+
+app7BtnVer.addEventListener("click",(e)=> {
+    e.preventDefault();
+
+    /* Sacar el valor de la variable */
+
+    let id = app7Id.value;
+
+    let url = "https://pokeapi.co/api/v2/pokemon/" + id;
+
+    /* Pedir datos en formato JSON */
+
+    fetch(url)
+    .then(response => response.json())
+    .then(data => mostrarDatos(data));
+
+});
+
+/* Funcion para mostrar los valores */
+
+function mostrarDatos (data) {
+
+    /* Asignar los valores a las etiquetas */
+
+    app7Nombre.innerHTML = "Nombre :" + data.name;
+    app7Peso.innerHTML = "Peso :" + data.weight;
+    app7Altura.innerHTML = "Altura :" + data.height;
+
+    app7Imagen.src = data.sprites.other.home.front_default;
+
+}

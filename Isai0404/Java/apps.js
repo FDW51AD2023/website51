@@ -203,8 +203,7 @@ solo.addEventListener("change", (e)=> {
 app4bc.addEventListener("click", (e) => {
     e.preventDefault();
     mostrarTabla();})
-app4bc.addEventListener ("click",(e) => {
-    e.preventDefault();});
+
 
 /* APP 5
 

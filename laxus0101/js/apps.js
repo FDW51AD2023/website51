@@ -245,3 +245,36 @@ function perfecto(numero){
    app6Res.appendChild(lista);
     /* pendiente hacer que se borre el resulatdo antes de mostrar otro */
  })
+
+
+
+/* app 7 */
+
+const app7id = document.getElementById("app7id");
+const app7nombre = document.getElementById("app7nombre");
+const app7peso = document.getElementById("app7peso");
+const app7altura = document.getElementById("app7altura");
+const app7imagen = document.getElementById("app7imagen");
+const app7BtnBuscar = document.getElementById("app7BtnBuscar");
+
+
+function mostrardatos(data){
+   app7nombre.innerHTML = "Nombre " + data.name;
+   app7peso.innerHTML = "Peso " + data.weight;
+   app7altura.innerHTML = "altura" + data.height;
+   app7imagen.src = data.sprites.other.home.front_default;
+}
+
+
+app7BtnBuscar.addEventListener("click", e => {
+   e.preventDefault();
+
+   let id7 = app7id.value;
+
+   let urlpokemon = "https://pokeapi.co/api/v2/pokemon/" + id7;
+
+   fetch(urlpokemon)
+   .then(Response => Response.json())
+   .then(data => mostrardatos(data));
+
+});
