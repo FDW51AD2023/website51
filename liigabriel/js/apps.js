@@ -1,3 +1,45 @@
+/* App5 */
+function perfecto(numero){
+    let div = 1;
+    let suma =0;
+    while( div < numero ){
+        if(numero % div == 0){
+            suma += div
+        }
+        div++;
+    }
+   return suma == numero;
+}
+
+const app5Ini = document.getElementById("app5Ini");
+const app5Fin = document.getElementById("app5Fin");
+const app5Res = document.getElementById("app5Res");
+const app5BtnVer = document.getElementById("app5BtnVer");
+const lista = document.createElement("ol");
+
+app5BtnVer.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    let ini = parseInt(app5Ini.value);
+    let fin = parseInt(app5Fin.value);
+
+    let numero = ini
+    
+    do {
+        /* codigo para checar si es perfecto */
+        if( perfecto(numero)){
+           let item = document.createElement("li");
+           item.innerHTML = numero;
+           lista.appendChild(item);  
+        }
+        numero++;
+    }while( numero <= fin);
+
+    app5Res.appendChild(lista);
+});
+
+
+
 /* App4 */
 const app4Tabla = document.getElementById("app4Tabla");
 const app4Inv = document.getElementById("app4Inv");
