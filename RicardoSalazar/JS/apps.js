@@ -118,27 +118,45 @@ const app4SoloPunto = document.getElementById("app4SoloPunto");
 const app4Res = document.getElementById("app4Res");
 const app4BtnVer = document.getElementById("app4BtnVer");
 
-app4BtnVer.addEventListener("click", (e) => {e.preventDefault();
+function mostrarTabla() {
 
     let tabla = parseInt(app4Tabla.value);
-        if(app4SoloPunto.checked){
-            for(let i=1 ; i <=10; i++ ){
-                let i = app4SoloPunto.checked? resMult= ".".repeat(tabla*i): resMult = tabla * i;
-                let app4SoloPunto;}
-            }
-        if ( !app4Inv.checked){
-            for(let i=1; i <=10; i++ ){
-                let i = document.createElement("li");
-                item.innerHTML = tabla + " X " + i + " = " + tabla * i;
-                lista.appendChild(item)};
-            }
-        else {
-            for(let i=10; i >=1; i-- ){
-                let item = document.createElement("li");
-                item.innerHTML = tabla + " X " + i + " = " + tabla * i;
-                lista.appendChild(item)};
-            }
-        });
+    let lista = document.createElement("ul");
+
+    if(!app4Inv.checked){
+        for(let numero=1 ; numero <=10; numero++ ){
+            let resMult = app4SoloPunto.checked ? resMult=".".repeat(tabla * numero) : tabla * numero;
+            let item = document.createElement("li");
+            item.innerHTML = tabla + " x " + numero + " = " + resMult;
+            lista.appendChild(item);
+        }
+    }
+    else {
+        for(let numero=10; numero >=1; numero-- ){
+            let resMult = app4SoloPunto.checked ? ".".repeat(tabla * numero) : tabla * numero;
+            let item = document.createElement("li");
+            item.innerHTML = tabla + " X " + numero + " = " + resMult;
+            lista.appendChild(item);
+        }
+    }
+    app4Res.innerHTML = "";
+    app4Res.appendChild(lista);
+}
+
+app4BtnVer.addEventListener("click", (e) => {
+    e.preventDefault();
+    mostrarTabla();
+});
+
+app4Inv.addEventListener("change", (e) => {
+    e.preventDefault();
+    mostrarTabla();
+});
+
+app4SoloPunto.addEventListener("change", (e) => {
+    e.preventDefault();
+    mostrarTabla();
+});
 /* App3 */
 
 const app3Num1 = document.getElementById("app3Num1")

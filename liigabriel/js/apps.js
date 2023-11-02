@@ -43,7 +43,7 @@ function mostrarTabla() {
 
     if (!app4Inv.checked) {
         for (let i = 1; i <= 10; i++) {
-            let resMult = app4SoloPunto.checked ? ".".repeat(tabla * i) : tabla * i;
+            let resMult = app4SoloPunto.checked ? resMult=".".repeat(tabla * i) : tabla * i;
 
             let item = document.createElement("li");
             item.innerHTML = tabla + " X " + i + " = " + resMult;
