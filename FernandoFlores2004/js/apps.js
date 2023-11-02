@@ -218,8 +218,44 @@ boton.addEventListener("click", (e) => {
 
   texto.style.margin = B;
   texto.style.color = C;
-  
-  texto.style.border = G + "px " + M + " black";
+
+  if (B == "margin") {
+    texto.style.border = G + "px " + M + " black";
+} else if (B == "margin-top") {
+    texto.style.borderTop = G + "px " + M + " black";
+    texto.style.borderRight = "0px";
+    texto.style.borderBottom = "0px";
+    texto.style.borderLeft = "0px";
+}else if(B=="margin-bottom"){
+    texto.style.borderTop = "0px" ;
+    texto.style.borderRight = "0px";
+    texto.style.borderBottom = G + "px " + M + " black";
+    texto.style.borderLeft = "0px";
+}else if(B=="margin-left"){
+    texto.style.borderTop = "0px" ;
+    texto.style.borderRight = "0px";
+    texto.style.borderBottom = "0px";
+    texto.style.borderLeft = G + "px " + M + " black";
+}else if(B=="margin-right"){
+    texto.style.borderTop = "0px" ;
+    texto.style.borderRight = G + "px " + M + " black";
+    texto.style.borderBottom = "0px";
+    texto.style.borderLeft = "0px";
+}
+
+
+
+
+
+
+
+
+
+  console.log(B);
+
+
+
+
 });
 
 //app8
