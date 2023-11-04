@@ -1,0 +1,65 @@
+#mp1 article {
+    font-size: 5px;
+}
+
+#mp1 p {
+    font-size: 5rem;
+    padding: 0.5em;
+}
+
+#mp1 .display{
+    background-color: chocolate;
+    height:100vh;
+    width:75vw;
+}
+
+#mp1 .display-porcentaje{
+    background-color:crimson;
+    height:100%;
+    width:100%;
+}
+/* Colores */
+
+#scolor article:first-child{
+    width:500px;
+    height:100px;
+    background-color: #6499E9;
+}
+
+#scolor article:nth-child(2){
+    width:500px;
+    height:200px;
+    background-color:rgb(255, 196, 54);
+}
+
+#scolor article:last-child{
+    width:500px;
+    height:300px;
+    background-color:hsl(350,70%,50%);
+}
+/* Fin de colores  */
+
+#scolor .a1{
+    background-color: #EDE6DB;
+    height: 50%;
+}
+
+#scolor .a2{
+    background-color:lime;
+    height: 50%;
+    width: 50%;
+}
+
+#scolor .a3{
+    background-color:peru;
+     height: 50%;
+     width: 30vw;
+}
+/* Overflow */
+
+.overflow{
+    background-color: hsl(350,70%,50%);
+    height:1000px ;
+    width:300px ;
+    overflow: scroll;
+}

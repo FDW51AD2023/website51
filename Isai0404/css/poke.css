@@ -1,0 +1,31 @@
+#poke{
+    display: flex;
+    background-image: url("http://gran4u.xtgem.com/Pokedex.png");
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+h1{
+    display: flex;
+    text-align: center;
+}
+
+#nom{
+    margin-top: 190px;
+    margin-left: 500px;
+}
+
+h3{
+    margin-left: 500px;
+}
+
+#ima{
+    width: 250px;
+    margin-top: -200px;
+    margin-left: 80px;
+}
+
+#info{
+    display: flex;
+    padding: 20px;
+}
