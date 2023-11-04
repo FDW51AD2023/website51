@@ -9,39 +9,46 @@
 <body>
 
     <form id="app1" action="">
-        <h2>Practica 25 de Octubre</h2>
-        <div>
-            <label for="app1Borde">Borde:</label>
+        <h2>Clase 25 De Octubre</h2>
+
+        <div class="row">
+            <label for="">Borde:</label>
             <select name="app1Borde" id="app1Borde">
                 <option value="To">Todos</option>
                 <option value="Su">Superior</option>
                 <option value="In">Inferior</option>
-                <option value="Iz">Izq</option>
-                <option value="De">Der</option>
+                <option value="Iz">Izquierda</option>
+                <option value="De">Derecha</option>
             </select>
         </div>
-        <div>
+
+        <div class="row">
             <label for="app1Color">Color:</label>
             <input type="color" name="app1Color" id="app1Color">
         </div>
-        <div>
+
+        <div class="row">
             <label for="app1Grosor">Grosor:</label>
-            <input type="number" name="app1Grosor" id="app1Grosor">
+            <input type="text" name="app1Grosor" id="app1Grosor">
         </div>
-        <div>
-            <label for="app1Tipo">Tipo:</label>
+
+        <div class="row">
+            <label for="">Tipo:</label>
             <select name="app1Tipo" id="app1Tipo">
-                <option value="So">Solid</option>
-                <option value="Ds">Dashed</option>
-                <option value="Do">Double</option>
+                <option value="solid">Solid</option>
+                <option value="dashed">Dashed</option>
+                <option value="double">Double</option>
             </select>
         </div>
-        <div class="divprueba">
-            <h4>Div Prueba</h4>
+
+        <div class="row" id="app1DivPrueba">
+            <h1>Div Prueba</h1>
         </div>
-        <div>
-            <input name="app1Boton" id="app1Boton" type="submit" value="Ver">
+
+        <div class="row">
+            <input id="app1BtnVer" class="btn" type="submit" value="Ver">
         </div>
+
     </form>
     
     <script src="js/jsoct25.js"></script>
