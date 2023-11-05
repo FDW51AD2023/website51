@@ -22,7 +22,7 @@
 
 #scolor article:first-child{
     width: 500px;
-    height: 200px;
+    height: 100px;
     background-color:  #FF6969;
 }
 
@@ -41,7 +41,7 @@
 
 #scolor .a1{
     background-color: #fff5e0;
-    height: 50vh;
+    height: 50%;
 }
 
 #scolor .a2{

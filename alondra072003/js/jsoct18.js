@@ -1,6 +1,6 @@
 
 console.log("Mensaje enviado a la consola");
-console.warn("Esto es un waring");
+console.warn("Esto es un warning");
 console.error("Esto es un error");
 console.info("Esto es informacion");
 
