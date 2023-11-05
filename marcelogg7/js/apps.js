@@ -210,5 +210,4 @@ function mostrarDatos(data){
     app7Peso.innerHTML= "Peso: "+ data.weight;
     app7Altura.innerHTML= "Altura: "+ data.height;
     app7Imagen.src = data.sprites.other.home.front_default;
-
-}
+};
