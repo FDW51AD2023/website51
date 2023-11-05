@@ -3,99 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Apps</title>
     <link rel="stylesheet" href="css/apps.css">
 </head>
 <body>
     <h1>Apps</h1>
-
     <form id="app1" action="">
-        
-        <h2>Aplicacion para sumar dos numeros</h2>
-
+        <h2>Aplicacion para sumar,multiplicar,dividir,restar dos numeros.</h2>
         <div class="row">
-            <label for="app1Num1">Numero:</label>
+            <label for="app1Num1">Numero: </label>
             <input type="text" name="app1Num1" id="app1Num1">
         </div>
-        
+
         <div class="row">
-            <label for="app1Num2">Numero:</label>
+            <label for="app1Num2">Numero: </label>
             <input type="text" name="app1Num2" id="app1Num2">
         </div>
 
         <div class="row">
-            <label for="">Operacion</label>
-            <select name="app1Operacion" id="idApp1Operacion">
-                <option value="s">suma</option>
-                <option value="r">resta</option>
-                <option value="m">multiplicacion</option>
-                <option value="d">division</option>
-            </select>
-
-        </div>
-        
-        <div class="row">
-            <label for="app1Res1">Resultado de la suma:</label>
-            <input type="text" name="app1Res1" id="app1Res1">
+            <label for="app1Res">Resultado de la suma: </label>
+            <input readonly type="text" name="app1Res" id="app1Res">
         </div>
 
         <div class="row">
-            <label for="app1Res2">Resultado de la resta:</label>
-            <input type="text" name="app1Res2" id="app1Res2">
+            <label for="app1Res2">Resultado de la resta: </label>
+            <input readonly type="text" name="app1Res2" id="app1Res2">
         </div>
 
         <div class="row">
-            <label for="app1Res3">Resultado de la multiplicacion:</label>
-            <input type="text" name="app1Res3" id="app1Res3">
+            <label for="app1Res3">Resultado de la division: </label>
+            <input readonly type="text" name="app1Res3" id="app1Res3">
         </div>
 
         <div class="row">
-            <label for="app1Res4">Resultado de la division:</label>
-            <input type="text" name="app1Res4" id="app1Res4">
+            <label for="app1Res4">Resultado de la multiplicacion: </label>
+            <input readonly type="text" name="app1Res4" id="app1Res4">
         </div>
 
-        <div class="row">
-            <input id="app1BtnCalcular" class="btn" type="submit" value="Calcular">
+        <div>
+            <input class="btn" type="submit" value="calcular" id="app1BtnCalcular">
         </div>
-    
     </form>
 
-
-
     <form id="app3" action="">
-        
-        <h2>Aplicacion para sumar dos numeros</h2>
+        <h2>Aplicacion para operaciones aritmeticas de dos numeros.</h2>
 
         <div class="row">
-            <label for="app3Num1">Numero:</label>
+            <label for="app3Num1">Numero: </label>
             <input type="text" name="app3Num1" id="app3Num1">
         </div>
-        
+
         <div class="row">
-            <label for="app3Num2">Numero:</label>
+            <label for="app3Num2">Numero: </label>
             <input type="text" name="app3Num2" id="app3Num2">
         </div>
 
         <div class="row">
-            <label for="">Operacion</label>
-            <select name="app3Operacion" id="idApp3Operacion">
-                <option value="s">suma</option>
-                <option value="r">resta</option>
-                <option value="m">multiplicacion</option>
-                <option value="d">division</option>
+            <label for="">Operacion: </label>
+            <select name="app3Operacion" id="app3Operacion">
+                <option value="s">Suma</option>
+                <option value="r">Resta</option>
+                <option value="m">Multiplicacion</option>
+                <option value="d">Division</option>
             </select>
-
-        </div>
-        
-        <div class="row">
-            <label for="app3Res">Resultado:</label>
-            <input type="text" name="app3Res" id="app3Res">
         </div>
 
         <div class="row">
-            <input id="app3BtnCalcular" class="btn" type="submit" value="Calcular">
+            <label for="app3Res">Resultado: </label>
+            <input readonly type="text" name="app3Res" id="app3Res">
         </div>
-    
+
+        <div>
+            <input class="btn" type="submit" value="calcular" id="app3BtnCalcular">
+        </div>
     </form>
 
     <form id="app4" action="">
@@ -128,8 +108,6 @@
             <input class="app4BtnVer" type="submit" value="Ver tabla" id="app4BtnVer">
         </div>
     </form>
-    
-    <script src="js/apps.js"></script>
 
     <form id="app5" action="">
         <h2>App para modificar div de prueba</h2>
@@ -199,9 +177,27 @@
         </div>
     </form>
 
+    <form id="app7" action="">
+        <h2>Aplicacion para buscar pokemon.</h2>
+
+        <div class="row">
+            <label for="app7Id">Id o nombre: </label>
+            <input type="text" name="app7Id" id="app7Id">
+        </div>
+
+        <div class="row">
+            <label for="app7Res">Resultado: </label>
+            <h2 id="app7Nombre"></h2>
+            <h3 id="app7Peso"></h3>
+            <h3 id="app7Altura"></h3>
+            <img id="app7Imagen" src="" alt="">
+        </div>
+
+        <div>
+            <input class="app7BtnBuscar" type="submit" value="Buscar" id="app7BtnBuscar">
+        </div>
+    </form>
+
     <script src="js/apps.js"></script>
-</body>
-</html>
-    
 </body>
 </html>

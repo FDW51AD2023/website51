@@ -2,7 +2,7 @@
 console.log("Mensaje enviado a la consola");
 console.warn("Esto es un warning");
 console.error("Esto es un error");
-console.info("esto es información");
+console.info("Esto es informacion");
 
 document.write("Mensaje desde javascript");
 document.title = "Nuevo titulo";
