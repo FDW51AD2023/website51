@@ -194,54 +194,75 @@ app5BtnCalcular.addEventListener ("click" , (e) => {
 
 /*App7*/
 function perfecto(numero){
-    let div =1;
-    let suma =0;
-    
+    let div = 1;
+    let suma = 0;
     while(div < numero){
         if(numero % div == 0){
-            suma+=div
+            suma += div;
         }
         div++;
     }
     return suma == numero;
 }
 
-
-const app7Init = document.getElementById("app7Init");
+const app7Ini = document.getElementById("app7Ini");
 const app7Fin = document.getElementById("app7Fin");
 const app7Res = document.getElementById("app7Res");
 const app7BtnVer = document.getElementById("app7BtnVer");
-
 const lista = document.createElement("ol");
 
-app7BtnVer.addEventListener("click" , (e) => {
-    e.preventDefault;
 
-    let ini = parseInt(app7Init.value);
-    let fin =parseInt(app7Fin.value);
+app7BtnVer.addEventListener("click", (e) => {
+    e.preventDefault();
+    let ini = parseInt(app7Ini.value);
+    let fin = parseInt(app7Fin.value);
+
     let numero = ini;
 
-    /*Codigo para checar ese numero*/
-
     do {
-        /*Codigo para checar si el numero es perfecto*/
-        if(perfecto(numero)){
+        /* codigo para checar si es perfecto*/
+        if( perfecto(numero)){
             let item = document.createElement("li");
             item.innerHTML = numero;
             lista.appendChild(item);
-
         }
         numero++;
-    }while(ini <= fin);
-
+    }while(numero <= fin);
     app7Res.appendChild(lista);
-
 });
+
+
 /*App7*/
 
+/*App8*/
+const app8Id = document.getElementById("app8Id");
+const app8Nombre = document.getElementById("app8Nombre");
+const app8Peso = document.getElementById("app8Nombre");
+const app8Altura = document.getElementById("app8Altura");
+const app8Imagen = document.getElementById("app8Imagen");
+
+const app8BtnBuscar = document.getElementById("app8BtnBuscar");
+
+app8BtnBuscar.addEventListener("click" , (e) => {
+    e.preventDefault();
+
+    let id = app8Id.value;
+    let url="https://pokeapi.co/api/v2/pokemon/" + id;
+
+    fetch(url).then(response => response.json().then(data => mostrarDatos(data)))
+});
+
+function mostrarDatos(data){
+
+    console.log(data);
+    app8Nombre.innerHTML = "Nombre:" + data.name;
+    app8Peso.innerHTML = "Peso:" + data.weight;
+    app8Altura.innerHTML = "Altura:" + data.height;
+    app8Imagen.src = data.sprites.other.home.front_default;
+}
 
 
-
+/*App8*/
 
 
 

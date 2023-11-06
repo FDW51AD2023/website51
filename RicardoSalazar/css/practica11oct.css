@@ -56,7 +56,7 @@
 }
 
 #logos {
-    margin: 10px 200px;
+    margin: 10px 260px;
     display: flex;
     justify-content: space-around;
 }
@@ -80,14 +80,14 @@
     justify-content: center;
 }
 
-article h1, #featured_logos {
+#south_korea_students > h1, #featured_logos {
     font-size: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-aside > h1 {
+#alumni_section > h1 {
     font-size: 50px;
     display: flex;
     align-items: center;
@@ -123,7 +123,69 @@ aside > h1 {
 }
 
 .opciones_certificaciones {
+    border: 3.5px solid black;
     margin: 10px;
     width: 1000px;
     height: 70px;
+    font-size: 18px;
+    text-align: left;
+}
+
+#preguntas_frecuentes {
+    display: block;
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 1px;
+    text-align: left;
+}
+
+#preguntas_frecuentes h1 {
+    font-size: 40px;
+}
+
+#preguntas_frecuentes p {
+    font-size: 20px;
+}
+
+footer {
+    display: flex;
+    align-items: left;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#article_donaciones {
+    display: fixed;
+    align-items: left;
+    width: 800px;
+    margin-right: 25px;
+}
+
+#article_donaciones div {
+    margin: 50px;
+    font-size: 20px;
+}
+
+#trending_guides div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    width: 550px;
+    height: 80px;
+    margin-left: 40px;
+}
+
+#trending_guides h2 {
+    text-align: center;
+}
+
+#trending_guides p {
+    margin: 2px;
+}
+
+#footer_2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }

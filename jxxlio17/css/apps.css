@@ -1,9 +1,10 @@
-/* css para input tipo text */
+/* Css para el input tipo texto */
+
 
 input[type="text"]{
     padding: 8px;
     border: none;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid gray;
 }
 
 .row {
