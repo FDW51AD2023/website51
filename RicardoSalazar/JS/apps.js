@@ -1,3 +1,40 @@
+/* APP 7: aplicacion para buscar pokemon */
+
+const app7id = document.getElementById("app7id");
+const app7nombre = document.getElementById("app7nombre");
+const app7altura = document.getElementById("app7altura");
+const app7peso = document.getElementById("app7peso");
+const app7imagen = document.getElementById("app7imagen");
+const app7BtnBuscar = document.getElementById("app7BtnBuscar");
+
+app7BtnBuscar.addEventListener("click", e => {
+    e.preventDefault();
+
+    let id = app7id.value;
+    let url = "https://pokeapi.co/api/v2/pokemon/" + id;
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => mostrarDatos(data));
+});
+
+function mostrarDatos(data){
+    console.log(data);
+
+    app7nombre.innerHTML = "nombre: " + data.name;
+    app7peso.innerHTML = "Peso: " + data.weight;
+    app7altura.innerHTML = "Altura: " + data.height;
+    app7imagen.src = data.sprites.other.home.front_default;
+
+    let plantilla = `<div class="row">
+        <label for="app7res">Resultado: </label>
+        <h2 id="app7nombre"> ${data.name}</h2>
+        <h3 id="app7peso"></h3>
+        <h3 id="app7altura"></h3>
+        <img id="app7imagen" src="" alt="">
+    </div>`
+}
+
 /* App 6 */
 function perfecto(numero){
     let div = 1;
@@ -41,33 +78,37 @@ app6btnVer.addEventListener("click", (e) => {
 
 /* app 5 */
 
-/* const app5Num1 = document.getElementById("app5Num1");
-const app5Num2 = document.getElementById("app5Num2");
-const app5Operacion = document.getElementById("app5Operacion")
-const app5Res = document.getElementById("app5Res");
-const app5BtnCalcular = document.getElementById("app5BtnCalcular");
+const app5ubicacion = document.getElementById("app5ubicacion");
+const app5color = document.getElementById("app5color");
+const app5grosor = document.getElementById("app5grosor");
+const app5tipo = document.getElementById("app5tipo");
+const app5BtnVer = document.getElementById("app5BtnVer");
+const app5div_prueba = document.getElementById("app5div_prueba");
 
-app5BtnCalcular.addEventListener("click", (e) => {
-    e.preventDefault();
+app5BtnVer.addEventListener("click", (e) => {e.preventDefault();
 
-    let num1 = parseInt(app5Num1.value);
-    let num2 = parseInt(app5Num2.value);
-    let operacion = app5Operacion.value;
-    let resultado;
+    let borde = app5ubicacion.value;
+    let color = app5color.value;
+    let grosor = app5grosor.value;
+    let estilo_borde = app5tipo.value;
 
-    switch(operacion){
-        case "s" :  resultado = num1 + num2;
-                    break;
-        case "r" :  resultado = num1 - num2;
-                    break;
-        case "m" :  resultado = num1 * num2;
-                    break;
-        case "d" :  resultado = num1 / num2;
-                    break;
+    if (borde == "todos"){
+        app5div_prueba.style.border= grosor + "px " + estilo_borde + " " + color;
     }
+    else if (borde == "superior"){
+        app5div_prueba.style.borderTop= grosor + "px " + estilo_borde + " " + color;
+    }
+    else if (borde == "inferior"){
+        app5div_prueba.style.borderBottom= grosor + "px " + estilo_borde + " " + color;
+    }
+    else if (borde == "izquierda"){
+        app5div_prueba.style.borderleft= grosor + "px " + estilo_borde + " " + color;
+    }
+    else if (borde == "derecha"){
+        app5div_prueba.style.borderleft= grosor + "px " + estilo_borde + " " + color;
+    }
+});
 
-    app5Res.value = resultado;
-}); */
 
 /* app4 Tablas de multiplicar*/
 
@@ -77,27 +118,45 @@ const app4SoloPunto = document.getElementById("app4SoloPunto");
 const app4Res = document.getElementById("app4Res");
 const app4BtnVer = document.getElementById("app4BtnVer");
 
-app4BtnVer.addEventListener("click", (e) => {e.preventDefault();
+function mostrarTabla() {
 
     let tabla = parseInt(app4Tabla.value);
-        if(app4SoloPunto.checked){
-            for(let i=1 ; i <=10; i++ ){
-                let i = app4SoloPunto.checked? resMult= ".".repeat(tabla*i): resMult = tabla * i;
-                let app4SoloPunto;}
-            }
-        if ( !app4Inv.checked){
-            for(let i=1; i <=10; i++ ){
-                let i = document.createElement("li");
-                item.innerHTML = tabla + " X " + i + " = " + tabla * i;
-                lista.appendChild(item)};
-            }
-        else {
-            for(let i=10; i >=1; i-- ){
-                let item = document.createElement("li");
-                item.innerHTML = tabla + " X " + i + " = " + tabla * i;
-                lista.appendChild(item)};
-            }
-        });
+    let lista = document.createElement("ul");
+
+    if(!app4Inv.checked){
+        for(let numero=1 ; numero <=10; numero++ ){
+            let resMult = app4SoloPunto.checked ? resMult=".".repeat(tabla * numero) : tabla * numero;
+            let item = document.createElement("li");
+            item.innerHTML = tabla + " x " + numero + " = " + resMult;
+            lista.appendChild(item);
+        }
+    }
+    else {
+        for(let numero=10; numero >=1; numero-- ){
+            let resMult = app4SoloPunto.checked ? ".".repeat(tabla * numero) : tabla * numero;
+            let item = document.createElement("li");
+            item.innerHTML = tabla + " X " + numero + " = " + resMult;
+            lista.appendChild(item);
+        }
+    }
+    app4Res.innerHTML = "";
+    app4Res.appendChild(lista);
+}
+
+app4BtnVer.addEventListener("click", (e) => {
+    e.preventDefault();
+    mostrarTabla();
+});
+
+app4Inv.addEventListener("change", (e) => {
+    e.preventDefault();
+    mostrarTabla();
+});
+
+app4SoloPunto.addEventListener("change", (e) => {
+    e.preventDefault();
+    mostrarTabla();
+});
 /* App3 */
 
 const app3Num1 = document.getElementById("app3Num1")
