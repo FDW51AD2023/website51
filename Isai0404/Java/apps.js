@@ -219,19 +219,20 @@ app5bc.addEventListener("click",(e)=>{
     console.log(tip)
     var gros = document.getElementById("gros").value
     console.log(gros)
+    let grosor = gros + "px"
     var bor = document.getElementById("borde").value
     console.log(bor)
     var divv = document.getElementById("box");
     switch(bor){
-        case "t": divv.style.border = gros +" "+tip+" "+ col;
+        case "t": divv.style.border = grosor +" "+tip+" "+ col;
                 break;
-        case "s": divv.style.borderTop = gros +" "+tip+" "+ col;
+        case "s": divv.style.borderTop = grosor +" "+tip+" "+ col;
                 break;
-        case "in": divv.style.borderBlockEnd= gros +" "+tip+" "+ col;
+        case "in": divv.style.borderBlockEnd= grosor +" "+tip+" "+ col;
                 break;
-        case "iz": divv.style.borderLeft = gros +" "+tip+" "+ col;
+        case "iz": divv.style.borderLeft = grosor +" "+tip+" "+ col;
                 break
-        case "d": divv.style.borderRight = gros +" "+tip+" "+ col;
+        case "d": divv.style.borderRight = grosor +" "+tip+" "+ col;
                 break;}
     var sup = gros
     console.log(tip)

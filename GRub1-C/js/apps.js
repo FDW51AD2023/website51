@@ -157,43 +157,47 @@ app4BtnVer.addEventListener ("click",(e) => {
 
 
 /* APLICAICON 5 */
+const editarDiv = document.getElementById("editarDiv");
+const app5BtnVer = document.getElementById("app5BtnVer");
 
 const app5Borde = document.getElementById("app5Borde");
 const app5Color = document.getElementById("app5Color");
 const app5Grosor = document.getElementById("app5Grosor");
 const app5Tipo = document.getElementById("app5Tipo");
-const app5BtnVer = document.getElementById("app5BtnVer");
-const editarDiv = document.getElementById("editarDiv");
+
 
 app5BtnVer.addEventListener("click",(e)=> {
    e.preventDefault();
-   editarDiv.style.border="none";
+   
+   editarDiv.style.border = "none";
    let Borde = (app5Borde.value);
    let Tipo = (app5Tipo.value);
+   let Color = (app5Color.value);
+   let Grosor = (app5Grosor.value);
 
    switch (Borde) {
       case "t":
-         editarDiv.style.border = app5Color.value + app5Grosor.value + "px";
+         editarDiv.style.border =  Grosor + "px " + Tipo + " " + Color;
          break;
 
       case "s":
-         editarDiv.style.borderTop = app5Color.value + app5Grosor.value + "px";
+         editarDiv.style.borderTop =  Grosor + "px " + Tipo + " " + Color;
          break;
       
       case "in":
-         editarDiv.style.borderBotton = app5Color.value + app5Grosor.value + "px";
+         editarDiv.style.borderBotton = Grosor + "px " + Tipo + " " + Color;
          break;
       
       case "iz":
-         editarDiv.style.borderLeft = app5Color.value + app5Grosor.value + "px";
+         editarDiv.style.borderLeft =  Grosor + "px " + Tipo + " " + Color;
          break;
 
       case "d":
-         editarDiv.style.borderRight = app5Color.value + app5Grosor.value + "px";
+         editarDiv.style.borderRight =  Grosor + "px " + Tipo + " " + Color;
          break;
    }
 
-   switch (Tipo){
+/*    switch (Tipo){
       case "solid"  :     
          editarDiv.style.border = "solid";
          break;
@@ -205,7 +209,7 @@ app5BtnVer.addEventListener("click",(e)=> {
       case "double" :     
          editarDiv.style.border = "double";
          break;
-  }
+  } */
 });
 
 
