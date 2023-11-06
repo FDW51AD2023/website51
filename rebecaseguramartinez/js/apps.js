@@ -77,7 +77,44 @@ const app6SoloPunto = document.getElementById("app6SoloPunto");
 const app6Res = document.getElementById("app6Res");
 const app6btnVer = document.getElementById("app6btnVer");
 
+function mostrarTabla(){
+    let tabla = parseInt(app6Tabla.value);
+    
+    let lista = document.createElement("ul");
 
+    if (!app6Inv.checked) {
+        for (let i=1; i <=10; i++ ) {
+            let resMult = app6SoloPunto.checked ? ".".repeat(tabla*i) : tabla * i;
+            let item = document.createElement("li");
+            item.innerHTML = tabla + "x" + i + "="+ resMult;
+            lista.appendChild(item);
+        }
+    }
+    else {
+        for (let i=10; i >=1; i--) {
+            let resMult = app6SoloPunto.checked ? ".".repeat(tabla*i) : tabla * i;;
+
+            let item = document.createElement("li");
+            item.innerHTML = tabla + "x" + i + "="+ resMult;
+            lista.appendChild(item);
+        }        
+    }
+    app6Res.innerHTML = "";
+    app6Res.appendChild(lista);
+
+};
+
+app6btnVer.addEventListener("click", (e) => {
+    e.preventDefault();
+    mostrarTabla();
+
+});
+app6Inv.addEventListener("change", (e) => {
+    mostrarTabla();
+});
+app6SoloPunto.addEventListener("change", (e) => {
+    mostrarTabla();
+});
 
 
 

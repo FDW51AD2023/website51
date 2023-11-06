@@ -1,0 +1,26 @@
+header{
+    background-color: darkblue;
+    display:flex;
+   /*  justify-content:space-around; */
+    align-items: center;
+}
+
+p{
+    color: white;
+}
+
+.menu{
+    border: 2px solid white ;
+    color:white
+}
+
+.sing{
+    border: 2px solid gold;
+    color:gold
+
+}
+
+header .menu{
+    align-self: flex-start;
+
+}

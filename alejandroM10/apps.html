@@ -160,9 +160,9 @@
         <div class="row">
             <label for="app5Tipo">Tipo:</label>
             <select name="app5Tipo" id="app5Tipo">
-                <option value="t">Solid</option>
-                <option value="s">Dashed</option>
-                <option value="i">Double</option>
+                <option value="solid">Solid</option>
+                <option value="dashed">Dashed</option>
+                <option value="double">Double</option>
             </select>
         </div>
         <div class="row">
@@ -196,6 +196,27 @@
             <input  id="app6BtnVer" class="btn" type="submit" value="Mostrar Numeros">
         </div>
     </form>
+
+    <form id="app7" action="">
+        <h2>Aplicacion para buscar pokemon</h2>
+
+        <div class="row">
+            <label for="app7Id">Id o nombre:</label>
+            <input type="text" name="app7Id" id="app7Id">
+        </div>
+        
+        <div class="row">
+            <label for="app7Res">Resultado:</label>
+            <h2 id="app7Nombre"></h2>
+            <h3 id="app7Peso"></h3>
+            <h3 id="app7Altura"></h3>
+            <img id="app7Imagen" src="" alt="">
+        </div>
+       
+        <div class="row">
+            <input id="app7BtnBuscar" class="btn" type="submit" value="Buscar">
+        </div>
+    <form>
     
     <script src="Js/apps.js"></script>
 </body>
