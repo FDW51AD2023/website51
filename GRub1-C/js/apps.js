@@ -174,7 +174,7 @@ app5BtnVer.addEventListener("click",(e)=> {
    let Tipo = (app5Tipo.value);
    let Color = (app5Color.value);
    let Grosor = (app5Grosor.value);
-  
+
    switch (Borde) {
       case "t":
          editarDiv.style.border =  Grosor + "px " + Tipo + " " + Color;
@@ -218,6 +218,7 @@ app5BtnVer.addEventListener("click",(e)=> {
 function perfecto(numero){
    let div = 1;
    let suma = 0;
+
    while (div < numero){
       if(numero % div == 0){
          suma += div;
@@ -242,9 +243,12 @@ const lista = document.createElement("ol");
 
 app6Btn.addEventListener("click", (e) => {
    e.preventDefault();
+
    let ini = parseInt(app6Ini.value);
-   let fin = parseInt(app6Fin.value);  
+   let fin = parseInt(app6Fin.value);
+   
    let numero = ini;
+
    do{
       /* codigo paara checar si ese numero es perfecto */
       if(perfecto(numero)){
