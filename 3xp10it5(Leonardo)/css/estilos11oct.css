@@ -1,0 +1,64 @@
+Header {
+    background-color:rgb(229, 255, 0);
+}
+
+main {
+    background-color: blueviolet;
+}
+
+aside {
+    background-color: red;
+}
+
+footer {
+    background-color: aqua;
+}
+
+#mp1 {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+#mp2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 200px;
+}
+
+#mp3 {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+
+#mp3 header {
+    grid-column: 1 / -1;
+}
+
+#mp3 footer {
+    grid-column: 1 / -1;
+}
+
+#mp4 {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-areas: "h h"
+                         "m a"
+                         "f f";
+    gap: 10px;                    
+}
+
+#mp4 header {
+    grid-area: h;
+}
+
+#mp4 main {
+    grid-area: m;
+}
+
+#mp4 aside {
+    grid-area: a;
+}
+
+#mp4 footer {
+    grid-area: f;
+}

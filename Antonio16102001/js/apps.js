@@ -170,7 +170,6 @@ function perfecto(numero){
    return suma == numero 
 }
 
-
 const app6Ini = document.getElementById("app6Ini");
 const app6Fin = document.getElementById("app6Fin");
 const app6Res = document.getElementById("app6Res");
