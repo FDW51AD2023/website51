@@ -7,7 +7,7 @@ document.write("Mensaje desde javascript");
 document.title = "Nuevo titulo";
 
 /* Obtener una referencia a un elemento html*/
-const titulo = document.getElementById("titulo")
+const titulo = document.getElementById("titulo");
 
 titulo.innerHTML = "Titulo modificado desde javascript";
 titulo.style.color = "aqua";
