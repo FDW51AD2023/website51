@@ -204,7 +204,7 @@ const margen = document.getElementById("tipo");
 const boton = document.getElementById("app6BtnVer");
 const texto = document.getElementById("div");
 
-
+console.log(grueso.value);
 
 boton.addEventListener("click", (e) => {
   e.preventDefault();
@@ -218,6 +218,101 @@ boton.addEventListener("click", (e) => {
 
   texto.style.margin = B;
   texto.style.color = C;
-  texto.style.border = G 
-  texto.style.border = M;
+
+  if (B == "margin") {
+    texto.style.border = G + "px " + M + " black";
+} else if (B == "margin-top") {
+    texto.style.borderTop = G + "px " + M + " black";
+    texto.style.borderRight = "0px";
+    texto.style.borderBottom = "0px";
+    texto.style.borderLeft = "0px";
+}else if(B=="margin-bottom"){
+    texto.style.borderTop = "0px" ;
+    texto.style.borderRight = "0px";
+    texto.style.borderBottom = G + "px " + M + " black";
+    texto.style.borderLeft = "0px";
+}else if(B=="margin-left"){
+    texto.style.borderTop = "0px" ;
+    texto.style.borderRight = "0px";
+    texto.style.borderBottom = "0px";
+    texto.style.borderLeft = G + "px " + M + " black";
+}else if(B=="margin-right"){
+    texto.style.borderTop = "0px" ;
+    texto.style.borderRight = G + "px " + M + " black";
+    texto.style.borderBottom = "0px";
+    texto.style.borderLeft = "0px";
+}
+
+
+
+
+
+
+
+
+
+  console.log(B);
+
+
+
+
 });
+
+//app8
+
+function perfecto(num){
+    let div=1;
+    let suma=0;
+while(div< num){
+
+    if(num%div==0){
+        suma+=div
+    }
+    div++
+
+}
+if(suma==num){
+    return true;
+}
+
+else{
+    return false;
+}
+
+}
+
+
+/*return suma==num;*/
+
+
+const app8Ini=document.getElementById("app8Ini");
+const app8Fin=document.getElementById("app8Fin");
+const app8Res=document.getElementById("app8Res");
+const app8BtnVer=document.getElementById("app8BtnVer");
+const lista=document.createElement("ol");
+
+
+app8BtnVer.addEventListener("click",(e)=>{
+    e.preventDefault();
+    let ini=parseInt(app8Ini.value);
+    let fin=parseInt(app8Fin.value);
+
+    let num = ini;
+
+    do{
+    //codigo para checar si es perfecto
+    if(perfecto(num)){
+        let item=document.createElement("li")
+        item.innerHTML=num;
+        lista.appendChild(item);
+    }
+    //codigo para checar ese numero
+    num++
+    }while(num<=fin);
+
+
+app8Res.appendChild(lista);
+
+})
+
+

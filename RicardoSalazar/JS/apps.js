@@ -1,4 +1,116 @@
-/* app4 Contador*/
+/* APP 7: aplicacion para buscar pokemon */
+
+const app7id = document.getElementById("app7id");
+const app7nombre = document.getElementById("app7nombre");
+const app7altura = document.getElementById("app7altura");
+const app7peso = document.getElementById("app7peso");
+const app7imagen = document.getElementById("app7imagen");
+const app7BtnBuscar = document.getElementById("app7BtnBuscar");
+
+app7BtnBuscar.addEventListener("click", e => {
+    e.preventDefault();
+
+    let id = app7id.value;
+    let url = "https://pokeapi.co/api/v2/pokemon/" + id;
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => mostrarDatos(data));
+});
+
+function mostrarDatos(data){
+    console.log(data);
+
+    app7nombre.innerHTML = "nombre: " + data.name;
+    app7peso.innerHTML = "Peso: " + data.weight;
+    app7altura.innerHTML = "Altura: " + data.height;
+    app7imagen.src = data.sprites.other.home.front_default;
+
+    let plantilla = `<div class="row">
+        <label for="app7res">Resultado: </label>
+        <h2 id="app7nombre"> ${data.name}</h2>
+        <h3 id="app7peso"></h3>
+        <h3 id="app7altura"></h3>
+        <img id="app7imagen" src="" alt="">
+    </div>`
+}
+
+/* App 6 */
+function perfecto(numero){
+    let div = 1;
+    let suma = 0;
+    while(div < numero){
+        if(numero % div == 0){
+            suma += div
+        }
+        div++;
+    }
+    return suma == numero;
+}
+
+const app6Ini = document.getElementById("app6Ini");
+const app6Fin = document.getElementById("app6Fin");
+const app6Res = document.getElementById("app6Res");
+const app6btnVer = document.getElementById("app6BtnVer");
+const lista = document.createElement("ol");
+
+app6btnVer.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    let ini = parseInt(app6Ini.value);
+    let fin = parseInt(app6Fin.value);
+
+    let numero = ini
+
+    do {
+        /* Aqui deberia ir un codigo para checar ese numero */
+        /* Codigo para revisar si es perfecto */
+        if(perfecto(numero)){
+            let item = document.createElement("li");
+            item.innerHTML = numero
+            lista.appendChild(item);
+        }
+        numero++;
+    }while(numero <= fin);
+
+    app6Res.appendChild(lista);
+});
+
+/* app 5 */
+
+const app5ubicacion = document.getElementById("app5ubicacion");
+const app5color = document.getElementById("app5color");
+const app5grosor = document.getElementById("app5grosor");
+const app5tipo = document.getElementById("app5tipo");
+const app5BtnVer = document.getElementById("app5BtnVer");
+const app5div_prueba = document.getElementById("app5div_prueba");
+
+app5BtnVer.addEventListener("click", (e) => {e.preventDefault();
+
+    let borde = app5ubicacion.value;
+    let color = app5color.value;
+    let grosor = app5grosor.value;
+    let estilo_borde = app5tipo.value;
+
+    if (borde == "todos"){
+        app5div_prueba.style.border= grosor + "px " + estilo_borde + " " + color;
+    }
+    else if (borde == "superior"){
+        app5div_prueba.style.borderTop= grosor + "px " + estilo_borde + " " + color;
+    }
+    else if (borde == "inferior"){
+        app5div_prueba.style.borderBottom= grosor + "px " + estilo_borde + " " + color;
+    }
+    else if (borde == "izquierda"){
+        app5div_prueba.style.borderleft= grosor + "px " + estilo_borde + " " + color;
+    }
+    else if (borde == "derecha"){
+        app5div_prueba.style.borderleft= grosor + "px " + estilo_borde + " " + color;
+    }
+});
+
+
+/* app4 Tablas de multiplicar*/
 
 const app4Tabla = document.getElementById("app4Tabla");
 const app4Inv = document.getElementById("app4Inv");
@@ -6,10 +118,45 @@ const app4SoloPunto = document.getElementById("app4SoloPunto");
 const app4Res = document.getElementById("app4Res");
 const app4BtnVer = document.getElementById("app4BtnVer");
 
-/* Revisar si se marco tabla invertida */
-if (app4Inv.checked){
-    
+function mostrarTabla() {
+
+    let tabla = parseInt(app4Tabla.value);
+    let lista = document.createElement("ul");
+
+    if(!app4Inv.checked){
+        for(let numero=1 ; numero <=10; numero++ ){
+            let resMult = app4SoloPunto.checked ? resMult=".".repeat(tabla * numero) : tabla * numero;
+            let item = document.createElement("li");
+            item.innerHTML = tabla + " x " + numero + " = " + resMult;
+            lista.appendChild(item);
+        }
+    }
+    else {
+        for(let numero=10; numero >=1; numero-- ){
+            let resMult = app4SoloPunto.checked ? ".".repeat(tabla * numero) : tabla * numero;
+            let item = document.createElement("li");
+            item.innerHTML = tabla + " X " + numero + " = " + resMult;
+            lista.appendChild(item);
+        }
+    }
+    app4Res.innerHTML = "";
+    app4Res.appendChild(lista);
 }
+
+app4BtnVer.addEventListener("click", (e) => {
+    e.preventDefault();
+    mostrarTabla();
+});
+
+app4Inv.addEventListener("change", (e) => {
+    e.preventDefault();
+    mostrarTabla();
+});
+
+app4SoloPunto.addEventListener("change", (e) => {
+    e.preventDefault();
+    mostrarTabla();
+});
 /* App3 */
 
 const app3Num1 = document.getElementById("app3Num1")
@@ -96,7 +243,7 @@ app_divisionBtnCalcular.addEventListener("click", (e) => { e.preventDefault();
 
     let num1 = parseInt(app_divisionNum1.value);
     let num2 = parseInt(app_divisionNum2.value);
-    let suma = num1 / num2;
+    let division = num1 / num2;
 
-    app_divisionRes.value = suma
+    app_divisionRes.value = division
 });

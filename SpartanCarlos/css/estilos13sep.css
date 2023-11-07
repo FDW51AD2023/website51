@@ -1,0 +1,51 @@
+#mp1 h2{
+    background-color: tomato;
+    color: black;
+    border: 2px solid black;
+    border-radius:  5px;
+}
+
+#mp1 h2:hover{
+    background-color: black;
+    color: tomato;
+}
+
+ul li:first-child{
+    border-top: 2px double rebeccapurple;
+}
+
+#mp1 ul li:last-child{
+    border-top: 2px double rebeccapurple;
+}
+
+#mp1 main ul li:last-child{
+    border-top: 2px double rebeccapurple;
+}
+
+#mp1 main ul li:nth-child(3){
+    background-color: blue;
+    color:white;
+}
+
+.formato-lista-1:nth-child(odd){
+    background-color: blue;
+    color:white;
+}
+
+.formato-lista-1:nth-child(even){
+    background-color:gray;
+    color:white;
+}
+
+.formato-lista-2:nth-child(3n){
+    background-color: tomato;
+}
+
+#mp1 p::first-letter{
+    font-size: 100px;
+}
+
+#mp1 p::first-line{
+    background-color: green;
+    color:black;
+}

@@ -203,8 +203,7 @@ solo.addEventListener("change", (e)=> {
 app4bc.addEventListener("click", (e) => {
     e.preventDefault();
     mostrarTabla();})
-app4bc.addEventListener ("click",(e) => {
-    e.preventDefault();});
+
 
 /* APP 5
 
@@ -220,22 +219,56 @@ app5bc.addEventListener("click",(e)=>{
     console.log(tip)
     var gros = document.getElementById("gros").value
     console.log(gros)
+    let grosor = gros + "px"
     var bor = document.getElementById("borde").value
     console.log(bor)
     var divv = document.getElementById("box");
     switch(bor){
-        case "t": divv.style.border = gros +" "+tip+" "+ col;
+        case "t": divv.style.border = grosor +" "+tip+" "+ col;
                 break;
-        case "s": divv.style.borderTop = gros +" "+tip+" "+ col;
+        case "s": divv.style.borderTop = grosor +" "+tip+" "+ col;
                 break;
-        case "in": divv.style.borderBlockEnd= gros +" "+tip+" "+ col;
+        case "in": divv.style.borderBlockEnd= grosor +" "+tip+" "+ col;
                 break;
-        case "iz": divv.style.borderLeft = gros +" "+tip+" "+ col;
+        case "iz": divv.style.borderLeft = grosor +" "+tip+" "+ col;
                 break
-        case "d": divv.style.borderRight = gros +" "+tip+" "+ col;
+        case "d": divv.style.borderRight = grosor +" "+tip+" "+ col;
                 break;}
     var sup = gros
     console.log(tip)
     console.log(sup)
     divv.style.margin = col;
-})
+});
+/* App6*/
+function Perfecto(num){
+    let div =1;
+    let suma = 0;
+    while(div < num){
+        if(num % div ==0){
+            suma += div
+        }
+        div++
+    }
+    return suma == num;
+}
+const app6Ini =document.getElementById("app6Ini")
+const app6Fin =document.getElementById("app6Fin")
+const app6Res = document.getElementById("app6res")
+const app6bc = document.getElementById("app6bc")
+const lis =document.createElement("ol")
+
+app6bc.addEventListener("click",(e) =>{
+    e.preventDefault();
+    let ini = parseInt(app6Ini.value);
+    let fin = parseInt(app6Fin.value);
+    let num = ini;
+    do{
+        /* Codigo pa ver si el numero es perfect */
+        if(Perfecto(num)){
+            let item = document.createElement("li");
+            item.innerHTML = num;
+            lis.appendChild(item)}
+        num++;
+    }while( num <= fin);
+    app6Res.appendChild(lis)
+});
